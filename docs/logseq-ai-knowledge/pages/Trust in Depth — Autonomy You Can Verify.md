@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/security-safety
+tags:: #article #corpus/aws-ml-blog #cluster/security-safety
 node-id:: a-trust-in-depth-for-agents
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/trust-in-depth-for-agents.md
 original-label:: Trust in Depth: Autonomy You Can Verify
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in…
 
 ## Relations

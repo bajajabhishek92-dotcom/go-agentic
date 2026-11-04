@@ -3,13 +3,13 @@ type:: article
 cluster:: agentic-systems
 cluster-name:: Agentic Systems & Engineering
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/agentic-systems
+tags:: #article #corpus/openai-news #cluster/agentic-systems
 node-id:: a-computer-use-professional-workflows
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/computer-use-professional-workflows.md
 original-label:: Computer Use for Professional Software: Train on Real Vendor Workflows
 
 - #cluster/agentic-systems
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Generic “use a browser” demos understate the hard problem: agents must operate **specialized business software** under company rules—approvals, templates, jurisdiction clauses, CAD constraints, QA viewports—and…
 
 ## Relations

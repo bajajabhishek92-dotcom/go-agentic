@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/trust-evals
+tags:: #article #corpus/huggingface-blog #cluster/trust-evals
 node-id:: a-long-context-state-tracking
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/long-context-state-tracking.md
 original-label:: Long-Context State Tracking: What Benchmarks Must Separate
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Long-context benchmarks often ask whether a model “remembers” something far back in a document. That question hides several different skills. **State tracking**—following how entities change as a document unfolds—has…
 
 ## Relations

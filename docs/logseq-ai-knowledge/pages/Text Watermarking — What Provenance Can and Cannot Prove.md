@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/security-safety
+tags:: #article #corpus/openai-news #cluster/security-safety
 node-id:: a-text-provenance-watermarking-limits
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/text-provenance-watermarking-limits.md
 original-label:: Text Watermarking: What Provenance Can and Cannot Prove
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Regulators increasingly require machine-readable signals that text was AI-generated. Statistical text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response—but they are…
 
 ## Relations

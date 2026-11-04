@@ -3,13 +3,13 @@ type:: article
 cluster:: enterprise-gov
 cluster-name:: Enterprise Adoption & Governance
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/enterprise-gov
+tags:: #article #corpus/aws-ml-blog #cluster/enterprise-gov
 node-id:: a-multi-tenant-and-rag-access-control
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/multi-tenant-and-rag-access-control.md
 original-label:: Multi-Tenant Agents and RAG Access Control
 
 - #cluster/enterprise-gov
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation** for agent…
 
 ## Relations

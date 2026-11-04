@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/security-safety
+tags:: #article #corpus/huggingface-blog #cluster/security-safety
 node-id:: a-agent-security-ai-intrusions
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/agent-security-ai-intrusions.md
 original-label:: Agentic Intrusions: Treat Data Pipelines as Attack Surface
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent** operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation agents that…
 
 ## Relations

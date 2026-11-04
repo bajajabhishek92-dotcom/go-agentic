@@ -3,13 +3,13 @@ type:: article
 cluster:: science-frontier
 cluster-name:: Science, Frontier & Interpretability
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/science-frontier
+tags:: #article #corpus/deepmind-blog #cluster/science-frontier
 node-id:: a-weathernext-climate-earth
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/weathernext-climate-earth.md
 original-label:: WeatherNext and Earth Observation: AI for Climate Decisions
 
 - #cluster/science-frontier
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: Weather and land-cover AI convert research models into **decision infrastructure**—hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what “green” actually is.
 
 ## Relations

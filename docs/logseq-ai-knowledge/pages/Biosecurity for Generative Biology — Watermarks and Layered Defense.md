@@ -3,13 +3,13 @@ type:: article
 cluster:: science-frontier
 cluster-name:: Science, Frontier & Interpretability
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/science-frontier
+tags:: #article #corpus/deepmind-blog #cluster/science-frontier
 node-id:: a-biosecurity-synthid-bio
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/biosecurity-synthid-bio.md
 original-label:: Biosecurity for Generative Biology: Watermarks and Layered Defense
 
 - #cluster/science-frontier
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar ≈ natural.” DeepMind’s…
 
 ## Relations

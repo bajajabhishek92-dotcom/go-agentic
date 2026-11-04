@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/trust-evals
+tags:: #article #corpus/deepmind-blog #cluster/trust-evals
 node-id:: a-gemma-scope-interpretability
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/gemma-scope-interpretability.md
 original-label:: Gemma Scope: Open Interpretability at Model Scale
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind’s open “microscope” for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers can see **what…
 
 ## Relations

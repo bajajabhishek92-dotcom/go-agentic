@@ -3,13 +3,13 @@ type:: article
 cluster:: coding-delivery
 cluster-name:: Coding Agents & Software Delivery
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/coding-delivery
+tags:: #article #corpus/openai-news #cluster/coding-delivery
 node-id:: a-low-resource-language-coding
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/low-resource-language-coding.md
 original-label:: Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior
 
 - #cluster/coding-delivery
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Models trained on oceans of Python and JavaScript historically struggled with **low-resource languages**—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails, weather codes, and…
 
 ## Relations

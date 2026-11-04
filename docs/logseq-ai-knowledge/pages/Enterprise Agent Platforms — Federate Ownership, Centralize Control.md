@@ -3,13 +3,13 @@ type:: article
 cluster:: enterprise-gov
 cluster-name:: Enterprise Adoption & Governance
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/enterprise-gov
+tags:: #article #corpus/aws-ml-blog #cluster/enterprise-gov
 node-id:: a-enterprise-agent-platform
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/enterprise-agent-platform.md
 original-label:: Enterprise Agent Platforms: Federate Ownership, Centralize Control
 
 - #cluster/enterprise-gov
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary—without every team…
 
 ## Relations

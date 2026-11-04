@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/security-safety
+tags:: #article #corpus/openai-news #cluster/security-safety
 node-id:: a-misalignment-monitoring-defense-in-depth
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/misalignment-monitoring-defense-in-depth.md
 original-label:: Misalignment Monitoring and Defense in Depth for Frontier Agents
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits…
 
 ## Relations

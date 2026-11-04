@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/security-safety
+tags:: #article #corpus/deepmind-blog #cluster/security-safety
 node-id:: a-ai-control-roadmap
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/ai-control-roadmap.md
 original-label:: AI Control: Security When Alignment Is Imperfect
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: Model alignment—training systems to be helpful and safe—is necessary but not sufficient for capable agents. DeepMind’s AI Control Roadmap adds a **system-level** layer: assume internal agents may act unexpectedly,…
 
 ## Relations

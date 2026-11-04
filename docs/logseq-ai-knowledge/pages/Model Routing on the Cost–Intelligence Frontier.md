@@ -3,13 +3,13 @@ type:: article
 cluster:: inference-infra
 cluster-name:: Inference, Efficiency & Infrastructure
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/inference-infra
+tags:: #article #corpus/openai-news #cluster/inference-infra
 node-id:: a-model-routing-cost-intelligence
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/model-routing-cost-intelligence.md
 original-label:: Model Routing on the Cost–Intelligence Frontier
 
 - #cluster/inference-infra
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is how teams burn 10–100×…
 
 ## Relations

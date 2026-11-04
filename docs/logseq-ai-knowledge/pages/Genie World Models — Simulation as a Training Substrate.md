@@ -3,13 +3,13 @@ type:: article
 cluster:: training-data
 cluster-name:: Training, Learning & Data
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/training-data
+tags:: #article #corpus/deepmind-blog #cluster/training-data
 node-id:: a-genie-world-models
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/genie-world-models.md
 original-label:: Genie World Models: Simulation as a Training Substrate
 
 - #cluster/training-data
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: World models generate interactive environments you can steer—not just videos you watch. Genie 4 is DeepMind’s latest statement of that idea: real-time multimodal simulation (vision + native audio + dialogue) grounded…
 
 ## Relations

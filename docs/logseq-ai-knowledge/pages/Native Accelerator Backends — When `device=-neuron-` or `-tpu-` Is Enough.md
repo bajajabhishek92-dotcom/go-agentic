@@ -3,13 +3,13 @@ type:: article
 cluster:: inference-infra
 cluster-name:: Inference, Efficiency & Infrastructure
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/inference-infra
+tags:: #article #corpus/huggingface-blog #cluster/inference-infra
 node-id:: a-native-accelerator-backends
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/native-accelerator-backends.md
 original-label:: Native Accelerator Backends: When `device="neuron"` or `"tpu"` Is Enough
 
 - #cluster/inference-infra
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows: lazy tensors, static shapes, recompilation cliffs, and library forks (`optimum-neuron`, Optimum TPU) that hid the pain.…
 
 ## Relations

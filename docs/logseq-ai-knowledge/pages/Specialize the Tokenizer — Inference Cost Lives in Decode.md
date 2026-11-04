@@ -3,13 +3,13 @@ type:: article
 cluster:: inference-infra
 cluster-name:: Inference, Efficiency & Infrastructure
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/inference-infra
+tags:: #article #corpus/huggingface-blog #cluster/inference-infra
 node-id:: a-vocabulary-specialization-cost
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/vocabulary-specialization-cost.md
 original-label:: Specialize the Tokenizer: Inference Cost Lives in Decode
 
 - #cluster/inference-infra
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Fine-tuning for a domain usually leaves the **base tokenizer** untouched. For specialized small models, that inheritance can dominate serving cost. VocabX’s production result on a Portuguese essay grader (Qwen3-4B):…
 
 ## Relations

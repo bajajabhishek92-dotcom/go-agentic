@@ -3,13 +3,13 @@ type:: article
 cluster:: inference-infra
 cluster-name:: Inference, Efficiency & Infrastructure
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/inference-infra
+tags:: #article #corpus/huggingface-blog #cluster/inference-infra
 node-id:: a-quantization-aware-healing
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/quantization-aware-healing.md
 original-label:: Quantization-Aware Healing: Compress Without Capping Accuracy
 
 - #cluster/inference-infra
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent tax—or becomes…
 
 ## Relations

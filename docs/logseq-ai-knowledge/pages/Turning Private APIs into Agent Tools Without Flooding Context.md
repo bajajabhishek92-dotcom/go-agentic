@@ -3,13 +3,13 @@ type:: article
 cluster:: knowledge-access
 cluster-name:: Context, Tools & Knowledge Access
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/knowledge-access
+tags:: #article #corpus/aws-ml-blog #cluster/knowledge-access
 node-id:: a-private-apis-as-agent-tools
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/private-apis-as-agent-tools.md
 original-label:: Turning Private APIs into Agent Tools Without Flooding Context
 
 - #cluster/knowledge-access
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints safely reachable by…
 
 ## Relations

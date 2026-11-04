@@ -3,13 +3,13 @@ type:: article
 cluster:: enterprise-gov
 cluster-name:: Enterprise Adoption & Governance
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/enterprise-gov
+tags:: #article #corpus/openai-news #cluster/enterprise-gov
 node-id:: a-closing-the-deployment-gap
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/closing-the-deployment-gap.md
 original-label:: Closing the Deployment Gap with Forward-Deployed Engineering
 
 - #cluster/enterprise-gov
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Model demos move faster than production systems. The **deployment gap** is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints,…
 
 ## Relations

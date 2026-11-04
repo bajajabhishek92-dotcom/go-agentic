@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/trust-evals
+tags:: #article #corpus/deepmind-blog #cluster/trust-evals
 node-id:: a-factuality-and-blind-evals
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/factuality-and-blind-evals.md
 original-label:: Factuality Benchmarks and Double-Blind Evaluations
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: As models become default information sources, two evaluation problems dominate: **measuring factuality across modes**, and **preventing contamination** so scores stay trustworthy.
 
 ## Relations

@@ -3,13 +3,13 @@ type:: article
 cluster:: science-frontier
 cluster-name:: Science, Frontier & Interpretability
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/science-frontier
+tags:: #article #corpus/deepmind-blog #cluster/science-frontier
 node-id:: a-science-agent-workflows
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/science-agent-workflows.md
 original-label:: Science Agents: Skills, Tool Grounding, and Idea Tournaments
 
 - #cluster/science-frontier
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: Scientific AI is moving from “answer a biology question” to **agents that run discovery workflows**—curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind…
 
 ## Relations

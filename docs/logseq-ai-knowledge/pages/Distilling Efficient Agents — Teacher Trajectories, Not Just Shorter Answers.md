@@ -3,13 +3,13 @@ type:: article
 cluster:: training-data
 cluster-name:: Training, Learning & Data
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/training-data
+tags:: #article #corpus/aws-ml-blog #cluster/training-data
 node-id:: a-distill-efficient-agents
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/distill-efficient-agents.md
 original-label:: Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers
 
 - #cluster/training-data
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: A shopping (or support, or triage) agent on a frontier model works—until you multiply **search → read → refine → verify → decide** by every user. One completed task is many billed calls. Smaller models are cheaper…
 
 ## Relations

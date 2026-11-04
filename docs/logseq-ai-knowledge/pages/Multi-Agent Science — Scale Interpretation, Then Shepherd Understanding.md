@@ -3,13 +3,13 @@ type:: article
 cluster:: science-frontier
 cluster-name:: Science, Frontier & Interpretability
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/science-frontier
+tags:: #article #corpus/openai-news #cluster/science-frontier
 node-id:: a-multi-agent-scientific-discovery
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/multi-agent-scientific-discovery.md
 original-label:: Multi-Agent Science: Scale Interpretation, Then Shepherd Understanding
 
 - #cluster/science-frontier
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Modern experiments produce more data than any lab can thoroughly read. The complementary problem for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices address the two…
 
 ## Relations

@@ -1,9 +1,9 @@
 title:: Corpus - Hugging Face Blog
 type:: corpus
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #corpus #corpus/extra-ai-knowledge/huggingface-blog
+tags:: #corpus #corpus/huggingface-blog
 
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - article-count:: 11
 
 ## Articles

@@ -3,13 +3,13 @@ type:: article
 cluster:: physical-ai
 cluster-name:: Physical AI, Voice & Autonomy
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/physical-ai
+tags:: #article #corpus/aws-ml-blog #cluster/physical-ai
 node-id:: a-voice-ai-latency-budget
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/voice-ai-latency-budget.md
 original-label:: Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling
 
 - #cluster/physical-ai
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is…
 
 ## Relations

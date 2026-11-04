@@ -3,13 +3,13 @@ type:: article
 cluster:: knowledge-access
 cluster-name:: Context, Tools & Knowledge Access
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/knowledge-access
+tags:: #article #corpus/aws-ml-blog #cluster/knowledge-access
 node-id:: a-agentic-retrieval-knowledge-bases
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/agentic-retrieval-knowledge-bases.md
 original-label:: From Single-Shot RAG to Agentic Retrieval
 
 - #cluster/knowledge-access
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come…
 
 ## Relations

@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/security-safety
+tags:: #article #corpus/openai-news #cluster/security-safety
 node-id:: a-adversarial-distillation-defenses
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/adversarial-distillation-defenses.md
 original-label:: Adversarial Distillation: Stealing Reasoning Without Breaking In
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Not every model-theft path looks like a database breach. **Adversarial distillation** is the systematic, unauthorized use of a model’s outputs—or especially its *protected reasoning*—to train or improve another…
 
 ## Relations

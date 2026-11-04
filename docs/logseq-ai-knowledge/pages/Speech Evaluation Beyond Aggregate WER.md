@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/trust-evals
+tags:: #article #corpus/huggingface-blog #cluster/trust-evals
 node-id:: a-speech-evaluation-beyond-averages
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/speech-evaluation-beyond-averages.md
 original-label:: Speech Evaluation Beyond Aggregate WER
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**—not just a single average word error…
 
 ## Relations

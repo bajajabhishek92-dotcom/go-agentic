@@ -1,9 +1,9 @@
 title:: Corpus - DeepMind Blog
 type:: corpus
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #corpus #corpus/extra-ai-knowledge/deepmind-blog
+tags:: #corpus #corpus/deepmind-blog
 
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - article-count:: 12
 
 ## Articles

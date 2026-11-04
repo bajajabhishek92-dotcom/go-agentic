@@ -3,13 +3,13 @@ type:: article
 cluster:: inference-infra
 cluster-name:: Inference, Efficiency & Infrastructure
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/inference-infra
+tags:: #article #corpus/aws-ml-blog #cluster/inference-infra
 node-id:: a-generative-ai-cost-operating-model
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/generative-ai-cost-operating-model.md
 original-label:: Generative AI Cost: An Operating Model, Not a Cheaper Model
 
 - #cluster/inference-infra
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse—one…
 
 ## Relations

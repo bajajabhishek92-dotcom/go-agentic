@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/trust-evals
+tags:: #article #corpus/huggingface-blog #cluster/trust-evals
 node-id:: a-source-aware-agent-verification
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/source-aware-agent-verification.md
 original-label:: Source-Aware Verification and Consistency for Tool Agents
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that does not repeat**.
 
 ## Relations

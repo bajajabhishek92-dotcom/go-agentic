@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/trust-evals
+tags:: #article #corpus/openai-news #cluster/trust-evals
 node-id:: a-lifeval-everyday-agent-evals
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/lifeval-everyday-agent-evals.md
 original-label:: LifeVal: Evaluating Agents on What Everyday People Need Done
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete practical life tasks—childcare logistics, government services, budgets, school prep, health-related meal planning,…
 
 ## Relations

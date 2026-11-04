@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/trust-evals
+tags:: #article #corpus/huggingface-blog #cluster/trust-evals
 node-id:: a-executable-agent-grading
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/executable-agent-grading.md
 original-label:: Executable Agent Grading: Outcomes Beat Tool-Call Theater
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite “resolved” reply, and a ticket closed when policy required **on hold**—that is the failure mode ThinkingBox was built…
 
 ## Relations

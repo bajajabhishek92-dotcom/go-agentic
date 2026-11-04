@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/security-safety
+tags:: #article #corpus/deepmind-blog #cluster/security-safety
 node-id:: a-frontier-safety-stack
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/frontier-safety-stack.md
 original-label:: Frontier Safety Stack: Misuse, Misalignment, and Injection
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: When a model can help defenders find complex bugs or scientists design experiments, the same strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon): **How do we stop…
 
 ## Relations

@@ -3,13 +3,13 @@ type:: article
 cluster:: knowledge-access
 cluster-name:: Context, Tools & Knowledge Access
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/knowledge-access
+tags:: #article #corpus/aws-ml-blog #cluster/knowledge-access
 node-id:: a-semantic-layers-for-agents
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/semantic-layers-for-agents.md
 original-label:: Semantic Layers: Let Agents Query Meaning, Not Schemas
 
 - #cluster/knowledge-access
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**—in a governed…
 
 ## Relations

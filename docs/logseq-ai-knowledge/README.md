@@ -6,9 +6,11 @@ Open this folder as a **local graph** in Logseq to browse the Project AI knowled
 
 1. Copy or download this entire folder (`logseq-ai-knowledge/`) to your machine (keep `pages/`, `journals/`, `logseq/`, and this `README.md` together).
 2. Install / open [Logseq](https://logseq.com/) (desktop app).
-3. In Logseq: **File → Open a local graph…** (or **Add new graph → Open a local folder**).
-4. Select **this folder** (`logseq-ai-knowledge`) as the graph root — the directory that contains `pages/` and `logseq/`, not a parent folder.
+3. **Logseq DB (current app):** **⋯ → Import → File to DB graph**, then choose **this folder** (`logseq-ai-knowledge` — the directory that contains `pages/` and `logseq/`, not a parent folder).
+4. **Classic file-based Logseq:** **Open a local folder** and select the same folder (no import).
 5. When the graph loads, open **[[Contents]]** (home is set to Contents in `logseq/config.edn`). If it does not open automatically, use the search bar (`Cmd/Ctrl + K`) and type `Contents`.
+
+**Note:** DB import fails on 3-level tags (`#a/b/c`). This graph uses at most 2-level tags (`#corpus/aws-ml-blog`, `#cluster/…`).
 
 ## What’s inside
 

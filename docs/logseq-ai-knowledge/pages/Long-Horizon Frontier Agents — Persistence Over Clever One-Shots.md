@@ -3,13 +3,13 @@ type:: article
 cluster:: agentic-systems
 cluster-name:: Agentic Systems & Engineering
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/agentic-systems
+tags:: #article #corpus/deepmind-blog #cluster/agentic-systems
 node-id:: a-long-horizon-frontier-agents
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/long-horizon-frontier-agents.md
 original-label:: Long-Horizon Frontier Agents: Persistence Over Clever One-Shots
 
 - #cluster/agentic-systems
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows, and agentic…
 
 ## Relations

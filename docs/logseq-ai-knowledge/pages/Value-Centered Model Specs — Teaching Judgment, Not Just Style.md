@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/trust-evals
+tags:: #article #corpus/openai-news #cluster/trust-evals
 node-id:: a-model-spec-value-alignment
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/model-spec-value-alignment.md
 original-label:: Value-Centered Model Specs: Teaching Judgment, Not Just Style
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: As models take consequential actions, literal instruction-following is not enough. They need a public, inspectable description of desired behavior—and that description works better when it is organized around…
 
 ## Relations

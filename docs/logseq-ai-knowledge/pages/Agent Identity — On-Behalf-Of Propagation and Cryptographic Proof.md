@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #article #corpus/extra-ai-knowledge/aws-ml-blog #cluster/security-safety
+tags:: #article #corpus/aws-ml-blog #cluster/security-safety
 node-id:: a-agent-identity-on-behalf-of
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/aws-ml-blog/agent-identity-on-behalf-of.md
 original-label:: Agent Identity: On-Behalf-Of Propagation and Cryptographic Proof
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - blurb:: Agents that call enterprise APIs as a shared application identity break three things at once: audit trails (who did this?), user-level authorization (what may *this* user do?), and least privilege. Production agents…
 
 ## Relations

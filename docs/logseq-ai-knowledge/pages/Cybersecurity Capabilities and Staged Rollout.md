@@ -3,13 +3,13 @@ type:: article
 cluster:: security-safety
 cluster-name:: Security, Safety & Control
 corpus:: extra-ai-knowledge/deepmind-blog
-tags:: #article #corpus/extra-ai-knowledge/deepmind-blog #cluster/security-safety
+tags:: #article #corpus/deepmind-blog #cluster/security-safety
 node-id:: a-cyber-staged-rollout
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/deepmind-blog/cyber-staged-rollout.md
 original-label:: Cybersecurity Capabilities and Staged Rollout
 
 - #cluster/security-safety
-- #corpus/extra-ai-knowledge/deepmind-blog
+- #corpus/deepmind-blog
 - blurb:: AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden access as…
 
 ## Relations

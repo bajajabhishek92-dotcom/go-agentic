@@ -3,13 +3,13 @@ type:: article
 cluster:: coding-delivery
 cluster-name:: Coding Agents & Software Delivery
 corpus:: extra-ai-knowledge/openai-news
-tags:: #article #corpus/extra-ai-knowledge/openai-news #cluster/coding-delivery
+tags:: #article #corpus/openai-news #cluster/coding-delivery
 node-id:: a-agent-scale-source-control
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/openai-news/agent-scale-source-control.md
 original-label:: Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions
 
 - #cluster/coding-delivery
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - blurb:: Coding agents multiply how much work one engineer can push at once: more branches, more CI clones, more fetches of the same commit. Source control that was “fine” for human cadence can collapse under agent…
 
 ## Relations

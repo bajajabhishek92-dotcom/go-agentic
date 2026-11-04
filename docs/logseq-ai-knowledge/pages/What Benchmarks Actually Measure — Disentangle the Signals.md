@@ -3,13 +3,13 @@ type:: article
 cluster:: trust-evals
 cluster-name:: Trust, Evaluation & Decision Quality
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/trust-evals
+tags:: #article #corpus/huggingface-blog #cluster/trust-evals
 node-id:: a-benchmark-signal-disentanglement
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/benchmark-signal-disentanglement.md
 original-label:: What Benchmarks Actually Measure: Disentangle the Signals
 
 - #cluster/trust-evals
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on **general reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than…
 
 ## Relations

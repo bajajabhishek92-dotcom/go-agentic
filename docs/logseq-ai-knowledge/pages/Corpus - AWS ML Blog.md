@@ -1,9 +1,9 @@
 title:: Corpus - AWS ML Blog
 type:: corpus
 corpus:: extra-ai-knowledge/aws-ml-blog
-tags:: #corpus #corpus/extra-ai-knowledge/aws-ml-blog
+tags:: #corpus #corpus/aws-ml-blog
 
-- #corpus/extra-ai-knowledge/aws-ml-blog
+- #corpus/aws-ml-blog
 - article-count:: 11
 
 ## Articles

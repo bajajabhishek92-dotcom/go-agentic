@@ -3,13 +3,13 @@ type:: article
 cluster:: training-data
 cluster-name:: Training, Learning & Data
 corpus:: extra-ai-knowledge/huggingface-blog
-tags:: #article #corpus/extra-ai-knowledge/huggingface-blog #cluster/training-data
+tags:: #article #corpus/huggingface-blog #cluster/training-data
 node-id:: a-async-grpo-lora-training
 source-path:: /cursor/stores/self/docs/extra-ai-knowledge/huggingface-blog/async-grpo-lora-training.md
 original-label:: Async GRPO with LoRA: Separate Trainers from Rollout GPUs
 
 - #cluster/training-data
-- #corpus/extra-ai-knowledge/huggingface-blog
+- #corpus/huggingface-blog
 - blurb:: Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between a trainer and vLLM is heavy. **LoRA changes the systems story**: a rank-1 adapter is a few megabytes, so training and…
 
 ## Relations

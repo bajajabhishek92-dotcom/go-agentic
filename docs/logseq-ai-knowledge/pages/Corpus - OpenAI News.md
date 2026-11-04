@@ -1,9 +1,9 @@
 title:: Corpus - OpenAI News
 type:: corpus
 corpus:: extra-ai-knowledge/openai-news
-tags:: #corpus #corpus/extra-ai-knowledge/openai-news
+tags:: #corpus #corpus/openai-news
 
-- #corpus/extra-ai-knowledge/openai-news
+- #corpus/openai-news
 - article-count:: 13
 
 ## Articles
