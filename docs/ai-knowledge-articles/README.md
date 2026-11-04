@@ -13,11 +13,10 @@
 | `extra/huggingface-blog/` | Hugging Face Blog | 11 |
 | `extra/aws-ml-blog/` | AWS ML Blog | 11 |
 
-## Into Google Docs (separate docs / tabs)
+## One Google Doc with a tab per article
 
-1. Pull this repo / branch so `docs/ai-knowledge-articles/` is on your laptop.
-2. In [Google Drive](https://drive.google.com): **New → Folder upload** (or upload files) and choose a corpus folder (e.g. `ibm/`).
-3. Open a `.md` file → Google may offer to open with Docs, or: open Docs → **File → Open → Upload**.
-4. Optional: keep one Drive folder per corpus and treat each uploaded Doc as a “tab.”
+Use **[`google-docs-tabs/`](google-docs-tabs/)** — upload `articles.json`, run the Apps Script (`Code.gs`), get a single Doc with corpus parent tabs and one child tab per article. Step-by-step: [`google-docs-tabs/README.md`](google-docs-tabs/README.md).
 
-Tip: start with `ibm/` or `sequoia/` if you want fewer files first; `extra/` is the larger set.
+## Or open Markdown locally
+
+Browse the `.md` files in `ibm/`, `sequoia/`, and `extra/` in any editor.
