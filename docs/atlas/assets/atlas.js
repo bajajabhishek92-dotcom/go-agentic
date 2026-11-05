@@ -83,6 +83,33 @@
       .replace(/"/g, "&quot;");
   }
 
+  /** Truncate for list cards at a sentence end; never mid-word. */
+  function sentenceSnippet(text, maxLen) {
+    maxLen = maxLen || 320;
+    const cleaned = String(text || "").replace(/\s+/g, " ").trim();
+    if (!cleaned) return "";
+    if (cleaned.length <= maxLen) return cleaned;
+    const window = cleaned.slice(0, maxLen + 1);
+    let best = -1;
+    for (let i = 0; i < window.length; i++) {
+      const ch = window[i];
+      if ((ch === "." || ch === "!" || ch === "?" || ch === "…") && (i === window.length - 1 || /\s/.test(window[i + 1]))) {
+        best = i + 1;
+      }
+    }
+    if (best >= 60) return cleaned.slice(0, best).trim();
+    let cut = cleaned.slice(0, maxLen);
+    if (!/\s$/.test(cut) && cut.includes(" ")) cut = cut.replace(/\s+\S*$/, "");
+    return cut.replace(/[ ,;:-]+$/, "") + "…";
+  }
+
+  function corpusReaderHref(art) {
+    if (!art) return "../ai-knowledge-articles/articles.html";
+    if (art.reader) return art.reader;
+    if (art.html_id) return `../ai-knowledge-articles/articles.html#${art.html_id}`;
+    return "../ai-knowledge-articles/articles.html";
+  }
+
   function showArticle(id, opts) {
     opts = opts || {};
     const art = articleById(id);
@@ -95,9 +122,8 @@
     $("#article-body").innerHTML = art.html || "";
     const meta = $("#article-meta");
     if (meta) {
-      meta.innerHTML = `<span class="asof">AS OF ${asOf()}</span><span>${escapeHtml(
-        art.path || ""
-      )}</span>`;
+      const reader = corpusReaderHref(art);
+      meta.innerHTML = `<span class="asof">AS OF ${asOf()}</span><a class="reader-link" href="${reader}">Open in corpus reader</a>`;
     }
     renderSources(art, $("#sources-panel"));
     if (opts.scroll !== false) {
@@ -169,7 +195,7 @@
           (a) =>
             `<a class="role-row" href="#${a.id}" data-article="${a.id}">
               <span class="role-title">${escapeHtml(a.title)}</span>
-              <p class="role-job">${escapeHtml(a.summary)}</p>
+              <p class="role-job">${escapeHtml(sentenceSnippet(a.summary))}</p>
             </a>`
         )
         .join("");
@@ -305,6 +331,8 @@
           cluster: "Landscape & Orientation",
           lane: a.lane,
           id: a.id,
+          html_id: a.html_id,
+          reader: a.reader || corpusReaderHref(a),
           kind: "orientation",
           keywords: [a.lane, "timeline", "players", "policy", "benchmarks", "orientation"],
         }))
@@ -314,16 +342,28 @@
           ...a,
           kind: "corpus",
           keywords: a.keywords || [],
+          reader: a.html_id
+            ? `../ai-knowledge-articles/articles.html#${a.html_id}`
+            : "../ai-knowledge-articles/articles.html",
         }))
       : [];
-    // Prefer orientation hits; dedupe by title
-    const seen = new Set();
+    // Prefer orientation lane reader for teachables; dedupe by title.
+    // If a corpus twin has a longer intact summary, keep that prose.
+    const seen = new Map();
     const all = [];
     for (const a of orientation.concat(rest)) {
       const key = a.title.toLowerCase();
-      if (seen.has(key)) continue;
-      seen.add(key);
-      all.push(a);
+      if (!seen.has(key)) {
+        seen.set(key, a);
+        all.push(a);
+        continue;
+      }
+      const prev = seen.get(key);
+      if ((a.summary || "").length > (prev.summary || "").length) {
+        prev.summary = a.summary;
+      }
+      if (!prev.html_id && a.html_id) prev.html_id = a.html_id;
+      if (!prev.reader && a.reader) prev.reader = a.reader;
     }
 
     const input = $("#topic-q");
@@ -383,11 +423,14 @@
       out.innerHTML = hits
         .slice(0, 80)
         .map((a) => {
+          // Always a rendered reader route — never raw .md / source .html files.
           let href;
-          if (a.kind === "orientation") {
+          if (a.kind === "orientation" && a.lane && a.id) {
             href = `./${a.lane}.html#${a.id}`;
           } else if (a.html_id) {
             href = `../ai-knowledge-articles/articles.html#${a.html_id}`;
+          } else if (a.reader) {
+            href = a.reader;
           } else {
             href = `../ai-knowledge-articles/articles.html`;
           }
@@ -396,7 +439,7 @@
             <div class="hit-meta">${escapeHtml(a.corpus || "")} · ${escapeHtml(
             a.cluster || ""
           )}</div>
-            <p class="hit-sum">${escapeHtml(a.summary || "")}</p>
+            <p class="hit-sum">${escapeHtml(sentenceSnippet(a.summary || ""))}</p>
           </a>`;
         })
         .join("");
