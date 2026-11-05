@@ -27,17 +27,14 @@ cd .. && python3 -m http.server 8765
 | Benchmarks | [`benchmarks.html`](benchmarks.html) |
 | Topics / Search | [`topics.html`](topics.html) |
 
-## Live (GitHub Pages)
+## Live
 
-After merge to `main` (repo `docs/` → Pages root):
+GitHub Pages is often unset on this repo (`github.io` 404). Prefer a host that serves **`text/html`** (not jsDelivr `text/plain`, which dumps source):
 
-- https://bajajabhishek92-dotcom.github.io/go-agentic/atlas/
-- Timeline: https://bajajabhishek92-dotcom.github.io/go-agentic/atlas/timeline.html
-- Full corpus search (182, includes gap-fill): https://bajajabhishek92-dotcom.github.io/go-agentic/ai-knowledge-articles/articles.html
+- Topics (in-page reader): https://gitcdn.link/repo/bajajabhishek92-dotcom/go-agentic/main/docs/atlas/topics.html
+- Local: from `docs/`, `python3 -m http.server 8765` → http://127.0.0.1:8765/atlas/topics.html
 
-htmlpreview fallback:
-
-- https://htmlpreview.github.io/?https://github.com/bajajabhishek92-dotcom/go-agentic/blob/main/docs/atlas/index.html
+Topic cards open an **in-page** reading pane (`#article-id`) using embedded `corpus-bodies.js` — they do not navigate to raw `.md` or CDN-plain `articles.html`.
 
 ## UX patterns borrowed
 
@@ -62,10 +59,10 @@ The legacy `articles.html` used to advertise **86** baseline articles only—sea
 
 ## Reader link contract
 
-Topic/search cards and timeline lane cards always open a **rendered** reader:
+**Topics cards stay in-page:** `topics.html#<id>` opens the embedded reading pane (bodies from `assets/corpus-bodies.js` + orientation HTML in `content.js`). No navigation to files that CDNs often serve as `text/plain`.
 
-- Orientation teachables → `atlas/{timeline|players|policy|benchmarks}.html#<article-id>` (in-lane reading pane)
-- Corpus hits → `ai-knowledge-articles/articles.html#<html_id>`
-- In-lane “Open in corpus reader” → same `articles.html#` route
+- Orientation lane chrome → `atlas/{timeline|players|policy|benchmarks}.html#<article-id>`
+- Sidebar “Corpus reader” → same-host relative `../ai-knowledge-articles/articles.html` (never GitHub blob/rawcdn)
+- Lane meta “Open in Topics reader” → `./topics.html#<html_id|id>`
 
-Never link cards to raw `.md` sources or GitHub blob “view source” URLs. List snippets truncate on **sentence boundaries** (never mid-word).
+Never link cards to raw `.md` or GitHub blob URLs. Snippets truncate on **sentence boundaries**.

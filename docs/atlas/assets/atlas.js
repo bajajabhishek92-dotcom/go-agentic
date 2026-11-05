@@ -103,11 +103,12 @@
     return cut.replace(/[ ,;:-]+$/, "") + "…";
   }
 
-  function corpusReaderHref(art) {
-    if (!art) return "../ai-knowledge-articles/articles.html";
-    if (art.reader) return art.reader;
-    if (art.html_id) return `../ai-knowledge-articles/articles.html#${art.html_id}`;
-    return "../ai-knowledge-articles/articles.html";
+  function topicsReaderHref(art) {
+    // Prefer in-app Topics pane (self-contained) over articles.html, which
+    // some CDNs serve as text/plain and dump as source.
+    if (!art) return "./topics.html";
+    const key = art.html_id || art.id;
+    return key ? `./topics.html#${key}` : "./topics.html";
   }
 
   function showArticle(id, opts) {
@@ -122,8 +123,8 @@
     $("#article-body").innerHTML = art.html || "";
     const meta = $("#article-meta");
     if (meta) {
-      const reader = corpusReaderHref(art);
-      meta.innerHTML = `<span class="asof">AS OF ${asOf()}</span><a class="reader-link" href="${reader}">Open in corpus reader</a>`;
+      const reader = topicsReaderHref(art);
+      meta.innerHTML = `<span class="asof">AS OF ${asOf()}</span><a class="reader-link" href="${reader}">Open in Topics reader</a>`;
     }
     renderSources(art, $("#sources-panel"));
     if (opts.scroll !== false) {
@@ -314,6 +315,7 @@
 
   function initTopics() {
     const T = window.ATLAS_TOPICS;
+    const Bodies = window.ATLAS_CORPUS_BODIES || {};
     const orientation = C
       ? Object.values(C.articles).map((a) => ({
           title: a.title,
@@ -332,9 +334,15 @@
           lane: a.lane,
           id: a.id,
           html_id: a.html_id,
-          reader: a.reader || corpusReaderHref(a),
           kind: "orientation",
-          keywords: [a.lane, "timeline", "players", "policy", "benchmarks", "orientation"],
+          keywords: [
+            a.lane,
+            "timeline",
+            "players",
+            "policy",
+            "benchmarks",
+            "orientation",
+          ],
         }))
       : [];
     const rest = T
@@ -342,13 +350,9 @@
           ...a,
           kind: "corpus",
           keywords: a.keywords || [],
-          reader: a.html_id
-            ? `../ai-knowledge-articles/articles.html#${a.html_id}`
-            : "../ai-knowledge-articles/articles.html",
         }))
       : [];
-    // Prefer orientation lane reader for teachables; dedupe by title.
-    // If a corpus twin has a longer intact summary, keep that prose.
+    // Prefer orientation teachables; dedupe by title; keep longer summaries.
     const seen = new Map();
     const all = [];
     for (const a of orientation.concat(rest)) {
@@ -363,13 +367,27 @@
         prev.summary = a.summary;
       }
       if (!prev.html_id && a.html_id) prev.html_id = a.html_id;
-      if (!prev.reader && a.reader) prev.reader = a.reader;
+      if (!prev.id && a.id) prev.id = a.id;
+      if (!prev.lane && a.lane) prev.lane = a.lane;
+      if (prev.kind !== "orientation" && a.kind === "orientation") {
+        prev.kind = "orientation";
+      }
     }
+
+    // Index for in-page open: hash key → record
+    const byHash = Object.create(null);
+    all.forEach((a) => {
+      if (a.kind === "orientation" && a.id) byHash[a.id] = a;
+      if (a.html_id) byHash[a.html_id] = a;
+    });
 
     const input = $("#topic-q");
     const out = $("#topic-hits");
     const meta = $("#topic-meta");
     const laneHints = $("#lane-hints");
+    const browse = $("#topics-browse");
+    const wrap = $("#article-view");
+    const backBtn = $("#article-back");
 
     function laneForQuery(q) {
       const qq = q.toLowerCase();
@@ -384,6 +402,89 @@
       return null;
     }
 
+    function hashKeyFor(a) {
+      if (a.kind === "orientation" && a.id) return a.id;
+      return a.html_id || a.id || "";
+    }
+
+    /** In-page href only — never .md / blob / CDN raw that dumps source. */
+    function inPageHref(a) {
+      const key = hashKeyFor(a);
+      return key ? `#${key}` : "#top";
+    }
+
+    function hideReader() {
+      if (wrap) wrap.hidden = true;
+      if (browse) browse.hidden = false;
+      const sources = $("#sources-panel");
+      if (sources) sources.hidden = true;
+    }
+
+    function showTopicRecord(a, opts) {
+      opts = opts || {};
+      if (!a || !wrap) return;
+      let title = a.title;
+      let bodyHtml = "";
+      let metaBits = [];
+
+      if (a.kind === "orientation" && a.id && articleById(a.id)) {
+        const art = articleById(a.id);
+        title = art.title;
+        bodyHtml = art.html || "";
+        metaBits.push(`<span class="asof">AS OF ${asOf()}</span>`);
+        metaBits.push(`<span>${escapeHtml(art.lane || a.corpus || "")}</span>`);
+        if (a.lane) {
+          metaBits.push(
+            `<a class="reader-link" href="./${a.lane}.html#${a.id}">Open in ${a.lane} lane</a>`
+          );
+        }
+        renderSources(art, $("#sources-panel"));
+      } else {
+        const body =
+          (a.html_id && Bodies[a.html_id]) ||
+          (a.id && Bodies[a.id]) ||
+          null;
+        title = (body && body.title) || a.title;
+        bodyHtml =
+          (body && body.html) ||
+          `<p>${escapeHtml(a.summary || "Full text is not embedded for this entry.")}</p>`;
+        metaBits.push(`<span class="asof">AS OF ${asOf()}</span>`);
+        metaBits.push(
+          `<span>${escapeHtml((body && body.corpus) || a.corpus || "")}</span>`
+        );
+        const sources = $("#sources-panel");
+        if (sources) sources.hidden = true;
+      }
+
+      if (browse) browse.hidden = true;
+      wrap.hidden = false;
+      $("#article-title").textContent = title;
+      $("#article-body").innerHTML = bodyHtml;
+      const metaEl = $("#article-meta");
+      if (metaEl) metaEl.innerHTML = metaBits.join("");
+
+      const key = hashKeyFor(a);
+      if (opts.hash !== false && key) {
+        if (location.hash.replace(/^#/, "") !== key) {
+          history.replaceState(null, "", "#" + key);
+        }
+      }
+      if (opts.scroll !== false) {
+        wrap.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function routeTopicHash() {
+      const raw = (location.hash || "").replace(/^#/, "");
+      if (!raw || raw === "top") {
+        hideReader();
+        return;
+      }
+      const rec = byHash[raw];
+      if (rec) showTopicRecord(rec, { hash: false });
+      else hideReader();
+    }
+
     function render(q) {
       const qq = (q || "").trim().toLowerCase();
       const lane = laneForQuery(qq);
@@ -395,7 +496,7 @@
             policy: "Policy",
             benchmarks: "Benchmarks",
           };
-          laneHints.innerHTML = `Orientation match: open the <a href="./${lane}.html"><strong>${labels[lane]}</strong></a> lane for the visual reader—not only keyword hits below.`;
+          laneHints.innerHTML = `Orientation match: open the <a href="./${lane}.html"><strong>${labels[lane]}</strong></a> lane—or click a result below to read in this page.`;
           laneHints.hidden = false;
         } else {
           laneHints.hidden = true;
@@ -419,22 +520,15 @@
       }
       meta.textContent = qq
         ? `${hits.length} of ${all.length} shown`
-        : `${all.length} articles · orientation lanes included`;
+        : `${all.length} articles · click to read in-page`;
       out.innerHTML = hits
         .slice(0, 80)
         .map((a) => {
-          // Always a rendered reader route — never raw .md / source .html files.
-          let href;
-          if (a.kind === "orientation" && a.lane && a.id) {
-            href = `./${a.lane}.html#${a.id}`;
-          } else if (a.html_id) {
-            href = `../ai-knowledge-articles/articles.html#${a.html_id}`;
-          } else if (a.reader) {
-            href = a.reader;
-          } else {
-            href = `../ai-knowledge-articles/articles.html`;
-          }
-          return `<a class="hit" href="${href}">
+          const href = inPageHref(a);
+          const key = hashKeyFor(a);
+          return `<a class="hit" href="${href}" data-topic-key="${escapeHtml(
+            key
+          )}">
             <div class="hit-title">${escapeHtml(a.title)}</div>
             <div class="hit-meta">${escapeHtml(a.corpus || "")} · ${escapeHtml(
             a.cluster || ""
@@ -443,16 +537,46 @@
           </a>`;
         })
         .join("");
+
+      out.querySelectorAll("a.hit").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          // Stay on Topics — never navigate to articles.html / .md / CDN raw.
+          e.preventDefault();
+          const key = el.dataset.topicKey;
+          const rec = byHash[key];
+          if (rec) showTopicRecord(rec);
+        });
+      });
+    }
+
+    if (backBtn) {
+      backBtn.addEventListener("click", () => {
+        const base = location.href.split("#")[0];
+        if (location.hash) history.replaceState(null, "", base);
+        hideReader();
+        if (browse) browse.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    // Corpus reader shortcut: same-host relative articles.html (not blob/rawcdn).
+    const corpusLink = $("#corpus-reader-link");
+    if (corpusLink) {
+      corpusLink.setAttribute("href", "../ai-knowledge-articles/articles.html");
     }
 
     if (input) {
-      input.addEventListener("input", () => render(input.value));
+      input.addEventListener("input", () => {
+        hideReader();
+        render(input.value);
+      });
       const params = new URLSearchParams(location.search);
       if (params.get("q")) {
         input.value = params.get("q");
       }
       render(input.value);
     }
+    routeTopicHash();
+    window.addEventListener("hashchange", routeTopicHash);
   }
 
   buildChrome();
@@ -461,5 +585,5 @@
   if (page === "policy") initPolicy();
   if (page === "benchmarks") initBenchmarks();
   if (page === "topics") initTopics();
-  window.addEventListener("hashchange", routeHash);
+  else window.addEventListener("hashchange", routeHash);
 })();
