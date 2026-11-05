@@ -41,28 +41,42 @@
       <a href="./players.html">Players lane</a>
       <a href="./policy.html">Policy lane</a>
       <a href="./benchmarks.html">Benchmarks lane</a>
-      <a href="../ai-knowledge-articles/articles.html">Full corpus HTML</a>
+      <a href="../ai-knowledge-articles/articles.html" id="corpus-reader-link">Corpus reader</a>
 
     </aside>
     <div class="pane">
       <div class="pane-inner" id="top">
-        <p class="kicker">TOPICS · SEARCH</p>
-        <h1>Search the atlas</h1>
-        <p class="lede">Orientation lanes are first-class. Searching “timeline” points you at the Timeline lane—and matches gap-fill teachables, not only the old baseline set.</p>
-        <input class="search-box" id="topic-q" type="search" placeholder="Try timeline, players, policy, benchmarks, SWE-bench…" autocomplete="off" />
-        <p class="search-meta" id="topic-meta"></p>
-        <p class="search-meta" id="lane-hints" hidden></p>
-        <div id="topic-hits"></div>
+        <div id="topics-browse">
+          <p class="kicker">TOPICS · SEARCH</p>
+          <h1>Search the atlas</h1>
+          <p class="lede">Click any result to read it here—no raw source dump. Orientation lanes stay one click away; the full corpus opens in this same reading pane.</p>
+          <input class="search-box" id="topic-q" type="search" placeholder="Try timeline, players, policy, benchmarks, SWE-bench…" autocomplete="off" />
+          <p class="search-meta" id="topic-meta"></p>
+          <p class="search-meta" id="lane-hints" hidden></p>
+          <div id="topic-hits"></div>
+        </div>
+
+        <article id="article-view" hidden>
+          <button type="button" class="back-lane" id="article-back">↑ Back to results</button>
+          <h1 id="article-title"></h1>
+          <div class="reader-meta" id="article-meta"></div>
+          <div class="reader-body" id="article-body"></div>
+          <details class="sources-panel" id="sources-panel" hidden>
+            <summary>Sources</summary>
+            <div class="src-body"><ul class="src-list"></ul></div>
+          </details>
+        </article>
       </div>
 
       <footer class="site">
         <span>AI Engineering Atlas · Forge Atlas</span>
-        <span><a href="../ai-knowledge-articles/articles.html">Gap-fill sources</a> · <a href="../ai-knowledge-articles/articles.html">Full corpus search</a></span>
+        <span><a href="../ai-knowledge-articles/articles.html">Corpus reader</a> · <a href="./timeline.html">Timeline lane</a></span>
       </footer>
     </div>
   </div>
   <script src="./assets/content.js"></script>
   <script src="./assets/topics-index.js"></script>
+  <script src="./assets/corpus-bodies.js"></script>
   <script src="./assets/atlas.js"></script>
 </body>
 </html>
