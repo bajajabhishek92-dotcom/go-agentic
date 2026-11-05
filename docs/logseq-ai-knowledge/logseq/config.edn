@@ -1,0 +1,18 @@
+{:meta/version 1
+
+ ;; Minimal Logseq defaults for the Project AI Knowledge graph.
+ :preferred-format "markdown"
+ :preferred-workflow :now
+ :feature/enable-block-timestamps? false
+ :feature/enable-search-remove-accents? true
+
+ :default-home {:page "Contents"}
+
+ :journal/page-title-format "yyyy_MM_dd"
+ :journal/file-name-format "yyyy_MM_dd"
+
+ :pages-directory "pages"
+ :journals-directory "journals"
+
+ :markdown/version 2
+}

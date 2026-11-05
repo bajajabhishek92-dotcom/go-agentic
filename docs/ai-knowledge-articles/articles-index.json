@@ -1,0 +1,3149 @@
+{
+  "generated_for": "search",
+  "count": 86,
+  "clusters": [
+    "Agentic Systems & Engineering",
+    "Coding Agents & Software Delivery",
+    "Context, Tools & Knowledge Access",
+    "Enterprise Adoption & Governance",
+    "Inference, Efficiency & Infrastructure",
+    "Physical AI, Voice & Autonomy",
+    "Science, Frontier & Interpretability",
+    "Security, Safety & Control",
+    "Training, Learning & Data",
+    "Trust, Evaluation & Decision Quality"
+  ],
+  "corpora": [
+    "AWS ML Blog",
+    "DeepMind Blog",
+    "Hugging Face Blog",
+    "IBM",
+    "OpenAI News",
+    "Sequoia"
+  ],
+  "articles": [
+    {
+      "title": "Agent Identity: On-Behalf-Of Propagation and Cryptographic Proof",
+      "slug": "a-agent-identity-on-behalf-of",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "trust-in-depth",
+        "agent-identity-on-behalf-of",
+        "aws-ml-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-aws-ml-blog",
+        "article",
+        "agent",
+        "identity",
+        "user",
+        "token",
+        "propagation",
+        "on-behalf-of",
+        "api"
+      ],
+      "summary": "Agents that call enterprise APIs as a shared application identity break three things at once: audit trails (who did this?), user-level authorization (what may *this* user do?), and least privilege. Production agents",
+      "related": [
+        "Agent Identity & On-Behalf-Of",
+        "Trust in Depth"
+      ],
+      "path": "extra/aws-ml-blog/agent-identity-on-behalf-of.md"
+    },
+    {
+      "title": "From Single-Shot RAG to Agentic Retrieval",
+      "slug": "a-agentic-retrieval-knowledge-bases",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "rag-retrieval-augmented-generation",
+        "agentic-retrieval",
+        "aws-ml-blog",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-aws-ml-blog",
+        "article",
+        "retrieval",
+        "agentic",
+        "single-shot",
+        "rag",
+        "you",
+        "not",
+        "agent"
+      ],
+      "summary": "Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come",
+      "related": [
+        "Agentic Retrieval",
+        "RAG (Retrieval-Augmented Generation)"
+      ],
+      "path": "extra/aws-ml-blog/agentic-retrieval-knowledge-bases.md"
+    },
+    {
+      "title": "Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers",
+      "slug": "a-distill-efficient-agents",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "model-routing",
+        "agent-distillation",
+        "aws-ml-blog",
+        "training-data",
+        "cluster-training-data",
+        "corpus-aws-ml-blog",
+        "article",
+        "teacher",
+        "not",
+        "trajectories",
+        "agents",
+        "you",
+        "shorter",
+        "just"
+      ],
+      "summary": "A shopping (or support, or triage) agent on a frontier model works—until you multiply **search → read → refine → verify → decide** by every user. One completed task is many billed calls. Smaller models are cheaper",
+      "related": [
+        "Agent Distillation",
+        "Model Routing"
+      ],
+      "path": "extra/aws-ml-blog/distill-efficient-agents.md"
+    },
+    {
+      "title": "Enterprise Agent Platforms: Federate Ownership, Centralize Control",
+      "slug": "a-enterprise-agent-platform",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "trust-in-depth",
+        "enterprise-agent-platforms",
+        "enterprise-ai-diffusion",
+        "aws-ml-blog",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-aws-ml-blog",
+        "article",
+        "agent",
+        "gateway",
+        "tool",
+        "team",
+        "one",
+        "platforms"
+      ],
+      "summary": "Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary—without every team",
+      "related": [
+        "Enterprise AI Diffusion",
+        "Enterprise Agent Platforms",
+        "Trust in Depth"
+      ],
+      "path": "extra/aws-ml-blog/enterprise-agent-platform.md"
+    },
+    {
+      "title": "Generative AI Cost: An Operating Model, Not a Cheaper Model",
+      "slug": "a-generative-ai-cost-operating-model",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "model-routing",
+        "generative-ai-cost-operating-model",
+        "aws-ml-blog",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-aws-ml-blog",
+        "article",
+        "model",
+        "not",
+        "cost",
+        "operating",
+        "generative",
+        "cheaper",
+        "every"
+      ],
+      "summary": "Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse—one",
+      "related": [
+        "Generative AI Cost Operating Model",
+        "Model Routing"
+      ],
+      "path": "extra/aws-ml-blog/generative-ai-cost-operating-model.md"
+    },
+    {
+      "title": "Five Production Challenges in Multi-Agent Systems",
+      "slug": "a-multi-agent-production-challenges",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "multi-agent-systems",
+        "loop-engineering",
+        "enterprise-agent-platforms",
+        "aws-ml-blog",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-aws-ml-blog",
+        "article",
+        "systems",
+        "multi-agent",
+        "production",
+        "model",
+        "plan",
+        "five"
+      ],
+      "summary": "Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture and execution",
+      "related": [
+        "Enterprise Agent Platforms",
+        "Loop Engineering",
+        "Multi-Agent Systems"
+      ],
+      "path": "extra/aws-ml-blog/multi-agent-production-challenges.md"
+    },
+    {
+      "title": "Multi-Tenant Agents and RAG Access Control",
+      "slug": "a-multi-tenant-and-rag-access-control",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "sensitive-data-controls",
+        "rag-retrieval-augmented-generation",
+        "multi-tenant-rag-access-control",
+        "aws-ml-blog",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-aws-ml-blog",
+        "article",
+        "rag",
+        "not",
+        "agents",
+        "access",
+        "multi-tenant",
+        "isolation"
+      ],
+      "summary": "When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation** for agent",
+      "related": [
+        "Multi-Tenant RAG Access Control",
+        "RAG (Retrieval-Augmented Generation)",
+        "Sensitive Data Controls"
+      ],
+      "path": "extra/aws-ml-blog/multi-tenant-and-rag-access-control.md"
+    },
+    {
+      "title": "Turning Private APIs into Agent Tools Without Flooding Context",
+      "slug": "a-private-apis-as-agent-tools",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "mcp-model-context-protocol",
+        "context-engineering",
+        "agent-tooling-apis",
+        "aws-ml-blog",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-aws-ml-blog",
+        "article",
+        "tools",
+        "without",
+        "private",
+        "context",
+        "apis",
+        "tool"
+      ],
+      "summary": "When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints safely reachable by",
+      "related": [
+        "Agent Tooling & APIs",
+        "Context Engineering",
+        "MCP (Model Context Protocol)"
+      ],
+      "path": "extra/aws-ml-blog/private-apis-as-agent-tools.md"
+    },
+    {
+      "title": "Semantic Layers: Let Agents Query Meaning, Not Schemas",
+      "slug": "a-semantic-layers-for-agents",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "semantic-layer-for-agents",
+        "multi-tenant-rag-access-control",
+        "agent-tooling-apis",
+        "aws-ml-blog",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-aws-ml-blog",
+        "article",
+        "semantic",
+        "meaning",
+        "agents",
+        "not",
+        "query",
+        "agent"
+      ],
+      "summary": "Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**—in a governed",
+      "related": [
+        "Agent Tooling & APIs",
+        "Multi-Tenant RAG Access Control",
+        "Semantic Layer for Agents"
+      ],
+      "path": "extra/aws-ml-blog/semantic-layers-for-agents.md"
+    },
+    {
+      "title": "Trust in Depth: Autonomy You Can Verify",
+      "slug": "a-trust-in-depth-for-agents",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "trusting-ai-decisions",
+        "trust-in-depth",
+        "agent-identity-on-behalf-of",
+        "aws-ml-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-aws-ml-blog",
+        "article",
+        "can",
+        "you",
+        "trust",
+        "autonomy",
+        "depth",
+        "verify"
+      ],
+      "summary": "Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in",
+      "related": [
+        "Agent Identity & On-Behalf-Of",
+        "Trust in Depth",
+        "Trusting AI Decisions"
+      ],
+      "path": "extra/aws-ml-blog/trust-in-depth-for-agents.md"
+    },
+    {
+      "title": "Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling",
+      "slug": "a-voice-ai-latency-budget",
+      "type": "article",
+      "corpus": "AWS ML Blog",
+      "corpus_key": "aws-ml-blog",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/aws-ml-blog",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "voice-as-primary-interface",
+        "generative-ai-cost-operating-model",
+        "aws-ml-blog",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-aws-ml-blog",
+        "article",
+        "latency",
+        "tts",
+        "speech",
+        "voice",
+        "autoscaling",
+        "sub-100ms",
+        "measured"
+      ],
+      "summary": "Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is",
+      "related": [
+        "Generative AI Cost Operating Model",
+        "Voice as Primary Interface"
+      ],
+      "path": "extra/aws-ml-blog/voice-ai-latency-budget.md"
+    },
+    {
+      "title": "AI Control: Security When Alignment Is Imperfect",
+      "slug": "a-ai-control-roadmap",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "ai-control",
+        "deepmind-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-deepmind-blog",
+        "article",
+        "control",
+        "security",
+        "alignment",
+        "agents",
+        "not",
+        "imperfect",
+        "systems"
+      ],
+      "summary": "Model alignment—training systems to be helpful and safe—is necessary but not sufficient for capable agents. DeepMind’s AI Control Roadmap adds a **system-level** layer: assume internal agents may act unexpectedly,",
+      "related": [
+        "AI Control",
+        "Frontier Safety Stack"
+      ],
+      "path": "extra/deepmind-blog/ai-control-roadmap.md"
+    },
+    {
+      "title": "Biosecurity for Generative Biology: Watermarks and Layered Defense",
+      "slug": "a-biosecurity-synthid-bio",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "provenance-watermarking",
+        "biosecurity-for-generative-biology",
+        "deepmind-blog",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-deepmind-blog",
+        "article",
+        "generative",
+        "defense",
+        "biosecurity",
+        "watermarks",
+        "layered",
+        "biology",
+        "sequences"
+      ],
+      "summary": "AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar ≈ natural.” DeepMind’s",
+      "related": [
+        "Biosecurity for Generative Biology",
+        "Provenance & Watermarking"
+      ],
+      "path": "extra/deepmind-blog/biosecurity-synthid-bio.md"
+    },
+    {
+      "title": "Cybersecurity Capabilities and Staged Rollout",
+      "slug": "a-cyber-staged-rollout",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "defender-s-window",
+        "deepmind-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-deepmind-blog",
+        "article",
+        "cyber",
+        "staged",
+        "rollout",
+        "cybersecurity",
+        "capabilities",
+        "models",
+        "hard"
+      ],
+      "summary": "AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden access as",
+      "related": [
+        "Defender's Window",
+        "Frontier Safety Stack"
+      ],
+      "path": "extra/deepmind-blog/cyber-staged-rollout.md"
+    },
+    {
+      "title": "Factuality Benchmarks and Double-Blind Evaluations",
+      "slug": "a-factuality-and-blind-evals",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "benchmark-signal-disentanglement",
+        "agent-evaluation",
+        "deepmind-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-deepmind-blog",
+        "article",
+        "factuality",
+        "double-blind",
+        "benchmarks",
+        "evaluations",
+        "private",
+        "models",
+        "under"
+      ],
+      "summary": "As models become default information sources, two evaluation problems dominate: **measuring factuality across modes**, and **preventing contamination** so scores stay trustworthy.",
+      "related": [
+        "Agent Evaluation",
+        "Benchmark Signal Disentanglement"
+      ],
+      "path": "extra/deepmind-blog/factuality-and-blind-evals.md"
+    },
+    {
+      "title": "Frontier Safety Stack: Misuse, Misalignment, and Injection",
+      "slug": "a-frontier-safety-stack",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "ai-control",
+        "deepmind-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-deepmind-blog",
+        "article",
+        "stack",
+        "misuse",
+        "misalignment",
+        "safety",
+        "injection",
+        "frontier",
+        "not"
+      ],
+      "summary": "When a model can help defenders find complex bugs or scientists design experiments, the same strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon): **How do we stop",
+      "related": [
+        "AI Control",
+        "Frontier Safety Stack"
+      ],
+      "path": "extra/deepmind-blog/frontier-safety-stack.md"
+    },
+    {
+      "title": "Gemini Robotics: Whole-Body Physical AI",
+      "slug": "a-gemini-robotics-physical-ai",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "world-models",
+        "physical-ai---robotics",
+        "deepmind-blog",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-deepmind-blog",
+        "article",
+        "robotics",
+        "gemini",
+        "whole-body",
+        "physical",
+        "vla",
+        "robots",
+        "one"
+      ],
+      "summary": "Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack into complementary models so robots can reason for minutes, control whole bodies, and run locally when the network is",
+      "related": [
+        "Physical AI - Robotics",
+        "World Models"
+      ],
+      "path": "extra/deepmind-blog/gemini-robotics-physical-ai.md"
+    },
+    {
+      "title": "Gemma Scope: Open Interpretability at Model Scale",
+      "slug": "a-gemma-scope-interpretability",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "open-interpretability-saes",
+        "frontier-safety-stack",
+        "deepmind-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-deepmind-blog",
+        "article",
+        "gemma",
+        "scope",
+        "open",
+        "interpretability",
+        "model",
+        "features",
+        "scale"
+      ],
+      "summary": "Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind’s open “microscope” for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers can see **what",
+      "related": [
+        "Frontier Safety Stack",
+        "Open Interpretability (SAEs)"
+      ],
+      "path": "extra/deepmind-blog/gemma-scope-interpretability.md"
+    },
+    {
+      "title": "Genie World Models: Simulation as a Training Substrate",
+      "slug": "a-genie-world-models",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "world-models",
+        "path-to-agi-last-mile",
+        "deepmind-blog",
+        "training-data",
+        "cluster-training-data",
+        "corpus-deepmind-blog",
+        "article",
+        "world",
+        "genie",
+        "models",
+        "training",
+        "simulation",
+        "gemini",
+        "substrate"
+      ],
+      "summary": "World models generate interactive environments you can steer—not just videos you watch. Genie 4 is DeepMind’s latest statement of that idea: real-time multimodal simulation (vision + native audio + dialogue) grounded",
+      "related": [
+        "Path to AGI (Last Mile)",
+        "World Models"
+      ],
+      "path": "extra/deepmind-blog/genie-world-models.md"
+    },
+    {
+      "title": "Long-Horizon Frontier Agents: Persistence Over Clever One-Shots",
+      "slug": "a-long-horizon-frontier-agents",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "long-horizon-agents",
+        "agent-harness",
+        "deepmind-blog",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-deepmind-blog",
+        "article",
+        "long-horizon",
+        "frontier",
+        "persistence",
+        "over",
+        "one-shots",
+        "not",
+        "model"
+      ],
+      "summary": "Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows, and agentic",
+      "related": [
+        "Agent Harness",
+        "Long-Horizon Agents"
+      ],
+      "path": "extra/deepmind-blog/long-horizon-frontier-agents.md"
+    },
+    {
+      "title": "Private and On-Device AI: Continuity Without Cloud Exposure",
+      "slug": "a-private-on-device-ai",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "private---on-device-ai",
+        "digital-sovereignty",
+        "deepmind-blog",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-deepmind-blog",
+        "article",
+        "on-device",
+        "private",
+        "cloud",
+        "without",
+        "exposure",
+        "continuity",
+        "models"
+      ],
+      "summary": "Personal AI wants long memory and strong models. Privacy wants data to stay on the device. DeepMind and Google’s recent posts show two complementary answers: **hardware-isolated cloud enclaves with sealed memory**,",
+      "related": [
+        "Digital Sovereignty",
+        "Private - On-Device AI"
+      ],
+      "path": "extra/deepmind-blog/private-on-device-ai.md"
+    },
+    {
+      "title": "Science Agents: Skills, Tool Grounding, and Idea Tournaments",
+      "slug": "a-science-agent-workflows",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "science-agent-workflows",
+        "multi-agent-systems",
+        "agent-skills",
+        "deepmind-blog",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-deepmind-blog",
+        "article",
+        "skills",
+        "agents",
+        "science",
+        "idea",
+        "tournaments",
+        "tool"
+      ],
+      "summary": "Scientific AI is moving from “answer a biology question” to **agents that run discovery workflows**—curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind",
+      "related": [
+        "Agent Skills",
+        "Multi-Agent Systems",
+        "Science Agent Workflows"
+      ],
+      "path": "extra/deepmind-blog/science-agent-workflows.md"
+    },
+    {
+      "title": "WeatherNext and Earth Observation: AI for Climate Decisions",
+      "slug": "a-weathernext-climate-earth",
+      "type": "article",
+      "corpus": "DeepMind Blog",
+      "corpus_key": "deepmind-blog",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/deepmind-blog",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "science-agent-workflows",
+        "climate-earth-observation-ai",
+        "deepmind-blog",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-deepmind-blog",
+        "article",
+        "weathernext",
+        "earth",
+        "decisions",
+        "observation",
+        "maps",
+        "forecasts",
+        "climate"
+      ],
+      "summary": "Weather and land-cover AI convert research models into **decision infrastructure**—hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what “green” actually is.",
+      "related": [
+        "Climate & Earth Observation AI",
+        "Science Agent Workflows"
+      ],
+      "path": "extra/deepmind-blog/weathernext-climate-earth.md"
+    },
+    {
+      "title": "Agentic Intrusions: Treat Data Pipelines as Attack Surface",
+      "slug": "a-agent-security-ai-intrusions",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "agentic-intrusions---data-pipeline-attacks",
+        "ai-security-trilemma",
+        "huggingface-blog",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-huggingface-blog",
+        "article",
+        "data",
+        "surface",
+        "pipelines",
+        "attack",
+        "treat",
+        "intrusions",
+        "code"
+      ],
+      "summary": "In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent** operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation agents that",
+      "related": [
+        "AI Security Trilemma",
+        "Agentic Intrusions - Data Pipeline Attacks"
+      ],
+      "path": "extra/huggingface-blog/agent-security-ai-intrusions.md"
+    },
+    {
+      "title": "Async GRPO with LoRA: Separate Trainers from Rollout GPUs",
+      "slug": "a-async-grpo-lora-training",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "rl-environments",
+        "lora---parameter-efficient-fine-tuning",
+        "huggingface-blog",
+        "training-data",
+        "cluster-training-data",
+        "corpus-huggingface-blog",
+        "article",
+        "lora",
+        "adapter",
+        "can",
+        "vllm",
+        "separate",
+        "rollout",
+        "grpo"
+      ],
+      "summary": "Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between a trainer and vLLM is heavy. **LoRA changes the systems story**: a rank-1 adapter is a few megabytes, so training and",
+      "related": [
+        "LoRA - Parameter-Efficient Fine-Tuning",
+        "RL Environments"
+      ],
+      "path": "extra/huggingface-blog/async-grpo-lora-training.md"
+    },
+    {
+      "title": "What Benchmarks Actually Measure: Disentangle the Signals",
+      "slug": "a-benchmark-signal-disentanglement",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "benchmark-signal-disentanglement",
+        "agent-evaluation",
+        "huggingface-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-huggingface-blog",
+        "article",
+        "benchmarks",
+        "reasoning",
+        "safety",
+        "measure",
+        "actually",
+        "signals",
+        "items"
+      ],
+      "summary": "A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on **general reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than",
+      "related": [
+        "Agent Evaluation",
+        "Benchmark Signal Disentanglement"
+      ],
+      "path": "extra/huggingface-blog/benchmark-signal-disentanglement.md"
+    },
+    {
+      "title": "Executable Agent Grading: Outcomes Beat Tool-Call Theater",
+      "slug": "a-executable-agent-grading",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "rl-environments",
+        "agent-evaluation",
+        "huggingface-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-huggingface-blog",
+        "article",
+        "executable",
+        "tasks",
+        "not",
+        "agent",
+        "tool-call",
+        "pass",
+        "theater"
+      ],
+      "summary": "Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite “resolved” reply, and a ticket closed when policy required **on hold**—that is the failure mode ThinkingBox was built",
+      "related": [
+        "Agent Evaluation",
+        "RL Environments"
+      ],
+      "path": "extra/huggingface-blog/executable-agent-grading.md"
+    },
+    {
+      "title": "Long-Context State Tracking: What Benchmarks Must Separate",
+      "slug": "a-long-context-state-tracking",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "context-engineering",
+        "benchmark-signal-disentanglement",
+        "huggingface-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-huggingface-blog",
+        "article",
+        "tracking",
+        "state",
+        "long-context",
+        "benchmarks",
+        "separate",
+        "must",
+        "can"
+      ],
+      "summary": "Long-context benchmarks often ask whether a model “remembers” something far back in a document. That question hides several different skills. **State tracking**—following how entities change as a document unfolds—has",
+      "related": [
+        "Benchmark Signal Disentanglement",
+        "Context Engineering"
+      ],
+      "path": "extra/huggingface-blog/long-context-state-tracking.md"
+    },
+    {
+      "title": "Native Accelerator Backends: When `device=\"neuron\"` or `\"tpu\"` Is Enough",
+      "slug": "a-native-accelerator-backends",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "native-accelerator-backends",
+        "llm-inference",
+        "huggingface-blog",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-huggingface-blog",
+        "article",
+        "native",
+        "tpu",
+        "neuron",
+        "device",
+        "backends",
+        "accelerator",
+        "enough"
+      ],
+      "summary": "For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows: lazy tensors, static shapes, recompilation cliffs, and library forks (`optimum-neuron`, Optimum TPU) that hid the pain.",
+      "related": [
+        "LLM Inference",
+        "Native Accelerator Backends"
+      ],
+      "path": "extra/huggingface-blog/native-accelerator-backends.md"
+    },
+    {
+      "title": "Quantization-Aware Healing: Compress Without Capping Accuracy",
+      "slug": "a-quantization-aware-healing",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "quantization",
+        "agent-distillation",
+        "huggingface-blog",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-huggingface-blog",
+        "article",
+        "quantization-aware",
+        "without",
+        "healing",
+        "student",
+        "accuracy",
+        "teacher",
+        "compress"
+      ],
+      "summary": "Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent tax—or becomes",
+      "related": [
+        "Agent Distillation",
+        "Quantization"
+      ],
+      "path": "extra/huggingface-blog/quantization-aware-healing.md"
+    },
+    {
+      "title": "RL Environments Belong on the Hub, Not Private Registries",
+      "slug": "a-rl-environments-on-hub",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "rl-environments",
+        "continual-learning",
+        "huggingface-blog",
+        "training-data",
+        "cluster-training-data",
+        "corpus-huggingface-blog",
+        "article",
+        "hub",
+        "not",
+        "environments",
+        "tags",
+        "tasksets",
+        "registries",
+        "private"
+      ],
+      "summary": "Reinforcement learning for agents needs **environments**: tasks, observations, actions, and a reward/verifier. Historically every framework invents its own registry. Hugging Face’s answer: environments are **datasets",
+      "related": [
+        "Continual Learning",
+        "RL Environments"
+      ],
+      "path": "extra/huggingface-blog/rl-environments-on-hub.md"
+    },
+    {
+      "title": "Source-Aware Verification and Consistency for Tool Agents",
+      "slug": "a-source-aware-agent-verification",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "source-aware-verification",
+        "rag-retrieval-augmented-generation",
+        "agent-evaluation",
+        "huggingface-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-huggingface-blog",
+        "article",
+        "consistency",
+        "agents",
+        "tool",
+        "source-aware",
+        "verification",
+        "source"
+      ],
+      "summary": "MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that does not repeat**.",
+      "related": [
+        "Agent Evaluation",
+        "RAG (Retrieval-Augmented Generation)",
+        "Source-Aware Verification"
+      ],
+      "path": "extra/huggingface-blog/source-aware-agent-verification.md"
+    },
+    {
+      "title": "Speech Evaluation Beyond Aggregate WER",
+      "slug": "a-speech-evaluation-beyond-averages",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "voice-as-primary-interface",
+        "benchmark-signal-disentanglement",
+        "huggingface-blog",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-huggingface-blog",
+        "article",
+        "wer",
+        "speech",
+        "models",
+        "asr",
+        "aggregate",
+        "tts",
+        "leaderboard"
+      ],
+      "summary": "Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**—not just a single average word error",
+      "related": [
+        "Benchmark Signal Disentanglement",
+        "Voice as Primary Interface"
+      ],
+      "path": "extra/huggingface-blog/speech-evaluation-beyond-averages.md"
+    },
+    {
+      "title": "Specialize the Tokenizer: Inference Cost Lives in Decode",
+      "slug": "a-vocabulary-specialization-cost",
+      "type": "article",
+      "corpus": "Hugging Face Blog",
+      "corpus_key": "huggingface-blog",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/huggingface-blog",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "tokenizer---vocabulary-specialization",
+        "llm-inference",
+        "generative-ai-cost-operating-model",
+        "huggingface-blog",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-huggingface-blog",
+        "article",
+        "cost",
+        "tokenizer",
+        "decode",
+        "tokens",
+        "inference",
+        "token"
+      ],
+      "summary": "Fine-tuning for a domain usually leaves the **base tokenizer** untouched. For specialized small models, that inheritance can dominate serving cost. VocabX’s production result on a Portuguese essay grader (Qwen3-4B):",
+      "related": [
+        "Generative AI Cost Operating Model",
+        "LLM Inference",
+        "Tokenizer - Vocabulary Specialization"
+      ],
+      "path": "extra/huggingface-blog/vocabulary-specialization-cost.md"
+    },
+    {
+      "title": "Adversarial Distillation: Stealing Reasoning Without Breaking In",
+      "slug": "a-adversarial-distillation-defenses",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "adversarial-distillation",
+        "openai-news",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-openai-news",
+        "article",
+        "reasoning",
+        "without",
+        "distillation",
+        "adversarial",
+        "stealing",
+        "breaking",
+        "same"
+      ],
+      "summary": "Not every model-theft path looks like a database breach. **Adversarial distillation** is the systematic, unauthorized use of a model’s outputs—or especially its *protected reasoning*—to train or improve another",
+      "related": [
+        "Adversarial Distillation",
+        "Frontier Safety Stack"
+      ],
+      "path": "extra/openai-news/adversarial-distillation-defenses.md"
+    },
+    {
+      "title": "Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions",
+      "slug": "a-agent-scale-source-control",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Coding Agents & Software Delivery",
+      "cluster_id": "coding-delivery",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/coding-delivery"
+      ],
+      "keywords": [
+        "agent-scale-source-control",
+        "ai-coding-quality-workflows",
+        "openai-news",
+        "coding-delivery",
+        "cluster-coding-delivery",
+        "corpus-openai-news",
+        "article",
+        "git",
+        "writers",
+        "source",
+        "control",
+        "can",
+        "assumptions",
+        "agent-scale"
+      ],
+      "summary": "Coding agents multiply how much work one engineer can push at once: more branches, more CI clones, more fetches of the same commit. Source control that was “fine” for human cadence can collapse under agent",
+      "related": [
+        "AI Coding Quality Workflows",
+        "Agent-Scale Source Control"
+      ],
+      "path": "extra/openai-news/agent-scale-source-control.md"
+    },
+    {
+      "title": "Bounded Decisions: Fast Structured Choices Inside Agent Loops",
+      "slug": "a-bounded-decisions-for-agents",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "model-routing",
+        "loop-engineering",
+        "bounded-decisions",
+        "openai-news",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-openai-news",
+        "article",
+        "inside",
+        "bounded",
+        "agent",
+        "loops",
+        "decisions",
+        "structured"
+      ],
+      "summary": "Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next action, score severity. Calling a full generative responses endpoint for each one burns latency and money. When the",
+      "related": [
+        "Bounded Decisions",
+        "Loop Engineering",
+        "Model Routing"
+      ],
+      "path": "extra/openai-news/bounded-decisions-for-agents.md"
+    },
+    {
+      "title": "Closing the Deployment Gap with Forward-Deployed Engineering",
+      "slug": "a-closing-the-deployment-gap",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "forward-deployed-engineering",
+        "enterprise-ai-diffusion",
+        "openai-news",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-openai-news",
+        "article",
+        "gap",
+        "deployment",
+        "forward-deployed",
+        "engineering",
+        "closing",
+        "can",
+        "domain"
+      ],
+      "summary": "Model demos move faster than production systems. The **deployment gap** is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints,",
+      "related": [
+        "Enterprise AI Diffusion",
+        "Forward-Deployed Engineering"
+      ],
+      "path": "extra/openai-news/closing-the-deployment-gap.md"
+    },
+    {
+      "title": "Computer Use for Professional Software: Train on Real Vendor Workflows",
+      "slug": "a-computer-use-professional-workflows",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "computer-use---gui-agents",
+        "agent-evaluation",
+        "openai-news",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-openai-news",
+        "article",
+        "use",
+        "computer",
+        "software",
+        "vendor",
+        "train",
+        "real",
+        "workflows"
+      ],
+      "summary": "Generic “use a browser” demos understate the hard problem: agents must operate **specialized business software** under company rules—approvals, templates, jurisdiction clauses, CAD constraints, QA viewports—and",
+      "related": [
+        "Agent Evaluation",
+        "Computer Use - GUI Agents"
+      ],
+      "path": "extra/openai-news/computer-use-professional-workflows.md"
+    },
+    {
+      "title": "The Defender’s Window: AI Vulnerability Discovery That Finishes With Fixes",
+      "slug": "a-defenders-window-coordinated-disclosure",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "defender-s-window",
+        "ai-security-trilemma",
+        "openai-news",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-openai-news",
+        "article",
+        "window",
+        "discovery",
+        "vulnerability",
+        "fixes",
+        "finishes",
+        "disclosure",
+        "defender"
+      ],
+      "summary": "Frontier models can discover critical flaws in widely used software before attackers do. That advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it is a **pipeline",
+      "related": [
+        "AI Security Trilemma",
+        "Defender's Window"
+      ],
+      "path": "extra/openai-news/defenders-window-coordinated-disclosure.md"
+    },
+    {
+      "title": "LifeVal: Evaluating Agents on What Everyday People Need Done",
+      "slug": "a-lifeval-everyday-agent-evals",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "long-horizon-agents",
+        "agent-evaluation",
+        "openai-news",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-openai-news",
+        "article",
+        "people",
+        "lifeval",
+        "everyday",
+        "not",
+        "need",
+        "done",
+        "use"
+      ],
+      "summary": "Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete practical life tasks—childcare logistics, government services, budgets, school prep, health-related meal planning,",
+      "related": [
+        "Agent Evaluation",
+        "Long-Horizon Agents"
+      ],
+      "path": "extra/openai-news/lifeval-everyday-agent-evals.md"
+    },
+    {
+      "title": "Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior",
+      "slug": "a-low-resource-language-coding",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Coding Agents & Software Delivery",
+      "cluster_id": "coding-delivery",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/coding-delivery"
+      ],
+      "keywords": [
+        "low-resource-language-coding",
+        "legacy-modernization-with-ai",
+        "openai-news",
+        "coding-delivery",
+        "cluster-coding-delivery",
+        "corpus-openai-news",
+        "article",
+        "languages",
+        "low-resource",
+        "coding",
+        "without",
+        "migrate",
+        "build",
+        "behavior"
+      ],
+      "summary": "Models trained on oceans of Python and JavaScript historically struggled with **low-resource languages**—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails, weather codes, and",
+      "related": [
+        "Legacy Modernization with AI",
+        "Low-Resource Language Coding"
+      ],
+      "path": "extra/openai-news/low-resource-language-coding.md"
+    },
+    {
+      "title": "Misalignment Monitoring and Defense in Depth for Frontier Agents",
+      "slug": "a-misalignment-monitoring-defense-in-depth",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "ai-control",
+        "openai-news",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-openai-news",
+        "article",
+        "monitoring",
+        "not",
+        "agents",
+        "misalignment",
+        "frontier",
+        "depth",
+        "defense"
+      ],
+      "summary": "Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits",
+      "related": [
+        "AI Control",
+        "Frontier Safety Stack"
+      ],
+      "path": "extra/openai-news/misalignment-monitoring-defense-in-depth.md"
+    },
+    {
+      "title": "Model Routing on the Cost–Intelligence Frontier",
+      "slug": "a-model-routing-cost-intelligence",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "model-routing",
+        "generative-ai-cost-operating-model",
+        "openai-news",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-openai-news",
+        "article",
+        "model",
+        "frontier",
+        "cost",
+        "routing",
+        "use",
+        "intelligence",
+        "reasoning"
+      ],
+      "summary": "Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is how teams burn 10–100×",
+      "related": [
+        "Generative AI Cost Operating Model",
+        "Model Routing"
+      ],
+      "path": "extra/openai-news/model-routing-cost-intelligence.md"
+    },
+    {
+      "title": "Value-Centered Model Specs: Teaching Judgment, Not Just Style",
+      "slug": "a-model-spec-value-alignment",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "value-centered-model-specs",
+        "trusting-ai-decisions",
+        "openai-news",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-openai-news",
+        "article",
+        "not",
+        "model",
+        "style",
+        "just",
+        "value-centered",
+        "teaching",
+        "specs"
+      ],
+      "summary": "As models take consequential actions, literal instruction-following is not enough. They need a public, inspectable description of desired behavior—and that description works better when it is organized around",
+      "related": [
+        "Trusting AI Decisions",
+        "Value-Centered Model Specs"
+      ],
+      "path": "extra/openai-news/model-spec-value-alignment.md"
+    },
+    {
+      "title": "Multi-Agent Science: Scale Interpretation, Then Shepherd Understanding",
+      "slug": "a-multi-agent-scientific-discovery",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "science-agent-workflows",
+        "multi-agent-systems",
+        "openai-news",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-openai-news",
+        "article",
+        "understanding",
+        "then",
+        "shepherd",
+        "science",
+        "scale",
+        "multi-agent",
+        "interpretation"
+      ],
+      "summary": "Modern experiments produce more data than any lab can thoroughly read. The complementary problem for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices address the two",
+      "related": [
+        "Multi-Agent Systems",
+        "Science Agent Workflows"
+      ],
+      "path": "extra/openai-news/multi-agent-scientific-discovery.md"
+    },
+    {
+      "title": "Text Watermarking: What Provenance Can and Cannot Prove",
+      "slug": "a-text-provenance-watermarking-limits",
+      "type": "article",
+      "corpus": "OpenAI News",
+      "corpus_key": "openai-news",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/openai-news",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "provenance-watermarking",
+        "model-collapse",
+        "openai-news",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-openai-news",
+        "article",
+        "text",
+        "watermarking",
+        "can",
+        "provenance",
+        "prove",
+        "detection",
+        "not"
+      ],
+      "summary": "Regulators increasingly require machine-readable signals that text was AI-generated. Statistical text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response—but they are",
+      "related": [
+        "Model Collapse",
+        "Provenance & Watermarking"
+      ],
+      "path": "extra/openai-news/text-provenance-watermarking-limits.md"
+    },
+    {
+      "title": "Agentic Engineering Vocabulary: Prompt, Context, Harness, Loop, Graph, Factory",
+      "slug": "a-agentic-engineering-vocabulary",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "multi-agent-systems",
+        "loop-engineering",
+        "agentic-engineering",
+        "agent-harness",
+        "ibm",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "harness",
+        "engineering",
+        "model",
+        "prompt",
+        "loop"
+      ],
+      "summary": "Teams shipping most of their code with AI assistants are not magically “prompting better.” They are practicing a stack of ideas that reuse classic computing patterns—feedback loops, orchestration, isolation—under new",
+      "related": [
+        "Agent Harness",
+        "Agentic Engineering",
+        "Loop Engineering",
+        "Multi-Agent Systems"
+      ],
+      "path": "ibm/agentic-engineering-vocabulary.md"
+    },
+    {
+      "title": "AI Coding Workflows: Quality, RAD, IDEs, and Review",
+      "slug": "a-ai-coding-quality-workflows",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Coding Agents & Software Delivery",
+      "cluster_id": "coding-delivery",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/coding-delivery"
+      ],
+      "keywords": [
+        "agentic-engineering",
+        "ai-coding-quality-workflows",
+        "ibm",
+        "coding-delivery",
+        "cluster-coding-delivery",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "rad",
+        "ides",
+        "quality",
+        "coding",
+        "review",
+        "workflows",
+        "code"
+      ],
+      "summary": "AI made writing code the easy part. The industry’s anxiety shifted to everything after generation: Is this the *right* solution? Does it fit the codebase? Can humans still understand and own what ships?",
+      "related": [
+        "AI Coding Quality Workflows",
+        "Agentic Engineering"
+      ],
+      "path": "ibm/ai-coding-quality-workflows.md"
+    },
+    {
+      "title": "The Memory Wall and Scaling LLMs Beyond One GPU",
+      "slug": "a-ai-memory-wall-multi-gpu",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "memory-wall",
+        "llm-inference",
+        "ibm",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "intensity",
+        "memory",
+        "one",
+        "gpu",
+        "wall",
+        "flops",
+        "you"
+      ],
+      "summary": "Chip peak FLOPs have grown roughly six-thousand-fold over two decades. Workloads have not gotten six-thousand-fold faster. Accelerators often sit idle waiting on data. That gap between rising compute and",
+      "related": [
+        "LLM Inference",
+        "Memory Wall"
+      ],
+      "path": "ibm/ai-memory-wall-multi-gpu.md"
+    },
+    {
+      "title": "The AI Security Trilemma—and Why Agents Raise the Stakes",
+      "slug": "a-ai-security-trilemma",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "frontier-safety-stack",
+        "ai-security-trilemma",
+        "ibm",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "security",
+        "trilemma",
+        "stakes",
+        "smart",
+        "raise",
+        "model",
+        "agents"
+      ],
+      "summary": "Enterprises want AI that is **smart**, **fast**, and **secure**. Like musical chairs with too few seats, you often get only two. That three-way tension is the **AI security trilemma**.",
+      "related": [
+        "AI Security Trilemma",
+        "Frontier Safety Stack"
+      ],
+      "path": "ibm/ai-security-trilemma.md"
+    },
+    {
+      "title": "Beyond Flat Chunks: Structure-Aware Retrieval and the Digital Librarian",
+      "slug": "a-chunkless-rag-complex-documents",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "structure-aware---chunkless-rag",
+        "rag-retrieval-augmented-generation",
+        "ibm",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "retrieval",
+        "chunks",
+        "structure-aware",
+        "librarian",
+        "flat",
+        "document",
+        "digital"
+      ],
+      "summary": "Classic RAG cuts documents into chunks, embeds them, and at query time retrieves the most similar fragments for the model. It is cheap and effective for many “find anything about X” questions over large corpora. It",
+      "related": [
+        "RAG (Retrieval-Augmented Generation)",
+        "Structure-Aware - Chunkless RAG"
+      ],
+      "path": "ibm/chunkless-rag-complex-documents.md"
+    },
+    {
+      "title": "Connecting Agents to Tools: From Direct APIs to MCP and Short-Lived Credentials",
+      "slug": "a-connecting-agents-to-tools",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "mcp-model-context-protocol",
+        "agent-tooling-apis",
+        "agent-identity-on-behalf-of",
+        "ibm",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "agent",
+        "user",
+        "mcp",
+        "credentials",
+        "tools",
+        "short-lived"
+      ],
+      "summary": "Agents are only useful when they can act: open tickets, read repos, post to chat, query databases. How that connection is wired determines whether you get a demo or a governable system. Five patterns appear in",
+      "related": [
+        "Agent Identity & On-Behalf-Of",
+        "Agent Tooling & APIs",
+        "MCP (Model Context Protocol)"
+      ],
+      "path": "ibm/connecting-agents-to-tools.md"
+    },
+    {
+      "title": "Context Engineering: Giving Agents the Right Information",
+      "slug": "a-context-engineering-for-agents",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "context-engineering",
+        "agent-harness",
+        "ibm",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "context",
+        "agents",
+        "information",
+        "engineering",
+        "tool",
+        "right",
+        "window"
+      ],
+      "summary": "Prompt engineering asks how to phrase instructions. Context engineering asks a broader question: what entire information environment should the model see at each step? For agents that plan, call tools, retrieve",
+      "related": [
+        "Agent Harness",
+        "Context Engineering"
+      ],
+      "path": "ibm/context-engineering-for-agents.md"
+    },
+    {
+      "title": "Digital Sovereignty in Agentic Systems",
+      "slug": "a-digital-sovereignty",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "sensitive-data-controls",
+        "own-your-weights",
+        "digital-sovereignty",
+        "ibm",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "sovereignty",
+        "systems",
+        "digital",
+        "who",
+        "control",
+        "agentic"
+      ],
+      "summary": "A single AI interaction can send data on a world tour: stored in one country, computed in another, interpreted by a model trained elsewhere, triggering actions in a fourth place—before a response returns. Agentic",
+      "related": [
+        "Digital Sovereignty",
+        "Own Your Weights",
+        "Sensitive Data Controls"
+      ],
+      "path": "ibm/digital-sovereignty.md"
+    },
+    {
+      "title": "Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine",
+      "slug": "a-fine-tuning-rag-local-engines",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "rag-retrieval-augmented-generation",
+        "quantization",
+        "local-inference-engines",
+        "lora---parameter-efficient-fine-tuning",
+        "ibm",
+        "training-data",
+        "cluster-training-data",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "fine-tuning",
+        "weights",
+        "inference",
+        "rag",
+        "lora"
+      ],
+      "summary": "In 2023, a well-known legal AI effort fine-tuned a custom model that attorneys preferred over the then-leading frontier model in blind tests. Fine-tuning looked like the obvious path to specialization. By 2025, that",
+      "related": [
+        "LoRA - Parameter-Efficient Fine-Tuning",
+        "Local Inference Engines",
+        "Quantization",
+        "RAG (Retrieval-Augmented Generation)"
+      ],
+      "path": "ibm/fine-tuning-rag-local-engines.md"
+    },
+    {
+      "title": "Jev and System-One Decision Models",
+      "slug": "a-jev-calibrated-decisions",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "trusting-ai-decisions",
+        "calibrated-decision-models-jev",
+        "bounded-decisions",
+        "ibm",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "jev",
+        "models",
+        "model",
+        "system-one",
+        "decision",
+        "you"
+      ],
+      "summary": "Most AI you use today is a text generator: a large language model (LLM) emits tokens one at a time—sometimes with a visible chain of thought that feels like slow, deliberate “system two” reasoning. Many software",
+      "related": [
+        "Bounded Decisions",
+        "Calibrated Decision Models (Jev)",
+        "Trusting AI Decisions"
+      ],
+      "path": "ibm/jev-calibrated-decisions.md"
+    },
+    {
+      "title": "Legacy Modernization with AI",
+      "slug": "a-legacy-modernization-with-ai",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Coding Agents & Software Delivery",
+      "cluster_id": "coding-delivery",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/coding-delivery"
+      ],
+      "keywords": [
+        "low-resource-language-coding",
+        "legacy-modernization-with-ai",
+        "ai-coding-quality-workflows",
+        "ibm",
+        "coding-delivery",
+        "cluster-coding-delivery",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "legacy",
+        "modernization",
+        "can",
+        "while",
+        "time",
+        "systems"
+      ],
+      "summary": "Imagine a “harmless” change that quietly stops millions of card and ATM transactions. For teams sitting on decades-old systems, that fear is why modernization is both urgent and hard—and why generative and agentic AI",
+      "related": [
+        "AI Coding Quality Workflows",
+        "Legacy Modernization with AI",
+        "Low-Resource Language Coding"
+      ],
+      "path": "ibm/legacy-modernization-with-ai.md"
+    },
+    {
+      "title": "LLM Inference: From Idle Weights to Live Answers",
+      "slug": "a-llm-inference-fundamentals",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "memory-wall",
+        "llm-inference",
+        "ibm",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "inference",
+        "weights",
+        "llm",
+        "prefill",
+        "live",
+        "idle",
+        "decode"
+      ],
+      "summary": "Training a frontier model can cost hundreds of millions of dollars and months of work. Afterward the model is a static pile of weights sitting in memory. It does nothing until **inference** runs those weights against",
+      "related": [
+        "LLM Inference",
+        "Memory Wall"
+      ],
+      "path": "ibm/llm-inference-fundamentals.md"
+    },
+    {
+      "title": "Loop Engineering: Designing Systems That Prompt Themselves",
+      "slug": "a-loop-engineering",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "loop-engineering",
+        "agentic-engineering",
+        "ibm",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "loop",
+        "engineering",
+        "agent",
+        "prompt",
+        "designing",
+        "themselves",
+        "systems"
+      ],
+      "summary": "Prompt engineering is writing the next perfect instruction by hand. **Loop engineering** is designing a system that takes a goal, prompts an agent, checks the work, prompts again, and repeats until a stopping",
+      "related": [
+        "Agentic Engineering",
+        "Loop Engineering"
+      ],
+      "path": "ibm/loop-engineering.md"
+    },
+    {
+      "title": "Model Collapse: When AI Learns Only from AI",
+      "slug": "a-model-collapse",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "model-collapse",
+        "continual-learning",
+        "ibm",
+        "training-data",
+        "cluster-training-data",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "collapse",
+        "model",
+        "only",
+        "learns",
+        "synthetic",
+        "reality",
+        "rare"
+      ],
+      "summary": "Imagine each generation of students studying only the previous class’s notes, never the textbook. Errors compound until nobody remembers the original. Replace students with models, notes with synthetic content, and",
+      "related": [
+        "Continual Learning",
+        "Model Collapse"
+      ],
+      "path": "ibm/model-collapse.md"
+    },
+    {
+      "title": "Open-Source Security When AI Makes Discovery Cheap",
+      "slug": "a-open-source-security-ai-era",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Security, Safety & Control",
+      "cluster_id": "security-safety",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/security-safety"
+      ],
+      "keywords": [
+        "defender-s-window",
+        "ai-security-trilemma",
+        "ibm",
+        "security-safety",
+        "cluster-security-safety",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "discovery",
+        "security",
+        "open-source",
+        "makes",
+        "cheap",
+        "not",
+        "source"
+      ],
+      "summary": "Roughly ninety percent of a modern enterprise codebase is open source—banks, hospitals, grids, telecom, cloud, and AI services alike. Much of that critical layer was written by small teams and volunteers. Innovation",
+      "related": [
+        "AI Security Trilemma",
+        "Defender's Window"
+      ],
+      "path": "ibm/open-source-security-ai-era.md"
+    },
+    {
+      "title": "Quantization: How Models Get Smaller Without Starting Over",
+      "slug": "a-quantization-llm-compression",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "llm-inference",
+        "ibm",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "quantization",
+        "models",
+        "smaller",
+        "model",
+        "accuracy",
+        "without",
+        "starting",
+        "over"
+      ],
+      "summary": "A trained model is a vast collection of weights and activations—dials tuned during training. Frontier and open models may have tens of billions to trillions of parameters. How many bits you store per parameter",
+      "related": [
+        "LLM Inference",
+        "Quantization"
+      ],
+      "path": "ibm/quantization-llm-compression.md"
+    },
+    {
+      "title": "Securing AI-Generated Code: Five Shift-Left Principles",
+      "slug": "a-securing-ai-generated-code",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Coding Agents & Software Delivery",
+      "cluster_id": "coding-delivery",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/coding-delivery"
+      ],
+      "keywords": [
+        "securing-ai-generated-code",
+        "ai-coding-quality-workflows",
+        "ibm",
+        "coding-delivery",
+        "cluster-coding-delivery",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "code",
+        "security",
+        "not",
+        "principles",
+        "five",
+        "ai-generated",
+        "shift-left"
+      ],
+      "summary": "AI changed how fast software can appear: prompts yield functions, tests, agents, and multi-step workflows in seconds. Security practices built for slower, human-paced coding do not automatically keep up. If security",
+      "related": [
+        "AI Coding Quality Workflows",
+        "Securing AI-Generated Code"
+      ],
+      "path": "ibm/securing-ai-generated-code.md"
+    },
+    {
+      "title": "Using Sensitive Data with AI: Visibility, Classification, and Control",
+      "slug": "a-sensitive-data-ai-controls",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "sensitive-data-controls",
+        "digital-sovereignty",
+        "ibm",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "data",
+        "control",
+        "classification",
+        "visibility",
+        "sensitive",
+        "using",
+        "not"
+      ],
+      "summary": "The data that makes AI most useful is often the data that can hurt you most: customer PII, health records, financial details, contracts, credentials. Organizations spent decades building controls so *humans* would",
+      "related": [
+        "Digital Sovereignty",
+        "Sensitive Data Controls"
+      ],
+      "path": "ibm/sensitive-data-ai-controls.md"
+    },
+    {
+      "title": "Skills, MCP, RAG, and Memory: Four Ways Agents Get Knowledge",
+      "slug": "a-skills-mcp-rag-memory",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "rag-retrieval-augmented-generation",
+        "mcp-model-context-protocol",
+        "agent-skills",
+        "agent-memory",
+        "ibm",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "mcp",
+        "skills",
+        "rag",
+        "knowledge",
+        "memory"
+      ],
+      "summary": "An agent facing a production 500 error will flounder if you only dump runbooks, dashboards, and customer history into the context window. Four complementary mechanisms give agents knowledge beyond training data—each",
+      "related": [
+        "Agent Memory",
+        "Agent Skills",
+        "MCP (Model Context Protocol)",
+        "RAG (Retrieval-Augmented Generation)"
+      ],
+      "path": "ibm/skills-mcp-rag-memory.md"
+    },
+    {
+      "title": "torch.compile: Dynamo, Inductor, Graph Breaks, and `.item()` Costs",
+      "slug": "a-torch-compile-graph-breaks",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "torch.compile-graph-breaks",
+        "llm-inference",
+        "ibm",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "graph",
+        "dynamo",
+        "breaks",
+        "item",
+        "you",
+        "torch.compile",
+        "python"
+      ],
+      "summary": "You have a correct PyTorch model and you want it faster. One line—`model = torch.compile(model)`—wraps it. The first run may be slower while compilation happens; later runs may be faster. Compilation is an",
+      "related": [
+        "LLM Inference",
+        "torch.compile & Graph Breaks"
+      ],
+      "path": "ibm/torch-compile-graph-breaks.md"
+    },
+    {
+      "title": "Trusting AI Decisions: Agents, Rules, Confidence, and Governance",
+      "slug": "a-trusting-ai-decisions",
+      "type": "article",
+      "corpus": "IBM",
+      "corpus_key": "ibm",
+      "cluster": "Trust, Evaluation & Decision Quality",
+      "cluster_id": "trust-evals",
+      "tags": [
+        "article",
+        "corpus/ibm-ai-knowledge",
+        "cluster/trust-evals"
+      ],
+      "keywords": [
+        "trusting-ai-decisions",
+        "calibrated-decision-models-jev",
+        "ibm",
+        "trust-evals",
+        "cluster-trust-evals",
+        "corpus-ibm-ai-knowledge",
+        "article",
+        "rules",
+        "agents",
+        "not",
+        "confidence",
+        "trusting",
+        "governance",
+        "decisions"
+      ],
+      "summary": "When AI generates a paragraph, a bad answer is embarrassing. When AI denies a loan, contains a host, or pays an invoice, a bad answer is an incident. The hard question is not only “can AI decide?” but “how do we know",
+      "related": [
+        "Calibrated Decision Models (Jev)",
+        "Trusting AI Decisions"
+      ],
+      "path": "ibm/trusting-ai-decisions.md"
+    },
+    {
+      "title": "Agent Harnesses: The Operating System Around the Model Loop",
+      "slug": "a-agent-harnesses",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "loop-engineering",
+        "long-horizon-agents",
+        "agent-harness",
+        "sequoia",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "loop",
+        "model",
+        "harness",
+        "agent",
+        "around",
+        "system"
+      ],
+      "summary": "Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it is building the **harness**: the runtime that feeds context, tools, memory, sandboxes, and recovery around a",
+      "related": [
+        "Agent Harness",
+        "Long-Horizon Agents",
+        "Loop Engineering"
+      ],
+      "path": "sequoia/agent-harnesses.md"
+    },
+    {
+      "title": "From Vibe Coding to Agentic Engineering",
+      "slug": "a-agentic-engineering",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "agentic-engineering",
+        "agent-harness",
+        "ai-coding-quality-workflows",
+        "sequoia",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "coding",
+        "engineering",
+        "agentic",
+        "vibe",
+        "www.youtube.com/watch",
+        "https"
+      ],
+      "summary": "Coding is the canary domain for agents: rich data, fast verifiers, and developers willing to change tools. Andrej Karpathy and Anthropic’s Boris Cherny describe a shift from autocomplete novelty to **agentic",
+      "related": [
+        "AI Coding Quality Workflows",
+        "Agent Harness",
+        "Agentic Engineering"
+      ],
+      "path": "sequoia/agentic-engineering.md"
+    },
+    {
+      "title": "AI That Designs Chips: Closing the Loop on Silicon",
+      "slug": "a-ai-designed-chips",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "energy-goodput-constraints",
+        "ai-designed-chips",
+        "sequoia",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "chips",
+        "silicon",
+        "designs",
+        "loop",
+        "closing",
+        "real",
+        "www.youtube.com/watch"
+      ],
+      "summary": "Ricursive Intelligence’s founders (Anna Goldie, Azalia Mirhoseini) represent a recursive bet: use AI to design the chips that run AI, informed by earlier Google work on learned placement and the painful gap between",
+      "related": [
+        "AI-Designed Chips",
+        "Energy & Goodput Constraints"
+      ],
+      "path": "sequoia/ai-designed-chips.md"
+    },
+    {
+      "title": "Applied Research Labs Inside Product Companies",
+      "slug": "a-applied-research-labs",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "own-your-weights",
+        "applied-research-labs",
+        "agent-evaluation",
+        "sequoia",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "research",
+        "labs",
+        "product",
+        "companies",
+        "applied",
+        "inside"
+      ],
+      "summary": "Harvey’s Gabe Pereyra describes building a serious research lab without frontier-lab budgets. The broader Sequoia pattern: **application companies are becoming research orgs** because domain intelligence is the moat.",
+      "related": [
+        "Agent Evaluation",
+        "Applied Research Labs",
+        "Own Your Weights"
+      ],
+      "path": "sequoia/applied-research-labs.md"
+    },
+    {
+      "title": "Autonomy at Scale: Reliability Is the Product",
+      "slug": "a-autonomy-at-scale",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "physical-ai---robotics",
+        "autonomy-reliability",
+        "sequoia",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "reliability",
+        "product",
+        "autonomy",
+        "scale",
+        "www.youtube.com/watch",
+        "rides",
+        "learning"
+      ],
+      "summary": "Waymo’s Dmitri Dolgov (20M+ rides) and Zipline’s long-distance autonomous delivery record push the same lesson: in the physical world, **reliability engineering eats model demos**.",
+      "related": [
+        "Autonomy Reliability",
+        "Physical AI - Robotics"
+      ],
+      "path": "sequoia/autonomy-at-scale.md"
+    },
+    {
+      "title": "Cars, Not Faster Horses: A Commercial Definition of the Agent Era",
+      "slug": "a-cars-not-horses",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Agentic Systems & Engineering",
+      "cluster_id": "agentic-systems",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/agentic-systems"
+      ],
+      "keywords": [
+        "long-horizon-agents",
+        "agentic-engineering",
+        "agent-era-market-frame",
+        "agentic-systems",
+        "cluster-agentic-systems",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "not",
+        "cars",
+        "horses",
+        "faster",
+        "commercial",
+        "agent",
+        "you"
+      ],
+      "summary": "Sequoia’s AI Ascent 2026 framing is intentionally non-academic: stop arguing about AGI checklists and notice that **the shape of software work has changed**.",
+      "related": [
+        "Agent Era Market Frame",
+        "Agentic Engineering",
+        "Long-Horizon Agents"
+      ],
+      "path": "sequoia/cars-not-horses.md"
+    },
+    {
+      "title": "Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress",
+      "slug": "a-continual-learning",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "rl-environments",
+        "path-to-agi-last-mile",
+        "continual-learning",
+        "sequoia",
+        "training-data",
+        "cluster-training-data",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "learning",
+        "experience",
+        "continual",
+        "models",
+        "frozen",
+        "stall"
+      ],
+      "summary": "Pretraining and post-training create impressive snapshots. They do not, by themselves, create systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and builders like",
+      "related": [
+        "Continual Learning",
+        "Path to AGI (Last Mile)",
+        "RL Environments"
+      ],
+      "path": "sequoia/continual-learning.md"
+    },
+    {
+      "title": "Data Efficiency: The Bottleneck After Search and Code",
+      "slug": "a-data-efficiency",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "data-efficiency-bottleneck",
+        "continual-learning",
+        "sequoia",
+        "training-data",
+        "cluster-training-data",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "data",
+        "efficiency",
+        "search",
+        "bottleneck",
+        "code",
+        "after",
+        "only"
+      ],
+      "summary": "LLMs look magical at search and coding because those domains are drowning in data (and synthetic data). Most of the economy is not. Flapping Airplanes’ thesis is that **data efficiency**—getting coding-level",
+      "related": [
+        "Continual Learning",
+        "Data Efficiency Bottleneck"
+      ],
+      "path": "sequoia/data-efficiency.md"
+    },
+    {
+      "title": "Edge AI and Defense Sovereignty Start in the Factory",
+      "slug": "a-defense-edge-ai",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "private---on-device-ai",
+        "physical-ai---robotics",
+        "digital-sovereignty",
+        "sequoia",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "defense",
+        "sovereignty",
+        "factory",
+        "edge",
+        "start",
+        "uwe"
+      ],
+      "summary": "Stark’s Uwe Horstmann and Johannes Schaback describe European defense modernization as an industrial and software problem: sovereignty is not a press release—it is the ability to **manufacture, update, and operate**",
+      "related": [
+        "Digital Sovereignty",
+        "Physical AI - Robotics",
+        "Private - On-Device AI"
+      ],
+      "path": "sequoia/defense-edge-ai.md"
+    },
+    {
+      "title": "Energy, Goodput, and the Physics of Frontier AI",
+      "slug": "a-energy-and-goodput",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "memory-wall",
+        "energy-goodput-constraints",
+        "sequoia",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "energy",
+        "physics",
+        "goodput",
+        "frontier",
+        "www.youtube.com/watch",
+        "intelligence",
+        "https"
+      ],
+      "summary": "Model quality narratives often ignore the industrial reality underneath: AI is becoming an energy-and-systems problem as much as an algorithms problem.",
+      "related": [
+        "Energy & Goodput Constraints",
+        "Memory Wall"
+      ],
+      "path": "sequoia/energy-and-goodput.md"
+    },
+    {
+      "title": "Enterprise AI Diffusion: Reinvention Beats Feature Packs",
+      "slug": "a-enterprise-diffusion",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "enterprise-agent-platforms",
+        "enterprise-ai-diffusion",
+        "sequoia",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "enterprise",
+        "diffusion",
+        "reinvention",
+        "packs",
+        "not",
+        "feature",
+        "beats"
+      ],
+      "summary": "Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron Levie (Box), Elias Torres (Agency), Block’s Goose agent, Crosby in legal—explain why: **diffusion is an org",
+      "related": [
+        "Enterprise AI Diffusion",
+        "Enterprise Agent Platforms"
+      ],
+      "path": "sequoia/enterprise-diffusion.md"
+    },
+    {
+      "title": "Own Your Weights: Why Companies Are Building Private Intelligence",
+      "slug": "a-own-your-weights",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Enterprise Adoption & Governance",
+      "cluster_id": "enterprise-gov",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/enterprise-gov"
+      ],
+      "keywords": [
+        "own-your-weights",
+        "enterprise-ai-diffusion",
+        "digital-sovereignty",
+        "sequoia",
+        "enterprise-gov",
+        "cluster-enterprise-gov",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "intelligence",
+        "your",
+        "companies",
+        "weights",
+        "own",
+        "not"
+      ],
+      "summary": "Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent conversations, a",
+      "related": [
+        "Digital Sovereignty",
+        "Enterprise AI Diffusion",
+        "Own Your Weights"
+      ],
+      "path": "sequoia/own-your-weights.md"
+    },
+    {
+      "title": "Three Quarters to AGI—and What Still Blocks the Last Mile",
+      "slug": "a-path-to-agi",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Science, Frontier & Interpretability",
+      "cluster_id": "science-frontier",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/science-frontier"
+      ],
+      "keywords": [
+        "world-models",
+        "path-to-agi-last-mile",
+        "continual-learning",
+        "sequoia",
+        "science-frontier",
+        "cluster-science-frontier",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "agi",
+        "three",
+        "still",
+        "quarters",
+        "mile",
+        "last"
+      ],
+      "summary": "Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: substantial progress toward AGI, with remaining gaps that are conceptual, not only “more scale.”",
+      "related": [
+        "Continual Learning",
+        "Path to AGI (Last Mile)",
+        "World Models"
+      ],
+      "path": "sequoia/path-to-agi.md"
+    },
+    {
+      "title": "RL Environments: The Missing Dataset for Real Work",
+      "slug": "a-rl-environments",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Training, Learning & Data",
+      "cluster_id": "training-data",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/training-data"
+      ],
+      "keywords": [
+        "rl-environments",
+        "continual-learning",
+        "sequoia",
+        "training-data",
+        "cluster-training-data",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "environments",
+        "work",
+        "real",
+        "missing",
+        "dataset",
+        "you",
+        "verifiers"
+      ],
+      "summary": "Reinforcement learning for agents is no longer only a lab technique. The bottleneck has shifted from “can we do RL?” to **can we build environments that look like the economy?**",
+      "related": [
+        "Continual Learning",
+        "RL Environments"
+      ],
+      "path": "sequoia/rl-environments.md"
+    },
+    {
+      "title": "Robot Data Factories: Sensorizing Humans to Train Physical AI",
+      "slug": "a-robot-data-factories",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "physical-ai---robotics",
+        "data-efficiency-bottleneck",
+        "sequoia",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "physical",
+        "data",
+        "robot",
+        "train",
+        "humans",
+        "sensorizing",
+        "factories"
+      ],
+      "summary": "Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s robotics conversations converge on a manufacturing problem: **how to produce experience at scale**.",
+      "related": [
+        "Data Efficiency Bottleneck",
+        "Physical AI - Robotics"
+      ],
+      "path": "sequoia/robot-data-factories.md"
+    },
+    {
+      "title": "Intelligence Per Watt: Rethinking the Computing Substrate",
+      "slug": "a-substrate-intelligence",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Inference, Efficiency & Infrastructure",
+      "cluster_id": "inference-infra",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/inference-infra"
+      ],
+      "keywords": [
+        "energy-goodput-constraints",
+        "ai-designed-chips",
+        "sequoia",
+        "inference-infra",
+        "cluster-inference-infra",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "substrate",
+        "per",
+        "computing",
+        "watt",
+        "rethinking",
+        "intelligence",
+        "than"
+      ],
+      "summary": "Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the **physical substrate** of computation—and that brains are an existence proof we are ignoring.",
+      "related": [
+        "AI-Designed Chips",
+        "Energy & Goodput Constraints"
+      ],
+      "path": "sequoia/substrate-intelligence.md"
+    },
+    {
+      "title": "Voice as a Primary Interface for AI",
+      "slug": "a-voice-as-interface",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Physical AI, Voice & Autonomy",
+      "cluster_id": "physical-ai",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/physical-ai"
+      ],
+      "keywords": [
+        "voice-as-primary-interface",
+        "sequoia",
+        "physical-ai",
+        "cluster-physical-ai",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "voice",
+        "interface",
+        "primary",
+        "staniszewski",
+        "mati",
+        "elevenlabs",
+        "www.youtube.com/watch",
+        "https"
+      ],
+      "summary": "ElevenLabs’ Mati Staniszewski argues voice is becoming a fundamental interface layer—not a niche accessibility feature. As models speak and listen fluidly, products can meet users in the channel where emotion, speed,",
+      "related": [
+        "Voice as Primary Interface"
+      ],
+      "path": "sequoia/voice-as-interface.md"
+    },
+    {
+      "title": "Building a Web That Agents Can Use",
+      "slug": "a-web-for-agents",
+      "type": "article",
+      "corpus": "Sequoia",
+      "corpus_key": "sequoia",
+      "cluster": "Context, Tools & Knowledge Access",
+      "cluster_id": "knowledge-access",
+      "tags": [
+        "article",
+        "corpus/sequoia-ai-knowledge",
+        "cluster/knowledge-access"
+      ],
+      "keywords": [
+        "agent-native-web",
+        "agent-tooling-apis",
+        "sequoia",
+        "knowledge-access",
+        "cluster-knowledge-access",
+        "corpus-sequoia-ai-knowledge",
+        "article",
+        "web",
+        "agents",
+        "building",
+        "use",
+        "can",
+        "agent",
+        "need"
+      ],
+      "summary": "The public web was built for human eyes and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel’s Parag Agrawal argues for a **new web layer for AI agents**—infrastructure that makes",
+      "related": [
+        "Agent Tooling & APIs",
+        "Agent-Native Web"
+      ],
+      "path": "sequoia/web-for-agents.md"
+    }
+  ]
+}

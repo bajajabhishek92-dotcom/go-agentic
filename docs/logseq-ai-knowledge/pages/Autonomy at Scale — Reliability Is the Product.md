@@ -1,0 +1,52 @@
+title:: Autonomy at Scale — Reliability Is the Product
+type:: article
+cluster:: physical-ai
+cluster-name:: Physical AI, Voice & Autonomy
+corpus:: sequoia-ai-knowledge
+tags:: #article #corpus/sequoia-ai-knowledge #cluster/physical-ai
+node-id:: a-autonomy-at-scale
+source-path:: /cursor/stores/self/docs/sequoia-ai-knowledge/autonomy-at-scale.md
+original-label:: Autonomy at Scale: Reliability Is the Product
+
+- #cluster/physical-ai
+- #corpus/sequoia-ai-knowledge
+- blurb:: Waymo’s Dmitri Dolgov (20M+ rides) and Zipline’s long-distance autonomous delivery record push the same lesson: in the physical world, **reliability engineering eats model demos**.
+
+## Relations
+
+- example of:: [[Autonomy Reliability]] — Discussed in article
+- related to:: [[Physical AI - Robotics]] — Discussed in article
+
+## Article
+
+# Autonomy at Scale: Reliability Is the Product
+
+- Waymo’s Dmitri Dolgov (20M+ rides) and Zipline’s long-distance autonomous delivery record push the same lesson: in the physical world, **reliability engineering eats model demos**.
+
+## What scales
+
+- Continuous data closed-loops from the fleet
+- Conservative operational design domains that expand with evidence
+- Organizations that treat incidents as learning systems, not PR crises
+- Maps, simulation, and policy layered with learned components (not “end-to-end or bust” absolutism in deployment)
+- Wayve’s end-to-end learning story complements this: learned driving stacks can advance quickly, but public trust still rides on measured safety.
+
+### Practice checklist
+
+- Define ODD (operational design domain) explicitly
+- Instrument every failure for training and process change
+- Separate research milestones from deployment gates
+- Budget ops centers and tooling as core product cost
+
+### Sources
+
+- [Waymo's Dmitri Dolgov: 20 Million Rides and the Road to Full Autonomy](https://www.youtube.com/watch?v=I_0Kuf6Aa2c)
+- [Inside Zipline's Autonomous System: 140M Miles, Zero Incidents](https://www.youtube.com/watch?v=6bGxm8gX41o)
+- [How End-to-End Learning Created Autonomous Driving 2.0: Wayve CEO Alex Kendall](https://www.youtube.com/watch?v=8x_O8BeGNTw)
+
+## Navigation
+
+- Cluster:: [[Cluster - Physical AI, Voice & Autonomy]]
+- Corpus:: [[Corpus - Sequoia AI Knowledge]]
+- [[Clusters]]
+- [[Contents]]
