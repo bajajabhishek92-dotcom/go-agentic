@@ -1,39 +1,3 @@
----
-title: 'Securing AI-Generated Code: Five Shift-Left Principles'
-slug: a-securing-ai-generated-code
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Coding Agents & Software Delivery
-cluster_id: coding-delivery
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/coding-delivery
-keywords:
-- securing-ai-generated-code
-- ai-coding-quality-workflows
-- ibm
-- coding-delivery
-- cluster-coding-delivery
-- corpus-ibm-ai-knowledge
-- article
-- code
-- security
-- not
-- principles
-- five
-- ai-generated
-- shift-left
-summary: 'AI changed how fast software can appear: prompts yield functions, tests, agents, and multi-step
-  workflows in seconds. Security practices built for slower, human-paced coding do not automatically keep
-  up. If security'
-related:
-- AI Coding Quality Workflows
-- Securing AI-Generated Code
-path: ibm/securing-ai-generated-code.md
----
-
 # Securing AI-Generated Code: Five Shift-Left Principles
 
 AI changed how fast software can appear: prompts yield functions, tests, agents, and multi-step workflows in seconds. Security practices built for slower, human-paced coding do not automatically keep up. If security is only a retrofit at the end of the pipeline, quality suffers and delivery stalls. **Shift left**—security from the earliest stages through the whole lifecycle—is not new, but AI-assisted development makes it non-negotiable. It is no longer enough to run a scanner slightly earlier; you need clearer answers to *what* you validate, *when*, and *how* you maintain confidence in machine-generated solutions.

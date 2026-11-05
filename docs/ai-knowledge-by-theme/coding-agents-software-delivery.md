@@ -46,8 +46,13 @@ IBM supplies the delivery culture: quality as fit, RAD discipline, conductor rol
 
 ## Sources woven in
 
-- AI Coding Workflows: Quality, RAD, IDEs, and Review (IBM)
-- Legacy Modernization with AI (IBM)
-- Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions (OpenAI News)
-- Securing AI-Generated Code: Five Shift-Left Principles (IBM)
-- Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior (OpenAI News)
+- [AI Coding Workflows: Quality, RAD, IDEs, and Review (IBM)](../ibm-ai-knowledge/ai-coding-quality-workflows.md)
+- [Legacy Modernization with AI (IBM)](../ibm-ai-knowledge/legacy-modernization-with-ai.md)
+- [Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions (OpenAI News)](../extra-ai-knowledge/openai-news/agent-scale-source-control.md)
+- [Securing AI-Generated Code: Five Shift-Left Principles (IBM)](../ibm-ai-knowledge/securing-ai-generated-code.md)
+- [Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior (OpenAI News)](../extra-ai-knowledge/openai-news/low-resource-language-coding.md)
+
+## See also (landscape)
+
+- [Anthropic: Parallel Agent Teams and Coding Harnesses](../gap-fill-ai-knowledge/anthropic-news/parallel-agent-teams-and-coding-harnesses.md)
+- [Agent Benchmarks: Major Agent and Capability Benchmarks](../gap-fill-ai-knowledge/agent-benchmarks/major-agent-and-capability-benchmarks.md)

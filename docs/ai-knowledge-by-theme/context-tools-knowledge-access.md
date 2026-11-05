@@ -44,11 +44,16 @@ IBM defines context failure modes and the skills/MCP/RAG/memory split; AWS shows
 
 ## Sources woven in
 
-- Context Engineering: Giving Agents the Right Information (IBM)
-- Semantic Layers: Let Agents Query Meaning, Not Schemas (AWS ML Blog)
-- Skills, MCP, RAG, and Memory: Four Ways Agents Get Knowledge (IBM)
-- Turning Private APIs into Agent Tools Without Flooding Context (AWS ML Blog)
-- Connecting Agents to Tools: From Direct APIs to MCP and Short-Lived Credentials (IBM)
-- From Single-Shot RAG to Agentic Retrieval (AWS ML Blog)
-- Building a Web That Agents Can Use (Sequoia)
-- Beyond Flat Chunks: Structure-Aware Retrieval and the Digital Librarian (IBM)
+- [Context Engineering: Giving Agents the Right Information (IBM)](../ibm-ai-knowledge/context-engineering-for-agents.md)
+- [Semantic Layers: Let Agents Query Meaning, Not Schemas (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/semantic-layers-for-agents.md)
+- [Skills, MCP, RAG, and Memory: Four Ways Agents Get Knowledge (IBM)](../ibm-ai-knowledge/skills-mcp-rag-memory.md)
+- [Turning Private APIs into Agent Tools Without Flooding Context (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/private-apis-as-agent-tools.md)
+- [Connecting Agents to Tools: From Direct APIs to MCP and Short-Lived Credentials (IBM)](../ibm-ai-knowledge/connecting-agents-to-tools.md)
+- [From Single-Shot RAG to Agentic Retrieval (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/agentic-retrieval-knowledge-bases.md)
+- [Building a Web That Agents Can Use (Sequoia)](../sequoia-ai-knowledge/web-for-agents.md)
+- [Beyond Flat Chunks: Structure-Aware Retrieval and the Digital Librarian (IBM)](../ibm-ai-knowledge/chunkless-rag-complex-documents.md)
+
+## See also (landscape)
+
+- [Anthropic: Context Engineering for Agents](../gap-fill-ai-knowledge/anthropic-news/context-engineering-for-agents.md)
+- [Anthropic: Agent Skills and Advanced Tool Use](../gap-fill-ai-knowledge/anthropic-news/agent-skills-and-advanced-tool-use.md)

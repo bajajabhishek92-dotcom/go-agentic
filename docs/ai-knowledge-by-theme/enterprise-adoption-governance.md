@@ -38,12 +38,19 @@ IBM defines sovereignty and sensitive-data control—visibility, classification,
 
 ## Sources woven in
 
-- Using Sensitive Data with AI: Visibility, Classification, and Control (IBM)
-- Edge AI and Defense Sovereignty Start in the Factory (Sequoia)
-- Enterprise Agent Platforms: Federate Ownership, Centralize Control (AWS ML Blog)
-- Closing the Deployment Gap with Forward-Deployed Engineering (OpenAI News)
-- Enterprise AI Diffusion: Reinvention Beats Feature Packs (Sequoia)
-- Multi-Tenant Agents and RAG Access Control (AWS ML Blog)
-- Own Your Weights: Why Companies Are Building Private Intelligence (Sequoia)
-- Digital Sovereignty in Agentic Systems (IBM)
-- Private and On-Device AI: Continuity Without Cloud Exposure (DeepMind Blog)
+- [Using Sensitive Data with AI: Visibility, Classification, and Control (IBM)](../ibm-ai-knowledge/sensitive-data-ai-controls.md)
+- [Edge AI and Defense Sovereignty Start in the Factory (Sequoia)](../sequoia-ai-knowledge/defense-edge-ai.md)
+- [Enterprise Agent Platforms: Federate Ownership, Centralize Control (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/enterprise-agent-platform.md)
+- [Closing the Deployment Gap with Forward-Deployed Engineering (OpenAI News)](../extra-ai-knowledge/openai-news/closing-the-deployment-gap.md)
+- [Enterprise AI Diffusion: Reinvention Beats Feature Packs (Sequoia)](../sequoia-ai-knowledge/enterprise-diffusion.md)
+- [Multi-Tenant Agents and RAG Access Control (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/multi-tenant-and-rag-access-control.md)
+- [Own Your Weights: Why Companies Are Building Private Intelligence (Sequoia)](../sequoia-ai-knowledge/own-your-weights.md)
+- [Digital Sovereignty in Agentic Systems (IBM)](../ibm-ai-knowledge/digital-sovereignty.md)
+- [Private and On-Device AI: Continuity Without Cloud Exposure (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/private-on-device-ai.md)
+
+## See also (landscape)
+
+- [Global AI Policy theme](../gap-fill-ai-knowledge/global-policy/) — US/EU/UK/China regimes + privacy/ADM
+- [Market Players theme](../gap-fill-ai-knowledge/market-players/) — labs, hyperscalers, open weights, states
+- [FPF: Defining “Agentic” for Law](../gap-fill-ai-knowledge/fpf/defining-agentic-for-law.md)
+- [CSET: US National AI Policy Framework](../gap-fill-ai-knowledge/cset-georgetown/us-national-ai-policy-framework.md)

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benchmarks — AI Engineering Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --paper:#E8ECF1; --ink:#0B1220; --muted:#4A5568; --line:#C5CDD8; --cobalt:#1F4BFF; --meta:#2A6F6B; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Source Serif 4",Georgia,serif; line-height:1.55; }
+    a { color:var(--cobalt); }
+    .chrome { display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; padding:.7rem 1.25rem; border-bottom:1px solid var(--line); font-family:"IBM Plex Mono",monospace; font-size:.78rem; background:rgba(232,236,241,.94); position:sticky; top:0; }
+    .chrome .mark { font-family:Syne,sans-serif; font-weight:800; color:var(--ink); text-decoration:none; }
+    .chrome nav { display:flex; flex-wrap:wrap; gap:.85rem; margin-left:auto; }
+    .chrome nav a { color:var(--muted); text-decoration:none; }
+    .chrome nav a[aria-current="page"], .chrome nav a:hover { color:var(--cobalt); }
+    .asof { color:var(--meta); }
+    main { padding:2.5rem clamp(1.25rem,4vw,3rem) 4rem; max-width:54rem; }
+    h1 { font-family:Syne,sans-serif; font-weight:800; font-size:clamp(1.8rem,4vw,2.4rem); letter-spacing:-.03em; margin:0 0 .5rem; }
+    .lede { color:var(--muted); margin:0 0 1.75rem; max-width:52ch; }
+    table { width:100%; border-collapse:collapse; font-size:.92rem; }
+    th, td { text-align:left; padding:.85rem .55rem; border-top:1px solid var(--line); vertical-align:top; }
+    th { font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--meta); font-weight:500; letter-spacing:.04em; text-transform:uppercase; }
+    tr:focus-within, tr:hover { background:#EEF2FA; }
+    td.id { font-family:"IBM Plex Mono",monospace; font-size:.8rem; color:var(--ink); white-space:nowrap; }
+    .note { margin-top:1.75rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="../index.html">AI Engineering Atlas</a>
+    <span class="asof">AS OF 2026-11-05</span>
+    <nav>
+      <a href="../../../ai-knowledge-articles-readable/articles.html">Search</a>
+      <a href="../timeline/index.html">Timeline</a>
+      <a href="../players/index.html">Players</a>
+      <a href="../policy/index.html">Policy</a>
+      <a href="./index.html" aria-current="page">Benchmarks</a>
+      <a href="../../../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../../../ai-knowledge-by-theme/themes.html">Themes</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Agent benchmarks ledger</h1>
+    <p class="lede">Leaderboards are not evaluation systems. This ledger routes to teachables on what measures what—and how those measures fail.</p>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Claims / focus</th><th>Failure mode to remember</th><th>Teachable</th></tr>
+      </thead>
+      <tbody>
+        <tr id="why-hard">
+          <td class="id">WHY-HARD</td>
+          <td>Why agent evals resist single-number scores</td>
+          <td>Collapsing multi-step tool use into one leaderboard cell</td>
+          <td><a href="../../../gap-fill-ai-knowledge/agent-benchmarks/why-agent-evals-are-hard.md">Why evals are hard</a></td>
+        </tr>
+        <tr id="major">
+          <td class="id">MAJOR-SET</td>
+          <td>Major agent &amp; capability benchmarks (portfolio view)</td>
+          <td>Treating one suite as universal competence</td>
+          <td><a href="../../../gap-fill-ai-knowledge/agent-benchmarks/major-agent-and-capability-benchmarks.md">Major benchmarks</a></td>
+        </tr>
+        <tr id="leaderboard-limits">
+          <td class="id">LB-LIMITS</td>
+          <td>Leaderboard limits &amp; contamination / overfitting modes</td>
+          <td>Chasing public ranks without task validity</td>
+          <td><a href="../../../gap-fill-ai-knowledge/agent-benchmarks/leaderboard-limits-and-failure-modes.md">Leaderboard limits</a></td>
+        </tr>
+        <tr id="can-cannot">
+          <td class="id">CAN-CANNOT</td>
+          <td>What benchmarks can and cannot answer</td>
+          <td>Using bench wins as deployment certificates</td>
+          <td><a href="../../../gap-fill-ai-knowledge/agent-benchmarks/what-benchmarks-can-and-cannot-answer.md">Can / cannot</a></td>
+        </tr>
+        <tr id="good-practice">
+          <td class="id">PRACTICE</td>
+          <td>Good eval practice for agents in production loops</td>
+          <td>Skipping held-out tasks, humans, and cost axes</td>
+          <td><a href="../../../gap-fill-ai-knowledge/agent-benchmarks/good-eval-practice-for-agents.md">Good practice</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">Pair with baseline eval teachables in Extra/OpenAI (e.g. LifeVal) via <a href="../../../ai-knowledge-articles-readable/articles.html">Search</a> and the <a href="../../../ai-knowledge-by-theme/trust-evaluation-decision-quality.md">Trust &amp; evaluation</a> theme.</p>
+  </main>
+</body>
+</html>

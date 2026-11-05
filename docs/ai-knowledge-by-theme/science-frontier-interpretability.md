@@ -44,9 +44,15 @@ DeepMind anchors climate/Earth science applications, science-agent patterns, bio
 
 ## Sources woven in
 
-- WeatherNext and Earth Observation: AI for Climate Decisions (DeepMind Blog)
-- Multi-Agent Science: Scale Interpretation, Then Shepherd Understanding (OpenAI News)
-- Applied Research Labs Inside Product Companies (Sequoia)
-- Three Quarters to AGI—and What Still Blocks the Last Mile (Sequoia)
-- Biosecurity for Generative Biology: Watermarks and Layered Defense (DeepMind Blog)
-- Science Agents: Skills, Tool Grounding, and Idea Tournaments (DeepMind Blog)
+- [WeatherNext and Earth Observation: AI for Climate Decisions (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/weathernext-climate-earth.md)
+- [Multi-Agent Science: Scale Interpretation, Then Shepherd Understanding (OpenAI News)](../extra-ai-knowledge/openai-news/multi-agent-scientific-discovery.md)
+- [Applied Research Labs Inside Product Companies (Sequoia)](../sequoia-ai-knowledge/applied-research-labs.md)
+- [Three Quarters to AGI—and What Still Blocks the Last Mile (Sequoia)](../sequoia-ai-knowledge/path-to-agi.md)
+- [Biosecurity for Generative Biology: Watermarks and Layered Defense (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/biosecurity-synthid-bio.md)
+- [Science Agents: Skills, Tool Grounding, and Idea Tournaments (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/science-agent-workflows.md)
+
+## See also (landscape)
+
+- [AI Timeline theme](../gap-fill-ai-knowledge/ai-timeline/)
+- [Google Research Blog folder](../gap-fill-ai-knowledge/google-research-blog/)
+- [IEEE: Scientific Integrity vs AI Slop](../gap-fill-ai-knowledge/ieee-spectrum-ai/scientific-integrity-vs-ai-slop.md)

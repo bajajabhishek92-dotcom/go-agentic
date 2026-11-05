@@ -1,39 +1,3 @@
----
-title: 'Beyond Flat Chunks: Structure-Aware Retrieval and the Digital Librarian'
-slug: a-chunkless-rag-complex-documents
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Context, Tools & Knowledge Access
-cluster_id: knowledge-access
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/knowledge-access
-keywords:
-- structure-aware---chunkless-rag
-- rag-retrieval-augmented-generation
-- ibm
-- knowledge-access
-- cluster-knowledge-access
-- corpus-ibm-ai-knowledge
-- article
-- retrieval
-- chunks
-- structure-aware
-- librarian
-- flat
-- document
-- digital
-summary: Classic RAG cuts documents into chunks, embeds them, and at query time retrieves the most similar
-  fragments for the model. It is cheap and effective for many “find anything about X” questions over large
-  corpora. It
-related:
-- RAG (Retrieval-Augmented Generation)
-- Structure-Aware - Chunkless RAG
-path: ibm/chunkless-rag-complex-documents.md
----
-
 # Beyond Flat Chunks: Structure-Aware Retrieval and the Digital Librarian
 
 Classic RAG cuts documents into chunks, embeds them, and at query time retrieves the most similar fragments for the model. It is cheap and effective for many “find anything about X” questions over large corpora. It breaks down when the answer depends on *document structure*—or when structured facts and unstructured policy live in different systems.

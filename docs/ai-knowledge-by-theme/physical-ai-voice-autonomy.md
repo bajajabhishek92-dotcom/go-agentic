@@ -46,9 +46,15 @@ Sequoia supplies commercial definitions—data factories, autonomy reliability, 
 
 ## Sources woven in
 
-- Robot Data Factories: Sensorizing Humans to Train Physical AI (Sequoia)
-- Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling (AWS ML Blog)
-- Gemini Robotics: Whole-Body Physical AI (DeepMind Blog)
-- Autonomy at Scale: Reliability Is the Product (Sequoia)
-- AI That Designs Chips: Closing the Loop on Silicon (Sequoia)
-- Voice as a Primary Interface for AI (Sequoia)
+- [Robot Data Factories: Sensorizing Humans to Train Physical AI (Sequoia)](../sequoia-ai-knowledge/robot-data-factories.md)
+- [Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/voice-ai-latency-budget.md)
+- [Gemini Robotics: Whole-Body Physical AI (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/gemini-robotics-physical-ai.md)
+- [Autonomy at Scale: Reliability Is the Product (Sequoia)](../sequoia-ai-knowledge/autonomy-at-scale.md)
+- [AI That Designs Chips: Closing the Loop on Silicon (Sequoia)](../sequoia-ai-knowledge/ai-designed-chips.md)
+- [Voice as a Primary Interface for AI (Sequoia)](../sequoia-ai-knowledge/voice-as-interface.md)
+
+## See also (landscape)
+
+- [NVIDIA: Sim-to-Real Robotics](../gap-fill-ai-knowledge/nvidia-technical-blog/robotics-simready-to-real.md)
+- [CSET: China’s Embodied AI Path](../gap-fill-ai-knowledge/cset-georgetown/chinas-embodied-ai-path.md)
+- [IEEE: Robot Safety When Inputs Lie](../gap-fill-ai-knowledge/ieee-spectrum-ai/robot-safety-when-inputs-lie.md)

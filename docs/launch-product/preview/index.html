@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Engineering Atlas</title>
+  <meta name="description" content="A cited map of how AI systems actually get built—teachables, graph, timeline, players, policy, and agent benchmarks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #E8ECF1;
+      --paper-2: #F3F5F8;
+      --ink: #0B1220;
+      --muted: #4A5568;
+      --line: #C5CDD8;
+      --cobalt: #1F4BFF;
+      --cobalt-ink: #1436C9;
+      --meta: #2A6F6B;
+      --warn: #B45309;
+      --lattice: rgba(31, 75, 255, 0.14);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(165deg, #DCE3EE 0%, var(--paper) 42%, #E4E9F0 100%);
+      font-family: "Source Serif 4", Georgia, serif;
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    a { color: var(--cobalt); }
+    a:hover { color: var(--cobalt-ink); }
+
+    .chrome {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem;
+      padding: 0.7rem 1.25rem;
+      background: rgba(232, 236, 241, 0.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 0.78rem;
+    }
+    .chrome .mark {
+      font-family: Syne, sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .chrome nav { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-left: auto; }
+    .chrome nav a { color: var(--muted); text-decoration: none; }
+    .chrome nav a:hover, .chrome nav a[aria-current="page"] { color: var(--cobalt); }
+    .asof { color: var(--meta); white-space: nowrap; }
+
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 48px);
+      display: grid;
+      align-items: end;
+      padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 4.5rem) clamp(2.5rem, 6vw, 4rem);
+      overflow: hidden;
+    }
+    .lattice {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+    }
+    .lattice line { stroke: var(--lattice); stroke-width: 1.25; }
+    .lattice circle { fill: var(--cobalt); opacity: 0.35; }
+    .lattice .draw { stroke-dasharray: 1200; stroke-dashoffset: 1200; animation: draw 0.9s ease forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+
+    .hero-copy { position: relative; z-index: 1; max-width: 38rem; }
+    .brand {
+      font-family: Syne, sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.8rem, 9vw, 5.6rem);
+      line-height: 0.92;
+      letter-spacing: -0.045em;
+      margin: 0 0 1.25rem;
+    }
+    .headline {
+      font-family: Syne, sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.25rem, 2.6vw, 1.7rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 0.75rem;
+      max-width: 28ch;
+    }
+    .support {
+      margin: 0 0 1.75rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 42ch;
+    }
+    .cta { display: flex; flex-wrap: wrap; gap: 0.65rem 0.85rem; font-family: Syne, sans-serif; }
+    .cta a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.7rem 1.1rem;
+      border: 1.5px solid var(--ink);
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .cta a.primary { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
+    .cta a.primary:hover { background: var(--cobalt-ink); border-color: var(--cobalt-ink); color: #fff; }
+    .cta a:not(.primary):hover { background: var(--ink); color: var(--paper); }
+
+    .section {
+      padding: clamp(2.5rem, 5vw, 4rem) clamp(1.25rem, 5vw, 4.5rem);
+      border-top: 1px solid var(--line);
+      background: var(--paper-2);
+    }
+    .section h2 {
+      font-family: Syne, sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+      letter-spacing: -0.03em;
+      margin: 0 0 0.5rem;
+    }
+    .section .lede { margin: 0 0 1.5rem; color: var(--muted); max-width: 52ch; }
+
+    .paths {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+    .path {
+      display: grid;
+      grid-template-columns: minmax(7rem, 11rem) 1fr auto;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 1.15rem 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      color: inherit;
+    }
+    .path:hover .path-name { color: var(--cobalt); }
+    .path-name {
+      font-family: Syne, sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+    .path-desc { color: var(--muted); margin: 0; font-size: 0.98rem; }
+    .path-go {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--cobalt);
+    }
+    @media (max-width: 720px) {
+      .path { grid-template-columns: 1fr; gap: 0.35rem; }
+      .chrome nav { margin-left: 0; width: 100%; }
+    }
+
+    .lanes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .lane {
+      padding: 1.25rem 1.15rem;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      color: inherit;
+      min-height: 9.5rem;
+    }
+    .lane:hover { background: #EEF2FA; }
+    .lane h3 {
+      font-family: Syne, sans-serif;
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem;
+      letter-spacing: -0.02em;
+    }
+    .lane p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .lane .meta {
+      display: block;
+      margin-top: 0.85rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.72rem;
+      color: var(--meta);
+    }
+
+    .tools {
+      display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.85rem;
+    }
+    .tools a { text-decoration: none; border-bottom: 1px solid currentColor; }
+
+    .method {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .method span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.78rem;
+      padding: 0.65rem 0.7rem;
+      border-left: 3px solid var(--cobalt);
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    footer.site {
+      padding: 1.5rem clamp(1.25rem, 5vw, 4.5rem) 2.5rem;
+      border-top: 1px solid var(--line);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+      justify-content: space-between;
+    }
+    footer.site a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="./index.html">AI Engineering Atlas</a>
+    <span class="asof" title="Corpus freshness stamp">AS OF 2026-11-05</span>
+    <nav aria-label="Primary">
+      <a href="../../ai-knowledge-articles-readable/articles.html">Search</a>
+      <a href="./timeline/index.html">Timeline</a>
+      <a href="./players/index.html">Players</a>
+      <a href="./policy/index.html">Policy</a>
+      <a href="./benchmarks/index.html">Benchmarks</a>
+      <a href="../../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../../ai-knowledge-by-theme/themes.html">Themes</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" aria-label="Hero">
+    <svg class="lattice" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <line class="draw" x1="40" y1="120" x2="320" y2="80" />
+      <line class="draw" style="animation-delay:.08s" x1="320" y1="80" x2="520" y2="220" />
+      <line class="draw" style="animation-delay:.14s" x1="520" y1="220" x2="780" y2="140" />
+      <line class="draw" style="animation-delay:.2s" x1="780" y1="140" x2="1040" y2="280" />
+      <line class="draw" style="animation-delay:.12s" x1="320" y1="80" x2="280" y2="340" />
+      <line class="draw" style="animation-delay:.18s" x1="280" y1="340" x2="520" y2="220" />
+      <line class="draw" style="animation-delay:.24s" x1="520" y1="220" x2="640" y2="480" />
+      <line class="draw" style="animation-delay:.28s" x1="640" y1="480" x2="900" y2="420" />
+      <line class="draw" style="animation-delay:.32s" x1="900" y1="420" x2="1040" y2="280" />
+      <line class="draw" style="animation-delay:.22s" x1="280" y1="340" x2="160" y2="560" />
+      <line class="draw" style="animation-delay:.3s" x1="160" y1="560" x2="640" y2="480" />
+      <line class="draw" style="animation-delay:.36s" x1="640" y1="480" x2="760" y2="680" />
+      <line class="draw" style="animation-delay:.4s" x1="900" y1="420" x2="1100" y2="620" />
+      <circle cx="320" cy="80" r="4" /><circle cx="520" cy="220" r="5" />
+      <circle cx="780" cy="140" r="4" /><circle cx="280" cy="340" r="4" />
+      <circle cx="640" cy="480" r="6" /><circle cx="900" cy="420" r="4" />
+      <circle cx="1040" cy="280" r="4" /><circle cx="160" cy="560" r="3" />
+    </svg>
+    <div class="hero-copy">
+      <p class="brand">AI Engineering Atlas</p>
+      <h1 class="headline">A cited map of how AI systems actually get built</h1>
+      <p class="support">Sources become teachables. Teachables become a typed graph. Gaps get audited. The review score stays public.</p>
+      <div class="cta">
+        <a class="primary" href="#paths">Start learning</a>
+        <a href="../../ai-knowledge-graph/explore.html">Explore the map</a>
+        <a href="../../ai-knowledge-articles-readable/articles.html">Search</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="paths">
+    <h2>Start-here paths</h2>
+    <p class="lede">Three intents. One click each. No corpus archaeology.</p>
+    <div class="paths">
+      <a class="path" href="../../ai-knowledge-by-theme/agentic-systems-engineering.md">
+        <span class="path-name">Builder</span>
+        <p class="path-desc">Agentic systems → harnesses &amp; context → eval hygiene → graph cluster.</p>
+        <span class="path-go">OPEN →</span>
+      </a>
+      <a class="path" href="./timeline/index.html">
+        <span class="path-name">Landscape</span>
+        <p class="path-desc">Timeline → players → policy → one deep dive. Orientation before technique.</p>
+        <span class="path-go">OPEN →</span>
+      </a>
+      <a class="path" href="./benchmarks/index.html">
+        <span class="path-name">Trust &amp; evals</span>
+        <p class="path-desc">What agent benchmarks measure, where leaderboards lie, how to eval in practice.</p>
+        <span class="path-go">OPEN →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="lanes" style="background: var(--paper);">
+    <h2>Orientation lanes</h2>
+    <p class="lede">Reader infrastructure the baseline corpus never shipped—now first-class product surfaces.</p>
+    <div class="lanes">
+      <a class="lane" href="./timeline/index.html">
+        <h3>Timeline</h3>
+        <p>Eras as operating regimes: what builders had to change when the bottleneck moved.</p>
+        <span class="meta">LANE · 5 TEACHABLES</span>
+      </a>
+      <a class="lane" href="./players/index.html">
+        <h3>Players</h3>
+        <p>Labs, hyperscalers, open-weight ecosystems, chips, enterprises, states—roles, not logos.</p>
+        <span class="meta">LANE · 5 TEACHABLES</span>
+      </a>
+      <a class="lane" href="./policy/index.html">
+        <h3>Policy</h3>
+        <p>US / EU / UK / China regimes and privacy–ADM second wave, taught comparatively.</p>
+        <span class="meta">LANE · 6 TEACHABLES</span>
+      </a>
+      <a class="lane" href="./benchmarks/index.html">
+        <h3>Benchmarks</h3>
+        <p>Agent eval ledger: claims, failure modes, and practice that survives leaderboard churn.</p>
+        <span class="meta">LANE · 5 TEACHABLES</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Working surfaces</h2>
+    <p class="lede">Existing corpus artifacts—wired under one chrome for this preview.</p>
+    <div class="tools">
+      <a href="../../ai-knowledge-articles-readable/articles.html">Searchable articles (86)</a>
+      <a href="../../ai-knowledge-by-theme/themes.html">Theme essays (10)</a>
+      <a href="../../ai-knowledge-graph/explore.html">Knowledge graph explorer</a>
+      <a href="../../ai-knowledge-graph/index.md">Graph index</a>
+      <a href="../../gap-fill-ai-knowledge/index.md">Gap-fill corpus</a>
+      <a href="../../corpus-quality-review/report.md">Quality review 6.2/10</a>
+    </div>
+  </section>
+
+  <section class="section" id="about" style="background: var(--paper);">
+    <h2>About this artifact</h2>
+    <p class="lede">Portfolio evidence of AI engineering skill—systems thinking, evaluation rigor, source ops, knowledge graphs, gap analysis, iteration under review. Not a YouTube summary folder.</p>
+    <div class="method">
+      <span>01 map</span>
+      <span>02 cite</span>
+      <span>03 evaluate</span>
+      <span>04 gap-fill</span>
+      <span>05 graph</span>
+      <span>06 iterate</span>
+    </div>
+    <p class="lede" style="margin-top:1.5rem;margin-bottom:0;">
+      Specs:
+      <a href="../positioning.md">positioning</a> ·
+      <a href="../product-spec.md">product-spec</a> ·
+      <a href="../make-it-pop.md">make-it-pop</a> ·
+      <a href="../build-plan.md">build-plan</a>
+    </p>
+  </section>
+
+  <footer class="site">
+    <span>AI Engineering Atlas · preview hub · Forge Atlas visual system</span>
+    <span>Health: <a href="../../corpus-quality-review/checklist.md">checklist</a> · open P0/P1 in review</span>
+  </footer>
+</body>
+</html>

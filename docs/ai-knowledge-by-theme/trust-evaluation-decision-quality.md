@@ -40,14 +40,21 @@ IBM defines how decisions enter products (system-one models, thresholds, agents 
 
 ## Sources woven in
 
-- Jev and System-One Decision Models (IBM)
-- What Benchmarks Actually Measure: Disentangle the Signals (Hugging Face Blog)
-- Trusting AI Decisions: Agents, Rules, Confidence, and Governance (IBM)
-- Value-Centered Model Specs: Teaching Judgment, Not Just Style (OpenAI News)
-- Source-Aware Verification and Consistency for Tool Agents (Hugging Face Blog)
-- Gemma Scope: Open Interpretability at Model Scale (DeepMind Blog)
-- Factuality Benchmarks and Double-Blind Evaluations (DeepMind Blog)
-- Speech Evaluation Beyond Aggregate WER (Hugging Face Blog)
-- Long-Context State Tracking: What Benchmarks Must Separate (Hugging Face Blog)
-- Executable Agent Grading: Outcomes Beat Tool-Call Theater (Hugging Face Blog)
-- LifeVal: Evaluating Agents on What Everyday People Need Done (OpenAI News)
+- [Jev and System-One Decision Models (IBM)](../ibm-ai-knowledge/jev-calibrated-decisions.md)
+- [What Benchmarks Actually Measure: Disentangle the Signals (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/benchmark-signal-disentanglement.md)
+- [Trusting AI Decisions: Agents, Rules, Confidence, and Governance (IBM)](../ibm-ai-knowledge/trusting-ai-decisions.md)
+- [Value-Centered Model Specs: Teaching Judgment, Not Just Style (OpenAI News)](../extra-ai-knowledge/openai-news/model-spec-value-alignment.md)
+- [Source-Aware Verification and Consistency for Tool Agents (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/source-aware-agent-verification.md)
+- [Gemma Scope: Open Interpretability at Model Scale (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/gemma-scope-interpretability.md)
+- [Factuality Benchmarks and Double-Blind Evaluations (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/factuality-and-blind-evals.md)
+- [Speech Evaluation Beyond Aggregate WER (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/speech-evaluation-beyond-averages.md)
+- [Long-Context State Tracking: What Benchmarks Must Separate (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/long-context-state-tracking.md)
+- [Executable Agent Grading: Outcomes Beat Tool-Call Theater (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/executable-agent-grading.md)
+- [LifeVal: Evaluating Agents on What Everyday People Need Done (OpenAI News)](../extra-ai-knowledge/openai-news/lifeval-everyday-agent-evals.md)
+
+## See also (landscape)
+
+- [Agent Benchmarks theme](../gap-fill-ai-knowledge/agent-benchmarks/) — SWE-bench, MirrorCode, leaderboard failure modes, eval practice
+- [Why Agent Evaluations Are Hard](../gap-fill-ai-knowledge/agent-benchmarks/why-agent-evals-are-hard.md)
+- [Epoch: Nine Questions Benchmarks Should Answer](../gap-fill-ai-knowledge/epoch-ai/nine-questions-benchmarks-answer.md)
+- [Anthropic: Agent Eval Hygiene](../gap-fill-ai-knowledge/anthropic-news/agent-eval-hygiene-contamination-noise.md)
