@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Engineering Atlas · Reader</title>
+  <meta name="description" content="Start with the AI development timeline, then branch into articles, themes, and the knowledge graph." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Schibsted+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f4f1eb; --ink: #14110f; --muted: #5c564e; --line: #d4cdc2;
+      --accent: #0e5c4c; --accent-soft: #d7ebe4; --panel: #fffdf8; --now: #b45309;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--ink);
+      font-family: Newsreader, Georgia, serif; line-height: 1.55;
+      background:
+        radial-gradient(900px 420px at 8% -8%, #dfece7 0%, transparent 55%),
+        radial-gradient(700px 380px at 100% 0%, #efe4d2 0%, transparent 50%),
+        var(--paper);
+    }
+    a { color: var(--accent); }
+    .chrome {
+      display: flex; flex-wrap: wrap; gap: .65rem 1rem; align-items: center;
+      padding: .7rem clamp(1rem, 3vw, 1.5rem); border-bottom: 1px solid var(--line);
+      background: rgba(244,241,235,.94); font-family: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif; font-size: .8rem;
+    }
+    .mark { font-weight: 800; color: var(--ink); text-decoration: none; letter-spacing: -.02em; }
+    nav { display: flex; flex-wrap: wrap; gap: .75rem; margin-left: auto; }
+    nav a { color: var(--muted); text-decoration: none; font-weight: 500; }
+    nav a[aria-current="page"], nav a:hover { color: var(--accent); }
+    .asof { font-family: "IBM Plex Mono", monospace; font-size: .72rem; color: var(--accent); }
+    main { max-width: 42rem; margin: 0 auto; padding: clamp(2rem, 5vw, 3.5rem) 1.25rem 4rem; }
+    .kicker { font-family: "IBM Plex Mono", monospace; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 .6rem; }
+    h1 { font-family: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif; font-weight: 800; letter-spacing: -.03em; font-size: clamp(2rem, 5vw, 2.75rem); margin: 0 0 .75rem; line-height: 1.1; }
+    .lede { color: var(--muted); margin: 0 0 1.75rem; font-size: 1.06rem; }
+    .primary {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--panel); border: 2px solid var(--accent); border-radius: 16px;
+      padding: 1.25rem 1.35rem; margin: 0 0 1rem;
+      box-shadow: 0 12px 32px rgba(20,17,15,.06);
+    }
+    .primary:hover { background: var(--accent-soft); }
+    .primary .eyebrow { font-family: "Schibsted Grotesk", sans-serif; font-size: .72rem; letter-spacing: .07em; text-transform: uppercase; color: var(--now); font-weight: 700; margin: 0 0 .35rem; }
+    .primary h2 { font-family: "Schibsted Grotesk", sans-serif; font-size: 1.35rem; margin: 0 0 .4rem; letter-spacing: -.02em; color: var(--accent); }
+    .primary p { margin: 0; color: var(--muted); }
+    .grid { display: grid; gap: .75rem; margin-top: 1.25rem; }
+    .card {
+      display: block; text-decoration: none; color: inherit;
+      background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem;
+    }
+    .card:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .card strong { display: block; font-family: "Schibsted Grotesk", sans-serif; margin: 0 0 .25rem; color: var(--accent); }
+    .card span { color: var(--muted); font-size: .95rem; }
+    .note { margin-top: 2rem; font-size: .9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="./index.html">AI Engineering Atlas</a>
+    <span class="asof">AS OF 2026-11-05</span>
+    <nav>
+      <a href="../gap-fill-ai-knowledge/ai-timeline/timeline.html" aria-current="page">Timeline</a>
+      <a href="../ai-knowledge-articles-readable/articles.html">Articles</a>
+      <a href="../ai-knowledge-by-theme/themes.html">Themes</a>
+      <a href="../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../launch-product/preview/index.html">Preview</a>
+    </nav>
+  </header>
+  <main>
+    <p class="kicker">Reader shell · start here</p>
+    <h1>AI Engineering Atlas</h1>
+    <p class="lede">One place to orient. Begin with the visual chronology (~3 minutes), then open articles, themes, or the graph.</p>
+
+    <a class="primary" href="../gap-fill-ai-knowledge/ai-timeline/timeline.html">
+      <p class="eyebrow">Primary entry</p>
+      <h2>AI development timeline</h2>
+      <p>Five eras with dates, short bullets, why it mattered, key players, and one-line takeaways. Mobile-scannable vertical timeline.</p>
+    </a>
+
+    <div class="grid">
+      <a class="card" href="../ai-knowledge-articles-readable/articles.html">
+        <strong>Articles search</strong>
+        <span>Search the corpus—also includes a Timeline stub so “timeline / history of AI” hits.</span>
+      </a>
+      <a class="card" href="../ai-knowledge-by-theme/themes.html">
+        <strong>Themes</strong>
+        <span>Long-form essays synthesizing the corpus by idea.</span>
+      </a>
+      <a class="card" href="../ai-knowledge-graph/explore.html">
+        <strong>Graph</strong>
+        <span>Interactive map of concepts and articles.</span>
+      </a>
+      <a class="card" href="../gap-fill-ai-knowledge/ai-timeline/index.md">
+        <strong>Timeline markdown hub</strong>
+        <span>Same chronology as plain Markdown plus slim deep-dives.</span>
+      </a>
+    </div>
+
+    <p class="note">Timeline content lives at <code>docs/gap-fill-ai-knowledge/ai-timeline/</code>. This shell is the shared reader entry; sibling Atlas UI work should extend this folder rather than fork a second chronology.</p>
+  </main>
+</body>
+</html>
