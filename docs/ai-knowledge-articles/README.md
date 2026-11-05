@@ -1,30 +1,27 @@
-# AI knowledge articles (plain Markdown)
+# AI knowledge articles (searchable)
 
-**86 articles** only — no Logseq graph.
+Open [`articles.html`](articles.html) in a browser (File → Open File).
 
-## Search metadata
+Search covers **title, summary, theme (cluster), source (corpus), tags, keywords, related concepts**.
 
-Every article has YAML frontmatter with: `title`, `slug`, `corpus`, `cluster`, `tags`, `keywords`, `summary`, `related`, `path`.
+Machine index: [`articles-index.json`](articles-index.json) — baseline IBM/Sequoia/Extra **plus** gap-fill orientation and landscape sources.
 
-Machine-readable catalog: [`articles-index.json`](articles-index.json).
+A mirrored copy of this reader also lives at [`../ai-knowledge-articles-readable/`](../ai-knowledge-articles-readable/).
 
-## Easiest: open in a browser
+## What is in this folder
 
-Double-click **[`articles.html`](articles.html)** (or Chrome/Safari → File → Open File).  
-Left sidebar jumps between articles; search filters titles. No Logseq, no Google Apps Script.
+| Artifact | Status |
+|----------|--------|
+| `articles.html` | Baseline + gap-fill pack (embedded) |
+| `articles-index.json` | Complete catalog with paths/summaries |
+| `ibm/*.md` | Present (mirrors) |
+| `sequoia/*.md` | Mirrored (expanded CQ-005 teachables) |
+| `extra/` Markdown | Present in this published path |
+| gap-fill Markdown | Canonical under [`../gap-fill-ai-knowledge/`](../gap-fill-ai-knowledge/) (linked from HTML) |
 
-## Folders
+Canonical Markdown lives in:
 
-| Folder | Source | Count |
-|--------|--------|------:|
-| `ibm/` | IBM AI Knowledge | 21 |
-| `sequoia/` | Sequoia AI Knowledge | 18 |
-| `extra/openai-news/` | OpenAI News | 13 |
-| `extra/deepmind-blog/` | DeepMind Blog | 12 |
-| `extra/huggingface-blog/` | Hugging Face Blog | 11 |
-| `extra/aws-ml-blog/` | AWS ML Blog | 11 |
-
-## Optional extras
-
-- Markdown files in the folders above (any editor)
-- [`google-docs-tabs/`](google-docs-tabs/) — Apps Script for one Google Doc with tabs (more setup)
+- [`../ibm-ai-knowledge/`](../ibm-ai-knowledge/)
+- [`../sequoia-ai-knowledge/`](../sequoia-ai-knowledge/)
+- [`../extra-ai-knowledge/`](../extra-ai-knowledge/)
+- [`../gap-fill-ai-knowledge/`](../gap-fill-ai-knowledge/)

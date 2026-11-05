@@ -40,12 +40,17 @@ IBM covers customization choices (fine-tune vs RAG vs LoRA vs local engines) and
 
 ## Sources woven in
 
-- RL Environments Belong on the Hub, Not Private Registries (Hugging Face Blog)
-- Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress (Sequoia)
-- Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine (IBM)
-- Genie World Models: Simulation as a Training Substrate (DeepMind Blog)
-- Async GRPO with LoRA: Separate Trainers from Rollout GPUs (Hugging Face Blog)
-- RL Environments: The Missing Dataset for Real Work (Sequoia)
-- Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers (AWS ML Blog)
-- Data Efficiency: The Bottleneck After Search and Code (Sequoia)
-- Model Collapse: When AI Learns Only from AI (IBM)
+- [RL Environments Belong on the Hub, Not Private Registries (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/rl-environments-on-hub.md)
+- [Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress (Sequoia)](../sequoia-ai-knowledge/continual-learning.md)
+- [Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine (IBM)](../ibm-ai-knowledge/fine-tuning-rag-local-engines.md)
+- [Genie World Models: Simulation as a Training Substrate (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/genie-world-models.md)
+- [Async GRPO with LoRA: Separate Trainers from Rollout GPUs (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/async-grpo-lora-training.md)
+- [RL Environments: The Missing Dataset for Real Work (Sequoia)](../sequoia-ai-knowledge/rl-environments.md)
+- [Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/distill-efficient-agents.md)
+- [Data Efficiency: The Bottleneck After Search and Code (Sequoia)](../sequoia-ai-knowledge/data-efficiency.md)
+- [Model Collapse: When AI Learns Only from AI (IBM)](../ibm-ai-knowledge/model-collapse.md)
+
+## See also (landscape)
+
+- [Google: Sleep Framework Continual Learning](../gap-fill-ai-knowledge/google-research-blog/sleep-framework-continual-learning.md)
+- [NVIDIA: Cosmos World Models](../gap-fill-ai-knowledge/nvidia-technical-blog/cosmos-world-models.md)

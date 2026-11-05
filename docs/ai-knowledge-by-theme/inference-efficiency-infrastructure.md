@@ -38,14 +38,21 @@ IBM teaches why decode hurts (roofline, prefill vs decode, multi-GPU strategies,
 
 ## Sources woven in
 
-- Intelligence Per Watt: Rethinking the Computing Substrate (Sequoia)
-- The Memory Wall and Scaling LLMs Beyond One GPU (IBM)
-- Generative AI Cost: An Operating Model, Not a Cheaper Model (AWS ML Blog)
-- Quantization: How Models Get Smaller Without Starting Over (IBM)
-- Quantization-Aware Healing: Compress Without Capping Accuracy (Hugging Face Blog)
-- LLM Inference: From Idle Weights to Live Answers (IBM)
-- Model Routing on the Cost–Intelligence Frontier (OpenAI News)
-- Native Accelerator Backends: When device="neuron" or "tpu" Is Enough (Hugging Face Blog)
-- Specialize the Tokenizer: Inference Cost Lives in Decode (Hugging Face Blog)
-- torch.compile: Dynamo, Inductor, Graph Breaks, and `.item()` Costs (IBM)
-- Energy, Goodput, and the Physics of Frontier AI (Sequoia)
+- [Intelligence Per Watt: Rethinking the Computing Substrate (Sequoia)](../sequoia-ai-knowledge/substrate-intelligence.md)
+- [The Memory Wall and Scaling LLMs Beyond One GPU (IBM)](../ibm-ai-knowledge/ai-memory-wall-multi-gpu.md)
+- [Generative AI Cost: An Operating Model, Not a Cheaper Model (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/generative-ai-cost-operating-model.md)
+- [Quantization: How Models Get Smaller Without Starting Over (IBM)](../ibm-ai-knowledge/quantization-llm-compression.md)
+- [Quantization-Aware Healing: Compress Without Capping Accuracy (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/quantization-aware-healing.md)
+- [LLM Inference: From Idle Weights to Live Answers (IBM)](../ibm-ai-knowledge/llm-inference-fundamentals.md)
+- [Model Routing on the Cost–Intelligence Frontier (OpenAI News)](../extra-ai-knowledge/openai-news/model-routing-cost-intelligence.md)
+- [Native Accelerator Backends: When device="neuron" or "tpu" Is Enough (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/native-accelerator-backends.md)
+- [Specialize the Tokenizer: Inference Cost Lives in Decode (Hugging Face Blog)](../extra-ai-knowledge/huggingface-blog/vocabulary-specialization-cost.md)
+- [torch.compile: Dynamo, Inductor, Graph Breaks, and `.item()` Costs (IBM)](../ibm-ai-knowledge/torch-compile-graph-breaks.md)
+- [Energy, Goodput, and the Physics of Frontier AI (Sequoia)](../sequoia-ai-knowledge/energy-and-goodput.md)
+
+## See also (landscape)
+
+- [Compute as the Timeline Spine](../gap-fill-ai-knowledge/ai-timeline/compute-as-timeline-spine.md)
+- [Epoch: Plunging Price of Thought](../gap-fill-ai-knowledge/epoch-ai/plunging-price-of-thought.md)
+- [Epoch: Compute Capacity and Datacenter Power](../gap-fill-ai-knowledge/epoch-ai/compute-capacity-and-datacenter-power.md)
+- [NVIDIA Technical Blog folder](../gap-fill-ai-knowledge/nvidia-technical-blog/)

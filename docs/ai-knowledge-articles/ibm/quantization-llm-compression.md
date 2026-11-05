@@ -1,39 +1,3 @@
----
-title: 'Quantization: How Models Get Smaller Without Starting Over'
-slug: a-quantization-llm-compression
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Inference, Efficiency & Infrastructure
-cluster_id: inference-infra
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/inference-infra
-keywords:
-- llm-inference
-- ibm
-- inference-infra
-- cluster-inference-infra
-- corpus-ibm-ai-knowledge
-- article
-- quantization
-- models
-- smaller
-- model
-- accuracy
-- without
-- starting
-- over
-summary: A trained model is a vast collection of weights and activations—dials tuned during training.
-  Frontier and open models may have tens of billions to trillions of parameters. How many bits you store
-  per parameter
-related:
-- LLM Inference
-- Quantization
-path: ibm/quantization-llm-compression.md
----
-
 # Quantization: How Models Get Smaller Without Starting Over
 
 A trained model is a vast collection of weights and activations—dials tuned during training. Frontier and open models may have tens of billions to trillions of parameters. How many bits you store per parameter decides memory, bandwidth, and often speed. **Quantization** stores those numbers at lower precision so the same model fits smaller devices and cheaper GPUs with limited accuracy loss.

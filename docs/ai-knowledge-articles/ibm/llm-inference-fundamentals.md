@@ -1,39 +1,3 @@
----
-title: 'LLM Inference: From Idle Weights to Live Answers'
-slug: a-llm-inference-fundamentals
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Inference, Efficiency & Infrastructure
-cluster_id: inference-infra
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/inference-infra
-keywords:
-- memory-wall
-- llm-inference
-- ibm
-- inference-infra
-- cluster-inference-infra
-- corpus-ibm-ai-knowledge
-- article
-- inference
-- weights
-- llm
-- prefill
-- live
-- idle
-- decode
-summary: Training a frontier model can cost hundreds of millions of dollars and months of work. Afterward
-  the model is a static pile of weights sitting in memory. It does nothing until **inference** runs those
-  weights against
-related:
-- LLM Inference
-- Memory Wall
-path: ibm/llm-inference-fundamentals.md
----
-
 # LLM Inference: From Idle Weights to Live Answers
 
 Training a frontier model can cost hundreds of millions of dollars and months of work. Afterward the model is a static pile of weights sitting in memory. It does nothing until **inference** runs those weights against new inputs to produce outputs. Chatbots, coding assistants, and agents are almost entirely inference products. Training happens once; inference happens on every request—and over time inference cost usually dominates.

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Policy — AI Engineering Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --paper:#E8ECF1; --ink:#0B1220; --muted:#4A5568; --line:#C5CDD8; --cobalt:#1F4BFF; --meta:#2A6F6B; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Source Serif 4",Georgia,serif; line-height:1.55; }
+    a { color:var(--cobalt); }
+    .chrome { display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; padding:.7rem 1.25rem; border-bottom:1px solid var(--line); font-family:"IBM Plex Mono",monospace; font-size:.78rem; background:rgba(232,236,241,.94); position:sticky; top:0; }
+    .chrome .mark { font-family:Syne,sans-serif; font-weight:800; color:var(--ink); text-decoration:none; }
+    .chrome nav { display:flex; flex-wrap:wrap; gap:.85rem; margin-left:auto; }
+    .chrome nav a { color:var(--muted); text-decoration:none; }
+    .chrome nav a[aria-current="page"], .chrome nav a:hover { color:var(--cobalt); }
+    .asof { color:var(--meta); }
+    main { padding:2.5rem clamp(1.25rem,4vw,3rem) 4rem; max-width:52rem; }
+    h1 { font-family:Syne,sans-serif; font-weight:800; font-size:clamp(1.8rem,4vw,2.4rem); letter-spacing:-.03em; margin:0 0 .5rem; }
+    .lede { color:var(--muted); margin:0 0 1.75rem; max-width:50ch; }
+    table { width:100%; border-collapse:collapse; font-size:.95rem; }
+    th, td { text-align:left; padding:.85rem .6rem; border-top:1px solid var(--line); vertical-align:top; }
+    th { font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--meta); font-weight:500; letter-spacing:.04em; text-transform:uppercase; }
+    td.regime { font-family:Syne,sans-serif; font-weight:700; letter-spacing:-.02em; }
+    .note { margin-top:1.75rem; padding-top:1.25rem; border-top:1px solid var(--line); color:var(--muted); font-size:.95rem; }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="../index.html">AI Engineering Atlas</a>
+    <span class="asof">AS OF 2026-11-05</span>
+    <nav>
+      <a href="../../../ai-knowledge-articles-readable/articles.html">Search</a>
+      <a href="../timeline/index.html">Timeline</a>
+      <a href="../players/index.html">Players</a>
+      <a href="./index.html" aria-current="page">Policy</a>
+      <a href="../benchmarks/index.html">Benchmarks</a>
+      <a href="../../../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../../../ai-knowledge-by-theme/themes.html">Themes</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Global policy tracker</h1>
+    <p class="lede">Comparative regimes for builders—not legal advice. Teachable first; primary instruments linked from articles after citation pass.</p>
+    <table>
+      <thead>
+        <tr><th>Regime</th><th>Frame</th><th>Teachable</th></tr>
+      </thead>
+      <tbody>
+        <tr id="us">
+          <td class="regime">United States</td>
+          <td>NIST AI RMF + federal preemption debates; frameworks over a single Act.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/us-frameworks-nist-and-federal-preemption.md">US frameworks</a></td>
+        </tr>
+        <tr id="eu">
+          <td class="regime">European Union</td>
+          <td>Risk-based AI Act obligations; codes of practice as operationalizing layer.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/eu-ai-act-risk-based-rules.md">EU AI Act</a></td>
+        </tr>
+        <tr id="uk">
+          <td class="regime">United Kingdom</td>
+          <td>Pro-innovation posture with regulator coordination instead of one omnibus statute.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/uk-pro-innovation-and-regulator-coordination.md">UK coordination</a></td>
+        </tr>
+        <tr id="china">
+          <td class="regime">China</td>
+          <td>Governance actors + government model use; industrial policy intertwined.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/china-governance-and-government-model-use.md">China governance</a></td>
+        </tr>
+        <tr id="privacy-adm">
+          <td class="regime">Privacy &amp; ADM</td>
+          <td>Chatbot legislation second wave; consequential automated decisions.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/privacy-adm-and-chatbot-legislation.md">Privacy / ADM</a></td>
+        </tr>
+        <tr id="compare">
+          <td class="regime">Comparative</td>
+          <td>How regimes differ on risk, openness, and enforcement style.</td>
+          <td><a href="../../../gap-fill-ai-knowledge/global-policy/comparing-ai-governance-regimes.md">Compare regimes</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">Citation debt (quality review P1): orientation articles still need Sources URL stamps before claiming launch-grade trust. See <a href="../../../corpus-quality-review/report.md">review</a>.</p>
+  </main>
+</body>
+</html>

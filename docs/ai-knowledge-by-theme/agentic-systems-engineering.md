@@ -48,12 +48,19 @@ Practice that survives all three framings: write machine-checkable stopping cond
 
 ## Sources woven in
 
-- Computer Use for Professional Software: Train on Real Vendor Workflows (OpenAI News)
-- From Vibe Coding to Agentic Engineering (Sequoia)
-- Loop Engineering: Designing Systems That Prompt Themselves (IBM)
-- Cars, Not Faster Horses: A Commercial Definition of the Agent Era (Sequoia)
-- Bounded Decisions: Fast Structured Choices Inside Agent Loops (OpenAI News)
-- Five Production Challenges in Multi-Agent Systems (AWS ML Blog)
-- Long-Horizon Frontier Agents: Persistence Over Clever One-Shots (DeepMind Blog)
-- Agentic Engineering Vocabulary: Prompt, Context, Harness, Loop, Graph, Factory (IBM)
-- Agent Harnesses: The Operating System Around the Model Loop (Sequoia)
+- [Computer Use for Professional Software: Train on Real Vendor Workflows (OpenAI News)](../extra-ai-knowledge/openai-news/computer-use-professional-workflows.md)
+- [From Vibe Coding to Agentic Engineering (Sequoia)](../sequoia-ai-knowledge/agentic-engineering.md)
+- [Loop Engineering: Designing Systems That Prompt Themselves (IBM)](../ibm-ai-knowledge/loop-engineering.md)
+- [Cars, Not Faster Horses: A Commercial Definition of the Agent Era (Sequoia)](../sequoia-ai-knowledge/cars-not-horses.md)
+- [Bounded Decisions: Fast Structured Choices Inside Agent Loops (OpenAI News)](../extra-ai-knowledge/openai-news/bounded-decisions-for-agents.md)
+- [Five Production Challenges in Multi-Agent Systems (AWS ML Blog)](../extra-ai-knowledge/aws-ml-blog/multi-agent-production-challenges.md)
+- [Long-Horizon Frontier Agents: Persistence Over Clever One-Shots (DeepMind Blog)](../extra-ai-knowledge/deepmind-blog/long-horizon-frontier-agents.md)
+- [Agentic Engineering Vocabulary: Prompt, Context, Harness, Loop, Graph, Factory (IBM)](../ibm-ai-knowledge/agentic-engineering-vocabulary.md)
+- [Agent Harnesses: The Operating System Around the Model Loop (Sequoia)](../sequoia-ai-knowledge/agent-harnesses.md)
+
+## See also (landscape)
+
+- [From Chatbots to Agents](../gap-fill-ai-knowledge/ai-timeline/from-chatbots-to-agents.md)
+- [AI Timeline theme](../gap-fill-ai-knowledge/ai-timeline/)
+- [Anthropic: Parallel Agent Teams and Coding Harnesses](../gap-fill-ai-knowledge/anthropic-news/parallel-agent-teams-and-coding-harnesses.md)
+- [NVIDIA: Agent Failures → Harness Fixes](../gap-fill-ai-knowledge/nvidia-technical-blog/agent-failures-to-harness-fixes.md)

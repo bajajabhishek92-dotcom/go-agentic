@@ -1,39 +1,3 @@
----
-title: 'Model Collapse: When AI Learns Only from AI'
-slug: a-model-collapse
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Training, Learning & Data
-cluster_id: training-data
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/training-data
-keywords:
-- model-collapse
-- continual-learning
-- ibm
-- training-data
-- cluster-training-data
-- corpus-ibm-ai-knowledge
-- article
-- collapse
-- model
-- only
-- learns
-- synthetic
-- reality
-- rare
-summary: Imagine each generation of students studying only the previous class’s notes, never the textbook.
-  Errors compound until nobody remembers the original. Replace students with models, notes with synthetic
-  content, and
-related:
-- Continual Learning
-- Model Collapse
-path: ibm/model-collapse.md
----
-
 # Model Collapse: When AI Learns Only from AI
 
 Imagine each generation of students studying only the previous class’s notes, never the textbook. Errors compound until nobody remembers the original. Replace students with models, notes with synthetic content, and textbooks with human knowledge, and you have **model collapse**: a degenerative process where training on AI-generated data gradually erases information about the real-world distribution the first models learned from.

@@ -1,39 +1,3 @@
----
-title: The Memory Wall and Scaling LLMs Beyond One GPU
-slug: a-ai-memory-wall-multi-gpu
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Inference, Efficiency & Infrastructure
-cluster_id: inference-infra
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/inference-infra
-keywords:
-- memory-wall
-- llm-inference
-- ibm
-- inference-infra
-- cluster-inference-infra
-- corpus-ibm-ai-knowledge
-- article
-- intensity
-- memory
-- one
-- gpu
-- wall
-- flops
-- you
-summary: Chip peak FLOPs have grown roughly six-thousand-fold over two decades. Workloads have not gotten
-  six-thousand-fold faster. Accelerators often sit idle waiting on data. That gap between rising compute
-  and
-related:
-- LLM Inference
-- Memory Wall
-path: ibm/ai-memory-wall-multi-gpu.md
----
-
 # The Memory Wall and Scaling LLMs Beyond One GPU
 
 Chip peak FLOPs have grown roughly six-thousand-fold over two decades. Workloads have not gotten six-thousand-fold faster. Accelerators often sit idle waiting on data. That gap between rising compute and slower-growing **memory bandwidth** is the **memory wall**—and it explains why “twice the FLOPs” rarely means twice the tokens per second.

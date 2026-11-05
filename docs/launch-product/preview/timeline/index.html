@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeline — AI Engineering Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --paper:#E8ECF1; --ink:#0B1220; --muted:#4A5568; --line:#C5CDD8; --cobalt:#1F4BFF; --meta:#2A6F6B; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Source Serif 4",Georgia,serif; line-height:1.55; }
+    a { color:var(--cobalt); }
+    .chrome { display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; padding:.7rem 1.25rem; border-bottom:1px solid var(--line); font-family:"IBM Plex Mono",monospace; font-size:.78rem; background:rgba(232,236,241,.94); position:sticky; top:0; }
+    .chrome .mark { font-family:Syne,sans-serif; font-weight:800; color:var(--ink); text-decoration:none; }
+    .chrome nav { display:flex; flex-wrap:wrap; gap:.85rem; margin-left:auto; }
+    .chrome nav a { color:var(--muted); text-decoration:none; }
+    .chrome nav a[aria-current="page"], .chrome nav a:hover { color:var(--cobalt); }
+    .asof { color:var(--meta); }
+    main { max-width:44rem; padding:2.5rem clamp(1.25rem,4vw,3rem) 4rem; }
+    h1 { font-family:Syne,sans-serif; font-weight:800; font-size:clamp(1.8rem,4vw,2.4rem); letter-spacing:-.03em; margin:0 0 .5rem; }
+    .lede { color:var(--muted); margin:0 0 2rem; }
+    .era { display:grid; grid-template-columns:6.5rem 1fr; gap:1rem; padding:1.25rem 0; border-top:1px solid var(--line); text-decoration:none; color:inherit; }
+    .era:hover h2 { color:var(--cobalt); }
+    .era .when { font-family:"IBM Plex Mono",monospace; font-size:.75rem; color:var(--meta); padding-top:.35rem; }
+    .era h2 { font-family:Syne,sans-serif; font-size:1.15rem; margin:0 0 .35rem; letter-spacing:-.02em; }
+    .era p { margin:0; color:var(--muted); font-size:.98rem; }
+    .era.now { border-left:3px solid var(--cobalt); padding-left:1rem; margin-left:-1rem; }
+    @media (max-width:560px){ .era { grid-template-columns:1fr; gap:.35rem; } }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="../index.html">AI Engineering Atlas</a>
+    <span class="asof">AS OF 2026-11-05</span>
+    <nav>
+      <a href="../../../ai-knowledge-articles-readable/articles.html">Search</a>
+      <a href="./index.html" aria-current="page">Timeline</a>
+      <a href="../players/index.html">Players</a>
+      <a href="../policy/index.html">Policy</a>
+      <a href="../benchmarks/index.html">Benchmarks</a>
+      <a href="../../../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../../../ai-knowledge-by-theme/themes.html">Themes</a>
+    </nav>
+  </header>
+  <main>
+    <h1>AI development timeline</h1>
+    <p class="lede">Eras as operating regimes—not product launch laundry lists. Each node opens a teachable.</p>
+
+    <a class="era" id="pre-dl" href="../../../gap-fill-ai-knowledge/ai-timeline/eras-of-modern-ai.md">
+      <span class="when">≤2012</span>
+      <div>
+        <h2>Features &amp; narrow competence</h2>
+        <p>Feature craft as scarce skill; single-task deployment contracts; metric-on-fixed-set eval.</p>
+      </div>
+    </a>
+    <a class="era" id="deep-learning" href="../../../gap-fill-ai-knowledge/ai-timeline/eras-of-modern-ai.md">
+      <span class="when">~2012–17</span>
+      <div>
+        <h2>Deep learning</h2>
+        <p>Representation learning goes mainstream; compute and data start to dominate method novelty.</p>
+      </div>
+    </a>
+    <a class="era" id="transformers-foundation" href="../../../gap-fill-ai-knowledge/ai-timeline/eras-of-modern-ai.md">
+      <span class="when">~2017–22</span>
+      <div>
+        <h2>Transformers &amp; foundation models</h2>
+        <p>Generality as a product; prompting and adaptation partly replace train-from-scratch.</p>
+      </div>
+    </a>
+    <a class="era" id="assistants" href="../../../gap-fill-ai-knowledge/ai-timeline/from-chatbots-to-agents.md">
+      <span class="when">~2022–24</span>
+      <div>
+        <h2>Assistants enter the workflow</h2>
+        <p>Chat as interface; copilots in IDEs and offices; eval pressure spreads beyond academic suites.</p>
+      </div>
+    </a>
+    <a class="era now" id="agents" href="../../../gap-fill-ai-knowledge/ai-timeline/from-chatbots-to-agents.md">
+      <span class="when">2024→ · YOU ARE HERE</span>
+      <div>
+        <h2>Agents, multimodal, physical AI</h2>
+        <p>Tools, harnesses, long-horizon loops; capability frontiers with lead times—and adoption in everyday life.</p>
+      </div>
+    </a>
+
+    <p class="lede" style="margin-top:2rem;border-top:1px solid var(--line);padding-top:1.25rem;">
+      Also:
+      <a href="../../../gap-fill-ai-knowledge/ai-timeline/compute-as-timeline-spine.md">Compute as timeline spine</a> ·
+      <a href="../../../gap-fill-ai-knowledge/ai-timeline/capability-frontiers-and-lead-times.md">Capability frontiers &amp; lead times</a> ·
+      <a href="../../../gap-fill-ai-knowledge/ai-timeline/adoption-enters-everyday-life.md">Adoption enters everyday life</a>
+    </p>
+  </main>
+</body>
+</html>

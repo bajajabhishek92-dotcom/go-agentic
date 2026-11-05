@@ -1,38 +1,3 @@
----
-title: 'AI Coding Workflows: Quality, RAD, IDEs, and Review'
-slug: a-ai-coding-quality-workflows
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Coding Agents & Software Delivery
-cluster_id: coding-delivery
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/coding-delivery
-keywords:
-- agentic-engineering
-- ai-coding-quality-workflows
-- ibm
-- coding-delivery
-- cluster-coding-delivery
-- corpus-ibm-ai-knowledge
-- article
-- rad
-- ides
-- quality
-- coding
-- review
-- workflows
-- code
-summary: 'AI made writing code the easy part. The industry’s anxiety shifted to everything after generation:
-  Is this the *right* solution? Does it fit the codebase? Can humans still understand and own what ships?'
-related:
-- AI Coding Quality Workflows
-- Agentic Engineering
-path: ibm/ai-coding-quality-workflows.md
----
-
 # AI Coding Workflows: Quality, RAD, IDEs, and Review
 
 AI made writing code the easy part. The industry’s anxiety shifted to everything after generation: Is this the *right* solution? Does it fit the codebase? Can humans still understand and own what ships?

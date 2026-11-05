@@ -1,38 +1,3 @@
----
-title: 'Loop Engineering: Designing Systems That Prompt Themselves'
-slug: a-loop-engineering
-type: article
-corpus: IBM
-corpus_key: ibm
-cluster: Agentic Systems & Engineering
-cluster_id: agentic-systems
-tags:
-- article
-- corpus/ibm-ai-knowledge
-- cluster/agentic-systems
-keywords:
-- loop-engineering
-- agentic-engineering
-- ibm
-- agentic-systems
-- cluster-agentic-systems
-- corpus-ibm-ai-knowledge
-- article
-- loop
-- engineering
-- agent
-- prompt
-- designing
-- themselves
-- systems
-summary: Prompt engineering is writing the next perfect instruction by hand. **Loop engineering** is designing
-  a system that takes a goal, prompts an agent, checks the work, prompts again, and repeats until a stopping
-related:
-- Agentic Engineering
-- Loop Engineering
-path: ibm/loop-engineering.md
----
-
 # Loop Engineering: Designing Systems That Prompt Themselves
 
 Prompt engineering is writing the next perfect instruction by hand. **Loop engineering** is designing a system that takes a goal, prompts an agent, checks the work, prompts again, and repeats until a stopping condition is met—with minimal manual prompting, but not zero human responsibility.

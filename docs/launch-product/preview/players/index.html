@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Players — AI Engineering Atlas</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --paper:#E8ECF1; --ink:#0B1220; --muted:#4A5568; --line:#C5CDD8; --cobalt:#1F4BFF; --meta:#2A6F6B; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Source Serif 4",Georgia,serif; line-height:1.55; }
+    a { color:var(--cobalt); }
+    .chrome { display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; padding:.7rem 1.25rem; border-bottom:1px solid var(--line); font-family:"IBM Plex Mono",monospace; font-size:.78rem; background:rgba(232,236,241,.94); position:sticky; top:0; }
+    .chrome .mark { font-family:Syne,sans-serif; font-weight:800; color:var(--ink); text-decoration:none; }
+    .chrome nav { display:flex; flex-wrap:wrap; gap:.85rem; margin-left:auto; }
+    .chrome nav a { color:var(--muted); text-decoration:none; }
+    .chrome nav a[aria-current="page"], .chrome nav a:hover { color:var(--cobalt); }
+    .asof { color:var(--meta); }
+    main { padding:2.5rem clamp(1.25rem,4vw,3rem) 4rem; max-width:56rem; }
+    h1 { font-family:Syne,sans-serif; font-weight:800; font-size:clamp(1.8rem,4vw,2.4rem); letter-spacing:-.03em; margin:0 0 .5rem; }
+    .lede { color:var(--muted); margin:0 0 1.75rem; max-width:48ch; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); border:1px solid var(--line); }
+    .card {
+      display:block; padding:1.25rem 1.15rem; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+      text-decoration:none; color:inherit; min-height:10rem;
+    }
+    .card:hover { background:#EEF2FA; }
+    .card h2 { font-family:Syne,sans-serif; font-size:1.05rem; margin:0 0 .4rem; letter-spacing:-.02em; }
+    .card p { margin:0; color:var(--muted); font-size:.95rem; }
+    .card .meta { display:block; margin-top:.9rem; font-family:"IBM Plex Mono",monospace; font-size:.72rem; color:var(--meta); }
+  </style>
+</head>
+<body>
+  <header class="chrome">
+    <a class="mark" href="../index.html">AI Engineering Atlas</a>
+    <span class="asof">AS OF 2026-11-05</span>
+    <nav>
+      <a href="../../../ai-knowledge-articles-readable/articles.html">Search</a>
+      <a href="../timeline/index.html">Timeline</a>
+      <a href="./index.html" aria-current="page">Players</a>
+      <a href="../policy/index.html">Policy</a>
+      <a href="../benchmarks/index.html">Benchmarks</a>
+      <a href="../../../ai-knowledge-graph/explore.html">Graph</a>
+      <a href="../../../ai-knowledge-by-theme/themes.html">Themes</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Market players map</h1>
+    <p class="lede">Roles in the stack—what each optimizes for and which constraints bite. Not a logo wall.</p>
+    <div class="grid">
+      <a class="card" id="frontier-labs" href="../../../gap-fill-ai-knowledge/market-players/frontier-labs-and-capability-competition.md">
+        <h2>Frontier labs</h2>
+        <p>Capability competition, release cadence, safety stacks—and the eval pressure that follows.</p>
+        <span class="meta">ROLE · OPEN →</span>
+      </a>
+      <a class="card" id="hyperscalers" href="../../../gap-fill-ai-knowledge/market-players/hyperscalers-cloud-and-custom-silicon.md">
+        <h2>Hyperscalers</h2>
+        <p>Cloud distribution, custom silicon, and the platform gravity that shapes who ships.</p>
+        <span class="meta">ROLE · OPEN →</span>
+      </a>
+      <a class="card" id="open-weight" href="../../../gap-fill-ai-knowledge/market-players/open-weight-ecosystems-and-soft-power.md">
+        <h2>Open-weight ecosystems</h2>
+        <p>Weights as soft power: licenses, community governance, and national strategy overlays.</p>
+        <span class="meta">ROLE · OPEN →</span>
+      </a>
+      <a class="card" id="chip-infra" href="../../../gap-fill-ai-knowledge/market-players/chip-infra-geography-and-energy.md">
+        <h2>Chip &amp; infra geography</h2>
+        <p>Accelerators, energy, interconnect, and the physical map underneath model claims.</p>
+        <span class="meta">ROLE · OPEN →</span>
+      </a>
+      <a class="card" id="states-enterprises" href="../../../gap-fill-ai-knowledge/market-players/states-enterprises-and-startups.md">
+        <h2>States, enterprises, startups</h2>
+        <p>Buyers, regulators, and builders with different time horizons and risk budgets.</p>
+        <span class="meta">ROLE · OPEN →</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
