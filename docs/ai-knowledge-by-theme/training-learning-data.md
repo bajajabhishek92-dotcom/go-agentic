@@ -18,6 +18,8 @@ An **RL environment** packages state, actions, and rewards (or preferences) for 
 
 ## Customize without starting over—and avoid training on yourself
 
+The customization ladder should be climbed only as far as evals justify. Many teams fine-tune because it feels like ownership, then discover RAG plus a better harness would have delivered attributable answers with less drift. Others refuse to touch weights when domain format and tool habits clearly need to live in the model. The corpus’s consistent advice is empirical: measure the failure mode, then pick the cheapest lever that fixes it.
+
 IBM’s fine-tuning vs RAG vs LoRA guidance remains the enterprise default path: prefer RAG when facts churn; fine-tune or LoRA when format, tool habits, or domain language must live in weights; choose serving engines for the deployment shape (edge/CPU vs high-QPS GPU). General models caught up on many tasks that once required fine-tunes—so customization should be justified by evals, not habit.
 
 Model collapse is the quiet risk as synthetic text floods the web and internal corpora. Mixing real and synthetic carefully, tracking provenance, and keeping human or grounded tails in the data diet are operational controls, not research trivia. The intersection with Sequoia’s data-efficiency talk is direct: when public unique data saturates, quality and experience beat naive scale-up on recycled AI text.

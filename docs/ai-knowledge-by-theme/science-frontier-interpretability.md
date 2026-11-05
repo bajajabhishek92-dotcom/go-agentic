@@ -18,6 +18,8 @@
 
 ## Scale interpretation, ground tools, shepherd understanding
 
+The practical tension in science AI is scale versus comprehension. Swarming agents can annotate atlases and literature far faster than any lab, yet scientific progress still requires a human (or a small team) who can state what was learned, what remains uncertain, and what experiment comes next. Shepherding is that compression step—and without it, multi-agent science is only multi-agent noise.
+
 OpenAI’s multi-agent science pattern and DeepMind’s science-agent playbooks agree on a division of labor. Pattern A: LLM orchestrates; deterministic tools calculate—never let the model silently replace arithmetic or simulation. Pattern B: multi-agent debate or tournaments surface disagreements for human adjudication. Shared lessons: cite tool outputs, version datasets, and design UI for shepherding thousands of intermediate claims into human-comprehensible narratives.
 
 WeatherNext and Earth observation show science AI as decision infrastructure: forecast skill matters when it changes evacuations, energy dispatch, or conservation policy. Teachable practice includes observation-driven improvements, careful validation against held-out events, and labels rich enough for the decision (forest typology, not only binary tree cover).
