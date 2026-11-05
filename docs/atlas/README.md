@@ -59,3 +59,13 @@ Visual system: **Forge Atlas** (cool paper, cobalt accent, Syne + Source Serif 4
 ## Must-fix note
 
 The legacy `articles.html` used to advertise **86** baseline articles only—searching “timeline” returned **0**. This reader puts Timeline/Players/Policy/Benchmarks in **top nav**, and the rebuilt `articles.html` embeds all **182** (baseline + gap-fill) with orientation keywords so “timeline” hits.
+
+## Reader link contract
+
+Topic/search cards and timeline lane cards always open a **rendered** reader:
+
+- Orientation teachables → `atlas/{timeline|players|policy|benchmarks}.html#<article-id>` (in-lane reading pane)
+- Corpus hits → `ai-knowledge-articles/articles.html#<html_id>`
+- In-lane “Open in corpus reader” → same `articles.html#` route
+
+Never link cards to raw `.md` sources or GitHub blob “view source” URLs. List snippets truncate on **sentence boundaries** (never mid-word).
