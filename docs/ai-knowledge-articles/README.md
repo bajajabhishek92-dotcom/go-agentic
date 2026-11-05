@@ -1,6 +1,11 @@
 # AI knowledge articles (plain Markdown)
 
-**86 articles** only — no Logseq graph. Easy to open in an editor or upload to Google Docs.
+**86 articles** only — no Logseq graph.
+
+## Easiest: open in a browser
+
+Double-click **[`articles.html`](articles.html)** (or Chrome/Safari → File → Open File).  
+Left sidebar jumps between articles; search filters titles. No Logseq, no Google Apps Script.
 
 ## Folders
 
@@ -13,10 +18,7 @@
 | `extra/huggingface-blog/` | Hugging Face Blog | 11 |
 | `extra/aws-ml-blog/` | AWS ML Blog | 11 |
 
-## One Google Doc with a tab per article
+## Optional extras
 
-Use **[`google-docs-tabs/`](google-docs-tabs/)** — upload `articles.json`, run the Apps Script (`Code.gs`), get a single Doc with corpus parent tabs and one child tab per article. Step-by-step: [`google-docs-tabs/README.md`](google-docs-tabs/README.md).
-
-## Or open Markdown locally
-
-Browse the `.md` files in `ibm/`, `sequoia/`, and `extra/` in any editor.
+- Markdown files in the folders above (any editor)
+- [`google-docs-tabs/`](google-docs-tabs/) — Apps Script for one Google Doc with tabs (more setup)
