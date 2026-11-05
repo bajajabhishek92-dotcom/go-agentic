@@ -1,4 +1,5 @@
 ---
+
 title: 'Async GRPO with LoRA: Separate Trainers from Rollout GPUs'
 slug: a-async-grpo-lora-training
 type: article
@@ -25,9 +26,7 @@ keywords:
 - separate
 - rollout
 - grpo
-summary: 'Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between
-  a trainer and vLLM is heavy. **LoRA changes the systems story**: a rank-1 adapter is a few megabytes,
-  so training and'
+summary: "Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between a trainer and vLLM is heavy. LoRA changes the systems story: a rank-1 adapter is a few megabytes, so training and inference can live on separate machines without NCCL—if you sync adapters carefully."
 related:
 - LoRA - Parameter-Efficient Fine-Tuning
 - RL Environments

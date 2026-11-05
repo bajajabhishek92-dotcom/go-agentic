@@ -1,4 +1,5 @@
 ---
+
 title: 'Adversarial Distillation: Stealing Reasoning Without Breaking In'
 slug: a-adversarial-distillation-defenses
 type: article
@@ -25,9 +26,7 @@ keywords:
 - stealing
 - breaking
 - same
-summary: Not every model-theft path looks like a database breach. **Adversarial distillation** is the
-  systematic, unauthorized use of a model’s outputs—or especially its *protected reasoning*—to train or
-  improve another
+summary: "Not every model-theft path looks like a database breach. Adversarial distillation is the systematic, unauthorized use of a model’s outputs—or especially its protected reasoning—to train or improve another model. Operators may never touch your disks; they manipulate conversations at scale until hidden intermediate work becomes visible and copyable."
 related:
 - Adversarial Distillation
 - Frontier Safety Stack

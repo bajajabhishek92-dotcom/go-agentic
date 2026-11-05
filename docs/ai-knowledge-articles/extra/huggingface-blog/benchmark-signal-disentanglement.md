@@ -1,4 +1,5 @@
 ---
+
 title: 'What Benchmarks Actually Measure: Disentangle the Signals'
 slug: a-benchmark-signal-disentanglement
 type: article
@@ -25,9 +26,7 @@ keywords:
 - actually
 - signals
 - items
-summary: A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on **general
-  reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more
-  than
+summary: "A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on general reasoning. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than refusal. Averaging them into one score hides what you are selecting for."
 related:
 - Agent Evaluation
 - Benchmark Signal Disentanglement

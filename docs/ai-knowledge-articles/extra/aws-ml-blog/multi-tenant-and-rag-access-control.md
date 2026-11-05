@@ -1,4 +1,5 @@
 ---
+
 title: Multi-Tenant Agents and RAG Access Control
 slug: a-multi-tenant-and-rag-access-control
 type: article
@@ -25,9 +26,7 @@ keywords:
 - access
 - multi-tenant
 - isolation
-summary: 'When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL
-  leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation**
-  for agent'
+summary: "When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: SaaS tenant isolation for agent platforms, and document ACL fidelity for RAG."
 related:
 - Multi-Tenant RAG Access Control
 - RAG (Retrieval-Augmented Generation)

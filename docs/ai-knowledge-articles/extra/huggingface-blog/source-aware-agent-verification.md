@@ -1,4 +1,5 @@
 ---
+
 title: Source-Aware Verification and Consistency for Tool Agents
 slug: a-source-aware-agent-verification
 type: article
@@ -25,9 +26,7 @@ keywords:
 - source-aware
 - verification
 - source
-summary: 'MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure
-  modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that
-  does not repeat**.'
+summary: "MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure modes matter more than raw fluency: wrong attribution of a true fact, and one-shot success that does not repeat."
 related:
 - Agent Evaluation
 - RAG (Retrieval-Augmented Generation)

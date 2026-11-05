@@ -1,4 +1,5 @@
 ---
+
 title: 'Text Watermarking: What Provenance Can and Cannot Prove'
 slug: a-text-provenance-watermarking-limits
 type: article
@@ -25,9 +26,7 @@ keywords:
 - prove
 - detection
 - not
-summary: Regulators increasingly require machine-readable signals that text was AI-generated. Statistical
-  text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response—but
-  they are
+summary: "Regulators increasingly require machine-readable signals that text was AI-generated. Statistical text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response—but they are early technology with sharp limits. Teaching those limits matters as much as shipping the feature."
 related:
 - Model Collapse
 - Provenance & Watermarking

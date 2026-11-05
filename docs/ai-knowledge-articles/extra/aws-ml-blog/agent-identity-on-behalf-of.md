@@ -1,4 +1,5 @@
 ---
+
 title: 'Agent Identity: On-Behalf-Of Propagation and Cryptographic Proof'
 slug: a-agent-identity-on-behalf-of
 type: article
@@ -25,9 +26,7 @@ keywords:
 - propagation
 - on-behalf-of
 - api
-summary: 'Agents that call enterprise APIs as a shared application identity break three things at once:
-  audit trails (who did this?), user-level authorization (what may *this* user do?), and least privilege.
-  Production agents'
+summary: "Agents that call enterprise APIs as a shared application identity break three things at once: audit trails (who did this?), user-level authorization (what may this user do?), and least privilege. Production agents need identity that answers two questions on every call: which agent acted, and for which user."
 related:
 - Agent Identity & On-Behalf-Of
 - Trust in Depth

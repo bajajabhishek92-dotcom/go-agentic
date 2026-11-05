@@ -1,4 +1,5 @@
 ---
+
 title: 'RL Environments: The Missing Dataset for Real Work'
 slug: a-rl-environments
 type: article
@@ -25,7 +26,7 @@ keywords:
 - dataset
 - you
 - verifiers
-summary: 'Reinforcement learning for agents is no longer only a lab technique. In Sequoia talks with Mercor’s Brendan Foody and Prime Intellect’s Will Brown and Johannes Hagemann, the bottleneck has shifted from “can we do RL?” to can we build environments that look like the economy?…'
+summary: "Reinforcement learning for agents is no longer only a lab technique. In Sequoia talks with Mercor’s Brendan Foody and Prime Intellect’s Will Brown and Johannes Hagemann, the bottleneck has shifted from “can we do RL?” to can we build environments that look like the economy? Without those environments, post-training reinforces eloquence in chat—not completed work."
 related:
 - Continual Learning
 - RL Environments

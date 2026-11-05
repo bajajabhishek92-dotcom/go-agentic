@@ -1,4 +1,5 @@
 ---
+
 title: 'Agent Harnesses: The Operating System Around the Model Loop'
 slug: a-agent-harnesses
 type: article
@@ -25,9 +26,7 @@ keywords:
 - agent
 - around
 - system
-summary: 'Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it
-  is building the **harness**: the runtime that feeds context, tools, memory, sandboxes, and recovery
-  around a'
+summary: "Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it is building the harness: the runtime that feeds context, tools, memory, sandboxes, and recovery around a deceptively simple loop."
 related:
 - Agent Harness
 - Long-Horizon Agents

@@ -1,4 +1,5 @@
 ---
+
 title: RL Environments Belong on the Hub, Not Private Registries
 slug: a-rl-environments-on-hub
 type: article
@@ -25,9 +26,7 @@ keywords:
 - tasksets
 - registries
 - private
-summary: 'Reinforcement learning for agents needs **environments**: tasks, observations, actions, and
-  a reward/verifier. Historically every framework invents its own registry. Hugging Face’s answer: environments
-  are **datasets'
+summary: "Reinforcement learning for agents needs environments: tasks, observations, actions, and a reward/verifier. Historically every framework invents its own registry. Hugging Face’s answer: environments are datasets with tags, discovered like any other Hub artifact."
 related:
 - Continual Learning
 - RL Environments

@@ -1,4 +1,5 @@
 ---
+
 title: 'Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers'
 slug: a-distill-efficient-agents
 type: article
@@ -25,9 +26,7 @@ keywords:
 - you
 - shorter
 - just
-summary: A shopping (or support, or triage) agent on a frontier model works—until you multiply **search
-  → read → refine → verify → decide** by every user. One completed task is many billed calls. Smaller
-  models are cheaper
+summary: "A shopping (or support, or triage) agent on a frontier model works—until you multiply search → read → refine → verify → decide by every user. One completed task is many billed calls. Smaller models are cheaper and faster, but usually worse at the task. Knowledge distillation transfers teacher behavior into a student so you keep much of the quality at student economics."
 related:
 - Agent Distillation
 - Model Routing

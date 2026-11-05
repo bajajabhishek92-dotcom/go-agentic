@@ -1,4 +1,5 @@
 ---
+
 title: 'Intelligence Per Watt: Rethinking the Computing Substrate'
 slug: a-substrate-intelligence
 type: article
@@ -25,7 +26,7 @@ keywords:
 - rethinking
 - intelligence
 - than
-summary: 'Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the physical substrate of computation—and that brains are an existence proof the industry underweights. The teaching frame is intelligence per watt: useful…'
+summary: "Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the physical substrate of computation—and that brains are an existence proof the industry underweights. The teaching frame is intelligence per watt: useful cognition delivered per unit energy, not FLOPS marketed on a slide."
 related:
 - AI-Designed Chips
 - Energy & Goodput Constraints

@@ -1,4 +1,5 @@
 ---
+
 title: Applied Research Labs Inside Product Companies
 slug: a-applied-research-labs
 type: article
@@ -25,7 +26,7 @@ keywords:
 - companies
 - applied
 - inside
-summary: 'Harvey’s Gabe Pereyra frames the problem without romance: competing with frontier labs from the application layer is an unfair game—they have more money, talent, compute, and data. The alternative title of his talk is blunt—*building a research lab on a budget*. The broader…'
+summary: "Harvey’s Gabe Pereyra frames the problem without romance: competing with frontier labs from the application layer is an unfair game—they have more money, talent, compute, and data. The alternative title of his talk is blunt—building a research lab on a budget."
 related:
 - Agent Evaluation
 - Applied Research Labs

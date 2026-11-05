@@ -1,4 +1,5 @@
 ---
+
 title: Three Quarters to AGI—and What Still Blocks the Last Mile
 slug: a-path-to-agi
 type: article
@@ -25,7 +26,7 @@ keywords:
 - quarters
 - mile
 - last
-summary: 'Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: AGI as a multi-decade mission that, in his telling, has stayed roughly on the schedule DeepMind sketched around 2010—and for which he still names roughly 2030 as a distribution year. The useful teaching…'
+summary: "Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: AGI as a multi-decade mission that, in his telling, has stayed roughly on the schedule DeepMind sketched around 2010—and for which he still names roughly 2030 as a distribution year. The useful teaching point is not a scoreboard percentage."
 related:
 - Continual Learning
 - Path to AGI (Last Mile)

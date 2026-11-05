@@ -1,4 +1,5 @@
 ---
+
 title: Voice as a Primary Interface for AI
 slug: a-voice-as-interface
 type: article
@@ -25,7 +26,7 @@ keywords:
 - elevenlabs
 - www.youtube.com/watch
 - https
-summary: 'ElevenLabs’ Mati Staniszewski argues that voice is becoming a fundamental interface layer—not a niche accessibility feature bolted onto chat. As generative speech crosses the uncanny valley across languages, products can meet users where emotion, speed, and hands-free work…'
+summary: "ElevenLabs’ Mati Staniszewski argues that voice is becoming a fundamental interface layer—not a niche accessibility feature bolted onto chat. As generative speech crosses the uncanny valley across languages, products can meet users where emotion, speed, and hands-free work already live: calls, games, cars, clinics, warehouses, and creative media."
 related:
 - Voice as Primary Interface
 path: sequoia/voice-as-interface.md

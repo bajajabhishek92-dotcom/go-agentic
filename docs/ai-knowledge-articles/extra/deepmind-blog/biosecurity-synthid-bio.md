@@ -1,4 +1,5 @@
 ---
+
 title: 'Biosecurity for Generative Biology: Watermarks and Layered Defense'
 slug: a-biosecurity-synthid-bio
 type: article
@@ -25,9 +26,7 @@ keywords:
 - layered
 - biology
 - sequences
-summary: AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel
-  sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar
-  ≈ natural.” DeepMind’s
+summary: "AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar ≈ natural.” DeepMind’s SynthID Bio and broader bioresilience framing teach layered defense with provenance in the design itself."
 related:
 - Biosecurity for Generative Biology
 - Provenance & Watermarking

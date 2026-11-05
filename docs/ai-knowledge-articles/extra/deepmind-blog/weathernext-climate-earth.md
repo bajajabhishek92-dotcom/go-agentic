@@ -1,4 +1,5 @@
 ---
+
 title: 'WeatherNext and Earth Observation: AI for Climate Decisions'
 slug: a-weathernext-climate-earth
 type: article
@@ -25,9 +26,7 @@ keywords:
 - maps
 - forecasts
 - climate
-summary: Weather and land-cover AI convert research models into **decision infrastructure**—hourly forecasts
-  in consumer products, energy and agriculture variables, and forest maps that distinguish what “green”
-  actually is.
+summary: "Weather and land-cover AI convert research models into decision infrastructure—hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what “green” actually is."
 related:
 - Climate & Earth Observation AI
 - Science Agent Workflows

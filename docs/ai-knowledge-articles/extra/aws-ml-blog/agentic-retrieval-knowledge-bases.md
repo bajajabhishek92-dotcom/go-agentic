@@ -1,4 +1,5 @@
 ---
+
 title: From Single-Shot RAG to Agentic Retrieval
 slug: a-agentic-retrieval-knowledge-bases
 type: article
@@ -25,9 +26,7 @@ keywords:
 - you
 - not
 - agent
-summary: 'Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That
-  design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span
-  two corpora come'
+summary: "Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come back fluent but incomplete; the right source depends on the question but a single index cannot choose; a second look after seeing first results has nowhere to happen."
 related:
 - Agentic Retrieval
 - RAG (Retrieval-Augmented Generation)

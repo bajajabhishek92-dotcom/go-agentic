@@ -1,4 +1,5 @@
 ---
+
 title: From Vibe Coding to Agentic Engineering
 slug: a-agentic-engineering
 type: article
@@ -25,7 +26,7 @@ keywords:
 - vibe
 - www.youtube.com/watch
 - https
-summary: 'Coding is the canary domain for agents: rich training data, fast verifiers (compilers, tests, types, CI), and developers willing to change tools. Sequoia conversations with Andrej Karpathy, Anthropic’s Boris Cherny, OpenAI’s Greg Brockman, and Factory’s Matan Grinberg…'
+summary: "Coding is the canary domain for agents: rich training data, fast verifiers (compilers, tests, types, CI), and developers willing to change tools."
 related:
 - AI Coding Quality Workflows
 - Agent Harness

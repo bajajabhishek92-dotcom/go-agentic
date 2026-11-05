@@ -1,4 +1,5 @@
 ---
+
 title: 'Cars, Not Faster Horses: A Commercial Definition of the Agent Era'
 slug: a-cars-not-horses
 type: article
@@ -25,7 +26,7 @@ keywords:
 - commercial
 - agent
 - you
-summary: 'Sequoia’s AI Ascent framing is intentionally non-academic: stop arguing about AGI checklists and notice that the shape of software work has changed. Pat Grady’s keynote metaphor is the teaching device—faster horses vs. cars—paired with Konstantine Buhler and Jim Gao’s…'
+summary: "Sequoia’s AI Ascent framing is intentionally non-academic: stop arguing about AGI checklists and notice that the shape of software work has changed. Pat Grady’s keynote metaphor is the teaching device—faster horses vs. cars—paired with Konstantine Buhler and Jim Gao’s economic story of a cognitive revolution, and Sonya Huang’s push for companies to own their intelligence rather than rent a black box forever."
 related:
 - Agent Era Market Frame
 - Agentic Engineering

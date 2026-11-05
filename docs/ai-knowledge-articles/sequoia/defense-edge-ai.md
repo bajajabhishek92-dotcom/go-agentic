@@ -1,4 +1,5 @@
 ---
+
 title: Edge AI and Defense Sovereignty Start in the Factory
 slug: a-defense-edge-ai
 type: article
@@ -25,7 +26,7 @@ keywords:
 - edge
 - start
 - uwe
-summary: 'Sovereignty in defense AI is not a slogan on a slide. Stark cofounders Uwe Horstmann and Johannes Schaback frame European defense modernization as an industrial and software problem: the ability to manufacture, update, and operate intelligent systems under your own control.…'
+summary: "Sovereignty in defense AI is not a slogan on a slide. Stark cofounders Uwe Horstmann and Johannes Schaback frame European defense modernization as an industrial and software problem: the ability to manufacture, update, and operate intelligent systems under your own control. Two years after founding, Stark had roughly 700 employees and software-driven strike systems in the field in Ukraine."
 related:
 - Digital Sovereignty
 - Physical AI - Robotics

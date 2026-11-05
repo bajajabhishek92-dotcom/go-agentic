@@ -1,4 +1,5 @@
 ---
+
 title: 'Executable Agent Grading: Outcomes Beat Tool-Call Theater'
 slug: a-executable-agent-grading
 type: article
@@ -25,9 +26,7 @@ keywords:
 - tool-call
 - pass
 - theater
-summary: Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite
-  “resolved” reply, and a ticket closed when policy required **on hold**—that is the failure mode ThinkingBox
-  was built
+summary: "Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite “resolved” reply, and a ticket closed when policy required on hold—that is the failure mode ThinkingBox was built to catch. The lesson for evaluation and training: grade terminal backend state, not fluency or tool-call shape."
 related:
 - Agent Evaluation
 - RL Environments

@@ -1,4 +1,5 @@
 ---
+
 title: 'Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior'
 slug: a-low-resource-language-coding
 type: article
@@ -25,9 +26,7 @@ keywords:
 - migrate
 - build
 - behavior
-summary: Models trained on oceans of Python and JavaScript historically struggled with **low-resource
-  languages**—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails,
-  weather codes, and
+summary: "Models trained on oceans of Python and JavaScript historically struggled with low-resource languages—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails, weather codes, and reactor-safety analysis. Enterprises feel this as brittle assistants: incomplete docs, departed authors, business rules that exist only in source. Two complementary evaluations show how to measure progress."
 related:
 - Legacy Modernization with AI
 - Low-Resource Language Coding

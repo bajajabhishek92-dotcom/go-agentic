@@ -1,4 +1,5 @@
 ---
+
 title: 'Long-Horizon Frontier Agents: Persistence Over Clever One-Shots'
 slug: a-long-horizon-frontier-agents
 type: article
@@ -25,9 +26,7 @@ keywords:
 - one-shots
 - not
 - model
-summary: 'Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon,
-  then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows,
-  and agentic'
+summary: "Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around deep work: multi-day engineering, multi-step professional workflows, and agentic runs that survive dead ends."
 related:
 - Agent Harness
 - Long-Horizon Agents

@@ -1,4 +1,5 @@
 ---
+
 title: Cybersecurity Capabilities and Staged Rollout
 slug: a-cyber-staged-rollout
 type: article
@@ -25,9 +26,7 @@ keywords:
 - capabilities
 - models
 - hard
-summary: 'AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent
-  cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden
-  access as'
+summary: "AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent cyber posts teach a clear deployment pattern: give defenders an adaptation window first, then broaden access as guardrails and operational controls mature."
 related:
 - Defender's Window
 - Frontier Safety Stack

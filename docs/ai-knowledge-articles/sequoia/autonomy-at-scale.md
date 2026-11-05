@@ -1,4 +1,5 @@
 ---
+
 title: 'Autonomy at Scale: Reliability Is the Product'
 slug: a-autonomy-at-scale
 type: article
@@ -25,7 +26,7 @@ keywords:
 - www.youtube.com/watch
 - rides
 - learning
-summary: 'Waymo’s Dmitri Dolgov (20M+ fully autonomous rides), Zipline’s long-distance delivery record (on the order of 140M miles with a zero-incident framing in their Training Data conversation), and Wayve’s end-to-end “AV 2.0” story converge on one teaching point: in the physical…'
+summary: "Waymo’s Dmitri Dolgov (20M+ fully autonomous rides), Zipline’s long-distance delivery record (on the order of 140M miles with a zero-incident framing in their Training Data conversation), and Wayve’s end-to-end “AV 2.0” story converge on one teaching point: in the physical world, reliability engineering eats model demos."
 related:
 - Autonomy Reliability
 - Physical AI - Robotics

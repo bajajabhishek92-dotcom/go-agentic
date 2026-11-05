@@ -1,4 +1,5 @@
 ---
+
 title: 'Specialize the Tokenizer: Inference Cost Lives in Decode'
 slug: a-vocabulary-specialization-cost
 type: article
@@ -25,9 +26,7 @@ keywords:
 - tokens
 - inference
 - token
-summary: 'Fine-tuning for a domain usually leaves the **base tokenizer** untouched. For specialized small
-  models, that inheritance can dominate serving cost. VocabX’s production result on a Portuguese essay
-  grader (Qwen3-4B):'
+summary: "Fine-tuning for a domain usually leaves the base tokenizer untouched. For specialized small models, that inheritance can dominate serving cost. VocabX’s production result on a Portuguese essay grader (Qwen3-4B): same base model and training recipe, specialized vocabulary → ~77% lower measured inference cost, shorter responses (≈350 → ≈101 tokens), and higher task quality—when compression is done carefully."
 related:
 - Generative AI Cost Operating Model
 - LLM Inference

@@ -1,4 +1,5 @@
 ---
+
 title: 'Data Efficiency: The Bottleneck After Search and Code'
 slug: a-data-efficiency
 type: article
@@ -25,7 +26,7 @@ keywords:
 - code
 - after
 - only
-summary: 'LLMs look magical at search and coding because those domains are drowning in data—and friendly to synthetic data. Most of the economy is not. Flapping Airplanes’ (Ben and Asher Spector) thesis is that data efficiency—getting coding-level capability with orders of magnitude…'
+summary: "LLMs look magical at search and coding because those domains are drowning in data—and friendly to synthetic data. Most of the economy is not. Flapping Airplanes’ (Ben and Asher Spector) thesis is that data efficiency—getting coding-level capability with orders of magnitude less data—will decide who can participate in AI beyond a few centralized labs."
 related:
 - Continual Learning
 - Data Efficiency Bottleneck
