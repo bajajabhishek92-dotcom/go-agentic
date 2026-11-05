@@ -75,6 +75,17 @@
     }
   }
 
+
+  function setHashSafe(hash) {
+    try {
+      const base = location.href.split("#")[0];
+      const next = hash ? base + "#" + String(hash).replace(/^#/, "") : base;
+      if (location.href !== next) history.replaceState(null, "", next);
+    } catch (e) {
+      /* cross-origin preview hosts (htmlpreview) reject replaceState */
+    }
+  }
+
   function escapeHtml(s) {
     return String(s)
       .replace(/&/g, "&amp;")
@@ -137,7 +148,7 @@
     if (opts.hash !== false) {
       const hash = opts.hashId || id;
       if (location.hash.replace(/^#/, "") !== hash) {
-        history.replaceState(null, "", "#" + hash);
+        setHashSafe(hash);
       }
     }
   }
@@ -466,7 +477,7 @@
       const key = hashKeyFor(a);
       if (opts.hash !== false && key) {
         if (location.hash.replace(/^#/, "") !== key) {
-          history.replaceState(null, "", "#" + key);
+          setHashSafe(key);
         }
       }
       if (opts.scroll !== false) {
@@ -551,8 +562,7 @@
 
     if (backBtn) {
       backBtn.addEventListener("click", () => {
-        const base = location.href.split("#")[0];
-        if (location.hash) history.replaceState(null, "", base);
+        setHashSafe("");
         hideReader();
         if (browse) browse.scrollIntoView({ behavior: "smooth", block: "start" });
       });
