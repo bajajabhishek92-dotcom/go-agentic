@@ -1,4 +1,5 @@
 ---
+
 title: 'AI That Designs Chips: Closing the Loop on Silicon'
 slug: a-ai-designed-chips
 type: article
@@ -25,7 +26,7 @@ keywords:
 - closing
 - real
 - www.youtube.com/watch
-summary: 'Ricursive Intelligence’s founders Anna Goldie and Azalia Mirhoseini represent a recursive bet: use AI to design the chips that run AI. Their Google-era AlphaChip work helped design multiple generations of TPUs and cut chip floor planning from months to hours. The teaching…'
+summary: "Ricursive Intelligence’s founders Anna Goldie and Azalia Mirhoseini represent a recursive bet: use AI to design the chips that run AI. Their Google-era AlphaChip work helped design multiple generations of TPUs and cut chip floor planning from months to hours."
 related:
 - AI-Designed Chips
 - Energy & Goodput Constraints

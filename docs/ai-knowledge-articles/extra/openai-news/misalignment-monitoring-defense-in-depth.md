@@ -1,4 +1,5 @@
 ---
+
 title: Misalignment Monitoring and Defense in Depth for Frontier Agents
 slug: a-misalignment-monitoring-defense-in-depth
 type: article
@@ -25,9 +26,7 @@ keywords:
 - frontier
 - depth
 - defense
-summary: 'Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes,
-  reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity;
-  security limits'
+summary: "Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits blast radius; monitoring is the layer that detects remaining failures in time to intervene. Treat these as three legs of one stool, not optional extras."
 related:
 - AI Control
 - Frontier Safety Stack

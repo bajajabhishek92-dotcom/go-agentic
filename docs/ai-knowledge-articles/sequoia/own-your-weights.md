@@ -1,4 +1,5 @@
 ---
+
 title: 'Own Your Weights: Why Companies Are Building Private Intelligence'
 slug: a-own-your-weights
 type: article
@@ -25,9 +26,7 @@ keywords:
 - weights
 - own
 - not
-summary: 'Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully
-  you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent
-  conversations, a'
+summary: "Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent conversations, a clear product doctrine is forming—not your weights, not your product."
 related:
 - Digital Sovereignty
 - Enterprise AI Diffusion

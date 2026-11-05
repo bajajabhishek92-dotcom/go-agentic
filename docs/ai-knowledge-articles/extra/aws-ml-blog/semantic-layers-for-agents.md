@@ -1,4 +1,5 @@
 ---
+
 title: 'Semantic Layers: Let Agents Query Meaning, Not Schemas'
 slug: a-semantic-layers-for-agents
 type: article
@@ -25,9 +26,7 @@ keywords:
 - not
 - query
 - agent
-summary: Agents that answer business questions from live systems need more than a chat model and a SQL
-  dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**—in
-  a governed
+summary: "Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need joins, metric definitions, and row/column security to live outside the prompt—in a governed semantic layer the model plans against but does not invent."
 related:
 - Agent Tooling & APIs
 - Multi-Tenant RAG Access Control

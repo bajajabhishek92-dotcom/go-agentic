@@ -1,4 +1,5 @@
 ---
+
 title: 'Value-Centered Model Specs: Teaching Judgment, Not Just Style'
 slug: a-model-spec-value-alignment
 type: article
@@ -25,9 +26,7 @@ keywords:
 - value-centered
 - teaching
 - specs
-summary: As models take consequential actions, literal instruction-following is not enough. They need
-  a public, inspectable description of desired behavior—and that description works better when it is organized
-  around
+summary: "As models take consequential actions, literal instruction-following is not enough. They need a public, inspectable description of desired behavior—and that description works better when it is organized around values that explain trade-offs, not a pile of stylistic rules."
 related:
 - Trusting AI Decisions
 - Value-Centered Model Specs

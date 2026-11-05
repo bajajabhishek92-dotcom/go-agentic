@@ -1,4 +1,5 @@
 ---
+
 title: 'Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress'
 slug: a-continual-learning
 type: article
@@ -25,9 +26,7 @@ keywords:
 - models
 - frozen
 - stall
-summary: Pretraining and post-training create impressive snapshots. They do not, by themselves, create
-  systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and
-  builders like
+summary: "Pretraining and post-training create impressive snapshots. They do not, by themselves, create systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and builders like Trajectory converge on a hard claim: the next leap is learning during use."
 related:
 - Continual Learning
 - Path to AGI (Last Mile)

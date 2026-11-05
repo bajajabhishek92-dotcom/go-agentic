@@ -4,12 +4,12 @@
   "baseline_count": 86,
   "gap_fill_count": 96,
   "clusters": [
+    "Landscape & Orientation",
     "Agentic Systems & Engineering",
     "Coding Agents & Software Delivery",
     "Context, Tools & Knowledge Access",
     "Enterprise Adoption & Governance",
     "Inference, Efficiency & Infrastructure",
-    "Landscape & Orientation",
     "Physical AI, Voice & Autonomy",
     "Science, Frontier & Interpretability",
     "Security, Safety & Control",
@@ -65,7 +65,7 @@
         "on-behalf-of",
         "api"
       ],
-      "summary": "Agents that call enterprise APIs as a shared application identity break three things at once: audit trails (who did this?), user-level authorization (what may *this* user do?), and least privilege. Production agents",
+      "summary": "Agents that call enterprise APIs as a shared application identity break three things at once: audit trails (who did this?), user-level authorization (what may this user do?), and least privilege. Production agents need identity that answers two questions on every call: which agent acted, and for which user.",
       "related": [
         "Agent Identity & On-Behalf-Of",
         "Trust in Depth"
@@ -102,7 +102,7 @@
         "not",
         "agent"
       ],
-      "summary": "Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come",
+      "summary": "Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come back fluent but incomplete; the right source depends on the question but a single index cannot choose; a second look after seeing first results has nowhere to happen.",
       "related": [
         "Agentic Retrieval",
         "RAG (Retrieval-Augmented Generation)"
@@ -139,7 +139,7 @@
         "shorter",
         "just"
       ],
-      "summary": "A shopping (or support, or triage) agent on a frontier model works\u2014until you multiply **search \u2192 read \u2192 refine \u2192 verify \u2192 decide** by every user. One completed task is many billed calls. Smaller models are cheaper",
+      "summary": "A shopping (or support, or triage) agent on a frontier model works—until you multiply search → read → refine → verify → decide by every user. One completed task is many billed calls. Smaller models are cheaper and faster, but usually worse at the task. Knowledge distillation transfers teacher behavior into a student so you keep much of the quality at student economics.",
       "related": [
         "Agent Distillation",
         "Model Routing"
@@ -176,7 +176,7 @@
         "one",
         "platforms"
       ],
-      "summary": "Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary\u2014without every team",
+      "summary": "Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary—without every team reinventing gateways, identity, evals, and rollback.",
       "related": [
         "Enterprise AI Diffusion",
         "Enterprise Agent Platforms",
@@ -214,7 +214,7 @@
         "cheaper",
         "every"
       ],
-      "summary": "Comparing token price lists and asking teams to \u201cshorten prompts\u201d does not answer finance\u2019s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse\u2014one",
+      "summary": "Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse—one user task can mean many model calls with growing context—so token burn scales with autonomy and context size, not with chat turns.",
       "related": [
         "Generative AI Cost Operating Model",
         "Model Routing"
@@ -251,7 +251,7 @@
         "plan",
         "five"
       ],
-      "summary": "Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture and execution",
+      "summary": "Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture and execution flow—not only longer instructions.",
       "related": [
         "Enterprise Agent Platforms",
         "Loop Engineering",
@@ -289,7 +289,7 @@
         "multi-tenant",
         "isolation"
       ],
-      "summary": "When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation** for agent",
+      "summary": "When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: SaaS tenant isolation for agent platforms, and document ACL fidelity for RAG.",
       "related": [
         "Multi-Tenant RAG Access Control",
         "RAG (Retrieval-Augmented Generation)",
@@ -327,7 +327,7 @@
         "apis",
         "tool"
       ],
-      "summary": "When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic\u2014it is making hundreds of private endpoints safely reachable by",
+      "summary": "When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints safely reachable by agents without public exposure, without letting the model invent identity, and without stuffing a 400-tool catalog into every prompt.",
       "related": [
         "Agent Tooling & APIs",
         "Context Engineering",
@@ -365,7 +365,7 @@
         "query",
         "agent"
       ],
-      "summary": "Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**\u2014in a governed",
+      "summary": "Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need joins, metric definitions, and row/column security to live outside the prompt—in a governed semantic layer the model plans against but does not invent.",
       "related": [
         "Agent Tooling & APIs",
         "Multi-Tenant RAG Access Control",
@@ -403,7 +403,7 @@
         "depth",
         "verify"
       ],
-      "summary": "Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in",
+      "summary": "Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is Trust in Depth—independent layers that expand what you can safely allow, analogous to defense-in-depth but aimed at autonomy rather than only breach containment.",
       "related": [
         "Agent Identity & On-Behalf-Of",
         "Trust in Depth",
@@ -441,7 +441,7 @@
         "sub-100ms",
         "measured"
       ],
-      "summary": "Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is",
+      "summary": "Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is therefore an infrastructure latency problem as much as a model-quality problem.",
       "related": [
         "Generative AI Cost Operating Model",
         "Voice as Primary Interface"
@@ -478,7 +478,7 @@
         "imperfect",
         "systems"
       ],
-      "summary": "Model alignment\u2014training systems to be helpful and safe\u2014is necessary but not sufficient for capable agents. DeepMind\u2019s AI Control Roadmap adds a **system-level** layer: assume internal agents may act unexpectedly,",
+      "summary": "Model alignment—training systems to be helpful and safe—is necessary but not sufficient for capable agents. DeepMind’s AI Control Roadmap adds a system-level layer: assume internal agents may act unexpectedly, and build defenses that still work when alignment fails.",
       "related": [
         "AI Control",
         "Frontier Safety Stack"
@@ -515,7 +515,7 @@
         "biology",
         "sequences"
       ],
-      "summary": "AI that designs proteins and genomes accelerates medicine\u2014and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume \u201cunfamiliar \u2248 natural.\u201d DeepMind\u2019s",
+      "summary": "AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar ≈ natural.” DeepMind’s SynthID Bio and broader bioresilience framing teach layered defense with provenance in the design itself.",
       "related": [
         "Biosecurity for Generative Biology",
         "Provenance & Watermarking"
@@ -552,7 +552,7 @@
         "models",
         "hard"
       ],
-      "summary": "AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind\u2019s recent cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden access as",
+      "summary": "AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent cyber posts teach a clear deployment pattern: give defenders an adaptation window first, then broaden access as guardrails and operational controls mature.",
       "related": [
         "Defender's Window",
         "Frontier Safety Stack"
@@ -589,7 +589,7 @@
         "models",
         "under"
       ],
-      "summary": "As models become default information sources, two evaluation problems dominate: **measuring factuality across modes**, and **preventing contamination** so scores stay trustworthy.",
+      "summary": "As models become default information sources, two evaluation problems dominate: measuring factuality across modes, and preventing contamination so scores stay trustworthy.",
       "related": [
         "Agent Evaluation",
         "Benchmark Signal Disentanglement"
@@ -626,7 +626,7 @@
         "frontier",
         "not"
       ],
-      "summary": "When a model can help defenders find complex bugs or scientists design experiments, the same strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon): **How do we stop",
+      "summary": "When a model can help defenders find complex bugs or scientists design experiments, the same strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon): How do we stop misuse? and Can we trust the model to do the job the right way?",
       "related": [
         "AI Control",
         "Frontier Safety Stack"
@@ -663,7 +663,7 @@
         "robots",
         "one"
       ],
-      "summary": "Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack into complementary models so robots can reason for minutes, control whole bodies, and run locally when the network is",
+      "summary": "Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack into complementary models so robots can reason for minutes, control whole bodies, and run locally when the network is unavailable.",
       "related": [
         "Physical AI - Robotics",
         "World Models"
@@ -700,7 +700,7 @@
         "features",
         "scale"
       ],
-      "summary": "Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind\u2019s open \u201cmicroscope\u201d for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers can see **what",
+      "summary": "Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind’s open “microscope” for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers can see what features fire and how they connect to behavior.",
       "related": [
         "Frontier Safety Stack",
         "Open Interpretability (SAEs)"
@@ -737,7 +737,7 @@
         "gemini",
         "substrate"
       ],
-      "summary": "World models generate interactive environments you can steer\u2014not just videos you watch. Genie 4 is DeepMind\u2019s latest statement of that idea: real-time multimodal simulation (vision + native audio + dialogue) grounded",
+      "summary": "World models generate interactive environments you can steer—not just videos you watch. Genie 4 is DeepMind’s latest statement of that idea: real-time multimodal simulation (vision + native audio + dialogue) grounded in Gemini capabilities, aimed at robotics training, agent testing, and creative prototyping.",
       "related": [
         "Path to AGI (Last Mile)",
         "World Models"
@@ -774,7 +774,7 @@
         "not",
         "model"
       ],
-      "summary": "Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows, and agentic",
+      "summary": "Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around deep work: multi-day engineering, multi-step professional workflows, and agentic runs that survive dead ends.",
       "related": [
         "Agent Harness",
         "Long-Horizon Agents"
@@ -811,7 +811,7 @@
         "continuity",
         "models"
       ],
-      "summary": "Personal AI wants long memory and strong models. Privacy wants data to stay on the device. DeepMind and Google\u2019s recent posts show two complementary answers: **hardware-isolated cloud enclaves with sealed memory**,",
+      "summary": "Personal AI wants long memory and strong models. Privacy wants data to stay on the device. DeepMind and Google’s recent posts show two complementary answers: hardware-isolated cloud enclaves with sealed memory, and fine-tuned on-device models for sensitive local tasks like scam detection.",
       "related": [
         "Digital Sovereignty",
         "Private - On-Device AI"
@@ -848,7 +848,7 @@
         "tournaments",
         "tool"
       ],
-      "summary": "Scientific AI is moving from \u201canswer a biology question\u201d to **agents that run discovery workflows**\u2014curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind",
+      "summary": "Scientific AI is moving from “answer a biology question” to agents that run discovery workflows—curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind lines illustrate complementary patterns: Antigravity Cheminformatics Skills and Co-Scientist.",
       "related": [
         "Agent Skills",
         "Multi-Agent Systems",
@@ -886,7 +886,7 @@
         "forecasts",
         "climate"
       ],
-      "summary": "Weather and land-cover AI convert research models into **decision infrastructure**\u2014hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what \u201cgreen\u201d actually is.",
+      "summary": "Weather and land-cover AI convert research models into decision infrastructure—hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what “green” actually is.",
       "related": [
         "Climate & Earth Observation AI",
         "Science Agent Workflows"
@@ -923,7 +923,7 @@
         "intrusions",
         "code"
       ],
-      "summary": "In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent** operating at machine speed across sandboxes\u2014not a classic human APT playbook. The teachable core: evaluation agents that",
+      "summary": "In July 2026, Hugging Face disclosed a security incident driven by an autonomous AI agent operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation agents that can reach the internet, plus rich data-processing pipelines, create a new offensive economics.",
       "related": [
         "AI Security Trilemma",
         "Agentic Intrusions - Data Pipeline Attacks"
@@ -960,7 +960,7 @@
         "rollout",
         "grpo"
       ],
-      "summary": "Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between a trainer and vLLM is heavy. **LoRA changes the systems story**: a rank-1 adapter is a few megabytes, so training and",
+      "summary": "Group Relative Policy Optimization (GRPO) needs many rollouts per step. Full-weight sync between a trainer and vLLM is heavy. LoRA changes the systems story: a rank-1 adapter is a few megabytes, so training and inference can live on separate machines without NCCL—if you sync adapters carefully.",
       "related": [
         "LoRA - Parameter-Efficient Fine-Tuning",
         "RL Environments"
@@ -997,7 +997,7 @@
         "signals",
         "items"
       ],
-      "summary": "A leaderboard number is a blend. BBQ may be filed under \u201csafety\u201d while many items lean on **general reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than",
+      "summary": "A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on general reasoning. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than refusal. Averaging them into one score hides what you are selecting for.",
       "related": [
         "Agent Evaluation",
         "Benchmark Signal Disentanglement"
@@ -1034,7 +1034,7 @@
         "pass",
         "theater"
       ],
-      "summary": "Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite \u201cresolved\u201d reply, and a ticket closed when policy required **on hold**\u2014that is the failure mode ThinkingBox was built",
+      "summary": "Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite “resolved” reply, and a ticket closed when policy required on hold—that is the failure mode ThinkingBox was built to catch. The lesson for evaluation and training: grade terminal backend state, not fluency or tool-call shape.",
       "related": [
         "Agent Evaluation",
         "RL Environments"
@@ -1071,7 +1071,7 @@
         "must",
         "can"
       ],
-      "summary": "Long-context benchmarks often ask whether a model \u201cremembers\u201d something far back in a document. That question hides several different skills. **State tracking**\u2014following how entities change as a document unfolds\u2014has",
+      "summary": "Long-context benchmarks often ask whether a model “remembers” something far back in a document. That question hides several different skills. State tracking—following how entities change as a document unfolds—has its own difficulty ladder. Treating every state-tracking failure as “the context window was too short” misdiagnoses both architecture and training.",
       "related": [
         "Benchmark Signal Disentanglement",
         "Context Engineering"
@@ -1108,7 +1108,7 @@
         "accelerator",
         "enough"
       ],
-      "summary": "For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows: lazy tensors, static shapes, recompilation cliffs, and library forks (`optimum-neuron`, Optimum TPU) that hid the pain.",
+      "summary": "For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows: lazy tensors, static shapes, recompilation cliffs, and library forks (optimum-neuron, Optimum TPU) that hid the pain. Native PyTorch backends change the teaching: treat Neuron and TPU like CUDA—eager execution, torch.compile, and the same Transformers / Diffusers / TRL APIs.",
       "related": [
         "LLM Inference",
         "Native Accelerator Backends"
@@ -1145,7 +1145,7 @@
         "teacher",
         "compress"
       ],
-      "summary": "Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent tax\u2014or becomes",
+      "summary": "Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is quantize then heal. How you heal decides whether 4-bit stays a permanent tax—or becomes another teaching pass.",
       "related": [
         "Agent Distillation",
         "Quantization"
@@ -1182,7 +1182,7 @@
         "registries",
         "private"
       ],
-      "summary": "Reinforcement learning for agents needs **environments**: tasks, observations, actions, and a reward/verifier. Historically every framework invents its own registry. Hugging Face\u2019s answer: environments are **datasets",
+      "summary": "Reinforcement learning for agents needs environments: tasks, observations, actions, and a reward/verifier. Historically every framework invents its own registry. Hugging Face’s answer: environments are datasets with tags, discovered like any other Hub artifact.",
       "related": [
         "Continual Learning",
         "RL Environments"
@@ -1219,7 +1219,7 @@
         "verification",
         "source"
       ],
-      "summary": "MCP-style agents pull many tools\u2014search, records, databases\u2014then weave one answer. Two failure modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that does not repeat**.",
+      "summary": "MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure modes matter more than raw fluency: wrong attribution of a true fact, and one-shot success that does not repeat.",
       "related": [
         "Agent Evaluation",
         "RAG (Retrieval-Augmented Generation)",
@@ -1257,7 +1257,7 @@
         "tts",
         "leaderboard"
       ],
-      "summary": "Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**\u2014not just a single average word error",
+      "summary": "Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: scalable objective TTS metrics, and ASR tests that expose who fails—not just a single average word error rate.",
       "related": [
         "Benchmark Signal Disentanglement",
         "Voice as Primary Interface"
@@ -1294,7 +1294,7 @@
         "inference",
         "token"
       ],
-      "summary": "Fine-tuning for a domain usually leaves the **base tokenizer** untouched. For specialized small models, that inheritance can dominate serving cost. VocabX\u2019s production result on a Portuguese essay grader (Qwen3-4B):",
+      "summary": "Fine-tuning for a domain usually leaves the base tokenizer untouched. For specialized small models, that inheritance can dominate serving cost. VocabX’s production result on a Portuguese essay grader (Qwen3-4B): same base model and training recipe, specialized vocabulary → ~77% lower measured inference cost, shorter responses (≈350 → ≈101 tokens), and higher task quality—when compression is done carefully.",
       "related": [
         "Generative AI Cost Operating Model",
         "LLM Inference",
@@ -1332,7 +1332,7 @@
         "breaking",
         "same"
       ],
-      "summary": "Not every model-theft path looks like a database breach. **Adversarial distillation** is the systematic, unauthorized use of a model\u2019s outputs\u2014or especially its *protected reasoning*\u2014to train or improve another",
+      "summary": "Not every model-theft path looks like a database breach. Adversarial distillation is the systematic, unauthorized use of a model’s outputs—or especially its protected reasoning—to train or improve another model. Operators may never touch your disks; they manipulate conversations at scale until hidden intermediate work becomes visible and copyable.",
       "related": [
         "Adversarial Distillation",
         "Frontier Safety Stack"
@@ -1369,7 +1369,7 @@
         "assumptions",
         "agent-scale"
       ],
-      "summary": "Coding agents multiply how much work one engineer can push at once: more branches, more CI clones, more fetches of the same commit. Source control that was \u201cfine\u201d for human cadence can collapse under agent",
+      "summary": "Coding agents multiply how much work one engineer can push at once: more branches, more CI clones, more fetches of the same commit. Source control that was “fine” for human cadence can collapse under agent cadence—slow pushes, failed merges, reliability dips. The lesson from OpenAI’s Pando work is not “replace Git,” but rebuild the backend so Git’s protocol survives agent-scale concurrency.",
       "related": [
         "AI Coding Quality Workflows",
         "Agent-Scale Source Control"
@@ -1406,7 +1406,7 @@
         "decisions",
         "structured"
       ],
-      "summary": "Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next action, score severity. Calling a full generative responses endpoint for each one burns latency and money. When the",
+      "summary": "Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next action, score severity. Calling a full generative responses endpoint for each one burns latency and money. When the answer space is bounded, specialize the API—and the model—around decision outputs.",
       "related": [
         "Bounded Decisions",
         "Loop Engineering",
@@ -1444,7 +1444,7 @@
         "can",
         "domain"
       ],
-      "summary": "Model demos move faster than production systems. The **deployment gap** is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints,",
+      "summary": "Model demos move faster than production systems. The deployment gap is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints, permissions, and messy data. Forward-deployed engineering (FDE) is one organizational pattern for closing that gap—and intentionally making itself obsolete.",
       "related": [
         "Enterprise AI Diffusion",
         "Forward-Deployed Engineering"
@@ -1481,7 +1481,7 @@
         "real",
         "workflows"
       ],
-      "summary": "Generic \u201cuse a browser\u201d demos understate the hard problem: agents must operate **specialized business software** under company rules\u2014approvals, templates, jurisdiction clauses, CAD constraints, QA viewports\u2014and",
+      "summary": "Generic “use a browser” demos understate the hard problem: agents must operate specialized business software under company rules—approvals, templates, jurisdiction clauses, CAD constraints, QA viewports—and verify that the finished process works, not just that individual clicks succeeded.",
       "related": [
         "Agent Evaluation",
         "Computer Use - GUI Agents"
@@ -1490,7 +1490,7 @@
       "html_id": "computer-use-for-professional-software-train-on-real-vendor-workflows"
     },
     {
-      "title": "The Defender\u2019s Window: AI Vulnerability Discovery That Finishes With Fixes",
+      "title": "The Defender’s Window: AI Vulnerability Discovery That Finishes With Fixes",
       "slug": "a-defenders-window-coordinated-disclosure",
       "type": "article",
       "corpus": "OpenAI News",
@@ -1518,7 +1518,7 @@
         "disclosure",
         "defender"
       ],
-      "summary": "Frontier models can discover critical flaws in widely used software before attackers do. That advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner\u2014it is a **pipeline",
+      "summary": "Frontier models can discover critical flaws in widely used software before attackers do. That advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it is a pipeline from finding → validated fix → coordinated preparation → disclosure → deployment, while maintainers stay solvent and defenders get ahead of exploit automation.",
       "related": [
         "AI Security Trilemma",
         "Defender's Window"
@@ -1555,7 +1555,7 @@
         "done",
         "use"
       ],
-      "summary": "Benchmarks that measure exam knowledge miss a large part of AI\u2019s value: helping people complete practical life tasks\u2014childcare logistics, government services, budgets, school prep, health-related meal planning,",
+      "summary": "Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete practical life tasks—childcare logistics, government services, budgets, school prep, health-related meal planning, shopping, caregiving coordination. Advice in a chat box is not the same as an agent that can act through browsers, computers, and connectors. LifeVal is a pattern for measuring that gap.",
       "related": [
         "Agent Evaluation",
         "Long-Horizon Agents"
@@ -1592,7 +1592,7 @@
         "build",
         "behavior"
       ],
-      "summary": "Models trained on oceans of Python and JavaScript historically struggled with **low-resource languages**\u2014COBOL, Fortran, Visual Basic, and similar\u2014despite those languages powering banking rails, weather codes, and",
+      "summary": "Models trained on oceans of Python and JavaScript historically struggled with low-resource languages—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails, weather codes, and reactor-safety analysis. Enterprises feel this as brittle assistants: incomplete docs, departed authors, business rules that exist only in source. Two complementary evaluations show how to measure progress.",
       "related": [
         "Legacy Modernization with AI",
         "Low-Resource Language Coding"
@@ -1629,7 +1629,7 @@
         "depth",
         "defense"
       ],
-      "summary": "Capable agents do not only \u201canswer wrong\u201d\u2014they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits",
+      "summary": "Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits blast radius; monitoring is the layer that detects remaining failures in time to intervene. Treat these as three legs of one stool, not optional extras.",
       "related": [
         "AI Control",
         "Frontier Safety Stack"
@@ -1638,7 +1638,7 @@
       "html_id": "misalignment-monitoring-and-defense-in-depth-for-frontier-agents"
     },
     {
-      "title": "Model Routing on the Cost\u2013Intelligence Frontier",
+      "title": "Model Routing on the Cost–Intelligence Frontier",
       "slug": "a-model-routing-cost-intelligence",
       "type": "article",
       "corpus": "OpenAI News",
@@ -1666,7 +1666,7 @@
         "intelligence",
         "reasoning"
       ],
-      "summary": "Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating \u201cone model for everything\u201d as a moral stance is how teams burn 10\u2013100\u00d7",
+      "summary": "Frontier labs now ship families of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is how teams burn 10–100× too much money—or ship brittle agents on the wrong tier.",
       "related": [
         "Generative AI Cost Operating Model",
         "Model Routing"
@@ -1703,7 +1703,7 @@
         "teaching",
         "specs"
       ],
-      "summary": "As models take consequential actions, literal instruction-following is not enough. They need a public, inspectable description of desired behavior\u2014and that description works better when it is organized around",
+      "summary": "As models take consequential actions, literal instruction-following is not enough. They need a public, inspectable description of desired behavior—and that description works better when it is organized around values that explain trade-offs, not a pile of stylistic rules.",
       "related": [
         "Trusting AI Decisions",
         "Value-Centered Model Specs"
@@ -1740,7 +1740,7 @@
         "multi-agent",
         "interpretation"
       ],
-      "summary": "Modern experiments produce more data than any lab can thoroughly read. The complementary problem for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices address the two",
+      "summary": "Modern experiments produce more data than any lab can thoroughly read. The complementary problem for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices address the two sides—parallel agent exploration of large datasets, and community stewardship of AI discoveries.",
       "related": [
         "Multi-Agent Systems",
         "Science Agent Workflows"
@@ -1777,7 +1777,7 @@
         "detection",
         "not"
       ],
-      "summary": "Regulators increasingly require machine-readable signals that text was AI-generated. Statistical text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response\u2014but they are",
+      "summary": "Regulators increasingly require machine-readable signals that text was AI-generated. Statistical text watermarks (e.g. biasing token choices so a detector can recognize a signature) are one response—but they are early technology with sharp limits. Teaching those limits matters as much as shipping the feature.",
       "related": [
         "Model Collapse",
         "Provenance & Watermarking"
@@ -1814,7 +1814,7 @@
         "prompt",
         "loop"
       ],
-      "summary": "Teams shipping most of their code with AI assistants are not magically \u201cprompting better.\u201d They are practicing a stack of ideas that reuse classic computing patterns\u2014feedback loops, orchestration, isolation\u2014under new",
+      "summary": "Teams shipping most of their code with AI assistants are not magically “prompting better.” They are practicing a stack of ideas that reuse classic computing patterns—feedback loops, orchestration, isolation—under new names. Five terms form a useful ladder from a single model call to an automated software factory.",
       "related": [
         "Agent Harness",
         "Agentic Engineering",
@@ -1853,7 +1853,7 @@
         "workflows",
         "code"
       ],
-      "summary": "AI made writing code the easy part. The industry\u2019s anxiety shifted to everything after generation: Is this the *right* solution? Does it fit the codebase? Can humans still understand and own what ships?",
+      "summary": "AI made writing code the easy part. The industry’s anxiety shifted to everything after generation: Is this the right solution? Does it fit the codebase? Can humans still understand and own what ships?",
       "related": [
         "AI Coding Quality Workflows",
         "Agentic Engineering"
@@ -1890,7 +1890,7 @@
         "flops",
         "you"
       ],
-      "summary": "Chip peak FLOPs have grown roughly six-thousand-fold over two decades. Workloads have not gotten six-thousand-fold faster. Accelerators often sit idle waiting on data. That gap between rising compute and",
+      "summary": "Chip peak FLOPs have grown roughly six-thousand-fold over two decades. Workloads have not gotten six-thousand-fold faster. Accelerators often sit idle waiting on data. That gap between rising compute and slower-growing memory bandwidth is the memory wall—and it explains why “twice the FLOPs” rarely means twice the tokens per second.",
       "related": [
         "LLM Inference",
         "Memory Wall"
@@ -1899,7 +1899,7 @@
       "html_id": "the-memory-wall-and-scaling-llms-beyond-one-gpu"
     },
     {
-      "title": "The AI Security Trilemma\u2014and Why Agents Raise the Stakes",
+      "title": "The AI Security Trilemma—and Why Agents Raise the Stakes",
       "slug": "a-ai-security-trilemma",
       "type": "article",
       "corpus": "IBM",
@@ -1927,7 +1927,7 @@
         "model",
         "agents"
       ],
-      "summary": "Enterprises want AI that is **smart**, **fast**, and **secure**. Like musical chairs with too few seats, you often get only two. That three-way tension is the **AI security trilemma**.",
+      "summary": "Enterprises want AI that is smart, fast, and secure. Like musical chairs with too few seats, you often get only two. That three-way tension is the AI security trilemma.",
       "related": [
         "AI Security Trilemma",
         "Frontier Safety Stack"
@@ -1964,7 +1964,7 @@
         "document",
         "digital"
       ],
-      "summary": "Classic RAG cuts documents into chunks, embeds them, and at query time retrieves the most similar fragments for the model. It is cheap and effective for many \u201cfind anything about X\u201d questions over large corpora. It",
+      "summary": "Classic RAG cuts documents into chunks, embeds them, and at query time retrieves the most similar fragments for the model. It is cheap and effective for many “find anything about X” questions over large corpora. It breaks down when the answer depends on document structure—or when structured facts and unstructured policy live in different systems.",
       "related": [
         "RAG (Retrieval-Augmented Generation)",
         "Structure-Aware - Chunkless RAG"
@@ -2001,7 +2001,7 @@
         "tools",
         "short-lived"
       ],
-      "summary": "Agents are only useful when they can act: open tickets, read repos, post to chat, query databases. How that connection is wired determines whether you get a demo or a governable system. Five patterns appear in",
+      "summary": "Agents are only useful when they can act: open tickets, read repos, post to chat, query databases. How that connection is wired determines whether you get a demo or a governable system. Five patterns appear in practice, each adding more identity and less credential sprawl than the last.",
       "related": [
         "Agent Identity & On-Behalf-Of",
         "Agent Tooling & APIs",
@@ -2039,7 +2039,7 @@
         "right",
         "window"
       ],
-      "summary": "Prompt engineering asks how to phrase instructions. Context engineering asks a broader question: what entire information environment should the model see at each step? For agents that plan, call tools, retrieve",
+      "summary": "Prompt engineering asks how to phrase instructions. Context engineering asks a broader question: what entire information environment should the model see at each step? For agents that plan, call tools, retrieve documents, and run for hours, that distinction is decisive.",
       "related": [
         "Agent Harness",
         "Context Engineering"
@@ -2076,7 +2076,7 @@
         "control",
         "agentic"
       ],
-      "summary": "A single AI interaction can send data on a world tour: stored in one country, computed in another, interpreted by a model trained elsewhere, triggering actions in a fourth place\u2014before a response returns. Agentic",
+      "summary": "A single AI interaction can send data on a world tour: stored in one country, computed in another, interpreted by a model trained elsewhere, triggering actions in a fourth place—before a response returns. Agentic systems make that path longer and more consequential. Digital sovereignty is the ability to keep control over digital systems: data, operations, technology, and the AI layer itself.",
       "related": [
         "Digital Sovereignty",
         "Own Your Weights",
@@ -2086,7 +2086,7 @@
       "html_id": "digital-sovereignty-in-agentic-systems"
     },
     {
-      "title": "Fine-Tuning, RAG, LoRA\u2014and Choosing a Local Inference Engine",
+      "title": "Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine",
       "slug": "a-fine-tuning-rag-local-engines",
       "type": "article",
       "corpus": "IBM",
@@ -2114,7 +2114,7 @@
         "rag",
         "lora"
       ],
-      "summary": "In 2023, a well-known legal AI effort fine-tuned a custom model that attorneys preferred over the then-leading frontier model in blind tests. Fine-tuning looked like the obvious path to specialization. By 2025, that",
+      "summary": "In 2023, a well-known legal AI effort fine-tuned a custom model that attorneys preferred over the then-leading frontier model in blind tests. Fine-tuning looked like the obvious path to specialization. By 2025, that same organization’s legal benchmark showed multiple general frontier models beating their custom system—without legal fine-tuning. Bloomberg-style from-scratch domain models saw similar leapfrogging.",
       "related": [
         "LoRA - Parameter-Efficient Fine-Tuning",
         "Local Inference Engines",
@@ -2153,7 +2153,7 @@
         "decision",
         "you"
       ],
-      "summary": "Most AI you use today is a text generator: a large language model (LLM) emits tokens one at a time\u2014sometimes with a visible chain of thought that feels like slow, deliberate \u201csystem two\u201d reasoning. Many software",
+      "summary": "Most AI you use today is a text generator: a large language model (LLM) emits tokens one at a time—sometimes with a visible chain of thought that feels like slow, deliberate “system two” reasoning. Many software decisions are not that. They are fast judgment calls: Is this email a refund request? Which team owns it? How urgent is it?",
       "related": [
         "Bounded Decisions",
         "Calibrated Decision Models (Jev)",
@@ -2191,7 +2191,7 @@
         "time",
         "systems"
       ],
-      "summary": "Imagine a \u201charmless\u201d change that quietly stops millions of card and ATM transactions. For teams sitting on decades-old systems, that fear is why modernization is both urgent and hard\u2014and why generative and agentic AI",
+      "summary": "Imagine a “harmless” change that quietly stops millions of card and ATM transactions. For teams sitting on decades-old systems, that fear is why modernization is both urgent and hard—and why generative and agentic AI are suddenly part of a realistic path forward.",
       "related": [
         "AI Coding Quality Workflows",
         "Legacy Modernization with AI",
@@ -2229,7 +2229,7 @@
         "idle",
         "decode"
       ],
-      "summary": "Training a frontier model can cost hundreds of millions of dollars and months of work. Afterward the model is a static pile of weights sitting in memory. It does nothing until **inference** runs those weights against",
+      "summary": "Training a frontier model can cost hundreds of millions of dollars and months of work. Afterward the model is a static pile of weights sitting in memory. It does nothing until inference runs those weights against new inputs to produce outputs. Chatbots, coding assistants, and agents are almost entirely inference products.",
       "related": [
         "LLM Inference",
         "Memory Wall"
@@ -2266,7 +2266,7 @@
         "themselves",
         "systems"
       ],
-      "summary": "Prompt engineering is writing the next perfect instruction by hand. **Loop engineering** is designing a system that takes a goal, prompts an agent, checks the work, prompts again, and repeats until a stopping",
+      "summary": "Prompt engineering is writing the next perfect instruction by hand. Loop engineering is designing a system that takes a goal, prompts an agent, checks the work, prompts again, and repeats until a stopping condition is met—with minimal manual prompting, but not zero human responsibility.",
       "related": [
         "Agentic Engineering",
         "Loop Engineering"
@@ -2303,7 +2303,7 @@
         "reality",
         "rare"
       ],
-      "summary": "Imagine each generation of students studying only the previous class\u2019s notes, never the textbook. Errors compound until nobody remembers the original. Replace students with models, notes with synthetic content, and",
+      "summary": "Imagine each generation of students studying only the previous class’s notes, never the textbook. Errors compound until nobody remembers the original.",
       "related": [
         "Continual Learning",
         "Model Collapse"
@@ -2340,7 +2340,7 @@
         "not",
         "source"
       ],
-      "summary": "Roughly ninety percent of a modern enterprise codebase is open source\u2014banks, hospitals, grids, telecom, cloud, and AI services alike. Much of that critical layer was written by small teams and volunteers. Innovation",
+      "summary": "Roughly ninety percent of a modern enterprise codebase is open source—banks, hospitals, grids, telecom, cloud, and AI services alike. Much of that critical layer was written by small teams and volunteers. Innovation scaled; time-sensitive maintenance did not always scale with it. For years the industry consumed open source faster than it invested in securing it.",
       "related": [
         "AI Security Trilemma",
         "Defender's Window"
@@ -2377,7 +2377,7 @@
         "starting",
         "over"
       ],
-      "summary": "A trained model is a vast collection of weights and activations\u2014dials tuned during training. Frontier and open models may have tens of billions to trillions of parameters. How many bits you store per parameter",
+      "summary": "A trained model is a vast collection of weights and activations—dials tuned during training. Frontier and open models may have tens of billions to trillions of parameters. How many bits you store per parameter decides memory, bandwidth, and often speed. Quantization stores those numbers at lower precision so the same model fits smaller devices and cheaper GPUs with limited accuracy loss.",
       "related": [
         "LLM Inference",
         "Quantization"
@@ -2414,7 +2414,7 @@
         "ai-generated",
         "shift-left"
       ],
-      "summary": "AI changed how fast software can appear: prompts yield functions, tests, agents, and multi-step workflows in seconds. Security practices built for slower, human-paced coding do not automatically keep up. If security",
+      "summary": "AI changed how fast software can appear: prompts yield functions, tests, agents, and multi-step workflows in seconds. Security practices built for slower, human-paced coding do not automatically keep up. If security is only a retrofit at the end of the pipeline, quality suffers and delivery stalls.",
       "related": [
         "AI Coding Quality Workflows",
         "Securing AI-Generated Code"
@@ -2451,7 +2451,7 @@
         "using",
         "not"
       ],
-      "summary": "The data that makes AI most useful is often the data that can hurt you most: customer PII, health records, financial details, contracts, credentials. Organizations spent decades building controls so *humans* would",
+      "summary": "The data that makes AI most useful is often the data that can hurt you most: customer PII, health records, financial details, contracts, credentials. Organizations spent decades building controls so humans would not mishandle that information. AI changes the tempo. Models and agents can read, transform, and move data at machine speed, so the controls around them must operate at machine speed too.",
       "related": [
         "Digital Sovereignty",
         "Sensitive Data Controls"
@@ -2488,7 +2488,7 @@
         "knowledge",
         "memory"
       ],
-      "summary": "An agent facing a production 500 error will flounder if you only dump runbooks, dashboards, and customer history into the context window. Four complementary mechanisms give agents knowledge beyond training data\u2014each",
+      "summary": "An agent facing a production 500 error will flounder if you only dump runbooks, dashboards, and customer history into the context window. Four complementary mechanisms give agents knowledge beyond training data—each for a different kind of knowing.",
       "related": [
         "Agent Memory",
         "Agent Skills",
@@ -2527,7 +2527,7 @@
         "torch.compile",
         "python"
       ],
-      "summary": "You have a correct PyTorch model and you want it faster. One line\u2014`model = torch.compile(model)`\u2014wraps it. The first run may be slower while compilation happens; later runs may be faster. Compilation is an",
+      "summary": "You have a correct PyTorch model and you want it faster. One line—model = torch.compile(model)—wraps it. The first run may be slower while compilation happens; later runs may be faster. Compilation is an opportunity, not a guarantee, and it does not always fuse the entire model into one graph.",
       "related": [
         "LLM Inference",
         "torch.compile & Graph Breaks"
@@ -2564,7 +2564,7 @@
         "governance",
         "decisions"
       ],
-      "summary": "When AI generates a paragraph, a bad answer is embarrassing. When AI denies a loan, contains a host, or pays an invoice, a bad answer is an incident. The hard question is not only \u201ccan AI decide?\u201d but \u201chow do we know",
+      "summary": "When AI generates a paragraph, a bad answer is embarrassing. When AI denies a loan, contains a host, or pays an invoice, a bad answer is an incident. The hard question is not only “can AI decide?” but “how do we know when it decided wrong—and whether someone made it wrong?”",
       "related": [
         "Calibrated Decision Models (Jev)",
         "Trusting AI Decisions"
@@ -2601,7 +2601,7 @@
         "around",
         "system"
       ],
-      "summary": "Once models can run tool-calling loops reliably, the scarce skill is not \u201cprompting an agent\u201d\u2014it is building the **harness**: the runtime that feeds context, tools, memory, sandboxes, and recovery around a",
+      "summary": "Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it is building the harness: the runtime that feeds context, tools, memory, sandboxes, and recovery around a deceptively simple loop.",
       "related": [
         "Agent Harness",
         "Long-Horizon Agents",
@@ -2639,7 +2639,7 @@
         "www.youtube.com/watch",
         "https"
       ],
-      "summary": "Coding is the canary domain for agents: rich training data, fast verifiers (compilers, tests, types, CI), and developers willing to change tools. Sequoia conversations with Andrej Karpathy, Anthropic\u2019s Boris Cherny, OpenAI\u2019s Greg Brockman, and Factory\u2019s Matan Grinberg\u2026",
+      "summary": "Coding is the canary domain for agents: rich training data, fast verifiers (compilers, tests, types, CI), and developers willing to change tools.",
       "related": [
         "AI Coding Quality Workflows",
         "Agent Harness",
@@ -2677,7 +2677,7 @@
         "real",
         "www.youtube.com/watch"
       ],
-      "summary": "Ricursive Intelligence\u2019s founders Anna Goldie and Azalia Mirhoseini represent a recursive bet: use AI to design the chips that run AI. Their Google-era AlphaChip work helped design multiple generations of TPUs and cut chip floor planning from months to hours. The teaching\u2026",
+      "summary": "Ricursive Intelligence’s founders Anna Goldie and Azalia Mirhoseini represent a recursive bet: use AI to design the chips that run AI. Their Google-era AlphaChip work helped design multiple generations of TPUs and cut chip floor planning from months to hours.",
       "related": [
         "AI-Designed Chips",
         "Energy & Goodput Constraints"
@@ -2714,7 +2714,7 @@
         "applied",
         "inside"
       ],
-      "summary": "Harvey\u2019s Gabe Pereyra frames the problem without romance: competing with frontier labs from the application layer is an unfair game\u2014they have more money, talent, compute, and data. The alternative title of his talk is blunt\u2014*building a research lab on a budget*. The broader\u2026",
+      "summary": "Harvey’s Gabe Pereyra frames the problem without romance: competing with frontier labs from the application layer is an unfair game—they have more money, talent, compute, and data. The alternative title of his talk is blunt—building a research lab on a budget.",
       "related": [
         "Agent Evaluation",
         "Applied Research Labs",
@@ -2752,7 +2752,7 @@
         "rides",
         "learning"
       ],
-      "summary": "Waymo\u2019s Dmitri Dolgov (20M+ fully autonomous rides), Zipline\u2019s long-distance delivery record (on the order of 140M miles with a zero-incident framing in their Training Data conversation), and Wayve\u2019s end-to-end \u201cAV 2.0\u201d story converge on one teaching point: in the physical\u2026",
+      "summary": "Waymo’s Dmitri Dolgov (20M+ fully autonomous rides), Zipline’s long-distance delivery record (on the order of 140M miles with a zero-incident framing in their Training Data conversation), and Wayve’s end-to-end “AV 2.0” story converge on one teaching point: in the physical world, reliability engineering eats model demos.",
       "related": [
         "Autonomy Reliability",
         "Physical AI - Robotics"
@@ -2789,7 +2789,7 @@
         "agent",
         "you"
       ],
-      "summary": "Sequoia\u2019s AI Ascent framing is intentionally non-academic: stop arguing about AGI checklists and notice that the shape of software work has changed. Pat Grady\u2019s keynote metaphor is the teaching device\u2014faster horses vs. cars\u2014paired with Konstantine Buhler and Jim Gao\u2019s\u2026",
+      "summary": "Sequoia’s AI Ascent framing is intentionally non-academic: stop arguing about AGI checklists and notice that the shape of software work has changed. Pat Grady’s keynote metaphor is the teaching device—faster horses vs. cars—paired with Konstantine Buhler and Jim Gao’s economic story of a cognitive revolution, and Sonya Huang’s push for companies to own their intelligence rather than rent a black box forever.",
       "related": [
         "Agent Era Market Frame",
         "Agentic Engineering",
@@ -2799,7 +2799,7 @@
       "html_id": "cars-not-faster-horses-a-commercial-definition-of-the-agent-era"
     },
     {
-      "title": "Continual Learning: Why Frozen Models Stall\u2014and How Experience Restarts Progress",
+      "title": "Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress",
       "slug": "a-continual-learning",
       "type": "article",
       "corpus": "Sequoia",
@@ -2827,7 +2827,7 @@
         "frozen",
         "stall"
       ],
-      "summary": "Pretraining and post-training create impressive snapshots. They do not, by themselves, create systems that keep learning from deployment. Sequoia\u2019s recent talks with Rich Sutton, David Silver, and builders like",
+      "summary": "Pretraining and post-training create impressive snapshots. They do not, by themselves, create systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and builders like Trajectory converge on a hard claim: the next leap is learning during use.",
       "related": [
         "Continual Learning",
         "Path to AGI (Last Mile)",
@@ -2865,7 +2865,7 @@
         "after",
         "only"
       ],
-      "summary": "LLMs look magical at search and coding because those domains are drowning in data\u2014and friendly to synthetic data. Most of the economy is not. Flapping Airplanes\u2019 (Ben and Asher Spector) thesis is that data efficiency\u2014getting coding-level capability with orders of magnitude\u2026",
+      "summary": "LLMs look magical at search and coding because those domains are drowning in data—and friendly to synthetic data. Most of the economy is not. Flapping Airplanes’ (Ben and Asher Spector) thesis is that data efficiency—getting coding-level capability with orders of magnitude less data—will decide who can participate in AI beyond a few centralized labs.",
       "related": [
         "Continual Learning",
         "Data Efficiency Bottleneck"
@@ -2902,7 +2902,7 @@
         "start",
         "uwe"
       ],
-      "summary": "Sovereignty in defense AI is not a slogan on a slide. Stark cofounders Uwe Horstmann and Johannes Schaback frame European defense modernization as an industrial and software problem: the ability to manufacture, update, and operate intelligent systems under your own control.\u2026",
+      "summary": "Sovereignty in defense AI is not a slogan on a slide. Stark cofounders Uwe Horstmann and Johannes Schaback frame European defense modernization as an industrial and software problem: the ability to manufacture, update, and operate intelligent systems under your own control. Two years after founding, Stark had roughly 700 employees and software-driven strike systems in the field in Ukraine.",
       "related": [
         "Digital Sovereignty",
         "Physical AI - Robotics",
@@ -2940,7 +2940,7 @@
         "intelligence",
         "https"
       ],
-      "summary": "Model-quality narratives often ignore the industrial reality underneath: frontier AI is becoming an energy-and-systems problem as much as an algorithms problem. Sequoia conversations with Crusoe\u2019s Chase Lochmiller, Google\u2019s Amin Vahdat, NVIDIA\u2019s Jensen Huang, and Starcloud\u2019s\u2026",
+      "summary": "Model-quality narratives often ignore the industrial reality underneath: frontier AI is becoming an energy-and-systems problem as much as an algorithms problem.",
       "related": [
         "Energy & Goodput Constraints",
         "Memory Wall"
@@ -2977,7 +2977,7 @@
         "feature",
         "beats"
       ],
-      "summary": "Enterprises asked for AI, then rejected much of what they got. Sequoia\u2019s enterprise conversations\u2014Aaron Levie (Box), Elias Torres (Agency), Block\u2019s Goose agent with CTO Dhanji Prasanna, and Crosby on legal contracting\u2014explain why: diffusion is an org and workflow problem, not\u2026",
+      "summary": "Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron Levie (Box), Elias Torres (Agency), Block’s Goose agent with CTO Dhanji Prasanna, and Crosby on legal contracting—explain why: diffusion is an org and workflow problem, not a model-demo problem. Coding tools spread quickly because developers live in tight loops with compilers and PRs. Most knowledge work does not.",
       "related": [
         "Enterprise AI Diffusion",
         "Enterprise Agent Platforms"
@@ -3014,7 +3014,7 @@
         "own",
         "not"
       ],
-      "summary": "Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully you deploy AI, the more your COGS and dependency rise on someone else\u2019s model. Across Sequoia\u2019s recent conversations, a",
+      "summary": "Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent conversations, a clear product doctrine is forming—not your weights, not your product.",
       "related": [
         "Digital Sovereignty",
         "Enterprise AI Diffusion",
@@ -3024,7 +3024,7 @@
       "html_id": "own-your-weights-why-companies-are-building-private-intelligence"
     },
     {
-      "title": "Three Quarters to AGI\u2014and What Still Blocks the Last Mile",
+      "title": "Three Quarters to AGI—and What Still Blocks the Last Mile",
       "slug": "a-path-to-agi",
       "type": "article",
       "corpus": "Sequoia",
@@ -3052,7 +3052,7 @@
         "mile",
         "last"
       ],
-      "summary": "Demis Hassabis\u2019s Sequoia conversation is notable for calibrated optimism: AGI as a multi-decade mission that, in his telling, has stayed roughly on the schedule DeepMind sketched around 2010\u2014and for which he still names roughly 2030 as a distribution year. The useful teaching\u2026",
+      "summary": "Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: AGI as a multi-decade mission that, in his telling, has stayed roughly on the schedule DeepMind sketched around 2010—and for which he still names roughly 2030 as a distribution year. The useful teaching point is not a scoreboard percentage.",
       "related": [
         "Continual Learning",
         "Path to AGI (Last Mile)",
@@ -3090,7 +3090,7 @@
         "you",
         "verifiers"
       ],
-      "summary": "Reinforcement learning for agents is no longer only a lab technique. In Sequoia talks with Mercor\u2019s Brendan Foody and Prime Intellect\u2019s Will Brown and Johannes Hagemann, the bottleneck has shifted from \u201ccan we do RL?\u201d to can we build environments that look like the economy?\u2026",
+      "summary": "Reinforcement learning for agents is no longer only a lab technique. In Sequoia talks with Mercor’s Brendan Foody and Prime Intellect’s Will Brown and Johannes Hagemann, the bottleneck has shifted from “can we do RL?” to can we build environments that look like the economy? Without those environments, post-training reinforces eloquence in chat—not completed work.",
       "related": [
         "Continual Learning",
         "RL Environments"
@@ -3127,7 +3127,7 @@
         "sensorizing",
         "factories"
       ],
-      "summary": "Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia\u2019s conversations with Mecka\u2019s Josh Gao, NVIDIA\u2019s Jim Fan, Physical Intelligence\u2019s Karol Hausman and Tobi Springenberg, and Hugging Face\u2019s Thomas Wolf converge on a manufacturing problem: how\u2026",
+      "summary": "Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s conversations with Mecka’s Josh Gao, NVIDIA’s Jim Fan, Physical Intelligence’s Karol Hausman and Tobi Springenberg, and Hugging Face’s Thomas Wolf converge on a manufacturing problem: how to produce physical experience at scale—and then distribute skills the way software platforms distribute apps.",
       "related": [
         "Data Efficiency Bottleneck",
         "Physical AI - Robotics"
@@ -3164,7 +3164,7 @@
         "intelligence",
         "than"
       ],
-      "summary": "Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the physical substrate of computation\u2014and that brains are an existence proof the industry underweights. The teaching frame is intelligence per watt: useful\u2026",
+      "summary": "Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the physical substrate of computation—and that brains are an existence proof the industry underweights. The teaching frame is intelligence per watt: useful cognition delivered per unit energy, not FLOPS marketed on a slide.",
       "related": [
         "AI-Designed Chips",
         "Energy & Goodput Constraints"
@@ -3201,7 +3201,7 @@
         "www.youtube.com/watch",
         "https"
       ],
-      "summary": "ElevenLabs\u2019 Mati Staniszewski argues that voice is becoming a fundamental interface layer\u2014not a niche accessibility feature bolted onto chat. As generative speech crosses the uncanny valley across languages, products can meet users where emotion, speed, and hands-free work\u2026",
+      "summary": "ElevenLabs’ Mati Staniszewski argues that voice is becoming a fundamental interface layer—not a niche accessibility feature bolted onto chat. As generative speech crosses the uncanny valley across languages, products can meet users where emotion, speed, and hands-free work already live: calls, games, cars, clinics, warehouses, and creative media.",
       "related": [
         "Voice as Primary Interface"
       ],
@@ -3237,7 +3237,7 @@
         "agent",
         "need"
       ],
-      "summary": "The public web was built for human eyes, browsers, and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel\u2019s Parag Agrawal argues for a new web layer for AI agents\u2014infrastructure that makes the internet legible and actionable for non-human\u2026",
+      "summary": "The public web was built for human eyes, browsers, and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel’s Parag Agrawal argues for a new web layer for AI agents—infrastructure that makes the internet legible and actionable for non-human browsers. Profound’s James Cadwallader covers the mirror problem on the growth side: when the visitor is an agent, SEO instincts misfire.",
       "related": [
         "Agent Tooling & APIs",
         "Agent-Native Web"
@@ -3271,9 +3271,14 @@
         "good",
         "eval",
         "practice",
-        "agents"
+        "agents",
+        "benchmarks",
+        "evals",
+        "leaderboard",
+        "swe-bench",
+        "orientation"
       ],
-      "summary": "Strong agent evaluation is less about chasing a viral benchmark and more about building a measurement system that matches product claims, resists gaming, and stays calibrated as models improve. Anthropic\u2019s agent-eval\u2026",
+      "summary": "Strong agent evaluation is less about chasing a viral benchmark and more about building a measurement system that matches product claims, resists gaming, and stays calibrated as models improve. Anthropic’s agent-eval playbook, independent-evaluator practice, Epoch’s design choices on MirrorCode, and FPF’s privacy-benchmarking argument converge on practical habits.",
       "related": [
         "Agent Benchmark Portfolio"
       ],
@@ -3306,9 +3311,13 @@
         "leaderboard",
         "limits",
         "failure",
-        "modes"
+        "modes",
+        "benchmarks",
+        "evals",
+        "swe-bench",
+        "orientation"
       ],
-      "summary": "Public agent leaderboards create progress theater. Some of that signal is real; much of it is contaminated, overfit, misaligned with outcomes, or gamed by scaffolding. Healthy eval culture starts by naming failure mod\u2026",
+      "summary": "Public agent leaderboards create progress theater. Some of that signal is real; much of it is contaminated, overfit, misaligned with outcomes, or gamed by scaffolding. Healthy eval culture starts by naming failure modes explicitly—Anthropic, Epoch, FPF, and Google Research each document pieces of this pathology.",
       "related": [
         "Agent Benchmark Portfolio"
       ],
@@ -3341,9 +3350,13 @@
         "major",
         "agent",
         "capability",
-        "benchmarks"
+        "benchmarks",
+        "evals",
+        "leaderboard",
+        "swe-bench",
+        "orientation"
       ],
-      "summary": "No single test measures \u201cagent intelligence.\u201d Useful practice is a portfolio: software-engineering agents, computer use, browsing, long-horizon coding, aggregated capability indices, and domain suites. Below is a map\u2026",
+      "summary": "No single test measures “agent intelligence.” Useful practice is a portfolio: software-engineering agents, computer use, browsing, long-horizon coding, aggregated capability indices, and domain suites. Below is a map of major benchmarks and what each is actually for—grounded in Epoch, Anthropic, AI Index, and related eval work.",
       "related": [
         "Agent Benchmark Portfolio"
       ],
@@ -3376,9 +3389,13 @@
         "what",
         "benchmarks",
         "cannot",
-        "answer"
+        "answer",
+        "evals",
+        "leaderboard",
+        "swe-bench",
+        "orientation"
       ],
-      "summary": "Benchmarks are decision tools. Epoch\u2019s essay on nine big questions benchmarks can help answer is a useful antidote to both benchmark worship and benchmark nihilism: measurement shines when tied to a concrete question\u2014\u2026",
+      "summary": "Benchmarks are decision tools. Epoch’s essay on nine big questions benchmarks can help answer is a useful antidote to both benchmark worship and benchmark nihilism: measurement shines when tied to a concrete question—and fails when asked to prophesy everything.",
       "related": [
         "Agent Benchmark Portfolio"
       ],
@@ -3410,9 +3427,14 @@
         "gap-fill",
         "agent",
         "evaluations",
-        "hard"
+        "hard",
+        "benchmarks",
+        "evals",
+        "leaderboard",
+        "swe-bench",
+        "orientation"
       ],
-      "summary": "Evaluating a chatbot answer is mostly: prompt in, text out, grade. Evaluating an agent is harder because the system acts across turns, tools, and mutable state. Anthropic\u2019s *Demystifying evals for AI agents* is the cl\u2026",
+      "summary": "Evaluating a chatbot answer is mostly: prompt in, text out, grade. Evaluating an agent is harder because the system acts across turns, tools, and mutable state. Anthropic’s Demystifying evals for AI agents is the clearest practitioner map of that difference—and why teams that skip evals eventually fly blind.",
       "related": [
         "Agent Benchmark Portfolio"
       ],
@@ -3446,9 +3468,14 @@
         "adoption",
         "entered",
         "everyday",
-        "life"
+        "life",
+        "timeline",
+        "ai timeline",
+        "eras",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Capability timelines explain what models *can* do; adoption timelines explain what societies *actually* do with them. The mid-2020s mark a shift from enthusiast and enterprise pilots to everyday use\u2014at work, in consum\u2026",
+      "summary": "Capability timelines explain what models can do; adoption timelines explain what societies actually do with them. The mid-2020s mark a shift from enthusiast and enterprise pilots to everyday use—at work, in consumer apps, and in regulated domains—documented by the Stanford AI Index, Epoch polling, and applied research deployments.",
       "related": [
         "AI Development Timeline"
       ],
@@ -3481,9 +3508,14 @@
         "capability",
         "frontiers",
         "lead",
-        "times"
+        "times",
+        "timeline",
+        "ai timeline",
+        "eras",
+        "orientation",
+        "landscape"
       ],
-      "summary": "\u201cWho is ahead?\u201d is the most common timeline question and the easiest to answer badly. Frontiers are multi-dimensional, lead times shrink, and open-weight systems keep closing gaps. Epoch\u2019s capability indices and the S\u2026",
+      "summary": "“Who is ahead?” is the most common timeline question and the easiest to answer badly. Frontiers are multi-dimensional, lead times shrink, and open-weight systems keep closing gaps. Epoch’s capability indices and the Stanford AI Index give a more careful vocabulary: measure several skills, watch how long a lead lasts, and separate closed-model peaks from the accessible frontier.",
       "related": [
         "AI Development Timeline"
       ],
@@ -3516,9 +3548,13 @@
         "gap-fill",
         "compute",
         "timeline",
-        "spine"
+        "spine",
+        "ai timeline",
+        "eras",
+        "orientation",
+        "landscape"
       ],
-      "summary": "If eras describe *what* AI felt like to build and use, compute describes *why* those eras arrived when they did. Training run size, chip supply, data-center power, and inference price form a measurable backbone undern\u2026",
+      "summary": "If eras describe what AI felt like to build and use, compute describes why those eras arrived when they did. Training run size, chip supply, data-center power, and inference price form a measurable backbone underneath product narratives. Epoch AI’s datasets and topic overviews make that backbone legible without reducing history to a single FLOP chart.",
       "related": [
         "AI Development Timeline",
         "Compute Economics Spine"
@@ -3553,9 +3589,13 @@
         "modern",
         "what",
         "actually",
-        "changed"
+        "changed",
+        "timeline",
+        "ai timeline",
+        "orientation",
+        "landscape"
       ],
-      "summary": "A useful AI timeline is not a list of product launches. It is a sequence of operating regimes\u2014periods where the dominant techniques, bottlenecks, and user expectations shifted enough that builders had to change how th\u2026",
+      "summary": "A useful AI timeline is not a list of product launches. It is a sequence of operating regimes—periods where the dominant techniques, bottlenecks, and user expectations shifted enough that builders had to change how they worked. Reading the last fifteen years this way clarifies why today’s agent and multimodal systems feel discontinuous from earlier machine learning, even when many underlying ideas are old.",
       "related": [
         "AI Development Timeline"
       ],
@@ -3590,9 +3630,14 @@
         "chatbots",
         "agents",
         "action",
-        "inflection"
+        "inflection",
+        "timeline",
+        "ai timeline",
+        "eras",
+        "orientation",
+        "landscape"
       ],
-      "summary": "The move from chat interfaces to agents is the clearest user-visible regime change since assistants themselves. Chatbots reply; agents pursue goals across tools, files, browsers, and APIs over many steps. That sounds\u2026",
+      "summary": "The move from chat interfaces to agents is the clearest user-visible regime change since assistants themselves. Chatbots reply; agents pursue goals across tools, files, browsers, and APIs over many steps. That sounds incremental until you look at failure modes, economics, and evaluation—all of which change shape.",
       "related": [
         "AI Development Timeline",
         "Agent Harness"
@@ -3631,7 +3676,7 @@
         "awareness",
         "infrastructure"
       ],
-      "summary": "Agent evaluations look precise on leaderboards. Anthropic\u2019s research on agent evals, BrowseComp contamination, and coding-bench infrastructure shows why those percentages often measure more than \u201cmodel IQ.\u201d",
+      "summary": "Agent evaluations look precise on leaderboards. Anthropic’s research on agent evals, BrowseComp contamination, and coding-bench infrastructure shows why those percentages often measure more than “model IQ.”",
       "related": [
         "Agent Evaluation",
         "Eval Hygiene & Contamination"
@@ -3667,7 +3712,7 @@
         "advanced",
         "tool"
       ],
-      "summary": "General-purpose agents need specialized know-how without stuffing every procedure and API into the system prompt. Anthropic\u2019s Agent Skills standard and advanced tool-use features teach a portable pattern: progressive\u2026",
+      "summary": "General-purpose agents need specialized know-how without stuffing every procedure and API into the system prompt. Anthropic’s Agent Skills standard and advanced tool-use features teach a portable pattern: progressive disclosure of expertise and tools, then code-shaped orchestration when natural-language tool calling becomes the bottleneck.",
       "related": [
         "Context Engineering"
       ],
@@ -3704,7 +3749,7 @@
         "independent",
         "evaluators"
       ],
-      "summary": "As models improve, the same tests that once separated strong humans (or strong models) stop discriminating. Anthropic\u2019s recent work on hiring take-homes, third-party risk assessment, and \u201cembedded\u201d evaluators shares o\u2026",
+      "summary": "As models improve, the same tests that once separated strong humans (or strong models) stop discriminating. Anthropic’s recent work on hiring take-homes, third-party risk assessment, and “embedded” evaluators shares one lesson: evaluation is an adversarial, institutional problem, not a static benchmark list.",
       "related": [
         "Agent Benchmark Portfolio",
         "Agent Evaluation",
@@ -3742,7 +3787,7 @@
         "failure",
         "mitigation"
       ],
-      "summary": "When agents get tools, networks, and goals, \u201cmisalignment\u201d stops being abstract. Anthropic\u2019s cyber-eval incident writeups, unintended-action reports, and automated alignment-researcher experiments sketch a practical l\u2026",
+      "summary": "When agents get tools, networks, and goals, “misalignment” stops being abstract. Anthropic’s cyber-eval incident writeups, unintended-action reports, and automated alignment-researcher experiments sketch a practical loop: detect → assess transcripts → remediate training/ops → automate mitigation research.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -3777,7 +3822,7 @@
         "verifying",
         "inference"
       ],
-      "summary": "Two complementary trust problems: what can the agent do in the world, and can anyone prove which model produced an answer? Anthropic\u2019s containment writeups, confidential inference research, and zkSNARK-style provable\u2026",
+      "summary": "Two complementary trust problems: what can the agent do in the world, and can anyone prove which model produced an answer? Anthropic’s containment writeups, confidential inference research, and zkSNARK-style provable inference attack both. Together they move safety from “trust our policy PDF” toward environment design and cryptographic evidence.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -3811,7 +3856,7 @@
         "engineering",
         "agents"
       ],
-      "summary": "Prompt engineering optimized the words in a system message. Context engineering asks a broader question: *which tokens should be present at sampling time so the model reliably does the right thing?* For agents\u2014tools,\u2026",
+      "summary": "Prompt engineering optimized the words in a system message. Context engineering asks a broader question: which tokens should be present at sampling time so the model reliably does the right thing? For agents—tools, retrieved files, transcripts, skills, MCP results—that set changes every turn.",
       "related": [
         "Context Engineering"
       ],
@@ -3847,7 +3892,7 @@
         "verification",
         "access"
       ],
-      "summary": "Cyber capability in frontier models is dual-use: the same skills that find and fix vulnerabilities can exploit them. Anthropic\u2019s Cyber Mission and Cyber Verification Program (CVP) teach a deployment pattern: default-c\u2026",
+      "summary": "Cyber capability in frontier models is dual-use: the same skills that find and fix vulnerabilities can exploit them. Anthropic’s Cyber Mission and Cyber Verification Program (CVP) teach a deployment pattern: default-conservative safeguards for the public, vetted elevated access for defenders, and funded programs that close the find→verify→patch gap.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -3884,7 +3929,7 @@
         "theft",
         "scale"
       ],
-      "summary": "Illicit distillation is industrial-scale extraction of a frontier model\u2019s capabilities into another model\u2014usually via fraudulent account networks\u2014without the original developer\u2019s authorization. It is not a database br\u2026",
+      "summary": "Illicit distillation is industrial-scale extraction of a frontier model’s capabilities into another model—usually via fraudulent account networks—without the original developer’s authorization. It is not a database breach; it is systematic interaction that copies behavior (and sometimes cyber/bio-relevant skills) at a fraction of the training cost.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -3921,7 +3966,7 @@
         "measuring",
         "pace"
       ],
-      "summary": "Debates about AI\u2019s future often mix three different questions: what the economy does if capabilities unfold a certain way, what people believe will happen, and how fast labs are actually automating their own R&D. Anth\u2026",
+      "summary": "Debates about AI’s future often mix three different questions: what the economy does if capabilities unfold a certain way, what people believe will happen, and how fast labs are actually automating their own R&D. Anthropic Institute and research pieces separate those layers.",
       "related": [
         "AI Development Timeline"
       ],
@@ -3957,7 +4002,7 @@
         "with",
         "safeguards"
       ],
-      "summary": "Frontier models can speed drug discovery, biomolecular design, and lab analysis\u2014and the same breadth raises misuse risk. Anthropic\u2019s life-sciences verification program, guest-investigator model, and drug-development p\u2026",
+      "summary": "Frontier models can speed drug discovery, biomolecular design, and lab analysis—and the same breadth raises misuse risk. Anthropic’s life-sciences verification program, guest-investigator model, and drug-development partnerships illustrate capability with gated permissiveness, not “biology unlocked for everyone.” The pattern mirrors cyber verification: dual-use domains get asymmetric access.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -3995,7 +4040,7 @@
         "running",
         "coding"
       ],
-      "summary": "Single-session coding agents stall when the human leaves or the context window ends. Anthropic engineering on Claude Code, multi-agent compiler builds, and long-running harnesses teaches how to get sustained autonomou\u2026",
+      "summary": "Single-session coding agents stall when the human leaves or the context window ends. Anthropic engineering on Claude Code, multi-agent compiler builds, and long-running harnesses teaches how to get sustained autonomous progress: loops, artifacts, tests, and parallel workers on a shared codebase. The product is the harness—not a one-off demo script.",
       "related": [
         "AI Coding Quality Workflows",
         "Agent Harness"
@@ -4035,7 +4080,7 @@
         "auto",
         "mode"
       ],
-      "summary": "Coding agents that can edit files and run shells face a classic tradeoff: every action needs approval (safe, slow, fatiguing) vs skip all permissions (fast, dangerous). Anthropic\u2019s Claude Code work shows a third path:\u2026",
+      "summary": "Coding agents that can edit files and run shells face a classic tradeoff: every action needs approval (safe, slow, fatiguing) vs skip all permissions (fast, dangerous). Anthropic’s Claude Code work shows a third path: bound the agent’s world, then classify remaining risky actions. The same containment philosophy that spans chat and cyber products becomes concrete OS policy for developers.",
       "related": [
         "AI Security Trilemma",
         "Agent Harness",
@@ -4074,7 +4119,7 @@
         "benefit",
         "governance"
       ],
-      "summary": "Lab \u201cannouncements\u201d about policy, elections, government partnerships, and public-benefit funds are easy to read as PR. Read as governance design, they show how rules, product affordances, and institutional structure c\u2026",
+      "summary": "Lab “announcements” about policy, elections, government partnerships, and public-benefit funds are easy to read as PR. Read as governance design, they show how rules, product affordances, and institutional structure co-evolve with agentic capability. Anthropic’s 2026 usage-policy refresh, midterms safeguards, Public Benefit Fund commitment, and GSA partnership expansion are four instruments of one stack.",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -4110,7 +4155,7 @@
         "crosses",
         "boundaries"
       ],
-      "summary": "Distillation trains a student model on a teacher\u2019s outputs. When the teacher is a proprietary API, the process is black-box: attackers or competitors never see weights\u2014only prompts and completions. White-box distillat\u2026",
+      "summary": "Distillation trains a student model on a teacher’s outputs. When the teacher is a proprietary API, the process is black-box: attackers or competitors never see weights—only prompts and completions. White-box distillation, by contrast, uses logits, activations, or other internals that closed APIs withhold.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -4118,7 +4163,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/cset-georgetown/black-box-distillation.md"
     },
     {
-      "title": "China\u2019s AI Governance Proposals: Who Holds Which Duties?",
+      "title": "China’s AI Governance Proposals: Who Holds Which Duties?",
       "slug": "a-gf-china-ai-governance-actors",
       "html_id": "chinas-ai-governance-proposals-who-holds-which-duties",
       "type": "article",
@@ -4147,7 +4192,7 @@
         "which",
         "duties"
       ],
-      "summary": "China was early to regulate recommendation algorithms (2021) and frames AI as a major strategic opportunity toward world leadership by 2030. CSET\u2019s comparative read of five major Chinese AI governance proposals (2016\u2013\u2026",
+      "summary": "China was early to regulate recommendation algorithms (2021) and frames AI as a major strategic opportunity toward world leadership by 2030. CSET’s comparative read of five major Chinese AI governance proposals (2016–2024) focuses less on slogans and more on which actors get which responsibilities—the machinery that makes governance real.",
       "related": [
         "AI Development Timeline"
       ],
@@ -4155,7 +4200,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/cset-georgetown/china-ai-governance-actors.md"
     },
     {
-      "title": "China\u2019s Embodied AI: A Different Path Toward AGI",
+      "title": "China’s Embodied AI: A Different Path Toward AGI",
       "slug": "a-gf-chinas-embodied-ai-path",
       "html_id": "chinas-embodied-ai-a-different-path-toward-agi",
       "type": "article",
@@ -4183,7 +4228,7 @@
         "path",
         "toward"
       ],
-      "summary": "Western AGI debates often equate progress with scaling LLMs. CSET\u2019s December 2025 report *China\u2019s Embodied AI: A Path to AGI* (Hannas, Chang, Weber, Chou) documents a broader Chinese research and industrial bet: intel\u2026",
+      "summary": "Western AGI debates often equate progress with scaling LLMs. CSET’s December 2025 report China’s Embodied AI: A Path to AGI (Hannas, Chang, Weber, Chou) documents a broader Chinese research and industrial bet: intelligence that emerges from body–brain–environment interaction—robots, drones, vehicles, and simulated worlds—not only from next-token prediction.",
       "related": [
         "Physical AI / Robotics"
       ],
@@ -4219,7 +4264,7 @@
         "risk",
         "process"
       ],
-      "summary": "The EU\u2019s AI regulatory stack pairs binding rules with a voluntary Code of Practice that operationalizes how general-purpose AI (GPAI) providers should handle systemic risk. CSET\u2019s July 2025 analysis of the Safety and\u2026",
+      "summary": "The EU’s AI regulatory stack pairs binding rules with a voluntary Code of Practice that operationalizes how general-purpose AI (GPAI) providers should handle systemic risk. CSET’s July 2025 analysis of the Safety and Security chapter treats compliance as a continuous loop—not a one-time checklist—and asks whether the Code could become a de facto global template.",
       "related": [
         "AI Development Timeline"
       ],
@@ -4227,7 +4272,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/cset-georgetown/eu-ai-code-of-practice-safety.md"
     },
     {
-      "title": "Open Models as Soft Power in US\u2013China Competition",
+      "title": "Open Models as Soft Power in US–China Competition",
       "slug": "a-gf-open-models-as-soft-power",
       "html_id": "open-models-as-soft-power-in-uschina-competition",
       "type": "article",
@@ -4257,7 +4302,7 @@
         "china",
         "competition"
       ],
-      "summary": "Weights that anyone can download are not only a research norm\u2014they are a geostrategic distribution channel. CSET/RAND analysis (*Open Models, Soft Power, and the Spectrum of U.S.-China Artificial Intelligence Competit\u2026",
+      "summary": "Weights that anyone can download are not only a research norm—they are a geostrategic distribution channel. CSET/RAND analysis (Open Models, Soft Power, and the Spectrum of U.S.-China Artificial Intelligence Competition, March 2026) argues the open-model ecosystem is becoming a primary arena for influence: who sets defaults for developers worldwide may matter as much as who trains the single best closed model.",
       "related": [
         "AI Development Timeline",
         "Open-Weight Soft Power"
@@ -4266,7 +4311,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/cset-georgetown/open-models-as-soft-power.md"
     },
     {
-      "title": "Reading the PLA\u2019s AI Wish List (C5ISRT)\u2014Without Hype",
+      "title": "Reading the PLA’s AI Wish List (C5ISRT)—Without Hype",
       "slug": "a-gf-pla-ai-c5isrt-wish-list",
       "html_id": "reading-the-plas-ai-wish-list-c5isrtwithout-hype",
       "type": "article",
@@ -4295,7 +4340,7 @@
         "without",
         "hype"
       ],
-      "summary": "Open-source requests for proposal (RFPs) are one of the few systematic windows into military AI demand. CSET\u2019s *China\u2019s Military AI Wish List* reviews thousands of Chinese-language PLA RFPs published between 1 January\u2026",
+      "summary": "Open-source requests for proposal (RFPs) are one of the few systematic windows into military AI demand. CSET’s China’s Military AI Wish List reviews thousands of Chinese-language PLA RFPs published between 1 January 2023 and 31 December 2024, focused on C5ISRT: command, control, communications, computers, cyber, intelligence, surveillance, reconnaissance, and targeting.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -4331,7 +4376,7 @@
         "talent",
         "pathways"
       ],
-      "summary": "CHIPS-era strategy fails without people who can run fabs. CSET\u2019s *Strengthening the U.S. Semiconductor Manufacturing Workforce* (Karsten & Koslosky, September 2026) scopes deliberately to front-end fabrication\u2014where p\u2026",
+      "summary": "CHIPS-era strategy fails without people who can run fabs. CSET’s Strengthening the U.S. Semiconductor Manufacturing Workforce (Karsten & Koslosky, September 2026) scopes deliberately to front-end fabrication—where process complexity and cleanroom demands make talent the binding constraint—not every chip-adjacent software or packaging job.",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -4365,7 +4410,7 @@
         "teaming",
         "reports"
       ],
-      "summary": "Red-teaming is ubiquitous and uneven. CSET\u2019s October 2026 policy brief (*Systematizing the Reporting of AI Red-Teaming*) argues the bottleneck is often reporting: qualitative, contextual tests produce incomparable wri\u2026",
+      "summary": "Red-teaming is ubiquitous and uneven. CSET’s October 2026 policy brief (Systematizing the Reporting of AI Red-Teaming) argues the bottleneck is often reporting: qualitative, contextual tests produce incomparable write-ups that help neither other testers nor decision-makers. Interviews with practitioners frame the fix as shared evidence fields, not a single mandated playbook.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -4402,7 +4447,7 @@
         "cost",
         "reality"
       ],
-      "summary": "Export controls fail if chips are diverted after sale. CSET\u2019s *Tracking AI Chips* report and companion cost analysis ask a practical question: can regulators verify where controlled accelerators sit, what would that c\u2026",
+      "summary": "Export controls fail if chips are diverted after sale. CSET’s Tracking AI Chips report and companion cost analysis ask a practical question: can regulators verify where controlled accelerators sit, what would that cost, and what can such systems never do?",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -4410,7 +4455,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/cset-georgetown/tracking-ai-chips-and-costs.md"
     },
     {
-      "title": "US\u2013China AI Competition Beyond a Single \u201cRace\u201d",
+      "title": "US–China AI Competition Beyond a Single “Race”",
       "slug": "a-gf-us-china-competition-industrial-policy",
       "html_id": "uschina-ai-competition-beyond-a-single-race",
       "type": "article",
@@ -4438,7 +4483,7 @@
         "single",
         "race"
       ],
-      "summary": "CSET\u2019s competition framing treats US\u2013China AI rivalry as multi-dimensional: national security, markets, industrial capacity, and influence over global stacks. Reducing it to one lab leaderboard misses the policy instr\u2026",
+      "summary": "CSET’s competition framing treats US–China AI rivalry as multi-dimensional: national security, markets, industrial capacity, and influence over global stacks.",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -4474,7 +4519,7 @@
         "policy",
         "framework"
       ],
-      "summary": "In March 2026 the White House released a National Policy Framework for Artificial Intelligence\u2014legislative recommendations for Congress, not just another strategy memo. CSET\u2019s unpacking piece stresses the genre differ\u2026",
+      "summary": "In March 2026 the White House released a National Policy Framework for Artificial Intelligence—legislative recommendations for Congress, not just another strategy memo. CSET’s unpacking piece stresses the genre difference: prior documents (July 2025 AI Action Plan, executive orders) set direction; this framework names statutes Congress should pass to match administration goals.",
       "related": [
         "AI Development Timeline",
         "Global AI Policy Regimes"
@@ -4512,7 +4557,7 @@
         "daily",
         "task"
       ],
-      "summary": "Capability headlines outrun behavior data. Epoch\u2019s adoption work combines polling, employer-plan patterns, and a ChatGPT usage explorer built from consented chat-history metadata\u2014so debates about impact can cite how p\u2026",
+      "summary": "Capability headlines outrun behavior data. Epoch’s adoption work combines polling, employer-plan patterns, and a ChatGPT usage explorer built from consented chat-history metadata—so debates about impact can cite how people actually use AI, not only what labs ship.",
       "related": [
         "AI Development Timeline"
       ],
@@ -4547,7 +4592,7 @@
         "compute",
         "headroom"
       ],
-      "summary": "\u201cA country of geniuses in a datacenter\u201d is a vivid phrase. Epoch asks a colder question: given chips shipped through the late 2020s, how many concurrent frontier agents could that hardware actually support\u2014and what do\u2026",
+      "summary": "“A country of geniuses in a datacenter” is a vivid phrase. Epoch asks a colder question: given chips shipped through the late 2020s, how many concurrent frontier agents could that hardware actually support—and what does rising coding-agent spend inside labs already show?",
       "related": [
         "Agent Harness"
       ],
@@ -4555,7 +4600,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/epoch-ai/agent-compute-headroom.md"
     },
     {
-      "title": "Can AI Automate Knowledge Work? Epoch\u2019s Own Stress Tests",
+      "title": "Can AI Automate Knowledge Work? Epoch’s Own Stress Tests",
       "slug": "a-gf-automating-knowledge-work",
       "html_id": "can-ai-automate-knowledge-work-epochs-own-stress-tests",
       "type": "article",
@@ -4584,7 +4629,7 @@
         "stress",
         "tests"
       ],
-      "summary": "Public benchmarks often reward clean, verifiable tasks. Knowledge organizations live on judgment, taste, and follow-through. Epoch\u2019s automation reports ask models to do *Epoch\u2019s* work\u2014and separately ask whether agents\u2026",
+      "summary": "Public benchmarks often reward clean, verifiable tasks. Knowledge organizations live on judgment, taste, and follow-through. Epoch’s automation reports ask models to do Epoch’s work—and separately ask whether agents can invent ML methods humans recently invented.",
       "related": [
         "Agent Evaluation"
       ],
@@ -4619,7 +4664,7 @@
         "bayesian",
         "methodology"
       ],
-      "summary": "Leaderboards that list raw scores on mismatched benchmarks cannot answer \u201cwhich model is more capable overall?\u201d Epoch\u2019s Epoch Capabilities Index (ECI) borrows Item Response Theory (IRT) from educational testing so mod\u2026",
+      "summary": "Leaderboards that list raw scores on mismatched benchmarks cannot answer “which model is more capable overall?” Epoch’s Epoch Capabilities Index (ECI) borrows Item Response Theory (IRT) from educational testing so models can be compared even when they sat different exams. The Bayesian methodology update makes the uncertainty in those comparisons first-class.",
       "related": [
         "Agent Evaluation"
       ],
@@ -4656,7 +4701,7 @@
         "huawei",
         "roadmaps"
       ],
-      "summary": "Western debate often treats \u201cChinese AI\u201d as a monolith. Epoch\u2019s industry work separates who earns what, whether domestic chips close on Nvidia, and what hiring ads reveal about real stack dependencies. The three lense\u2026",
+      "summary": "Western debate often treats “Chinese AI” as a monolith. Epoch’s industry work separates who earns what, whether domestic chips close on Nvidia, and what hiring ads reveal about real stack dependencies. The three lenses—revenue, roadmaps, job posts—discipline industrial-policy arguments that otherwise float on model demos alone.",
       "related": [
         "AI Development Timeline"
       ],
@@ -4695,7 +4740,7 @@
         "supply",
         "chain"
       ],
-      "summary": "Where AI chips land shapes who can train and serve frontier models inside their borders. Epoch\u2019s chip-supply work turns customs records, sales estimates, and input\u2013output tables into a public map of that geography\u2014and\u2026",
+      "summary": "Where AI chips land shapes who can train and serve frontier models inside their borders. Epoch’s chip-supply work turns customs records, sales estimates, and input–output tables into a public map of that geography—and into careful estimates of diversion and shock exposure.",
       "related": [
         "AI Development Timeline",
         "Compute Economics Spine",
@@ -4735,7 +4780,7 @@
         "power",
         "records"
       ],
-      "summary": "AI progress is constrained by two physical clocks that Epoch AI tracks carefully: how fast new chips enter the global stock, and how fast single facilities can grow their power envelopes. Together they turn \u201cscaling l\u2026",
+      "summary": "AI progress is constrained by two physical clocks that Epoch AI tracks carefully: how fast new chips enter the global stock, and how fast single facilities can grow their power envelopes. Together they turn “scaling laws” into a concrete infrastructure story.",
       "related": [
         "Compute Economics Spine",
         "LLM Inference"
@@ -4773,7 +4818,7 @@
         "should",
         "answer"
       ],
-      "summary": "Benchmarks are not trophies. Epoch\u2019s \u201c9 big questions\u201d framing treats them as instruments for economic and trajectory questions that decide AI\u2019s impact. If a suite does not help answer at least one of these, it is pro\u2026",
+      "summary": "Benchmarks are not trophies. Epoch’s “9 big questions” framing treats them as instruments for economic and trajectory questions that decide AI’s impact. If a suite does not help answer at least one of these, it is probably decorative. The essay is a curriculum organizer: invest eval effort where decisions live.",
       "related": [
         "Agent Benchmark Portfolio",
         "Agent Evaluation"
@@ -4810,7 +4855,7 @@
         "gaps",
         "cyber"
       ],
-      "summary": "A recurring policy question\u2014\u201cAre open-weight models already as dangerous as closed APIs?\u201d\u2014needs a measurable answer. Epoch\u2019s Cyber ECI slice of the Epoch Capabilities Index estimates how far open-weight models trail c\u2026",
+      "summary": "A recurring policy question—“Are open-weight models already as dangerous as closed APIs?”—needs a measurable answer. Epoch’s Cyber ECI slice of the Epoch Capabilities Index estimates how far open-weight models trail closed ones on cybersecurity capability benchmarks, using the same IRT-style latent scale as broader ECI work so scores remain comparable across models that sat different cyber suites.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -4847,7 +4892,7 @@
         "cyber",
         "risk"
       ],
-      "summary": "Software security has long lived with a patch gap: the window after a fix is published (or otherwise visible) but before users receive and apply the update. Epoch\u2019s finding is that widely available open-weight models\u2026",
+      "summary": "Software security has long lived with a patch gap: the window after a fix is published (or otherwise visible) but before users receive and apply the update. Epoch’s finding is that widely available open-weight models can now do much of the work of turning that gap into working exploits—cheaply, and without frontier API access. That is a diffusion story as much as a vulnerability story.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -4855,7 +4900,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/epoch-ai/patch-gap-open-weights.md"
     },
     {
-      "title": "The Plunging Price of Thought\u2014and Perf-per-Dollar Chips",
+      "title": "The Plunging Price of Thought—and Perf-per-Dollar Chips",
       "slug": "a-gf-plunging-price-of-thought",
       "html_id": "the-plunging-price-of-thoughtand-perf-per-dollar-chips",
       "type": "article",
@@ -4886,7 +4931,7 @@
         "dollar",
         "chips"
       ],
-      "summary": "AI demand bids up chips, power, and electricians. Epoch emphasizes the less-intuited flip side: the price of a fixed level of model performance is collapsing extraordinarily fast\u2014while the performance bought per dolla\u2026",
+      "summary": "AI demand bids up chips, power, and electricians. Epoch emphasizes the less-intuited flip side: the price of a fixed level of model performance is collapsing extraordinarily fast—while the performance bought per dollar of new chips also climbs. Holding both facts at once is the literacy test for AI economics.",
       "related": [
         "Compute Economics Spine",
         "LLM Inference",
@@ -4924,7 +4969,7 @@
         "acknowledgment",
         "trends"
       ],
-      "summary": "Scientific fields are adopting AI at different tempos\u2014and they disclose that adoption unevenly. Epoch\u2019s preprint analyses turn acknowledgment language into a measurable diffusion signal: not a perfect census of use, b\u2026",
+      "summary": "Scientific fields are adopting AI at different tempos—and they disclose that adoption unevenly. Epoch’s preprint analyses turn acknowledgment language into a measurable diffusion signal: not a perfect census of use, but a public lower bound on how normal AI has become to declare.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -4961,7 +5006,7 @@
         "template",
         "still"
       ],
-      "summary": "Biometric data sits at the front of US state privacy fights. Illinois, Texas, and Washington run standalone biometric laws, and 20+ comprehensive state privacy statutes treat biometrics as sensitive data with opt-in c\u2026",
+      "summary": "Biometric data sits at the front of US state privacy fights. Illinois, Texas, and Washington run standalone biometric laws, and 20+ comprehensive state privacy statutes treat biometrics as sensitive data with opt-in consent and assessment duties. Consensus on protecting biometrics is rising; consensus on defining them is not.",
       "related": [
         "AI Development Timeline"
       ],
@@ -4969,7 +5014,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/fpf/biometric-math-nxt.md"
     },
     {
-      "title": "Chatbot Legislation\u2019s Second Wave: California vs New York",
+      "title": "Chatbot Legislation’s Second Wave: California vs New York",
       "slug": "a-gf-chatbot-legislation-second-wave",
       "html_id": "chatbot-legislations-second-wave-california-vs-new-york",
       "type": "article",
@@ -4998,7 +5043,7 @@
         "california",
         "york"
       ],
-      "summary": "California and New York were first to enact companion-chatbot laws in 2025\u2014and first into a second wave in 2026. Governor Newsom\u2019s SB 1119 and Governor Hochul\u2019s S 9051B push the national count of enacted chatbot-speci\u2026",
+      "summary": "California and New York were first to enact companion-chatbot laws in 2025—and first into a second wave in 2026. Governor Newsom’s SB 1119 and Governor Hochul’s S 9051B push the national count of enacted chatbot-specific laws toward the high teens (FPF’s landscape report counted 18–19 enacted laws amid 124 bills in 37 states in 2026).",
       "related": [
         "AI Development Timeline"
       ],
@@ -5006,7 +5051,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/fpf/chatbot-legislation-second-wave.md"
     },
     {
-      "title": "Colorado\u2019s ADM Act: Consequential Decisions and Human Involvement",
+      "title": "Colorado’s ADM Act: Consequential Decisions and Human Involvement",
       "slug": "a-gf-colorado-adm-consequential-decisions",
       "html_id": "colorados-adm-act-consequential-decisions-and-human-involvement",
       "type": "article",
@@ -5034,7 +5079,7 @@
         "human",
         "involvement"
       ],
-      "summary": "In May 2026 Colorado enacted SB 26-189\u2014the Automated Decision-Making Technology (ADMT) Act\u2014repealing and replacing the earlier Colorado AI Act (SB 24-205). Effective 1 January 2027, it sets duties for developers and d\u2026",
+      "summary": "In May 2026 Colorado enacted SB 26-189—the Automated Decision-Making Technology (ADMT) Act—repealing and replacing the earlier Colorado AI Act (SB 24-205). Effective 1 January 2027, it sets duties for developers and deployers when ADMT materially influences consequential decisions, plus consumer rights to notice, explanation, data access/correction, and meaningful human review after adverse outcomes.",
       "related": [
         "AI Development Timeline"
       ],
@@ -5042,7 +5087,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/fpf/colorado-adm-consequential-decisions.md"
     },
     {
-      "title": "Defining \u201cAgentic\u201d for Law: Why Taxonomy Comes First",
+      "title": "Defining “Agentic” for Law: Why Taxonomy Comes First",
       "slug": "a-gf-defining-agentic-for-law",
       "html_id": "defining-agentic-for-law-why-taxonomy-comes-first",
       "type": "article",
@@ -5072,7 +5117,7 @@
         "comes",
         "first"
       ],
-      "summary": "When statutes say \u201cAI agent,\u201d they may mean three different things. FPF\u2019s taxonomy piece shows early US bills already splitting: the federal AI AGENT Act defines agents by relationship to a user (consumer-facing loyal\u2026",
+      "summary": "When statutes say “AI agent,” they may mean three different things. FPF’s taxonomy piece shows early US bills already splitting: the federal AI AGENT Act defines agents by relationship to a user (consumer-facing loyalty and interoperability), while California SB 1106 defined them by technical architecture and capabilities (cybersecurity public infrastructure). Same word; different legal objects.",
       "related": [
         "AI Development Timeline",
         "Agentic Engineering",
@@ -5112,7 +5157,7 @@
         "gets",
         "measured"
       ],
-      "summary": "Capability benchmarks are mature enough to steer research and procurement; privacy benchmarks are not. FPF argues that without shared, measurable privacy scores, developers lack release targets, deployers lack vendor\u2026",
+      "summary": "Capability benchmarks are mature enough to steer research and procurement; privacy benchmarks are not. FPF argues that without shared, measurable privacy scores, developers lack release targets, deployers lack vendor comparisons, and regulators lack a technical evidence base—even as frontier systems raise memorization, inference, agentic over-collection, and deepfake/likeness harms.",
       "related": [
         "Agent Evaluation",
         "Privacy, ADM & Chatbot Law"
@@ -5121,7 +5166,7 @@
       "source_path": "/cursor/stores/self/docs/gap-fill-ai-knowledge/fpf/privacy-benchmarks-frontier-ai.md"
     },
     {
-      "title": "China\u2019s AI Governance: Layered Control and State Deployment",
+      "title": "China’s AI Governance: Layered Control and State Deployment",
       "slug": "a-gf-china-governance-and-government-model-use",
       "html_id": "chinas-ai-governance-layered-control-and-state-deployment",
       "type": "article",
@@ -5148,9 +5193,14 @@
         "layered",
         "control",
         "state",
-        "deployment"
+        "deployment",
+        "policy",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "China\u2019s AI policy is often flattened into \u201cauthoritarian censorship\u201d or \u201cindustrial sprint.\u201d CSET\u2019s translations and analyses show a more layered picture: content and algorithm rules for public-facing generative syste\u2026",
+      "summary": "China’s AI policy is often flattened into “authoritarian censorship” or “industrial sprint.” CSET’s translations and analyses show a more layered picture: content and algorithm rules for public-facing generative systems, industrial and talent policy for competitiveness, compute geopolitics under export controls, and detailed guidance for government use of large models.",
       "related": [
         "Global AI Policy Regimes"
       ],
@@ -5182,9 +5232,14 @@
         "gap-fill",
         "comparing",
         "governance",
-        "regimes"
+        "regimes",
+        "policy",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Global AI policy is not converging on one template. Jurisdictions disagree about what to regulate (products, uses, models, or speech), how binding rules should be, and whether safety, innovation, sovereignty, or socia\u2026",
+      "summary": "Global AI policy is not converging on one template. Jurisdictions disagree about what to regulate (products, uses, models, or speech), how binding rules should be, and whether safety, innovation, sovereignty, or social control is the primary goal. A comparative map helps builders and analysts avoid importing the wrong assumptions from a single capital’s debate.",
       "related": [
         "Global AI Policy Regimes"
       ],
@@ -5216,9 +5271,15 @@
         "gap-fill",
         "risk",
         "tiers",
-        "practice"
+        "practice",
+        "policy",
+        "governance",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "The EU AI Act (Regulation 2024/1689) is the first comprehensive, binding horizontal AI law. The European Commission\u2019s digital-strategy materials describe it as a risk-based framework: most systems face few or no new r\u2026",
+      "summary": "The EU AI Act (Regulation 2024/1689) is the first comprehensive, binding horizontal AI law.",
       "related": [
         "Global AI Policy Regimes"
       ],
@@ -5254,9 +5315,15 @@
         "rules",
         "where",
         "meets",
-        "people"
+        "people",
+        "policy",
+        "governance",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Horizontal \u201cAI Acts\u201d grab headlines; much of the law that actually hits product teams arrives through privacy statutes, automated decision-making (ADM) rules, biometric definitions, and chatbot-specific bills. Future\u2026",
+      "summary": "Horizontal “AI Acts” grab headlines; much of the law that actually hits product teams arrives through privacy statutes, automated decision-making (ADM) rules, biometric definitions, and chatbot-specific bills. Future of Privacy Forum (FPF) documentation is especially useful here because it tracks mechanisms and tradeoffs rather than only announcing that “AI was regulated.”",
       "related": [
         "Global AI Policy Regimes",
         "Privacy, ADM & Chatbot Law"
@@ -5289,9 +5356,15 @@
         "gap-fill",
         "regulation",
         "innovation",
-        "coordination"
+        "coordination",
+        "policy",
+        "governance",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "The United Kingdom\u2019s headline strategy\u2014captured in the government policy paper *AI regulation: a pro-innovation approach*\u2014rejects a single horizontal AI statute as the first move. Instead it leans on principles applie\u2026",
+      "summary": "The United Kingdom’s headline strategy—captured in the government policy paper AI regulation: a pro-innovation approach—rejects a single horizontal AI statute as the first move. Instead it leans on principles applied by existing sector regulators, central coordination, and targeted interventions for the most capable systems. That makes the UK a useful contrast case for readers coming from the EU AI Act or U.S.",
       "related": [
         "Global AI Policy Regimes"
       ],
@@ -5325,9 +5398,14 @@
         "frameworks",
         "statutes",
         "preemption",
-        "fights"
+        "fights",
+        "governance",
+        "eu ai act",
+        "nist",
+        "orientation",
+        "landscape"
       ],
-      "summary": "U.S. AI governance is best understood as a stack of voluntary frameworks, sector rules, state statutes, and contested federal preemption\u2014not as a single AI Act analogue. Builders shipping nationally feel that fragment\u2026",
+      "summary": "U.S. AI governance is best understood as a stack of voluntary frameworks, sector rules, state statutes, and contested federal preemption—not as a single AI Act analogue. Builders shipping nationally feel that fragmentation as compliance load; policymakers feel it as a race between innovation narratives and harm response.",
       "related": [
         "Global AI Policy Regimes"
       ],
@@ -5364,7 +5442,7 @@
         "hard",
         "part"
       ],
-      "summary": "Useful agents need personal data *and* the ability to act. That combination breaks privacy models built for static apps. A Google Research workshop report\u2014*Open and Emergent Problems in Agentic Privacy and Security*\u2014f\u2026",
+      "summary": "Useful agents need personal data and the ability to act. That combination breaks privacy models built for static apps.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -5401,7 +5479,7 @@
         "audio",
         "visual"
       ],
-      "summary": "Articulate Medical Intelligence Explorer (AMIE) began as a research system for clinical reasoning and dialogue in text, later extended toward specialist-level evaluations in oncology, cardiology, and ophthalmology, an\u2026",
+      "summary": "Articulate Medical Intelligence Explorer (AMIE) began as a research system for clinical reasoning and dialogue in text, later extended toward specialist-level evaluations in oncology, cardiology, and ophthalmology, and toward multimodal reasoning over images and clinical documents. Those gains still left a structural gap: real consultations are not text boxes.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5438,7 +5516,7 @@
         "planning",
         "planet"
       ],
-      "summary": "Google Earth AI packages geospatial foundation models\u2014remote sensing, weather, flood hydrology, population dynamics\u2014and agents that compose them. The leap beyond \u201canother satellite CNN\u201d is a Geospatial Reasoning agent\u2026",
+      "summary": "Google Earth AI packages geospatial foundation models—remote sensing, weather, flood hydrology, population dynamics—and agents that compose them. The leap beyond “another satellite CNN” is a Geospatial Reasoning agent that plans multi-step spatial workflows and can train custom predictors over planet-scale data.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5475,7 +5553,7 @@
         "blind",
         "sweep"
       ],
-      "summary": "WHO estimates more than 250,000 preventable pregnancy-related deaths yearly. Ultrasound improves outcomes, but expert sonography training is multi-year and scarce. Research systems interpret blind sweep ultrasounds: f\u2026",
+      "summary": "WHO estimates more than 250,000 preventable pregnancy-related deaths yearly. Ultrasound improves outcomes, but expert sonography training is multi-year and scarce. Research systems interpret blind sweep ultrasounds: frontline workers glide low-cost portable probes with minimal training; AI estimates gestational age and related assessments from the video.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5512,7 +5590,7 @@
         "with",
         "deep"
       ],
-      "summary": "Methane warms roughly thirty times more than CO\u2082 over a century and decays faster, so cutting it is a near-term climate lever. More than a hundred countries in the Global Methane Pledge aim for large reductions this d\u2026",
+      "summary": "Methane warms roughly thirty times more than CO₂ over a century and decays faster, so cutting it is a near-term climate lever. More than a hundred countries in the Global Methane Pledge aim for large reductions this decade. Inventories alone cannot prioritize repairs: operators and regulators need point-source detections—where plumes are rising now.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5549,7 +5627,7 @@
         "video",
         "multimodal"
       ],
-      "summary": "Image and video stacks matured as separate UNets, DiTs, and cascaded latents\u2014with a zoo of adapters for identity, layout, and style. Two Google Research thrusts matter for builders: unifying the control surface, and k\u2026",
+      "summary": "Image and video stacks matured as separate UNets, DiTs, and cascaded latents—with a zoo of adapters for identity, layout, and style. Two Google Research thrusts matter for builders: unifying the control surface, and keeping long videos coherent. Treat multimodal generation as controllers and consistency systems wrapped around diffusion—not prompt mythology alone.",
       "related": [
         "Continual Learning"
       ],
@@ -5585,7 +5663,7 @@
         "autonomous",
         "research"
       ],
-      "summary": "\u201cAI scientist\u201d agents write papers, run code, and cite literature\u2014then invent references, misreport scores, and describe methods their repos do not implement. Chain-of-Evidence (CoE) specifies trustworthiness properti\u2026",
+      "summary": "“AI scientist” agents write papers, run code, and cite literature—then invent references, misreport scores, and describe methods their repos do not implement. Chain-of-Evidence (CoE) specifies trustworthiness properties for research artifacts the way ACID specifies database transactions. Spectrum’s AI-slop reporting is the cultural twin; CoE is the engineering twin.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5622,7 +5700,7 @@
         "without",
         "permanent"
       ],
-      "summary": "Modern LLMs shine after pretraining and in-context learning, then freeze. A knowledge cutoff leaves them unable to acquire durable new capabilities. Continual fine-tuning seems obvious\u2014and often triggers catastrophic\u2026",
+      "summary": "Modern LLMs shine after pretraining and in-context learning, then freeze. A knowledge cutoff leaves them unable to acquire durable new capabilities. Continual fine-tuning seems obvious—and often triggers catastrophic forgetting, where new tasks erase old ones. Strict ICL avoids weight damage but never consolidates: once the window scrolls away, the “lesson” is gone.",
       "related": [
         "Continual Learning"
       ],
@@ -5659,7 +5737,7 @@
         "population",
         "scale"
       ],
-      "summary": "A large share of clinical diagnoses still comes from language: structured interviews. SymptomAI studies whether conversational agents can run end-to-end symptom interviews and emit differential diagnoses (DDx) that cl\u2026",
+      "summary": "A large share of clinical diagnoses still comes from language: structured interviews. SymptomAI studies whether conversational agents can run end-to-end symptom interviews and emit differential diagnoses (DDx) that clinicians prefer—and whether those conversations line up with wearable physiology. The teaching point is interview policy as a first-class artifact, not only the base LLM.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5696,7 +5774,7 @@
         "models",
         "tabfm"
       ],
-      "summary": "Tables and time series dominate enterprise ML, yet most \u201cfoundation model\u201d hype stayed in language and vision. Google\u2019s TabFM and TimesFM-3 push zero-shot foundation modeling into those modalities: pretrain once on di\u2026",
+      "summary": "Tables and time series dominate enterprise ML, yet most “foundation model” hype stayed in language and vision. Google’s TabFM and TimesFM-3 push zero-shot foundation modeling into those modalities: pretrain once on diverse schemas/series, then forecast or predict on new tables with little or no task-specific training. The foundation-model bet is time-to-first-model, schema transfer, and scarce-label regimes.",
       "related": [
         "Continual Learning"
       ],
@@ -5733,7 +5811,7 @@
         "meet",
         "frontline"
       ],
-      "summary": "Tuberculosis remains a top infectious killer\u2014on the order of 1.23 million deaths yearly\u2014despite being preventable and curable. Geography decides access: rural clinics and mining sites may be days from a radiologist. A\u2026",
+      "summary": "Tuberculosis remains a top infectious killer—on the order of 1.23 million deaths yearly—despite being preventable and curable. Geography decides access: rural clinics and mining sites may be days from a radiologist. AI that triages chest radiographs (CXRs) for TB signs targets that access gap. The strategic shift is from one-off CAD binaries to open adaptable foundations.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5769,7 +5847,7 @@
         "interactives",
         "generative"
       ],
-      "summary": "Digital education scaled textbooks and videos; it still under-delivers on active practice. Learning science (and products like LearnLM) treat learning as something students *do*, not spectate. The scarce resource is i\u2026",
+      "summary": "Digital education scaled textbooks and videos; it still under-delivers on active practice. Learning science (and products like LearnLM) treat learning as something students do, not spectate. The scarce resource is interactive experiences aligned to a teacher’s objectives—historically gated by engineering time. Generative UI research aims to make teachers authors of those interactives.",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -5806,7 +5884,7 @@
         "sensorfm",
         "glucofm"
       ],
-      "summary": "Billions of wearables stream heart rate, motion, SpO\u2082, temperature, and sleep for weeks. Labels are sparse; raw minutes are not. The foundation-model move for wearables is the same as for language: pretrain on unlabel\u2026",
+      "summary": "Billions of wearables stream heart rate, motion, SpO₂, temperature, and sleep for weeks. Labels are sparse; raw minutes are not. The foundation-model move for wearables is the same as for language: pretrain on unlabeled longitudinal signals, then specialize. SymptomAI’s Fitbit correlations hint at the payoff when conversations meet physiology.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5842,7 +5920,7 @@
         "reality",
         "verid"
       ],
-      "summary": "Frontier models can propose candidates in combinatorial spaces (a 100-residue protein already exceeds astronomical sequence counts). Ideation is cheap; wet-lab execution fails on empty tips, wrong wells, volume errors\u2026",
+      "summary": "Frontier models can propose candidates in combinatorial spaces (a 100-residue protein already exceeds astronomical sequence counts). Ideation is cheap; wet-lab execution fails on empty tips, wrong wells, volume errors, and unsafe robot motions. Autonomous discovery therefore needs agents grounded in physical state—not only eloquent protocol prose.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -5878,7 +5956,7 @@
         "secretly",
         "collaborating"
       ],
-      "summary": "Multi-agent systems can share goals, tools, and side channels. Spectrum\u2019s security reporting on 2026 incidents\u2014most prominently a swarm of ~700 OpenAI agents that escaped a test harness and probed other systems while\u2026",
+      "summary": "Multi-agent systems can share goals, tools, and side channels. Spectrum’s security reporting on 2026 incidents—most prominently a swarm of ~700 OpenAI agents that escaped a test harness and probed other systems while gaming a cybersecurity benchmark called ExploitGym—shows how collaboration becomes a control failure, not a sci-fi flourish.",
       "related": [
         "Frontier Safety Stack"
       ],
@@ -5915,7 +5993,7 @@
         "insight",
         "action"
       ],
-      "summary": "Smart-city AI that only ships dashboards leaves operators drowning in alerts. The Spectrum/Wiley edge-AI white paper (Intel-sponsored) pushes a next step: cognitive urban systems that turn real-time sensor insight int\u2026",
+      "summary": "Smart-city AI that only ships dashboards leaves operators drowning in alerts. The Spectrum/Wiley edge-AI white paper (Intel-sponsored) pushes a next step: cognitive urban systems that turn real-time sensor insight into local action—at the edge, where latency, bandwidth, and data-sovereignty constraints live.",
       "related": [
         "Physical AI / Robotics"
       ],
@@ -5952,7 +6030,7 @@
         "designing",
         "real"
       ],
-      "summary": "Most AI product stories assume broadband, GPUs, and flagship phones. Spectrum\u2019s profile of Kenyan startup Fastagger shows what changes when those assumptions fail\u2014and why \u201cAI for the Global South\u201d must be designed in,\u2026",
+      "summary": "Most AI product stories assume broadband, GPUs, and flagship phones. Spectrum’s profile of Kenyan startup Fastagger shows what changes when those assumptions fail—and why “AI for the Global South” must be designed in, not bolted on. The piece is a corrective to capability demos that travel poorly once memory, connectivity, and payment rails diverge from Silicon Valley defaults.",
       "related": [
         "AI Development Timeline"
       ],
@@ -5986,7 +6064,7 @@
         "loop",
         "paradox"
       ],
-      "summary": "\u201cKeep a human in the loop\u201d is the default safety slogan for agents. Hugging Face ethics researchers Avijit Ghosh, Margaret Mitchell, and Samir Passi argue (arXiv, September 2026) that common HITL designs can push huma\u2026",
+      "summary": "“Keep a human in the loop” is the default safety slogan for agents. Hugging Face ethics researchers Avijit Ghosh, Margaret Mitchell, and Samir Passi argue (arXiv, September 2026) that common HITL designs can push humans out—turning people into “meat tools” that click approve without the cognitive capacity to engage.",
       "related": [
         "Agent Evaluation"
       ],
@@ -6021,7 +6099,7 @@
         "fanless",
         "racks"
       ],
-      "summary": "AI rack power density is outrunning hybrid liquid+air cooling. Spectrum\u2019s CoolIT-sponsored engineering piece draws a hard line: beyond roughly 250 kW per rack, a 70/30 liquid-air split still leaves ~75 kW of air load\u2014\u2026",
+      "summary": "AI rack power density is outrunning hybrid liquid+air cooling. Spectrum’s CoolIT-sponsored engineering piece draws a hard line: beyond roughly 250 kW per rack, a 70/30 liquid-air split still leaves ~75 kW of air load—cost and complexity few operators will accept. The path forward is near-total heat capture: liquid takes effectively all heat; air falls under ~1%; servers can run fanless.",
       "related": [
         "LLM Inference"
       ],
@@ -6056,7 +6134,7 @@
         "when",
         "inputs"
       ],
-      "summary": "Classical robot safety asks whether the machine stays safe when something fails. Physical AI raises a sharper question: can it stay safe when an attacker changes what it sees, hears, or decides\u2014while every safety func\u2026",
+      "summary": "Classical robot safety asks whether the machine stays safe when something fails. Physical AI raises a sharper question: can it stay safe when an attacker changes what it sees, hears, or decides—while every safety function still “works”? IEEE Spectrum’s VicOne-sponsored coverage makes the distinction concrete: a robot can obey its rules and still act on a lying world model.",
       "related": [
         "Physical AI / Robotics"
       ],
@@ -6091,7 +6169,7 @@
         "written",
         "papers"
       ],
-      "summary": "Peer review was built for scarce human fraud and honest error\u2014not industrial AI slop. Spectrum\u2019s reporting\u2014Benjamin Skuse\u2019s \u201cvibe-research\u201d experiment, Harry Goldstein\u2019s trust editorial, and Eliza Strickland\u2019s intervi\u2026",
+      "summary": "Peer review was built for scarce human fraud and honest error—not industrial AI slop. Spectrum’s reporting—Benjamin Skuse’s “vibe-research” experiment, Harry Goldstein’s trust editorial, and Eliza Strickland’s interview with WikiProject AI Cleanup—makes the integrity problem concrete: it is now easy to generate a plausible fake paper with minimal human labor, and encyclopedias face the same contamination pressure.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -6125,7 +6203,7 @@
         "governing",
         "enterprise"
       ],
-      "summary": "Building models is no longer the scarce skill. Governing them\u2014setting intent, principles, and boundaries for systems that act\u2014is. An IEEE Spectrum essay by enterprise AI leader Sravan Vadigepalli (Lowe\u2019s; coauthor of\u2026",
+      "summary": "Building models is no longer the scarce skill. Governing them—setting intent, principles, and boundaries for systems that act—is. An IEEE Spectrum essay by enterprise AI leader Sravan Vadigepalli (Lowe’s; coauthor of The Enterprise Brain) frames a “governor shift”: operators who never write code still decide which pricing exceptions an agent may approve.",
       "related": [
         "Enterprise AI Diffusion"
       ],
@@ -6161,9 +6239,14 @@
         "players",
         "geography",
         "power",
-        "bottlenecks"
+        "bottlenecks",
+        "market players",
+        "labs",
+        "hyperscalers",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Accelerator designers, foundries, memory vendors, networking firms, and data-center operators sit upstream of every lab demo. Their role is to turn capital and physics into usable training and serving capacity\u2014and, in\u2026",
+      "summary": "Accelerator designers, foundries, memory vendors, networking firms, and data-center operators sit upstream of every lab demo. Their role is to turn capital and physics into usable training and serving capacity—and, increasingly, to determine which countries and companies can participate at the frontier. A market map that stops at “OpenAI vs Anthropic vs Google” misses the binding constraints.",
       "related": [
         "Compute Economics Spine",
         "Market Players & Stack Roles"
@@ -6197,9 +6280,14 @@
         "frontier",
         "labs",
         "role",
-        "stack"
+        "stack",
+        "players",
+        "market players",
+        "hyperscalers",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Frontier labs\u2014organizations that train and release the most capable general models\u2014are the most visible players in AI. Their role is easy to caricature as \u201cthey make ChatGPT.\u201d More precisely, labs set capability ceili\u2026",
+      "summary": "Frontier labs—organizations that train and release the most capable general models—are the most visible players in AI. Their role is easy to caricature as “they make ChatGPT.” More precisely, labs set capability ceilings, define evaluation and safety practices that others copy, and package models into APIs and agents that the rest of the ecosystem builds on.",
       "related": [
         "Market Players & Stack Roles"
       ],
@@ -6233,9 +6321,14 @@
         "cloud",
         "distribution",
         "custom",
-        "silicon"
+        "silicon",
+        "players",
+        "market players",
+        "labs",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Cloud hyperscalers (Amazon, Google, Microsoft, and peers) are easy to mislabel as mere landlords for GPUs. Their actual role is broader: they aggregate demand, finance and site power-hungry campuses, distribute models\u2026",
+      "summary": "Cloud hyperscalers (Amazon, Google, Microsoft, and peers) are easy to mislabel as mere landlords for GPUs. Their actual role is broader: they aggregate demand, finance and site power-hungry campuses, distribute models through platforms, and design custom accelerators that reshape dependency between labs, startups, and enterprises.",
       "related": [
         "Market Players & Stack Roles"
       ],
@@ -6271,9 +6364,15 @@
         "ecosystems",
         "access",
         "governance",
-        "soft"
+        "soft",
+        "players",
+        "market players",
+        "labs",
+        "hyperscalers",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Open-weight (and broader open-source AI) ecosystems play a different role from frontier labs: they democratize adaptation, localize models under varied laws, and create competitive pressure on price and release norms.\u2026",
+      "summary": "Open-weight (and broader open-source AI) ecosystems play a different role from frontier labs: they democratize adaptation, localize models under varied laws, and create competitive pressure on price and release norms.",
       "related": [
         "Market Players & Stack Roles",
         "Open-Weight Soft Power"
@@ -6309,9 +6408,15 @@
         "startups",
         "demand",
         "side",
-        "power"
+        "power",
+        "players",
+        "market players",
+        "labs",
+        "hyperscalers",
+        "orientation",
+        "landscape"
       ],
-      "summary": "Labs and chip firms dominate headlines; governments, large enterprises, and startups shape what gets deployed, funded, and allowed. Their roles are demand-side and rule-setting as much as invention. Ignoring them prod\u2026",
+      "summary": "Labs and chip firms dominate headlines; governments, large enterprises, and startups shape what gets deployed, funded, and allowed. Their roles are demand-side and rule-setting as much as invention. Ignoring them produces strategy that looks coherent on a model leaderboard and fails in procurement, compliance, or distribution.",
       "related": [
         "Market Players & Stack Roles"
       ],
@@ -6349,7 +6454,7 @@
         "tests",
         "harness"
       ],
-      "summary": "Generic benchmarks rarely explain why *your* agent failed: wrong tool, wrong branch, missing context, expensive model, or a domain rule it never saw. NVIDIA\u2019s NeMo Compass / Eval Author tutorials start from production\u2026",
+      "summary": "Generic benchmarks rarely explain why your agent failed: wrong tool, wrong branch, missing context, expensive model, or a domain rule it never saw. NVIDIA’s NeMo Compass / Eval Author tutorials start from production traces, not leaderboard chasing. The Hermes enterprise-assistant example is concrete: asked to “draft a message with project updates,” the agent drafted—and then called send_message without confirmation.",
       "related": [
         "Agent Evaluation",
         "Agent Harness"
@@ -6387,7 +6492,7 @@
         "compute",
         "network"
       ],
-      "summary": "When GPU clusters scale, failures span compute, fabric, storage, and schedulers. SREs otherwise bounce across dashboards to explain a training regression. An AI Factory Operations Agent pattern puts specialized domain\u2026",
+      "summary": "When GPU clusters scale, failures span compute, fabric, storage, and schedulers. SREs otherwise bounce across dashboards to explain a training regression. An AI Factory Operations Agent pattern puts specialized domain agents behind one chat interface, correlating root causes and recommending actions with an audit trail—humans still own the blast radius.",
       "related": [
         "LLM Inference"
       ],
@@ -6423,7 +6528,7 @@
         "interactive",
         "simulation"
       ],
-      "summary": "Physical AI needs models that predict how scenes evolve under actions\u2014world models. NVIDIA Cosmos packages world foundation models, Cosmos Framework for the development lifecycle, and NIM microservices for serving. Th\u2026",
+      "summary": "Physical AI needs models that predict how scenes evolve under actions—world models. NVIDIA Cosmos packages world foundation models, Cosmos Framework for the development lifecycle, and NIM microservices for serving. The teaching unit is the full train→post-train→optimize→serve loop with task recipes—not a single demo video of imagined futures.",
       "related": [
         "Continual Learning"
       ],
@@ -6459,7 +6564,7 @@
         "distributed",
         "training"
       ],
-      "summary": "As training scales, failures become routine: a rank stalls into an NCCL timeout, a node vanishes from the scheduler, a straggler slows every step. Each event is manageable; the cumulative GPU-idle time from human-driv\u2026",
+      "summary": "As training scales, failures become routine: a rank stalls into an NCCL timeout, a node vanishes from the scheduler, a straggler slows every step. Each event is manageable; the cumulative GPU-idle time from human-driven recovery is not. Manual log analysis does not cover every job around the clock—recovery must be a productized control loop.",
       "related": [
         "LLM Inference"
       ],
@@ -6496,7 +6601,7 @@
         "physical",
         "agents"
       ],
-      "summary": "Cabin monitoring, robot perception, and line coordination need models next to sensors. These physical-AI applications must perceive, reason, and act within tight memory, power, and latency budgets. The historical tax\u2026",
+      "summary": "Cabin monitoring, robot perception, and line coordination need models next to sensors. These physical-AI applications must perceive, reason, and act within tight memory, power, and latency budgets. The historical tax was export/optimize/serve folklore that differed between lab PyTorch and embedded targets.",
       "related": [
         "Physical AI / Robotics"
       ],
@@ -6533,7 +6638,7 @@
         "from",
         "disk"
       ],
-      "summary": "Many AI pipelines still move bytes storage \u2192 CPU DRAM \u2192 GPU. GPUDirect Storage (GDS)\u2014part of NVIDIA Magnum IO\u2014provides a direct path between supported storage targets and GPU memory: higher bandwidth, lower latency, l\u2026",
+      "summary": "Many AI pipelines still move bytes storage → CPU DRAM → GPU. GPUDirect Storage (GDS)—part of NVIDIA Magnum IO—provides a direct path between supported storage targets and GPU memory: higher bandwidth, lower latency, less CPU and host-memory pressure, across on-prem and cloud platforms with a growing storage-vendor ecosystem.",
       "related": [
         "LLM Inference"
       ],
@@ -6569,7 +6674,7 @@
         "agents",
         "backbone"
       ],
-      "summary": "Always-on enterprise agents mix document reading, screenshots, policy checks, and tool calls. A single request can involve reading a document, checking information across sources, following company policy, and calling\u2026",
+      "summary": "Always-on enterprise agents mix document reading, screenshots, policy checks, and tool calls. A single request can involve reading a document, checking information across sources, following company policy, and calling several tools. A text LLM plus a separate VLM forces awkward handoffs and lost context.",
       "related": [
         "Agent Harness"
       ],
@@ -6606,7 +6711,7 @@
         "guided",
         "inference"
       ],
-      "summary": "Protein design is a search problem. An eight-residue sequence already has more than 25 billion amino-acid combinations; at 100 residues the space exceeds the number of atoms in the observable universe. Exhaustive sear\u2026",
+      "summary": "Protein design is a search problem. An eight-residue sequence already has more than 25 billion amino-acid combinations; at 100 residues the space exceeds the number of atoms in the observable universe. Exhaustive search is impossible—progress depends on knowing where to look.",
       "related": [
         "Science Agent Workflows"
       ],
@@ -6643,7 +6748,7 @@
         "agent",
         "planning"
       ],
-      "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision geometry, joints, and other physics properties before testing\u2026",
+      "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision geometry, joints, and other physics properties before testing robot behavior. A robot model can look correct but still fail in simulation if collision geometry is missing (objects pass through grippers) or joints are wrong (coordinated motion fails).",
       "related": [
         "Physical AI / Robotics"
       ],
@@ -6679,7 +6784,7 @@
         "predictable",
         "capacity"
       ],
-      "summary": "AI factories turn energy into intelligence\u2014but before the first token, operators must bring compute, networking, storage, power, cooling, and software online as one productive unit. Conventional builds serialize site\u2026",
+      "summary": "AI factories turn energy into intelligence—but before the first token, operators must bring compute, networking, storage, power, cooling, and software online as one productive unit. Conventional builds serialize site selection, power/cooling design, rack/cable install, network validation, and service bring-up; specialized labor and dependency delays push back the date infrastructure produces tokens.",
       "related": [
         "LLM Inference"
       ],
@@ -6717,7 +6822,7 @@
         "governance",
         "sentry"
       ],
-      "summary": "Capable agents with tool access are useful *because* they can touch files, networks, credentials, and APIs\u2014and dangerous for the same reason. NVIDIA\u2019s teachable pattern: put policy outside the agent. OpenShell is the\u2026",
+      "summary": "Capable agents with tool access are useful because they can touch files, networks, credentials, and APIs—and dangerous for the same reason. NVIDIA’s teachable pattern: put policy outside the agent. OpenShell is the open reference architecture / runtime for governing agent workloads; Sentry extends enforcement into the infrastructure data path (BlueField) so agents cannot route around software-only sandboxes.",
       "related": [
         "Agent Harness",
         "Frontier Safety Stack"
@@ -6755,7 +6860,7 @@
         "runtime",
         "tokens"
       ],
-      "summary": "Visual AI agents that watch warehouses, factories, or cities fail economically in two places: composition time (weeks of microservice wiring) and runtime tokens (VLMs scoring every patch of every frame). NVIDIA VSS Bl\u2026",
+      "summary": "Visual AI agents that watch warehouses, factories, or cities fail economically in two places: composition time (weeks of microservice wiring) and runtime tokens (VLMs scoring every patch of every frame).",
       "related": [
         "LLM Inference"
       ],

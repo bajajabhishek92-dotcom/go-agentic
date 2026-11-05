@@ -1,4 +1,5 @@
 ---
+
 title: 'The Defender’s Window: AI Vulnerability Discovery That Finishes With Fixes'
 slug: a-defenders-window-coordinated-disclosure
 type: article
@@ -25,9 +26,7 @@ keywords:
 - finishes
 - disclosure
 - defender
-summary: Frontier models can discover critical flaws in widely used software before attackers do. That
-  advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it
-  is a **pipeline
+summary: "Frontier models can discover critical flaws in widely used software before attackers do. That advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it is a pipeline from finding → validated fix → coordinated preparation → disclosure → deployment, while maintainers stay solvent and defenders get ahead of exploit automation."
 related:
 - AI Security Trilemma
 - Defender's Window

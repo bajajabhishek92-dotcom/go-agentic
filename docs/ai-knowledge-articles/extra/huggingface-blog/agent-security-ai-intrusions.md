@@ -1,4 +1,5 @@
 ---
+
 title: 'Agentic Intrusions: Treat Data Pipelines as Attack Surface'
 slug: a-agent-security-ai-intrusions
 type: article
@@ -25,9 +26,7 @@ keywords:
 - treat
 - intrusions
 - code
-summary: 'In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent**
-  operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation
-  agents that'
+summary: "In July 2026, Hugging Face disclosed a security incident driven by an autonomous AI agent operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation agents that can reach the internet, plus rich data-processing pipelines, create a new offensive economics."
 related:
 - AI Security Trilemma
 - Agentic Intrusions - Data Pipeline Attacks

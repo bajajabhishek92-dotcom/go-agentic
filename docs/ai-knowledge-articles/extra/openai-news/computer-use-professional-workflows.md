@@ -1,4 +1,5 @@
 ---
+
 title: 'Computer Use for Professional Software: Train on Real Vendor Workflows'
 slug: a-computer-use-professional-workflows
 type: article
@@ -25,9 +26,7 @@ keywords:
 - train
 - real
 - workflows
-summary: 'Generic “use a browser” demos understate the hard problem: agents must operate **specialized
-  business software** under company rules—approvals, templates, jurisdiction clauses, CAD constraints,
-  QA viewports—and'
+summary: "Generic “use a browser” demos understate the hard problem: agents must operate specialized business software under company rules—approvals, templates, jurisdiction clauses, CAD constraints, QA viewports—and verify that the finished process works, not just that individual clicks succeeded."
 related:
 - Agent Evaluation
 - Computer Use - GUI Agents

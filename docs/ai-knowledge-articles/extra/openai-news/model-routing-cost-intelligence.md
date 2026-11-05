@@ -1,4 +1,5 @@
 ---
+
 title: Model Routing on the Cost–Intelligence Frontier
 slug: a-model-routing-cost-intelligence
 type: article
@@ -25,9 +26,7 @@ keywords:
 - use
 - intelligence
 - reasoning
-summary: Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap)
-  plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is
-  how teams burn 10–100×
+summary: "Frontier labs now ship families of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is how teams burn 10–100× too much money—or ship brittle agents on the wrong tier."
 related:
 - Generative AI Cost Operating Model
 - Model Routing

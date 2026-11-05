@@ -1,4 +1,5 @@
 ---
+
 title: Closing the Deployment Gap with Forward-Deployed Engineering
 slug: a-closing-the-deployment-gap
 type: article
@@ -25,8 +26,7 @@ keywords:
 - closing
 - can
 - domain
-summary: Model demos move faster than production systems. The **deployment gap** is the distance between
-  what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints,
+summary: "Model demos move faster than production systems. The deployment gap is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints, permissions, and messy data. Forward-deployed engineering (FDE) is one organizational pattern for closing that gap—and intentionally making itself obsolete."
 related:
 - Enterprise AI Diffusion
 - Forward-Deployed Engineering

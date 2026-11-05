@@ -1,4 +1,5 @@
 ---
+
 title: 'Frontier Safety Stack: Misuse, Misalignment, and Injection'
 slug: a-frontier-safety-stack
 type: article
@@ -25,9 +26,7 @@ keywords:
 - injection
 - frontier
 - not
-summary: 'When a model can help defenders find complex bugs or scientists design experiments, the same
-  strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon):
-  **How do we stop'
+summary: "When a model can help defenders find complex bugs or scientists design experiments, the same strengths raise two questions DeepMind puts front and center for Gemini 4 Argon (and extends for Carbon): How do we stop misuse? and Can we trust the model to do the job the right way?"
 related:
 - AI Control
 - Frontier Safety Stack

@@ -1,4 +1,5 @@
 ---
+
 title: Building a Web That Agents Can Use
 slug: a-web-for-agents
 type: article
@@ -25,7 +26,7 @@ keywords:
 - can
 - agent
 - need
-summary: 'The public web was built for human eyes, browsers, and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel’s Parag Agrawal argues for a new web layer for AI agents—infrastructure that makes the internet legible and actionable for non-human…'
+summary: "The public web was built for human eyes, browsers, and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel’s Parag Agrawal argues for a new web layer for AI agents—infrastructure that makes the internet legible and actionable for non-human browsers. Profound’s James Cadwallader covers the mirror problem on the growth side: when the visitor is an agent, SEO instincts misfire."
 related:
 - Agent Tooling & APIs
 - Agent-Native Web

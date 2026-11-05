@@ -1,4 +1,5 @@
 ---
+
 title: 'Native Accelerator Backends: When `device="neuron"` or `"tpu"` Is Enough'
 slug: a-native-accelerator-backends
 type: article
@@ -25,9 +26,7 @@ keywords:
 - backends
 - accelerator
 - enough
-summary: 'For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows:
-  lazy tensors, static shapes, recompilation cliffs, and library forks (`optimum-neuron`, Optimum TPU)
-  that hid the pain.'
+summary: "For years, Hugging Face on AWS Trainium/Inferentia and Google TPUs meant XLA-shaped workflows: lazy tensors, static shapes, recompilation cliffs, and library forks (optimum-neuron, Optimum TPU) that hid the pain. Native PyTorch backends change the teaching: treat Neuron and TPU like CUDA—eager execution, torch.compile, and the same Transformers / Diffusers / TRL APIs."
 related:
 - LLM Inference
 - Native Accelerator Backends

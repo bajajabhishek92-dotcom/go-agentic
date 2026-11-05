@@ -1,4 +1,5 @@
 ---
+
 title: 'Gemini Robotics: Whole-Body Physical AI'
 slug: a-gemini-robotics-physical-ai
 type: article
@@ -25,9 +26,7 @@ keywords:
 - vla
 - robots
 - one
-summary: Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack
-  into complementary models so robots can reason for minutes, control whole bodies, and run locally when
-  the network is
+summary: "Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack into complementary models so robots can reason for minutes, control whole bodies, and run locally when the network is unavailable."
 related:
 - Physical AI - Robotics
 - World Models

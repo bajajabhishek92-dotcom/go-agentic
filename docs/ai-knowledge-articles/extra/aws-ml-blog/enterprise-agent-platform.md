@@ -1,4 +1,5 @@
 ---
+
 title: 'Enterprise Agent Platforms: Federate Ownership, Centralize Control'
 slug: a-enterprise-agent-platform
 type: article
@@ -25,9 +26,7 @@ keywords:
 - team
 - one
 - platforms
-summary: Getting one agent to call a model and a few tools is not the production problem. The production
-  problem is how many teams can ship agents inside the same security, cost, and quality boundary—without
-  every team
+summary: "Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary—without every team reinventing gateways, identity, evals, and rollback."
 related:
 - Enterprise AI Diffusion
 - Enterprise Agent Platforms

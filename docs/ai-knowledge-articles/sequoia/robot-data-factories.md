@@ -1,4 +1,5 @@
 ---
+
 title: 'Robot Data Factories: Sensorizing Humans to Train Physical AI'
 slug: a-robot-data-factories
 type: article
@@ -25,7 +26,7 @@ keywords:
 - humans
 - sensorizing
 - factories
-summary: 'Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s conversations with Mecka’s Josh Gao, NVIDIA’s Jim Fan, Physical Intelligence’s Karol Hausman and Tobi Springenberg, and Hugging Face’s Thomas Wolf converge on a manufacturing problem: how…'
+summary: "Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s conversations with Mecka’s Josh Gao, NVIDIA’s Jim Fan, Physical Intelligence’s Karol Hausman and Tobi Springenberg, and Hugging Face’s Thomas Wolf converge on a manufacturing problem: how to produce physical experience at scale—and then distribute skills the way software platforms distribute apps."
 related:
 - Data Efficiency Bottleneck
 - Physical AI - Robotics

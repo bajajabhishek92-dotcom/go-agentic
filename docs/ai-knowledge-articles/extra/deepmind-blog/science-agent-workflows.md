@@ -1,4 +1,5 @@
 ---
+
 title: 'Science Agents: Skills, Tool Grounding, and Idea Tournaments'
 slug: a-science-agent-workflows
 type: article
@@ -25,8 +26,7 @@ keywords:
 - idea
 - tournaments
 - tool
-summary: Scientific AI is moving from “answer a biology question” to **agents that run discovery workflows**—curating
-  literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind
+summary: "Scientific AI is moving from “answer a biology question” to agents that run discovery workflows—curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind lines illustrate complementary patterns: Antigravity Cheminformatics Skills and Co-Scientist."
 related:
 - Agent Skills
 - Multi-Agent Systems

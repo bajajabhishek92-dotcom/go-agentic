@@ -1,4 +1,5 @@
 ---
+
 title: 'Bounded Decisions: Fast Structured Choices Inside Agent Loops'
 slug: a-bounded-decisions-for-agents
 type: article
@@ -25,9 +26,7 @@ keywords:
 - loops
 - decisions
 - structured
-summary: 'Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next
-  action, score severity. Calling a full generative responses endpoint for each one burns latency and
-  money. When the'
+summary: "Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next action, score severity. Calling a full generative responses endpoint for each one burns latency and money. When the answer space is bounded, specialize the API—and the model—around decision outputs."
 related:
 - Bounded Decisions
 - Loop Engineering

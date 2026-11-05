@@ -1,4 +1,5 @@
 ---
+
 title: 'Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling'
 slug: a-voice-ai-latency-budget
 type: article
@@ -25,9 +26,7 @@ keywords:
 - autoscaling
 - sub-100ms
 - measured
-summary: Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking
-  expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor.
-  Voice AI is
+summary: "Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is therefore an infrastructure latency problem as much as a model-quality problem."
 related:
 - Generative AI Cost Operating Model
 - Voice as Primary Interface

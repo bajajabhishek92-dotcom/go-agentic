@@ -1,4 +1,5 @@
 ---
+
 title: 'Enterprise AI Diffusion: Reinvention Beats Feature Packs'
 slug: a-enterprise-diffusion
 type: article
@@ -25,7 +26,7 @@ keywords:
 - not
 - feature
 - beats
-summary: 'Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron Levie (Box), Elias Torres (Agency), Block’s Goose agent with CTO Dhanji Prasanna, and Crosby on legal contracting—explain why: diffusion is an org and workflow problem, not…'
+summary: "Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron Levie (Box), Elias Torres (Agency), Block’s Goose agent with CTO Dhanji Prasanna, and Crosby on legal contracting—explain why: diffusion is an org and workflow problem, not a model-demo problem. Coding tools spread quickly because developers live in tight loops with compilers and PRs. Most knowledge work does not."
 related:
 - Enterprise AI Diffusion
 - Enterprise Agent Platforms

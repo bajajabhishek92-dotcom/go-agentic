@@ -1,4 +1,5 @@
 ---
+
 title: 'AI Control: Security When Alignment Is Imperfect'
 slug: a-ai-control-roadmap
 type: article
@@ -25,9 +26,7 @@ keywords:
 - not
 - imperfect
 - systems
-summary: 'Model alignment—training systems to be helpful and safe—is necessary but not sufficient for
-  capable agents. DeepMind’s AI Control Roadmap adds a **system-level** layer: assume internal agents
-  may act unexpectedly,'
+summary: "Model alignment—training systems to be helpful and safe—is necessary but not sufficient for capable agents. DeepMind’s AI Control Roadmap adds a system-level layer: assume internal agents may act unexpectedly, and build defenses that still work when alignment fails."
 related:
 - AI Control
 - Frontier Safety Stack

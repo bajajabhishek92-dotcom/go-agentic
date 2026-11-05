@@ -4,10 +4,10 @@ Teachable articles distilled from videos and reputable AI sources. Pick a surfac
 
 ## Fastest path (browser, no setup)
 
-1. **Orientation (timeline, players, policy, benchmarks)** — start with gap-fill themes:  
-   [`gap-fill-ai-knowledge/`](gap-fill-ai-knowledge/) → especially [`ai-timeline/`](gap-fill-ai-knowledge/ai-timeline/), [`market-players/`](gap-fill-ai-knowledge/market-players/), [`global-policy/`](gap-fill-ai-knowledge/global-policy/), [`agent-benchmarks/`](gap-fill-ai-knowledge/agent-benchmarks/).
-2. **Cross-source essays** — open [`ai-knowledge-by-theme/themes.html`](ai-knowledge-by-theme/themes.html) in a browser (File → Open File).
-3. **All articles (searchable)** — open either:
+1. **AI Engineering Atlas (recommended)** — [`atlas/`](atlas/) · Start → Timeline → Players → Policy → Benchmarks → Topics. Timeline is a top-level lane (not a keyword hunt).
+2. **Orientation Markdown** — [`gap-fill-ai-knowledge/`](gap-fill-ai-knowledge/) → [`ai-timeline/`](gap-fill-ai-knowledge/ai-timeline/), [`market-players/`](gap-fill-ai-knowledge/market-players/), [`global-policy/`](gap-fill-ai-knowledge/global-policy/), [`agent-benchmarks/`](gap-fill-ai-knowledge/agent-benchmarks/).
+3. **Cross-source essays** — open [`ai-knowledge-by-theme/themes.html`](ai-knowledge-by-theme/themes.html) in a browser (File → Open File).
+4. **All articles (searchable, 182 = baseline + gap-fill)** — open either:
    - [`ai-knowledge-articles/articles.html`](ai-knowledge-articles/articles.html) *(published path)*
    - [`ai-knowledge-articles-readable/articles.html`](ai-knowledge-articles-readable/articles.html) *(same reader, store mirror)*
 
@@ -25,6 +25,7 @@ Teachable articles distilled from videos and reputable AI sources. Pick a surfac
 - **Concept map:** [`ai-knowledge-graph/index.md`](ai-knowledge-graph/index.md) · explorer [`explore.html`](ai-knowledge-graph/explore.html)
 - **Logseq graph:** [`logseq-setup.md`](logseq-setup.md) · folder [`logseq-ai-knowledge/`](logseq-ai-knowledge/)
 - **AI engineer study plan:** [`ai-engineer-study-plan.md`](ai-engineer-study-plan.md)
+- **Atlas reader:** [`atlas/`](atlas/) · README [`atlas/README.md`](atlas/README.md)
 - **Launch product:** [`launch-product/positioning.md`](launch-product/positioning.md) · preview [`launch-product/preview/`](launch-product/preview/)
 
 ## Quality review

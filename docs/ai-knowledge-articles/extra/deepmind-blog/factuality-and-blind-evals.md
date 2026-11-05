@@ -1,4 +1,5 @@
 ---
+
 title: Factuality Benchmarks and Double-Blind Evaluations
 slug: a-factuality-and-blind-evals
 type: article
@@ -25,8 +26,7 @@ keywords:
 - private
 - models
 - under
-summary: 'As models become default information sources, two evaluation problems dominate: **measuring
-  factuality across modes**, and **preventing contamination** so scores stay trustworthy.'
+summary: "As models become default information sources, two evaluation problems dominate: measuring factuality across modes, and preventing contamination so scores stay trustworthy."
 related:
 - Agent Evaluation
 - Benchmark Signal Disentanglement

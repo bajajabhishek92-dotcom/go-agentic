@@ -1,4 +1,5 @@
 ---
+
 title: Turning Private APIs into Agent Tools Without Flooding Context
 slug: a-private-apis-as-agent-tools
 type: article
@@ -25,9 +26,7 @@ keywords:
 - context
 - apis
 - tool
-summary: When teams start building agents, the capabilities they need usually already exist as internal
-  REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints
-  safely reachable by
+summary: "When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints safely reachable by agents without public exposure, without letting the model invent identity, and without stuffing a 400-tool catalog into every prompt."
 related:
 - Agent Tooling & APIs
 - Context Engineering

@@ -1,4 +1,5 @@
 ---
+
 title: 'LifeVal: Evaluating Agents on What Everyday People Need Done'
 slug: a-lifeval-everyday-agent-evals
 type: article
@@ -25,9 +26,7 @@ keywords:
 - need
 - done
 - use
-summary: 'Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete
-  practical life tasks—childcare logistics, government services, budgets, school prep, health-related
-  meal planning,'
+summary: "Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete practical life tasks—childcare logistics, government services, budgets, school prep, health-related meal planning, shopping, caregiving coordination. Advice in a chat box is not the same as an agent that can act through browsers, computers, and connectors. LifeVal is a pattern for measuring that gap."
 related:
 - Agent Evaluation
 - Long-Horizon Agents

@@ -1,4 +1,5 @@
 ---
+
 title: 'Generative AI Cost: An Operating Model, Not a Cheaper Model'
 slug: a-generative-ai-cost-operating-model
 type: article
@@ -25,9 +26,7 @@ keywords:
 - generative
 - cheaper
 - every
-summary: 'Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s
-  real questions: which team spent this, on which workload, and was it inside budget? Agentic systems
-  make the gap worse—one'
+summary: "Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse—one user task can mean many model calls with growing context—so token burn scales with autonomy and context size, not with chat turns."
 related:
 - Generative AI Cost Operating Model
 - Model Routing

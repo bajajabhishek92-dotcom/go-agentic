@@ -1,4 +1,5 @@
 ---
+
 title: Speech Evaluation Beyond Aggregate WER
 slug: a-speech-evaluation-beyond-averages
 type: article
@@ -25,9 +26,7 @@ keywords:
 - aggregate
 - tts
 - leaderboard
-summary: 'Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for
-  teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**—not just a single
-  average word error'
+summary: "Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: scalable objective TTS metrics, and ASR tests that expose who fails—not just a single average word error rate."
 related:
 - Benchmark Signal Disentanglement
 - Voice as Primary Interface

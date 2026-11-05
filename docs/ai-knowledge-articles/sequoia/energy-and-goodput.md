@@ -1,4 +1,5 @@
 ---
+
 title: Energy, Goodput, and the Physics of Frontier AI
 slug: a-energy-and-goodput
 type: article
@@ -25,7 +26,7 @@ keywords:
 - www.youtube.com/watch
 - intelligence
 - https
-summary: 'Model-quality narratives often ignore the industrial reality underneath: frontier AI is becoming an energy-and-systems problem as much as an algorithms problem. Sequoia conversations with Crusoe’s Chase Lochmiller, Google’s Amin Vahdat, NVIDIA’s Jensen Huang, and Starcloud’s…'
+summary: "Model-quality narratives often ignore the industrial reality underneath: frontier AI is becoming an energy-and-systems problem as much as an algorithms problem."
 related:
 - Energy & Goodput Constraints
 - Memory Wall

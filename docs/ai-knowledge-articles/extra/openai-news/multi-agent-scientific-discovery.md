@@ -1,4 +1,5 @@
 ---
+
 title: 'Multi-Agent Science: Scale Interpretation, Then Shepherd Understanding'
 slug: a-multi-agent-scientific-discovery
 type: article
@@ -25,9 +26,7 @@ keywords:
 - scale
 - multi-agent
 - interpretation
-summary: 'Modern experiments produce more data than any lab can thoroughly read. The complementary problem
-  for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices
-  address the two'
+summary: "Modern experiments produce more data than any lab can thoroughly read. The complementary problem for AI-produced proofs and papers: raw model output is not yet scientific understanding. Two practices address the two sides—parallel agent exploration of large datasets, and community stewardship of AI discoveries."
 related:
 - Multi-Agent Systems
 - Science Agent Workflows

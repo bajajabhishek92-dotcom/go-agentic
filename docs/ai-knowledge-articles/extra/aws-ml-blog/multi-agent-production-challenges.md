@@ -1,4 +1,5 @@
 ---
+
 title: Five Production Challenges in Multi-Agent Systems
 slug: a-multi-agent-production-challenges
 type: article
@@ -25,9 +26,7 @@ keywords:
 - model
 - plan
 - five
-summary: 'Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot
-  fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture
-  and execution'
+summary: "Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture and execution flow—not only longer instructions."
 related:
 - Enterprise Agent Platforms
 - Loop Engineering

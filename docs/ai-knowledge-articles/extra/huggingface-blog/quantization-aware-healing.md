@@ -1,4 +1,5 @@
 ---
+
 title: 'Quantization-Aware Healing: Compress Without Capping Accuracy'
 slug: a-quantization-aware-healing
 type: article
@@ -25,9 +26,7 @@ keywords:
 - accuracy
 - teacher
 - compress
-summary: Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses
-  quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent
-  tax—or becomes
+summary: "Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is quantize then heal. How you heal decides whether 4-bit stays a permanent tax—or becomes another teaching pass."
 related:
 - Agent Distillation
 - Quantization

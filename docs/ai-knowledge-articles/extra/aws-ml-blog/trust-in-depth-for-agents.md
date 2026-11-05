@@ -1,4 +1,5 @@
 ---
+
 title: 'Trust in Depth: Autonomy You Can Verify'
 slug: a-trust-in-depth-for-agents
 type: article
@@ -25,8 +26,7 @@ keywords:
 - autonomy
 - depth
 - verify
-summary: 'Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything
-  does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in'
+summary: "Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is Trust in Depth—independent layers that expand what you can safely allow, analogous to defense-in-depth but aimed at autonomy rather than only breach containment."
 related:
 - Agent Identity & On-Behalf-Of
 - Trust in Depth
