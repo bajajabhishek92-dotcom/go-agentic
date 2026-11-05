@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI Engineer Study Plan</title><style>
+:root { --bg:#f7f4ef; --ink:#1c1917; --muted:#57534e; --panel:#fffdf9; --line:#e7e0d5; --accent:#0f766e; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; color:var(--ink);
+  background:radial-gradient(1200px 600px at 10% -10%,#e8f5f2 0%,transparent 55%),radial-gradient(900px 500px at 100% 0%,#f3e9d8 0%,transparent 50%),var(--bg); line-height:1.55; }
+main { max-width:48rem; margin:0 auto; padding:2rem 1.25rem 4rem; }
+.nav { font-family:ui-sans-serif,system-ui,sans-serif; font-size:.9rem; margin:0 0 1.5rem; }
+.nav a { color:var(--accent); }
+h1 { font-size:clamp(1.7rem,3vw,2.3rem); margin:0 0 .75rem; }
+h2 { margin:2rem 0 .75rem; border-bottom:2px solid var(--accent); padding-bottom:.25rem; color:var(--accent); font-family:ui-sans-serif,system-ui,sans-serif; font-size:1.05rem; letter-spacing:.04em; text-transform:uppercase; }
+h3 { margin:1.4rem 0 .5rem; font-size:1.1rem; }
+p,li { margin:0 0 .75rem; }
+table { border-collapse:collapse; width:100%; margin:0 0 1rem; font-size:.92rem; background:var(--panel); }
+th,td { border:1px solid var(--line); padding:.4rem .55rem; text-align:left; vertical-align:top; }
+code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.88em; background:#f0ebe3; padding:.1em .35em; border-radius:4px; }
+pre { background:#1c1917; color:#f5f5f4; padding:1rem; overflow:auto; border-radius:8px; }
+pre code { background:transparent; color:inherit; }
+a { color:var(--accent); }
+hr { border:none; border-top:1px solid var(--line); margin:2rem 0; }
+</style></head>
+<body><main>
+<p class="nav"><a href="index.html">← Hub</a></p>
+<h1>AI Engineer Study Plan — Abhishek Bajaj (8–12 weeks)</h1>
+<p><strong>Goal:</strong> One cloud engineer cert + public build that hiring managers can verify in ≤15 minutes.  </p>
+<p><strong>Primary cert:</strong> AWS Certified Machine Learning Engineer – Associate (<strong>MLA-C01</strong>; if English C01 window is closed, sit the current successor <strong>MLA-C02</strong>—same cert family, heavier Bedrock/SageMaker AI).  </p>
+<p><strong>Portfolio spine:</strong> ship <strong>AI Engineering Atlas</strong> publicly + one production-ish build (RAG agent over Atlas + eval harness + light MLOps).  </p>
+<p><strong>Weekly budget:</strong> <strong>10–15 hrs</strong> (see §4).</p>
+<hr/>
+<h2>1. Why AWS-first (and when to switch)</h2>
+<table><tbody><tr><td>Reason</td><td>Detail</td></tr>
+<tr><td>--------</td><td>--------</td></tr>
+<tr><td><strong>Job coverage</strong></td><td>Largest share of AI/ML/MLOps postings still list AWS (SageMaker, Bedrock, S3, IAM, Step Functions). One AWS engineer badge travels farther than Azure/GCP alone for most US/global roles.</td></tr>
+<tr><td><strong>Fits Atlas narrative</strong></td><td>Corpus already includes AWS ML Blog teachables (RAG, tools, agent distillation, latency). Cert study maps onto content you already curate.</td></tr>
+<tr><td><strong>Engineering, not “AI apps only”</strong></td><td>MLA domains = data prep → train/tune → deploy/orchestrate → monitor/secure. Matches “systems + evals” positioning in <code>launch-product/positioning.md</code>.</td></tr>
+</tbody></table>
+<p><strong>Switch before week 1 (or mid-plan) if:</strong></p>
+<table><tbody><tr><td>Signal</td><td>Prefer instead</td></tr>
+<tr><td>--------</td><td>----------------</td></tr>
+<tr><td>Target employers are Azure-heavy (MSFT partner, enterprise .NET/Foundry shops) or JD lists Azure AI / Foundry</td><td><strong>AI-103</strong> (Azure AI Apps and Agents Developer Associate)</td></tr>
+<tr><td>Target employers are GCP-heavy (data platforms, Vertex, BigQuery ML) or you already have strong GCP</td><td><strong>PMLE</strong> (Professional Machine Learning Engineer)</td></tr>
+<tr><td>Offer / pipeline already forces a cloud</td><td>Match that cloud; do not dual-track in the first 12 weeks</td></tr>
+</tbody></table>
+<p>Default: <strong>AWS.</strong> Azure/GCP = optional second badge after week 12 (§6).</p>
+<hr/>
+<h2>2. Week-by-week plan (10 weeks core + 2-week buffer)</h2>
+<p><strong>Track A (default production build):</strong> Atlas-backed <strong>RAG agent</strong> + <strong>eval harness</strong> + <strong>CI refresh pipeline</strong> (embeddings/index on AWS).  </p>
+<p><strong>Track B (alt):</strong> Classical MLOps (SageMaker train → Model Registry → endpoint + monitoring) if you prefer non-LLM postings—swap weeks 5–8 labs; keep Atlas ship milestones.</p>
+<p><strong>Split each week (~12 hrs mid):</strong> Cert/study <strong>4–5h</strong> · Hands-on <strong>4–5h</strong> · Atlas/portfolio <strong>2–4h</strong>.</p>
+<h3>Weeks 1–2 — Foundations + Atlas public</h3>
+<table><tbody><tr><td></td><td>Topics</td><td>Labs</td><td>Cert</td><td>Portfolio milestone</td></tr>
+<tr><td>-</td><td>--------</td><td>------</td><td>------</td><td>---------------------</td></tr>
+<tr><td><strong>W1</strong></td><td>IAM least privilege; S3; CloudWatch basics; MLA domain map (4 domains)</td><td>Free-tier AWS account hygiene; CLI + IAM user/role for ML; bucket for Atlas artifacts</td><td>Read <a href="https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html" rel="noopener">MLA exam guide</a>; Skill Builder free practice question set (baseline score)</td><td>Freeze Atlas story (name, hub IA). Publish <strong>GitHub Pages hub</strong> from <code>go-agentic</code> (single entry URL)</td></tr>
+<tr><td><strong>W2</strong></td><td>Data prep for ML (Domain 1, 28%): formats, Glue/Athena awareness, feature stores concepts, data quality</td><td>Ingest a slice of Atlas markdown → S3; simple validation script (schema/counts/broken links)</td><td>Domain 1 notes + 20–30 practice Qs</td><td>Inventory honesty page (real article counts); Sources/<code>as_of</code> on Start-here orientation pages</td></tr>
+</tbody></table>
+<h3>Weeks 3–4 — Models + Bedrock/SageMaker mental model</h3>
+<table><tbody><tr><td></td><td>Topics</td><td>Labs</td><td>Cert</td><td>Portfolio milestone</td></tr>
+<tr><td>-</td><td>--------</td><td>------</td><td>------</td><td>---------------------</td></tr>
+<tr><td><strong>W3</strong></td><td>Domain 2: train/tune/eval metrics; bias/drift concepts; model registry</td><td>SageMaker Studio/notebook: train a tiny tabular model <strong>or</strong> Bedrock invoke + embeddings on Atlas chunks</td><td>Domain 2 deep dive</td><td>Searchable articles live on Pages; About/method + quality scorecard linked</td></tr>
+<tr><td><strong>W4</strong></td><td>GenAI engineering: prompts, chunking, embeddings, RAG failure modes</td><td>Chunk Atlas corpus; embed; store vectors (OpenSearch Serverless <strong>or</strong> FAISS/local + S3 artifacts for cost control); retrieve + answer 10 golden questions manually</td><td>Bedrock/SageMaker AI sections in Skill Builder path</td><td>Graph explorer reachable from hub; cold-visitor “60s start” path works</td></tr>
+</tbody></table>
+<h3>Weeks 5–6 — RAG agent + eval harness (portfolio core)</h3>
+<table><tbody><tr><td></td><td>Topics</td><td>Labs</td><td>Cert</td><td>Portfolio milestone</td></tr>
+<tr><td>-</td><td>--------</td><td>------</td><td>------</td><td>---------------------</td></tr>
+<tr><td><strong>W5</strong></td><td>Agentic retrieval patterns; tools; grounding; cost/latency</td><td>Ship <strong>v0 RAG agent</strong> (API or CLI) over Atlas: retrieve → answer → cite paths/URLs</td><td>Domain 3 overview (deploy/orchestrate)</td><td>Public repo README: architecture diagram + “how to run”; demo GIF/clip</td></tr>
+<tr><td><strong>W6</strong></td><td>Evals: faithfulness, citation hit-rate, latency, cost/query; regression sets</td><td><strong>Eval harness</strong>: ≥30 labeled Qs from Atlas; metrics JSON + HTML report; fail the build if citation hit-rate &lt; threshold</td><td>Practice Qs Domains 1–2 mixed</td><td>Publish eval report on Pages (<code>/evals</code> or About); tie to Atlas “evaluation rigor” claim</td></tr>
+</tbody></table>
+<h3>Weeks 7–8 — Deploy, orchestrate, secure (Domain 3–4)</h3>
+<table><tbody><tr><td></td><td>Topics</td><td>Labs</td><td>Cert</td><td>Portfolio milestone</td></tr>
+<tr><td>-</td><td>--------</td><td>------</td><td>------</td><td>---------------------</td></tr>
+<tr><td><strong>W7</strong></td><td>Endpoints, containers, Step Functions/Pipelines, CI/CD for ML</td><td>Package agent; deploy (Lambda + API GW <strong>or</strong> SageMaker endpoint / ECS lite); env secrets via SSM/Secrets Manager</td><td>Domain 3 task statements end-to-end</td><td>Live demo URL (auth optional but document threat model)</td></tr>
+<tr><td><strong>W8</strong></td><td>Monitoring, drift, logging, IAM for ML, encryption, VPC endpoints concepts</td><td>CloudWatch metrics/alarms; log prompts/retrieval IDs (PII-safe); weekly index refresh job (EventBridge → pipeline)</td><td>Domain 4 notes + mixed practice</td><td><strong>MLOps slice:</strong> automated re-embed on corpus change (GitHub Action → S3 → job); document RTO/cost</td></tr>
+</tbody></table>
+<h3>Weeks 9–10 — Exam push + interview packaging</h3>
+<table><tbody><tr><td></td><td>Topics</td><td>Labs</td><td>Cert</td><td>Portfolio milestone</td></tr>
+<tr><td>-</td><td>--------</td><td>------</td><td>------</td><td>---------------------</td></tr>
+<tr><td><strong>W9</strong></td><td>Weak-domain remediation from practice scores</td><td>Fix top 3 production bugs (latency, bad cites, cold start)</td><td>Official practice exam / pretest; schedule real exam for end of W10–W11</td><td>Resume bullet + LinkedIn: Atlas + agent + evals + AWS stack; pin repos</td></tr>
+<tr><td><strong>W10</strong></td><td>Full mock exams; service cheat-sheet (SageMaker, Bedrock, Glue, Step Functions, CloudWatch, IAM, S3)</td><td>Cost teardown write-up ($/1k queries)</td><td><strong>Sit exam</strong> (or early W11)</td><td>“Staff narrative” README section: map / cite / evaluate / gap-fill / graph / iterate</td></tr>
+</tbody></table>
+<h3>Weeks 11–12 — Buffer (use only what you need)</h3>
+<table><tbody><tr><td>Mode</td><td>Use when</td><td>Do</td></tr>
+<tr><td>------</td><td>----------</td><td>-----</td></tr>
+<tr><td><strong>Exam buffer</strong></td><td>Score &amp;lt; ready on mocks</td><td>Extra Domain drills; retake practice exam; sit exam W12</td></tr>
+<tr><td><strong>Portfolio polish</strong></td><td>Exam passed early</td><td>Harden evals; add ACL note for multi-tenant RAG; record 3-min walkthrough</td></tr>
+<tr><td><strong>Stretch to 12 from week 1</strong></td><td>Only ~10 hrs/week available</td><td>Slide each block +1 week; still ship Pages hub by end of calendar week 3</td></tr>
+</tbody></table>
+<p><strong>8-week compress (aggressive):</strong> Merge W1–2, W3–4, W5–6, W7–8 into four bi-weeks; cut Track B; exam end of week 8. Only if you already know AWS IAM/S3 and can ship Atlas hub in weekend 1.</p>
+<hr/>
+<h2>3. Resources (short list)</h2>
+<h3>Official (required)</h3>
+<ul>
+<li><a href="https://docs.aws.amazon.com/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.html" rel="noopener">MLA-C01 exam guide (HTML)</a> · <a href="https://docs.aws.amazon.com/pdfs/aws-certification/latest/machine-learning-engineer-associate-01/machine-learning-engineer-associate-01.pdf" rel="noopener">PDF</a></li>
+<li><a href="https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/" rel="noopener">AWS cert page — ML Engineer Associate</a> (check C01 vs C02 English availability before booking)</li>
+<li><a href="https://skillbuilder.aws/category/exam-prep/machine-learning-engineer-associate-MLA-C01" rel="noopener">Skill Builder — MLA-C01 exam prep</a> (free Q set + paid Official Practice Exam)</li>
+</ul>
+<h3>Free / low-cost labs</h3>
+<ul>
+<li>AWS free tier + SageMaker / Bedrock docs tutorials (embeddings, Knowledge Bases if budget allows)</li>
+<li>Atlas corpus under <code>/cursor/stores/self/docs/</code> + <code>launch-product/</code> (positioning, build-plan, product-spec) as the build backlog</li>
+</ul>
+<h3>Paid (pick <strong>one</strong>, not three)</h3>
+<ul>
+<li>AWS Skill Builder subscription <strong>or</strong> one well-reviewed MLA video course (Adrian Cantrill / similar)—cancel after exam</li>
+<li>Official practice exam once (week 9)</li>
+</ul>
+<h3>Alternatives (only if switching clouds)</h3>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103" rel="noopener">AI-103 study guide</a> · <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" rel="noopener">Azure AI Apps and Agents Developer Associate</a></li>
+<li><a href="https://cloud.google.com/learn/certification/machine-learning-engineer" rel="noopener">GCP PMLE</a> · <a href="https://services.google.com/fh/files/misc/professional_machine_learning_engineer_exam_guide_english_new.pdf" rel="noopener">exam guide PDF</a></li>
+</ul>
+<hr/>
+<h2>4. Weekly time budget (~10–15 hrs)</h2>
+<table><tbody><tr><td>Block</td><td>Hours</td><td>Cadence</td></tr>
+<tr><td>-------</td><td>------:</td><td>---------</td></tr>
+<tr><td>Cert study (guide + practice Qs)</td><td>4–5</td><td>4–5 × 50–60 min sessions</td></tr>
+<tr><td>Hands-on AWS / agent / evals</td><td>4–5</td><td>1 long lab (2–3h) + 1–2 short</td></tr>
+<tr><td>Atlas / docs / README / Pages</td><td>2–4</td><td>Ship one visible artifact every week</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>10–15</strong></td><td>Protect one weekday evening + one weekend block</td></tr>
+</tbody></table>
+<p><strong>Rules:</strong> No second cloud until badge #1. No new course after week 6—only exam guide + weak domains + build. Cap AWS bill; prefer local/FAISS + S3 artifacts if Bedrock/OpenSearch burns cash.</p>
+<hr/>
+<h2>5. Interview-ready outcomes checklist</h2>
+<p>Pass when you can show <strong>and</strong> explain each item:</p>
+<p><strong>Cert / cloud</strong></p>
+<ul>
+<li>[ ] AWS ML Engineer Associate earned (or scheduled + mock ≥ target)</li>
+<li>[ ] Explain MLA’s 4 domains with one personal lab story each</li>
+<li>[ ] Whiteboard: secure RAG on AWS (IAM, data path, logging, failure modes)</li>
+</ul>
+<p><strong>Atlas (systems proof)</strong></p>
+<ul>
+<li>[ ] Live URL: single hub, search, Start-here, Sources/<code>as_of</code>, graph, quality scorecard</li>
+<li>[ ] One-sentence claim: <em>knowledge system with graph + eval surface</em>, not “video summaries”</li>
+<li>[ ] Honest inventory + public gaps/remediation backlog</li>
+</ul>
+<p><strong>Production-ish project</strong></p>
+<ul>
+<li>[ ] Public RAG (or MLOps) repo with architecture, runbook, cost note</li>
+<li>[ ] Eval harness with fixed set, metrics, regression gate</li>
+<li>[ ] Deployed endpoint or scheduled pipeline; monitoring screenshot/logs</li>
+<li>[ ] 3-minute demo: question → retrieved cites → answer → eval score</li>
+</ul>
+<p><strong>Behavioral / staff signals</strong></p>
+<ul>
+<li>[ ] Resume + LinkedIn use the six verbs: map, cite, evaluate, gap-fill, graph, iterate</li>
+<li>[ ] Can discuss tradeoffs: chunk size, embedding model, retrieval vs agent loops, eval gaming</li>
+<li>[ ] Can discuss what you would do in week 13 (scale, ACLs, online evals)—without having built it yet</li>
+</ul>
+<hr/>
+<h2>6. Optional second-badge fork (after week 12)</h2>
+<p>Do <strong>not</strong> start until: badge #1 done <strong>and</strong> Atlas + agent/evals are public.</p>
+<table><tbody><tr><td>If next target market is…</td><td>Second badge</td><td>6–8 week add-on focus</td></tr>
+<tr><td>---------------------------</td><td>--------------</td><td>------------------------</td></tr>
+<tr><td>Enterprise Microsoft / agents on Foundry</td><td><strong>AI-103</strong></td><td>Port RAG agent concepts to Azure AI Search + Foundry agents; reuse eval harness</td></tr>
+<tr><td>Data/ML platform / Vertex shops</td><td><strong>PMLE</strong></td><td>Vertex pipelines + BigQuery ML; map your MLOps slice to GCP</td></tr>
+<tr><td>Deeper AWS differentiation</td><td>Skip second cloud; add <strong>Security Specialty light study</strong> <em>or</em> publish a second eval paper-style writeup</td><td>Stronger than a weak second badge</td></tr>
+</tbody></table>
+<p><strong>Rule:</strong> Second badge only if JDs you want list that cloud ≥3× in your pipeline. Otherwise double down on Atlas depth + online evals + one customer-shaped case study.</p>
+</main></body></html>
