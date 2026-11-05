@@ -1,3 +1,38 @@
+---
+title: Energy, Goodput, and the Physics of Frontier AI
+slug: a-energy-and-goodput
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/inference-infra
+keywords:
+- memory-wall
+- energy-goodput-constraints
+- sequoia
+- inference-infra
+- cluster-inference-infra
+- corpus-sequoia-ai-knowledge
+- article
+- energy
+- physics
+- goodput
+- frontier
+- www.youtube.com/watch
+- intelligence
+- https
+summary: 'Model quality narratives often ignore the industrial reality underneath: AI is becoming an energy-and-systems
+  problem as much as an algorithms problem.'
+related:
+- Energy & Goodput Constraints
+- Memory Wall
+path: sequoia/energy-and-goodput.md
+---
+
 # Energy, Goodput, and the Physics of Frontier AI
 
 Model quality narratives often ignore the industrial reality underneath: AI is becoming an energy-and-systems problem as much as an algorithms problem.

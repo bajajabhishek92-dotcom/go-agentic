@@ -1,3 +1,39 @@
+---
+title: 'Intelligence Per Watt: Rethinking the Computing Substrate'
+slug: a-substrate-intelligence
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/inference-infra
+keywords:
+- energy-goodput-constraints
+- ai-designed-chips
+- sequoia
+- inference-infra
+- cluster-inference-infra
+- corpus-sequoia-ai-knowledge
+- article
+- substrate
+- per
+- computing
+- watt
+- rethinking
+- intelligence
+- than
+summary: Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues
+  the deeper limit is the **physical substrate** of computation—and that brains are an existence proof
+  we are ignoring.
+related:
+- AI-Designed Chips
+- Energy & Goodput Constraints
+path: sequoia/substrate-intelligence.md
+---
+
 # Intelligence Per Watt: Rethinking the Computing Substrate
 
 Most AI efficiency work optimizes algorithms or GPU kernels. Naveen Rao (Unconventional AI) argues the deeper limit is the **physical substrate** of computation—and that brains are an existence proof we are ignoring.

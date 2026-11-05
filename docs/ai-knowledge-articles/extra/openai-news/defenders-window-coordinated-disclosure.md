@@ -1,3 +1,39 @@
+---
+title: 'The Defender’s Window: AI Vulnerability Discovery That Finishes With Fixes'
+slug: a-defenders-window-coordinated-disclosure
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/openai-news
+- cluster/security-safety
+keywords:
+- defender-s-window
+- ai-security-trilemma
+- openai-news
+- security-safety
+- cluster-security-safety
+- corpus-openai-news
+- article
+- window
+- discovery
+- vulnerability
+- fixes
+- finishes
+- disclosure
+- defender
+summary: Frontier models can discover critical flaws in widely used software before attackers do. That
+  advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it
+  is a **pipeline
+related:
+- AI Security Trilemma
+- Defender's Window
+path: extra/openai-news/defenders-window-coordinated-disclosure.md
+---
+
 # The Defender’s Window: AI Vulnerability Discovery That Finishes With Fixes
 
 Frontier models can discover critical flaws in widely used software before attackers do. That advantage is temporary. The same capabilities will spread. The scarce resource is not another scanner—it is a **pipeline from finding → validated fix → coordinated preparation → disclosure → deployment**, while maintainers stay solvent and defenders get ahead of exploit automation.

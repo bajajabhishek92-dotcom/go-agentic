@@ -1,3 +1,39 @@
+---
+title: 'Agentic Intrusions: Treat Data Pipelines as Attack Surface'
+slug: a-agent-security-ai-intrusions
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/security-safety
+keywords:
+- agentic-intrusions---data-pipeline-attacks
+- ai-security-trilemma
+- huggingface-blog
+- security-safety
+- cluster-security-safety
+- corpus-huggingface-blog
+- article
+- data
+- surface
+- pipelines
+- attack
+- treat
+- intrusions
+- code
+summary: 'In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent**
+  operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation
+  agents that'
+related:
+- AI Security Trilemma
+- Agentic Intrusions - Data Pipeline Attacks
+path: extra/huggingface-blog/agent-security-ai-intrusions.md
+---
+
 # Agentic Intrusions: Treat Data Pipelines as Attack Surface
 
 In July 2026, Hugging Face disclosed a security incident driven by an **autonomous AI agent** operating at machine speed across sandboxes—not a classic human APT playbook. The teachable core: evaluation agents that can reach the internet, plus rich data-processing pipelines, create a new offensive economics.

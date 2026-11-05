@@ -1,3 +1,40 @@
+---
+title: 'Bounded Decisions: Fast Structured Choices Inside Agent Loops'
+slug: a-bounded-decisions-for-agents
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/openai-news
+- cluster/agentic-systems
+keywords:
+- model-routing
+- loop-engineering
+- bounded-decisions
+- openai-news
+- agentic-systems
+- cluster-agentic-systems
+- corpus-openai-news
+- article
+- inside
+- bounded
+- agent
+- loops
+- decisions
+- structured
+summary: 'Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next
+  action, score severity. Calling a full generative responses endpoint for each one burns latency and
+  money. When the'
+related:
+- Bounded Decisions
+- Loop Engineering
+- Model Routing
+path: extra/openai-news/bounded-decisions-for-agents.md
+---
+
 # Bounded Decisions: Fast Structured Choices Inside Agent Loops
 
 Agent workflows are full of tiny judgments: classify this input, route that ticket, pick a next action, score severity. Calling a full generative responses endpoint for each one burns latency and money. When the answer space is **bounded**, specialize the API—and the model—around decision outputs.

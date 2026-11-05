@@ -1,3 +1,40 @@
+---
+title: 'Agent Harnesses: The Operating System Around the Model Loop'
+slug: a-agent-harnesses
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/agentic-systems
+keywords:
+- loop-engineering
+- long-horizon-agents
+- agent-harness
+- sequoia
+- agentic-systems
+- cluster-agentic-systems
+- corpus-sequoia-ai-knowledge
+- article
+- loop
+- model
+- harness
+- agent
+- around
+- system
+summary: 'Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it
+  is building the **harness**: the runtime that feeds context, tools, memory, sandboxes, and recovery
+  around a'
+related:
+- Agent Harness
+- Long-Horizon Agents
+- Loop Engineering
+path: sequoia/agent-harnesses.md
+---
+
 # Agent Harnesses: The Operating System Around the Model Loop
 
 Once models can run tool-calling loops reliably, the scarce skill is not “prompting an agent”—it is building the **harness**: the runtime that feeds context, tools, memory, sandboxes, and recovery around a deceptively simple loop.

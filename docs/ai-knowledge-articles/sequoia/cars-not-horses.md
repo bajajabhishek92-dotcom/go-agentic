@@ -1,3 +1,39 @@
+---
+title: 'Cars, Not Faster Horses: A Commercial Definition of the Agent Era'
+slug: a-cars-not-horses
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/agentic-systems
+keywords:
+- long-horizon-agents
+- agentic-engineering
+- agent-era-market-frame
+- agentic-systems
+- cluster-agentic-systems
+- corpus-sequoia-ai-knowledge
+- article
+- not
+- cars
+- horses
+- faster
+- commercial
+- agent
+- you
+summary: 'Sequoia’s AI Ascent 2026 framing is intentionally non-academic: stop arguing about AGI checklists
+  and notice that **the shape of software work has changed**.'
+related:
+- Agent Era Market Frame
+- Agentic Engineering
+- Long-Horizon Agents
+path: sequoia/cars-not-horses.md
+---
+
 # Cars, Not Faster Horses: A Commercial Definition of the Agent Era
 
 Sequoia’s AI Ascent 2026 framing is intentionally non-academic: stop arguing about AGI checklists and notice that **the shape of software work has changed**.

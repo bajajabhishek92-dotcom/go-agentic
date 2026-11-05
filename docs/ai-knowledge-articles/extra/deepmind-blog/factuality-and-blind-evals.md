@@ -1,3 +1,38 @@
+---
+title: Factuality Benchmarks and Double-Blind Evaluations
+slug: a-factuality-and-blind-evals
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/trust-evals
+keywords:
+- benchmark-signal-disentanglement
+- agent-evaluation
+- deepmind-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-deepmind-blog
+- article
+- factuality
+- double-blind
+- benchmarks
+- evaluations
+- private
+- models
+- under
+summary: 'As models become default information sources, two evaluation problems dominate: **measuring
+  factuality across modes**, and **preventing contamination** so scores stay trustworthy.'
+related:
+- Agent Evaluation
+- Benchmark Signal Disentanglement
+path: extra/deepmind-blog/factuality-and-blind-evals.md
+---
+
 # Factuality Benchmarks and Double-Blind Evaluations
 
 As models become default information sources, two evaluation problems dominate: **measuring factuality across modes**, and **preventing contamination** so scores stay trustworthy.

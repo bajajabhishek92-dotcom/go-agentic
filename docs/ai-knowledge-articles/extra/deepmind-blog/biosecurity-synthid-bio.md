@@ -1,3 +1,39 @@
+---
+title: 'Biosecurity for Generative Biology: Watermarks and Layered Defense'
+slug: a-biosecurity-synthid-bio
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Science, Frontier & Interpretability
+cluster_id: science-frontier
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/science-frontier
+keywords:
+- provenance-watermarking
+- biosecurity-for-generative-biology
+- deepmind-blog
+- science-frontier
+- cluster-science-frontier
+- corpus-deepmind-blog
+- article
+- generative
+- defense
+- biosecurity
+- watermarks
+- layered
+- biology
+- sequences
+summary: AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel
+  sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar
+  ≈ natural.” DeepMind’s
+related:
+- Biosecurity for Generative Biology
+- Provenance & Watermarking
+path: extra/deepmind-blog/biosecurity-synthid-bio.md
+---
+
 # Biosecurity for Generative Biology: Watermarks and Layered Defense
 
 AI that designs proteins and genomes accelerates medicine—and complicates biosecurity. Novel sequences may not match known-threat databases, so DNA synthesis screening cannot assume “unfamiliar ≈ natural.” DeepMind’s SynthID Bio and broader bioresilience framing teach **layered defense** with provenance in the design itself.

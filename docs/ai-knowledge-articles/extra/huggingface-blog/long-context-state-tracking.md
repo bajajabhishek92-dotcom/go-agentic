@@ -1,3 +1,39 @@
+---
+title: 'Long-Context State Tracking: What Benchmarks Must Separate'
+slug: a-long-context-state-tracking
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/trust-evals
+keywords:
+- context-engineering
+- benchmark-signal-disentanglement
+- huggingface-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-huggingface-blog
+- article
+- tracking
+- state
+- long-context
+- benchmarks
+- separate
+- must
+- can
+summary: Long-context benchmarks often ask whether a model “remembers” something far back in a document.
+  That question hides several different skills. **State tracking**—following how entities change as a
+  document unfolds—has
+related:
+- Benchmark Signal Disentanglement
+- Context Engineering
+path: extra/huggingface-blog/long-context-state-tracking.md
+---
+
 # Long-Context State Tracking: What Benchmarks Must Separate
 
 Long-context benchmarks often ask whether a model “remembers” something far back in a document. That question hides several different skills. **State tracking**—following how entities change as a document unfolds—has its own difficulty ladder. Treating every state-tracking failure as “the context window was too short” misdiagnoses both architecture and training.

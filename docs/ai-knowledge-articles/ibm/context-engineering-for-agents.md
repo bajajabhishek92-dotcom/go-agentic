@@ -1,3 +1,39 @@
+---
+title: 'Context Engineering: Giving Agents the Right Information'
+slug: a-context-engineering-for-agents
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/knowledge-access
+keywords:
+- context-engineering
+- agent-harness
+- ibm
+- knowledge-access
+- cluster-knowledge-access
+- corpus-ibm-ai-knowledge
+- article
+- context
+- agents
+- information
+- engineering
+- tool
+- right
+- window
+summary: 'Prompt engineering asks how to phrase instructions. Context engineering asks a broader question:
+  what entire information environment should the model see at each step? For agents that plan, call tools,
+  retrieve'
+related:
+- Agent Harness
+- Context Engineering
+path: ibm/context-engineering-for-agents.md
+---
+
 # Context Engineering: Giving Agents the Right Information
 
 Prompt engineering asks how to phrase instructions. Context engineering asks a broader question: what entire information environment should the model see at each step? For agents that plan, call tools, retrieve documents, and run for hours, that distinction is decisive.

@@ -1,3 +1,38 @@
+---
+title: 'RL Environments: The Missing Dataset for Real Work'
+slug: a-rl-environments
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/training-data
+keywords:
+- rl-environments
+- continual-learning
+- sequoia
+- training-data
+- cluster-training-data
+- corpus-sequoia-ai-knowledge
+- article
+- environments
+- work
+- real
+- missing
+- dataset
+- you
+- verifiers
+summary: Reinforcement learning for agents is no longer only a lab technique. The bottleneck has shifted
+  from “can we do RL?” to **can we build environments that look like the economy?**
+related:
+- Continual Learning
+- RL Environments
+path: sequoia/rl-environments.md
+---
+
 # RL Environments: The Missing Dataset for Real Work
 
 Reinforcement learning for agents is no longer only a lab technique. The bottleneck has shifted from “can we do RL?” to **can we build environments that look like the economy?**

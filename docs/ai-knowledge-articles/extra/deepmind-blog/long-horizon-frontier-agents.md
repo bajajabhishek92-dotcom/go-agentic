@@ -1,3 +1,39 @@
+---
+title: 'Long-Horizon Frontier Agents: Persistence Over Clever One-Shots'
+slug: a-long-horizon-frontier-agents
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/agentic-systems
+keywords:
+- long-horizon-agents
+- agent-harness
+- deepmind-blog
+- agentic-systems
+- cluster-agentic-systems
+- corpus-deepmind-blog
+- article
+- long-horizon
+- frontier
+- persistence
+- over
+- one-shots
+- not
+- model
+summary: 'Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon,
+  then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows,
+  and agentic'
+related:
+- Agent Harness
+- Long-Horizon Agents
+path: extra/deepmind-blog/long-horizon-frontier-agents.md
+---
+
 # Long-Horizon Frontier Agents: Persistence Over Clever One-Shots
 
 Frontier models are no longer judged only by short chat answers. The newest Gemini 4 class (Argon, then Carbon) is framed around **deep work**: multi-day engineering, multi-step professional workflows, and agentic runs that survive dead ends.

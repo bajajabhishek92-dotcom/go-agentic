@@ -1,3 +1,39 @@
+---
+title: 'Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling'
+slug: a-voice-ai-latency-budget
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Physical AI, Voice & Autonomy
+cluster_id: physical-ai
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/physical-ai
+keywords:
+- voice-as-primary-interface
+- generative-ai-cost-operating-model
+- aws-ml-blog
+- physical-ai
+- cluster-physical-ai
+- corpus-aws-ml-blog
+- article
+- latency
+- tts
+- speech
+- voice
+- autoscaling
+- sub-100ms
+- measured
+summary: Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking
+  expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor.
+  Voice AI is
+related:
+- Generative AI Cost Operating Model
+- Voice as Primary Interface
+path: extra/aws-ml-blog/voice-ai-latency-budget.md
+---
+
 # Voice AI Latency Budgets: Sub-100ms Speech and Measured Autoscaling
 
 Natural conversation has a temporal window. If synthesized speech arrives outside human turn-taking expectations, users hear awkward pauses, trust drops, and contact-center or sales agents lose the floor. Voice AI is therefore an **infrastructure latency problem** as much as a model-quality problem.

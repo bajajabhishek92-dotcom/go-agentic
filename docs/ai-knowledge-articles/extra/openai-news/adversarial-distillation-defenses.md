@@ -1,3 +1,39 @@
+---
+title: 'Adversarial Distillation: Stealing Reasoning Without Breaking In'
+slug: a-adversarial-distillation-defenses
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/openai-news
+- cluster/security-safety
+keywords:
+- frontier-safety-stack
+- adversarial-distillation
+- openai-news
+- security-safety
+- cluster-security-safety
+- corpus-openai-news
+- article
+- reasoning
+- without
+- distillation
+- adversarial
+- stealing
+- breaking
+- same
+summary: Not every model-theft path looks like a database breach. **Adversarial distillation** is the
+  systematic, unauthorized use of a model’s outputs—or especially its *protected reasoning*—to train or
+  improve another
+related:
+- Adversarial Distillation
+- Frontier Safety Stack
+path: extra/openai-news/adversarial-distillation-defenses.md
+---
+
 # Adversarial Distillation: Stealing Reasoning Without Breaking In
 
 Not every model-theft path looks like a database breach. **Adversarial distillation** is the systematic, unauthorized use of a model’s outputs—or especially its *protected reasoning*—to train or improve another model. Operators may never touch your disks; they manipulate conversations at scale until hidden intermediate work becomes visible and copyable.

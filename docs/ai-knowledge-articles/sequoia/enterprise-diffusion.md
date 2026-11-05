@@ -1,3 +1,39 @@
+---
+title: 'Enterprise AI Diffusion: Reinvention Beats Feature Packs'
+slug: a-enterprise-diffusion
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/enterprise-gov
+keywords:
+- enterprise-agent-platforms
+- enterprise-ai-diffusion
+- sequoia
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-sequoia-ai-knowledge
+- article
+- enterprise
+- diffusion
+- reinvention
+- packs
+- not
+- feature
+- beats
+summary: 'Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron
+  Levie (Box), Elias Torres (Agency), Block’s Goose agent, Crosby in legal—explain why: **diffusion is
+  an org'
+related:
+- Enterprise AI Diffusion
+- Enterprise Agent Platforms
+path: sequoia/enterprise-diffusion.md
+---
+
 # Enterprise AI Diffusion: Reinvention Beats Feature Packs
 
 Enterprises asked for AI, then rejected much of what they got. Sequoia’s enterprise conversations—Aaron Levie (Box), Elias Torres (Agency), Block’s Goose agent, Crosby in legal—explain why: **diffusion is an org problem**, not a model-demo problem.

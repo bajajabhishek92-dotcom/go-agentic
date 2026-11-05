@@ -1,3 +1,39 @@
+---
+title: 'Private and On-Device AI: Continuity Without Cloud Exposure'
+slug: a-private-on-device-ai
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/enterprise-gov
+keywords:
+- private---on-device-ai
+- digital-sovereignty
+- deepmind-blog
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-deepmind-blog
+- article
+- on-device
+- private
+- cloud
+- without
+- exposure
+- continuity
+- models
+summary: 'Personal AI wants long memory and strong models. Privacy wants data to stay on the device. DeepMind
+  and Google’s recent posts show two complementary answers: **hardware-isolated cloud enclaves with sealed
+  memory**,'
+related:
+- Digital Sovereignty
+- Private - On-Device AI
+path: extra/deepmind-blog/private-on-device-ai.md
+---
+
 # Private and On-Device AI: Continuity Without Cloud Exposure
 
 Personal AI wants long memory and strong models. Privacy wants data to stay on the device. DeepMind and Google’s recent posts show two complementary answers: **hardware-isolated cloud enclaves with sealed memory**, and **fine-tuned on-device models** for sensitive local tasks like scam detection.

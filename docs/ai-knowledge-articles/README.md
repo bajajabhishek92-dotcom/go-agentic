@@ -2,6 +2,12 @@
 
 **86 articles** only — no Logseq graph.
 
+## Search metadata
+
+Every article has YAML frontmatter with: `title`, `slug`, `corpus`, `cluster`, `tags`, `keywords`, `summary`, `related`, `path`.
+
+Machine-readable catalog: [`articles-index.json`](articles-index.json).
+
 ## Easiest: open in a browser
 
 Double-click **[`articles.html`](articles.html)** (or Chrome/Safari → File → Open File).  

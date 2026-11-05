@@ -1,3 +1,41 @@
+---
+title: 'Skills, MCP, RAG, and Memory: Four Ways Agents Get Knowledge'
+slug: a-skills-mcp-rag-memory
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/knowledge-access
+keywords:
+- rag-retrieval-augmented-generation
+- mcp-model-context-protocol
+- agent-skills
+- agent-memory
+- ibm
+- knowledge-access
+- cluster-knowledge-access
+- corpus-ibm-ai-knowledge
+- article
+- mcp
+- skills
+- rag
+- knowledge
+- memory
+summary: An agent facing a production 500 error will flounder if you only dump runbooks, dashboards, and
+  customer history into the context window. Four complementary mechanisms give agents knowledge beyond
+  training data—each
+related:
+- Agent Memory
+- Agent Skills
+- MCP (Model Context Protocol)
+- RAG (Retrieval-Augmented Generation)
+path: ibm/skills-mcp-rag-memory.md
+---
+
 # Skills, MCP, RAG, and Memory: Four Ways Agents Get Knowledge
 
 An agent facing a production 500 error will flounder if you only dump runbooks, dashboards, and customer history into the context window. Four complementary mechanisms give agents knowledge beyond training data—each for a different kind of knowing.

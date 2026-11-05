@@ -1,3 +1,39 @@
+---
+title: 'WeatherNext and Earth Observation: AI for Climate Decisions'
+slug: a-weathernext-climate-earth
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Science, Frontier & Interpretability
+cluster_id: science-frontier
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/science-frontier
+keywords:
+- science-agent-workflows
+- climate-earth-observation-ai
+- deepmind-blog
+- science-frontier
+- cluster-science-frontier
+- corpus-deepmind-blog
+- article
+- weathernext
+- earth
+- decisions
+- observation
+- maps
+- forecasts
+- climate
+summary: Weather and land-cover AI convert research models into **decision infrastructure**—hourly forecasts
+  in consumer products, energy and agriculture variables, and forest maps that distinguish what “green”
+  actually is.
+related:
+- Climate & Earth Observation AI
+- Science Agent Workflows
+path: extra/deepmind-blog/weathernext-climate-earth.md
+---
+
 # WeatherNext and Earth Observation: AI for Climate Decisions
 
 Weather and land-cover AI convert research models into **decision infrastructure**—hourly forecasts in consumer products, energy and agriculture variables, and forest maps that distinguish what “green” actually is.

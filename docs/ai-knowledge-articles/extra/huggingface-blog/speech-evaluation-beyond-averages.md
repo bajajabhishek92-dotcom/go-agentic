@@ -1,3 +1,39 @@
+---
+title: Speech Evaluation Beyond Aggregate WER
+slug: a-speech-evaluation-beyond-averages
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/trust-evals
+keywords:
+- voice-as-primary-interface
+- benchmark-signal-disentanglement
+- huggingface-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-huggingface-blog
+- article
+- wer
+- speech
+- models
+- asr
+- aggregate
+- tts
+- leaderboard
+summary: 'Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for
+  teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**—not just a single
+  average word error'
+related:
+- Benchmark Signal Disentanglement
+- Voice as Primary Interface
+path: extra/huggingface-blog/speech-evaluation-beyond-averages.md
+---
+
 # Speech Evaluation Beyond Aggregate WER
 
 Speech models ship faster than evaluations keep up. Two Hugging Face Audio themes matter for teaching: **scalable objective TTS metrics**, and **ASR tests that expose who fails**—not just a single average word error rate.

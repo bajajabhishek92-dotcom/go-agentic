@@ -1,3 +1,39 @@
+---
+title: Model Routing on the Cost–Intelligence Frontier
+slug: a-model-routing-cost-intelligence
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/openai-news
+- cluster/inference-infra
+keywords:
+- model-routing
+- generative-ai-cost-operating-model
+- openai-news
+- inference-infra
+- cluster-inference-infra
+- corpus-openai-news
+- article
+- model
+- frontier
+- cost
+- routing
+- use
+- intelligence
+- reasoning
+summary: Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap)
+  plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is
+  how teams burn 10–100×
+related:
+- Generative AI Cost Operating Model
+- Model Routing
+path: extra/openai-news/model-routing-cost-intelligence.md
+---
+
 # Model Routing on the Cost–Intelligence Frontier
 
 Frontier labs now ship **families** of models (max-intelligence, strong mid-tier, fast/cheap) plus knobs for reasoning effort and speed. Treating “one model for everything” as a moral stance is how teams burn 10–100× too much money—or ship brittle agents on the wrong tier.

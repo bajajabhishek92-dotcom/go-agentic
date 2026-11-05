@@ -1,3 +1,38 @@
+---
+title: 'Robot Data Factories: Sensorizing Humans to Train Physical AI'
+slug: a-robot-data-factories
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Physical AI, Voice & Autonomy
+cluster_id: physical-ai
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/physical-ai
+keywords:
+- physical-ai---robotics
+- data-efficiency-bottleneck
+- sequoia
+- physical-ai
+- cluster-physical-ai
+- corpus-sequoia-ai-knowledge
+- article
+- physical
+- data
+- robot
+- train
+- humans
+- sensorizing
+- factories
+summary: 'Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s robotics
+  conversations converge on a manufacturing problem: **how to produce experience at scale**.'
+related:
+- Data Efficiency Bottleneck
+- Physical AI - Robotics
+path: sequoia/robot-data-factories.md
+---
+
 # Robot Data Factories: Sensorizing Humans to Train Physical AI
 
 Language models pretrain on the internet. Robotics has no equivalent corpus. Sequoia’s robotics conversations converge on a manufacturing problem: **how to produce experience at scale**.

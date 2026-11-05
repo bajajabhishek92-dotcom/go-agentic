@@ -1,3 +1,39 @@
+---
+title: Building a Web That Agents Can Use
+slug: a-web-for-agents
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/knowledge-access
+keywords:
+- agent-native-web
+- agent-tooling-apis
+- sequoia
+- knowledge-access
+- cluster-knowledge-access
+- corpus-sequoia-ai-knowledge
+- article
+- web
+- agents
+- building
+- use
+- can
+- agent
+- need
+summary: The public web was built for human eyes and ad clickers. Agents need machine-reliable retrieval,
+  tools, and permissions. Parallel’s Parag Agrawal argues for a **new web layer for AI agents**—infrastructure
+  that makes
+related:
+- Agent Tooling & APIs
+- Agent-Native Web
+path: sequoia/web-for-agents.md
+---
+
 # Building a Web That Agents Can Use
 
 The public web was built for human eyes and ad clickers. Agents need machine-reliable retrieval, tools, and permissions. Parallel’s Parag Agrawal argues for a **new web layer for AI agents**—infrastructure that makes the internet legible and actionable for non-human browsers.

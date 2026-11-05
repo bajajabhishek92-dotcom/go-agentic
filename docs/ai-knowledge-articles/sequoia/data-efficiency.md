@@ -1,3 +1,38 @@
+---
+title: 'Data Efficiency: The Bottleneck After Search and Code'
+slug: a-data-efficiency
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/training-data
+keywords:
+- data-efficiency-bottleneck
+- continual-learning
+- sequoia
+- training-data
+- cluster-training-data
+- corpus-sequoia-ai-knowledge
+- article
+- data
+- efficiency
+- search
+- bottleneck
+- code
+- after
+- only
+summary: LLMs look magical at search and coding because those domains are drowning in data (and synthetic
+  data). Most of the economy is not. Flapping Airplanes’ thesis is that **data efficiency**—getting coding-level
+related:
+- Continual Learning
+- Data Efficiency Bottleneck
+path: sequoia/data-efficiency.md
+---
+
 # Data Efficiency: The Bottleneck After Search and Code
 
 LLMs look magical at search and coding because those domains are drowning in data (and synthetic data). Most of the economy is not. Flapping Airplanes’ thesis is that **data efficiency**—getting coding-level capability with orders of magnitude less data—will decide who can participate in AI.

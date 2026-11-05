@@ -1,3 +1,39 @@
+---
+title: 'Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers'
+slug: a-distill-efficient-agents
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/training-data
+keywords:
+- model-routing
+- agent-distillation
+- aws-ml-blog
+- training-data
+- cluster-training-data
+- corpus-aws-ml-blog
+- article
+- teacher
+- not
+- trajectories
+- agents
+- you
+- shorter
+- just
+summary: A shopping (or support, or triage) agent on a frontier model works—until you multiply **search
+  → read → refine → verify → decide** by every user. One completed task is many billed calls. Smaller
+  models are cheaper
+related:
+- Agent Distillation
+- Model Routing
+path: extra/aws-ml-blog/distill-efficient-agents.md
+---
+
 # Distilling Efficient Agents: Teacher Trajectories, Not Just Shorter Answers
 
 A shopping (or support, or triage) agent on a frontier model works—until you multiply **search → read → refine → verify → decide** by every user. One completed task is many billed calls. Smaller models are cheaper and faster, but usually worse at the task. **Knowledge distillation** transfers teacher behavior into a student so you keep much of the quality at student economics.

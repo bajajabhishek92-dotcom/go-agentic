@@ -1,3 +1,38 @@
+---
+title: Closing the Deployment Gap with Forward-Deployed Engineering
+slug: a-closing-the-deployment-gap
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/openai-news
+- cluster/enterprise-gov
+keywords:
+- forward-deployed-engineering
+- enterprise-ai-diffusion
+- openai-news
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-openai-news
+- article
+- gap
+- deployment
+- forward-deployed
+- engineering
+- closing
+- can
+- domain
+summary: Model demos move faster than production systems. The **deployment gap** is the distance between
+  what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints,
+related:
+- Enterprise AI Diffusion
+- Forward-Deployed Engineering
+path: extra/openai-news/closing-the-deployment-gap.md
+---
+
 # Closing the Deployment Gap with Forward-Deployed Engineering
 
 Model demos move faster than production systems. The **deployment gap** is the distance between what a model appears capable of on a benchmark or slide and what people can reliably use amid real constraints, permissions, and messy data. Forward-deployed engineering (FDE) is one organizational pattern for closing that gap—and intentionally making itself obsolete.

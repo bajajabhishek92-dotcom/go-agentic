@@ -1,3 +1,40 @@
+---
+title: Multi-Tenant Agents and RAG Access Control
+slug: a-multi-tenant-and-rag-access-control
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/enterprise-gov
+keywords:
+- sensitive-data-controls
+- rag-retrieval-augmented-generation
+- multi-tenant-rag-access-control
+- aws-ml-blog
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-aws-ml-blog
+- article
+- rag
+- not
+- agents
+- access
+- multi-tenant
+- isolation
+summary: 'When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL
+  leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation**
+  for agent'
+related:
+- Multi-Tenant RAG Access Control
+- RAG (Retrieval-Augmented Generation)
+- Sensitive Data Controls
+path: extra/aws-ml-blog/multi-tenant-and-rag-access-control.md
+---
+
 # Multi-Tenant Agents and RAG Access Control
 
 When AI reads complaint records, HR files, or strategy docs, a single cross-tenant or cross-ACL leak can outweigh any product benefit. Two related problems show up in production: **SaaS tenant isolation** for agent platforms, and **document ACL fidelity** for RAG.

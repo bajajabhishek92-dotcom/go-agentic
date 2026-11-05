@@ -1,3 +1,39 @@
+---
+title: 'Trusting AI Decisions: Agents, Rules, Confidence, and Governance'
+slug: a-trusting-ai-decisions
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/trust-evals
+keywords:
+- trusting-ai-decisions
+- calibrated-decision-models-jev
+- ibm
+- trust-evals
+- cluster-trust-evals
+- corpus-ibm-ai-knowledge
+- article
+- rules
+- agents
+- not
+- confidence
+- trusting
+- governance
+- decisions
+summary: When AI generates a paragraph, a bad answer is embarrassing. When AI denies a loan, contains
+  a host, or pays an invoice, a bad answer is an incident. The hard question is not only “can AI decide?”
+  but “how do we know
+related:
+- Calibrated Decision Models (Jev)
+- Trusting AI Decisions
+path: ibm/trusting-ai-decisions.md
+---
+
 # Trusting AI Decisions: Agents, Rules, Confidence, and Governance
 
 When AI generates a paragraph, a bad answer is embarrassing. When AI denies a loan, contains a host, or pays an invoice, a bad answer is an incident. The hard question is not only “can AI decide?” but “how do we know when it decided wrong—and whether someone made it wrong?”

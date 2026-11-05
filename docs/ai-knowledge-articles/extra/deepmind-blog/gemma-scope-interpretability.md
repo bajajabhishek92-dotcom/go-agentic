@@ -1,3 +1,39 @@
+---
+title: 'Gemma Scope: Open Interpretability at Model Scale'
+slug: a-gemma-scope-interpretability
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/trust-evals
+keywords:
+- open-interpretability-saes
+- frontier-safety-stack
+- deepmind-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-deepmind-blog
+- article
+- gemma
+- scope
+- open
+- interpretability
+- model
+- features
+- scale
+summary: 'Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind’s open “microscope”
+  for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers
+  can see **what'
+related:
+- Frontier Safety Stack
+- Open Interpretability (SAEs)
+path: extra/deepmind-blog/gemma-scope-interpretability.md
+---
+
 # Gemma Scope: Open Interpretability at Model Scale
 
 Frontier safety needs more than black-box evals. Gemma Scope 2 is DeepMind’s open “microscope” for the Gemma 3 family: sparse autoencoders (SAEs), transcoders, and chat-oriented tools so researchers can see **what features fire** and how they connect to behavior.

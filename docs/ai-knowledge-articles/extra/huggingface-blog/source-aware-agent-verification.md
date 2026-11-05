@@ -1,3 +1,40 @@
+---
+title: Source-Aware Verification and Consistency for Tool Agents
+slug: a-source-aware-agent-verification
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/trust-evals
+keywords:
+- source-aware-verification
+- rag-retrieval-augmented-generation
+- agent-evaluation
+- huggingface-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-huggingface-blog
+- article
+- consistency
+- agents
+- tool
+- source-aware
+- verification
+- source
+summary: 'MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure
+  modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that
+  does not repeat**.'
+related:
+- Agent Evaluation
+- RAG (Retrieval-Augmented Generation)
+- Source-Aware Verification
+path: extra/huggingface-blog/source-aware-agent-verification.md
+---
+
 # Source-Aware Verification and Consistency for Tool Agents
 
 MCP-style agents pull many tools—search, records, databases—then weave one answer. Two failure modes matter more than raw fluency: **wrong attribution** of a true fact, and **one-shot success that does not repeat**.

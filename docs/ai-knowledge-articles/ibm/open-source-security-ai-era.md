@@ -1,3 +1,39 @@
+---
+title: Open-Source Security When AI Makes Discovery Cheap
+slug: a-open-source-security-ai-era
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/security-safety
+keywords:
+- defender-s-window
+- ai-security-trilemma
+- ibm
+- security-safety
+- cluster-security-safety
+- corpus-ibm-ai-knowledge
+- article
+- discovery
+- security
+- open-source
+- makes
+- cheap
+- not
+- source
+summary: Roughly ninety percent of a modern enterprise codebase is open source—banks, hospitals, grids,
+  telecom, cloud, and AI services alike. Much of that critical layer was written by small teams and volunteers.
+  Innovation
+related:
+- AI Security Trilemma
+- Defender's Window
+path: ibm/open-source-security-ai-era.md
+---
+
 # Open-Source Security When AI Makes Discovery Cheap
 
 Roughly ninety percent of a modern enterprise codebase is open source—banks, hospitals, grids, telecom, cloud, and AI services alike. Much of that critical layer was written by small teams and volunteers. Innovation scaled; time-sensitive maintenance did not always scale with it. For years the industry consumed open source faster than it invested in securing it. A flaw in an obscure library no longer stays obscure: dependency graphs turn one bug into thousands of downstream exposures.

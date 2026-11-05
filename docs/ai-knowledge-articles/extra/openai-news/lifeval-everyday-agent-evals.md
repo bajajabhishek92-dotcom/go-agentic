@@ -1,3 +1,39 @@
+---
+title: 'LifeVal: Evaluating Agents on What Everyday People Need Done'
+slug: a-lifeval-everyday-agent-evals
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/openai-news
+- cluster/trust-evals
+keywords:
+- long-horizon-agents
+- agent-evaluation
+- openai-news
+- trust-evals
+- cluster-trust-evals
+- corpus-openai-news
+- article
+- people
+- lifeval
+- everyday
+- not
+- need
+- done
+- use
+summary: 'Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete
+  practical life tasks—childcare logistics, government services, budgets, school prep, health-related
+  meal planning,'
+related:
+- Agent Evaluation
+- Long-Horizon Agents
+path: extra/openai-news/lifeval-everyday-agent-evals.md
+---
+
 # LifeVal: Evaluating Agents on What Everyday People Need Done
 
 Benchmarks that measure exam knowledge miss a large part of AI’s value: helping people complete practical life tasks—childcare logistics, government services, budgets, school prep, health-related meal planning, shopping, caregiving coordination. Advice in a chat box is not the same as an agent that can **act** through browsers, computers, and connectors. LifeVal is a pattern for measuring that gap.

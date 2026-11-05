@@ -1,3 +1,40 @@
+---
+title: Five Production Challenges in Multi-Agent Systems
+slug: a-multi-agent-production-challenges
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/agentic-systems
+keywords:
+- multi-agent-systems
+- loop-engineering
+- enterprise-agent-platforms
+- aws-ml-blog
+- agentic-systems
+- cluster-agentic-systems
+- corpus-aws-ml-blog
+- article
+- systems
+- multi-agent
+- production
+- model
+- plan
+- five
+summary: 'Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot
+  fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture
+  and execution'
+related:
+- Enterprise Agent Platforms
+- Loop Engineering
+- Multi-Agent Systems
+path: extra/aws-ml-blog/multi-agent-production-challenges.md
+---
+
 # Five Production Challenges in Multi-Agent Systems
 
 Standing up a demo agent is easy. Production multi-agent systems fail for reasons prompts cannot fix: agents improvise paths, skip validation, and mishandle edge cases. You need cognitive architecture and execution flow—not only longer instructions.

@@ -1,3 +1,40 @@
+---
+title: Applied Research Labs Inside Product Companies
+slug: a-applied-research-labs
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Science, Frontier & Interpretability
+cluster_id: science-frontier
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/science-frontier
+keywords:
+- own-your-weights
+- applied-research-labs
+- agent-evaluation
+- sequoia
+- science-frontier
+- cluster-science-frontier
+- corpus-sequoia-ai-knowledge
+- article
+- research
+- labs
+- product
+- companies
+- applied
+- inside
+summary: 'Harvey’s Gabe Pereyra describes building a serious research lab without frontier-lab budgets.
+  The broader Sequoia pattern: **application companies are becoming research orgs** because domain intelligence
+  is the moat.'
+related:
+- Agent Evaluation
+- Applied Research Labs
+- Own Your Weights
+path: sequoia/applied-research-labs.md
+---
+
 # Applied Research Labs Inside Product Companies
 
 Harvey’s Gabe Pereyra describes building a serious research lab without frontier-lab budgets. The broader Sequoia pattern: **application companies are becoming research orgs** because domain intelligence is the moat.

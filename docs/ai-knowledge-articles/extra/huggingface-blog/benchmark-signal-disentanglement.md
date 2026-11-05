@@ -1,3 +1,39 @@
+---
+title: 'What Benchmarks Actually Measure: Disentangle the Signals'
+slug: a-benchmark-signal-disentanglement
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/trust-evals
+keywords:
+- benchmark-signal-disentanglement
+- agent-evaluation
+- huggingface-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-huggingface-blog
+- article
+- benchmarks
+- reasoning
+- safety
+- measure
+- actually
+- signals
+- items
+summary: A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on **general
+  reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more
+  than
+related:
+- Agent Evaluation
+- Benchmark Signal Disentanglement
+path: extra/huggingface-blog/benchmark-signal-disentanglement.md
+---
+
 # What Benchmarks Actually Measure: Disentangle the Signals
 
 A leaderboard number is a blend. BBQ may be filed under “safety” while many items lean on **general reasoning**. HarmBench mixes phishing-style compliance with copyright prompts that track reasoning more than refusal. Averaging them into one score hides what you are selecting for.

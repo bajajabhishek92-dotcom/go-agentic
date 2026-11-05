@@ -1,3 +1,39 @@
+---
+title: Cybersecurity Capabilities and Staged Rollout
+slug: a-cyber-staged-rollout
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/security-safety
+keywords:
+- frontier-safety-stack
+- defender-s-window
+- deepmind-blog
+- security-safety
+- cluster-security-safety
+- corpus-deepmind-blog
+- article
+- cyber
+- staged
+- rollout
+- cybersecurity
+- capabilities
+- models
+- hard
+summary: 'AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent
+  cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden
+  access as'
+related:
+- Defender's Window
+- Frontier Safety Stack
+path: extra/deepmind-blog/cyber-staged-rollout.md
+---
+
 # Cybersecurity Capabilities and Staged Rollout
 
 AI that can find, validate, and patch vulnerabilities is dual-use by nature. DeepMind’s recent cyber posts teach a clear deployment pattern: **give defenders an adaptation window first**, then broaden access as guardrails and operational controls mature.

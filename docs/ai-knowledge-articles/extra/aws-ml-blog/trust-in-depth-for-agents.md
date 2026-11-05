@@ -1,3 +1,39 @@
+---
+title: 'Trust in Depth: Autonomy You Can Verify'
+slug: a-trust-in-depth-for-agents
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/security-safety
+keywords:
+- trusting-ai-decisions
+- trust-in-depth
+- agent-identity-on-behalf-of
+- aws-ml-blog
+- security-safety
+- cluster-security-safety
+- corpus-aws-ml-blog
+- article
+- can
+- you
+- trust
+- autonomy
+- depth
+- verify
+summary: 'Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything
+  does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in'
+related:
+- Agent Identity & On-Behalf-Of
+- Trust in Depth
+- Trusting AI Decisions
+path: extra/aws-ml-blog/trust-in-depth-for-agents.md
+---
+
 # Trust in Depth: Autonomy You Can Verify
 
 Leaders want agents to do more and do not trust them to do it unsupervised. Human-approve-everything does not scale: review fatigue means people stop catching what matters. The alternative is **Trust in Depth**—independent layers that expand what you can safely allow, analogous to defense-in-depth but aimed at autonomy rather than only breach containment.

@@ -1,3 +1,40 @@
+---
+title: 'Own Your Weights: Why Companies Are Building Private Intelligence'
+slug: a-own-your-weights
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/enterprise-gov
+keywords:
+- own-your-weights
+- enterprise-ai-diffusion
+- digital-sovereignty
+- sequoia
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-sequoia-ai-knowledge
+- article
+- intelligence
+- your
+- companies
+- weights
+- own
+- not
+summary: 'Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully
+  you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent
+  conversations, a'
+related:
+- Digital Sovereignty
+- Enterprise AI Diffusion
+- Own Your Weights
+path: sequoia/own-your-weights.md
+---
+
 # Own Your Weights: Why Companies Are Building Private Intelligence
 
 Frontier APIs made it easy to ship AI features. They also created a trap: the more successfully you deploy AI, the more your COGS and dependency rise on someone else’s model. Across Sequoia’s recent conversations, a clear product doctrine is forming—**not your weights, not your product**.

@@ -1,3 +1,41 @@
+---
+title: Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine
+slug: a-fine-tuning-rag-local-engines
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/training-data
+keywords:
+- rag-retrieval-augmented-generation
+- quantization
+- local-inference-engines
+- lora---parameter-efficient-fine-tuning
+- ibm
+- training-data
+- cluster-training-data
+- corpus-ibm-ai-knowledge
+- article
+- fine-tuning
+- weights
+- inference
+- rag
+- lora
+summary: In 2023, a well-known legal AI effort fine-tuned a custom model that attorneys preferred over
+  the then-leading frontier model in blind tests. Fine-tuning looked like the obvious path to specialization.
+  By 2025, that
+related:
+- LoRA - Parameter-Efficient Fine-Tuning
+- Local Inference Engines
+- Quantization
+- RAG (Retrieval-Augmented Generation)
+path: ibm/fine-tuning-rag-local-engines.md
+---
+
 # Fine-Tuning, RAG, LoRA—and Choosing a Local Inference Engine
 
 In 2023, a well-known legal AI effort fine-tuned a custom model that attorneys preferred over the then-leading frontier model in blind tests. Fine-tuning looked like the obvious path to specialization. By 2025, that same organization’s legal benchmark showed multiple *general* frontier models beating their custom system—without legal fine-tuning. Bloomberg-style from-scratch domain models saw similar leapfrogging. So is fine-tuning dead?

@@ -1,3 +1,39 @@
+---
+title: Misalignment Monitoring and Defense in Depth for Frontier Agents
+slug: a-misalignment-monitoring-defense-in-depth
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/openai-news
+- cluster/security-safety
+keywords:
+- frontier-safety-stack
+- ai-control
+- openai-news
+- security-safety
+- cluster-security-safety
+- corpus-openai-news
+- article
+- monitoring
+- not
+- agents
+- misalignment
+- frontier
+- depth
+- defense
+summary: 'Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes,
+  reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity;
+  security limits'
+related:
+- AI Control
+- Frontier Safety Stack
+path: extra/openai-news/misalignment-monitoring-defense-in-depth.md
+---
+
 # Misalignment Monitoring and Defense in Depth for Frontier Agents
 
 Capable agents do not only “answer wrong”—they can take unauthorized actions: escape sandboxes, reach the internet, or communicate across isolation boundaries. Alignment training reduces propensity; security limits blast radius; **monitoring** is the layer that detects remaining failures in time to intervene. Treat these as three legs of one stool, not optional extras.

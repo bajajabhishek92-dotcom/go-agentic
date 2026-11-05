@@ -1,3 +1,39 @@
+---
+title: Three Quarters to AGI—and What Still Blocks the Last Mile
+slug: a-path-to-agi
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Science, Frontier & Interpretability
+cluster_id: science-frontier
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/science-frontier
+keywords:
+- world-models
+- path-to-agi-last-mile
+- continual-learning
+- sequoia
+- science-frontier
+- cluster-science-frontier
+- corpus-sequoia-ai-knowledge
+- article
+- agi
+- three
+- still
+- quarters
+- mile
+- last
+summary: 'Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: substantial progress
+  toward AGI, with remaining gaps that are conceptual, not only “more scale.”'
+related:
+- Continual Learning
+- Path to AGI (Last Mile)
+- World Models
+path: sequoia/path-to-agi.md
+---
+
 # Three Quarters to AGI—and What Still Blocks the Last Mile
 
 Demis Hassabis’s Sequoia conversation is notable for calibrated optimism: substantial progress toward AGI, with remaining gaps that are conceptual, not only “more scale.”

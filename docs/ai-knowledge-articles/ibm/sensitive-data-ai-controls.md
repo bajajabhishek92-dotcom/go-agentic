@@ -1,3 +1,39 @@
+---
+title: 'Using Sensitive Data with AI: Visibility, Classification, and Control'
+slug: a-sensitive-data-ai-controls
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/enterprise-gov
+keywords:
+- sensitive-data-controls
+- digital-sovereignty
+- ibm
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-ibm-ai-knowledge
+- article
+- data
+- control
+- classification
+- visibility
+- sensitive
+- using
+- not
+summary: 'The data that makes AI most useful is often the data that can hurt you most: customer PII, health
+  records, financial details, contracts, credentials. Organizations spent decades building controls so
+  *humans* would'
+related:
+- Digital Sovereignty
+- Sensitive Data Controls
+path: ibm/sensitive-data-ai-controls.md
+---
+
 # Using Sensitive Data with AI: Visibility, Classification, and Control
 
 The data that makes AI most useful is often the data that can hurt you most: customer PII, health records, financial details, contracts, credentials. Organizations spent decades building controls so *humans* would not mishandle that information. AI changes the tempo. Models and agents can read, transform, and move data at machine speed, so the controls around them must operate at machine speed too.

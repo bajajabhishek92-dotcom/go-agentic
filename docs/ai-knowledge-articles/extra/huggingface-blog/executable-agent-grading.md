@@ -1,3 +1,39 @@
+---
+title: 'Executable Agent Grading: Outcomes Beat Tool-Call Theater'
+slug: a-executable-agent-grading
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Trust, Evaluation & Decision Quality
+cluster_id: trust-evals
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/trust-evals
+keywords:
+- rl-environments
+- agent-evaluation
+- huggingface-blog
+- trust-evals
+- cluster-trust-evals
+- corpus-huggingface-blog
+- article
+- executable
+- tasks
+- not
+- agent
+- tool-call
+- pass
+- theater
+summary: Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite
+  “resolved” reply, and a ticket closed when policy required **on hold**—that is the failure mode ThinkingBox
+  was built
+related:
+- Agent Evaluation
+- RL Environments
+path: extra/huggingface-blog/executable-agent-grading.md
+---
+
 # Executable Agent Grading: Outcomes Beat Tool-Call Theater
 
 Agents can look competent while leaving the wrong record behind. Nine clean tool calls, a polite “resolved” reply, and a ticket closed when policy required **on hold**—that is the failure mode ThinkingBox was built to catch. The lesson for evaluation and training: **grade terminal backend state**, not fluency or tool-call shape.

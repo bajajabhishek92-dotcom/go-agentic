@@ -1,3 +1,39 @@
+---
+title: 'Science Agents: Skills, Tool Grounding, and Idea Tournaments'
+slug: a-science-agent-workflows
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Science, Frontier & Interpretability
+cluster_id: science-frontier
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/science-frontier
+keywords:
+- science-agent-workflows
+- multi-agent-systems
+- agent-skills
+- deepmind-blog
+- science-frontier
+- cluster-science-frontier
+- corpus-deepmind-blog
+- article
+- skills
+- agents
+- science
+- idea
+- tournaments
+- tool
+summary: Scientific AI is moving from “answer a biology question” to **agents that run discovery workflows**—curating
+  literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind
+related:
+- Agent Skills
+- Multi-Agent Systems
+- Science Agent Workflows
+path: extra/deepmind-blog/science-agent-workflows.md
+---
+
 # Science Agents: Skills, Tool Grounding, and Idea Tournaments
 
 Scientific AI is moving from “answer a biology question” to **agents that run discovery workflows**—curating literature and structures, calling domain tools, proposing designs, and debating hypotheses. Two DeepMind lines illustrate complementary patterns: Antigravity Cheminformatics Skills and Co-Scientist.

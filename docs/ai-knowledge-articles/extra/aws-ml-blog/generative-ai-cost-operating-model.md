@@ -1,3 +1,39 @@
+---
+title: 'Generative AI Cost: An Operating Model, Not a Cheaper Model'
+slug: a-generative-ai-cost-operating-model
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/inference-infra
+keywords:
+- model-routing
+- generative-ai-cost-operating-model
+- aws-ml-blog
+- inference-infra
+- cluster-inference-infra
+- corpus-aws-ml-blog
+- article
+- model
+- not
+- cost
+- operating
+- generative
+- cheaper
+- every
+summary: 'Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s
+  real questions: which team spent this, on which workload, and was it inside budget? Agentic systems
+  make the gap worse—one'
+related:
+- Generative AI Cost Operating Model
+- Model Routing
+path: extra/aws-ml-blog/generative-ai-cost-operating-model.md
+---
+
 # Generative AI Cost: An Operating Model, Not a Cheaper Model
 
 Comparing token price lists and asking teams to “shorten prompts” does not answer finance’s real questions: which team spent this, on which workload, and was it inside budget? Agentic systems make the gap worse—one user task can mean many model calls with growing context—so **token burn scales with autonomy and context size**, not with chat turns.

@@ -1,3 +1,38 @@
+---
+title: The AI Security Trilemma—and Why Agents Raise the Stakes
+slug: a-ai-security-trilemma
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Security, Safety & Control
+cluster_id: security-safety
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/security-safety
+keywords:
+- frontier-safety-stack
+- ai-security-trilemma
+- ibm
+- security-safety
+- cluster-security-safety
+- corpus-ibm-ai-knowledge
+- article
+- security
+- trilemma
+- stakes
+- smart
+- raise
+- model
+- agents
+summary: Enterprises want AI that is **smart**, **fast**, and **secure**. Like musical chairs with too
+  few seats, you often get only two. That three-way tension is the **AI security trilemma**.
+related:
+- AI Security Trilemma
+- Frontier Safety Stack
+path: ibm/ai-security-trilemma.md
+---
+
 # The AI Security Trilemma—and Why Agents Raise the Stakes
 
 Enterprises want AI that is **smart**, **fast**, and **secure**. Like musical chairs with too few seats, you often get only two. That three-way tension is the **AI security trilemma**.

@@ -1,3 +1,39 @@
+---
+title: 'Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior'
+slug: a-low-resource-language-coding
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Coding Agents & Software Delivery
+cluster_id: coding-delivery
+tags:
+- article
+- corpus/openai-news
+- cluster/coding-delivery
+keywords:
+- low-resource-language-coding
+- legacy-modernization-with-ai
+- openai-news
+- coding-delivery
+- cluster-coding-delivery
+- corpus-openai-news
+- article
+- languages
+- low-resource
+- coding
+- without
+- migrate
+- build
+- behavior
+summary: Models trained on oceans of Python and JavaScript historically struggled with **low-resource
+  languages**—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails,
+  weather codes, and
+related:
+- Legacy Modernization with AI
+- Low-Resource Language Coding
+path: extra/openai-news/low-resource-language-coding.md
+---
+
 # Coding Agents for Low-Resource Languages: Build and Migrate Without Breaking Behavior
 
 Models trained on oceans of Python and JavaScript historically struggled with **low-resource languages**—COBOL, Fortran, Visual Basic, and similar—despite those languages powering banking rails, weather codes, and reactor-safety analysis. Enterprises feel this as brittle assistants: incomplete docs, departed authors, business rules that exist *only* in source. Two complementary evaluations show how to measure progress.

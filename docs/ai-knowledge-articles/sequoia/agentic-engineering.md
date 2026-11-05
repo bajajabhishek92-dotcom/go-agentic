@@ -1,3 +1,40 @@
+---
+title: From Vibe Coding to Agentic Engineering
+slug: a-agentic-engineering
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/agentic-systems
+keywords:
+- agentic-engineering
+- agent-harness
+- ai-coding-quality-workflows
+- sequoia
+- agentic-systems
+- cluster-agentic-systems
+- corpus-sequoia-ai-knowledge
+- article
+- coding
+- engineering
+- agentic
+- vibe
+- www.youtube.com/watch
+- https
+summary: 'Coding is the canary domain for agents: rich data, fast verifiers, and developers willing to
+  change tools. Andrej Karpathy and Anthropic’s Boris Cherny describe a shift from autocomplete novelty
+  to **agentic'
+related:
+- AI Coding Quality Workflows
+- Agent Harness
+- Agentic Engineering
+path: sequoia/agentic-engineering.md
+---
+
 # From Vibe Coding to Agentic Engineering
 
 Coding is the canary domain for agents: rich data, fast verifiers, and developers willing to change tools. Andrej Karpathy and Anthropic’s Boris Cherny describe a shift from autocomplete novelty to **agentic engineering**—systems that plan, edit, test, and recover across a codebase.

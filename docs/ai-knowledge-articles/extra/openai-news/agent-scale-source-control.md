@@ -1,3 +1,39 @@
+---
+title: 'Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions'
+slug: a-agent-scale-source-control
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Coding Agents & Software Delivery
+cluster_id: coding-delivery
+tags:
+- article
+- corpus/openai-news
+- cluster/coding-delivery
+keywords:
+- agent-scale-source-control
+- ai-coding-quality-workflows
+- openai-news
+- coding-delivery
+- cluster-coding-delivery
+- corpus-openai-news
+- article
+- git
+- writers
+- source
+- control
+- can
+- assumptions
+- agent-scale
+summary: 'Coding agents multiply how much work one engineer can push at once: more branches, more CI clones,
+  more fetches of the same commit. Source control that was “fine” for human cadence can collapse under
+  agent'
+related:
+- AI Coding Quality Workflows
+- Agent-Scale Source Control
+path: extra/openai-news/agent-scale-source-control.md
+---
+
 # Agent-Scale Source Control: When Concurrent Writers Break Git Assumptions
 
 Coding agents multiply how much work one engineer can push at once: more branches, more CI clones, more fetches of the same commit. Source control that was “fine” for human cadence can collapse under agent cadence—slow pushes, failed merges, reliability dips. The lesson from OpenAI’s Pando work is not “replace Git,” but **rebuild the backend so Git’s protocol survives agent-scale concurrency**.

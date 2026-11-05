@@ -1,3 +1,40 @@
+---
+title: Turning Private APIs into Agent Tools Without Flooding Context
+slug: a-private-apis-as-agent-tools
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/knowledge-access
+keywords:
+- mcp-model-context-protocol
+- context-engineering
+- agent-tooling-apis
+- aws-ml-blog
+- knowledge-access
+- cluster-knowledge-access
+- corpus-aws-ml-blog
+- article
+- tools
+- without
+- private
+- context
+- apis
+- tool
+summary: When teams start building agents, the capabilities they need usually already exist as internal
+  REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints
+  safely reachable by
+related:
+- Agent Tooling & APIs
+- Context Engineering
+- MCP (Model Context Protocol)
+path: extra/aws-ml-blog/private-apis-as-agent-tools.md
+---
+
 # Turning Private APIs into Agent Tools Without Flooding Context
 
 When teams start building agents, the capabilities they need usually already exist as internal REST APIs. The hard part is not writing new product logic—it is making hundreds of private endpoints safely reachable by agents without public exposure, without letting the model invent identity, and without stuffing a 400-tool catalog into every prompt.

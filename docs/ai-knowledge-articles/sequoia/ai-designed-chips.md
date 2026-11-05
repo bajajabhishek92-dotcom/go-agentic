@@ -1,3 +1,39 @@
+---
+title: 'AI That Designs Chips: Closing the Loop on Silicon'
+slug: a-ai-designed-chips
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Physical AI, Voice & Autonomy
+cluster_id: physical-ai
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/physical-ai
+keywords:
+- energy-goodput-constraints
+- ai-designed-chips
+- sequoia
+- physical-ai
+- cluster-physical-ai
+- corpus-sequoia-ai-knowledge
+- article
+- chips
+- silicon
+- designs
+- loop
+- closing
+- real
+- www.youtube.com/watch
+summary: 'Ricursive Intelligence’s founders (Anna Goldie, Azalia Mirhoseini) represent a recursive bet:
+  use AI to design the chips that run AI, informed by earlier Google work on learned placement and the
+  painful gap between'
+related:
+- AI-Designed Chips
+- Energy & Goodput Constraints
+path: sequoia/ai-designed-chips.md
+---
+
 # AI That Designs Chips: Closing the Loop on Silicon
 
 Ricursive Intelligence’s founders (Anna Goldie, Azalia Mirhoseini) represent a recursive bet: use AI to design the chips that run AI, informed by earlier Google work on learned placement and the painful gap between academic metrics and real tapeout constraints.

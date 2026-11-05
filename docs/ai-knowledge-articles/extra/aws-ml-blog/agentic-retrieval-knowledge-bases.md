@@ -1,3 +1,39 @@
+---
+title: From Single-Shot RAG to Agentic Retrieval
+slug: a-agentic-retrieval-knowledge-bases
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/knowledge-access
+keywords:
+- rag-retrieval-augmented-generation
+- agentic-retrieval
+- aws-ml-blog
+- knowledge-access
+- cluster-knowledge-access
+- corpus-aws-ml-blog
+- article
+- retrieval
+- agentic
+- single-shot
+- rag
+- you
+- not
+- agent
+summary: 'Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That
+  design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span
+  two corpora come'
+related:
+- Agentic Retrieval
+- RAG (Retrieval-Augmented Generation)
+path: extra/aws-ml-blog/agentic-retrieval-knowledge-bases.md
+---
+
 # From Single-Shot RAG to Agentic Retrieval
 
 Classic RAG embeds a question, fetches nearest chunks from one index, and generates once. That design is right for many FAQs. It fails in recognizable ways on enterprise questions: answers that span two corpora come back fluent but incomplete; the right source depends on the question but a single index cannot choose; a second look after seeing first results has nowhere to happen.

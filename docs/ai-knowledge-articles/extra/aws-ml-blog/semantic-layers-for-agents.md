@@ -1,3 +1,40 @@
+---
+title: 'Semantic Layers: Let Agents Query Meaning, Not Schemas'
+slug: a-semantic-layers-for-agents
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Context, Tools & Knowledge Access
+cluster_id: knowledge-access
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/knowledge-access
+keywords:
+- semantic-layer-for-agents
+- multi-tenant-rag-access-control
+- agent-tooling-apis
+- aws-ml-blog
+- knowledge-access
+- cluster-knowledge-access
+- corpus-aws-ml-blog
+- article
+- semantic
+- meaning
+- agents
+- not
+- query
+- agent
+summary: Agents that answer business questions from live systems need more than a chat model and a SQL
+  dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**—in
+  a governed
+related:
+- Agent Tooling & APIs
+- Multi-Tenant RAG Access Control
+- Semantic Layer for Agents
+path: extra/aws-ml-blog/semantic-layers-for-agents.md
+---
+
 # Semantic Layers: Let Agents Query Meaning, Not Schemas
 
 Agents that answer business questions from live systems need more than a chat model and a SQL dialect. They need **joins, metric definitions, and row/column security to live outside the prompt**—in a governed semantic layer the model plans against but does not invent.

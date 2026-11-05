@@ -1,3 +1,39 @@
+---
+title: 'Gemini Robotics: Whole-Body Physical AI'
+slug: a-gemini-robotics-physical-ai
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Physical AI, Voice & Autonomy
+cluster_id: physical-ai
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/physical-ai
+keywords:
+- world-models
+- physical-ai---robotics
+- deepmind-blog
+- physical-ai
+- cluster-physical-ai
+- corpus-deepmind-blog
+- article
+- robotics
+- gemini
+- whole-body
+- physical
+- vla
+- robots
+- one
+summary: Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack
+  into complementary models so robots can reason for minutes, control whole bodies, and run locally when
+  the network is
+related:
+- Physical AI - Robotics
+- World Models
+path: extra/deepmind-blog/gemini-robotics-physical-ai.md
+---
+
 # Gemini Robotics: Whole-Body Physical AI
 
 Physical AI needs more than a chatbot that describes actions. Gemini Robotics 2 splits the stack into complementary models so robots can reason for minutes, control whole bodies, and run locally when the network is unavailable.

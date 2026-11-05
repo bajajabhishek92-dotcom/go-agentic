@@ -1,3 +1,39 @@
+---
+title: 'torch.compile: Dynamo, Inductor, Graph Breaks, and `.item()` Costs'
+slug: a-torch-compile-graph-breaks
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/inference-infra
+keywords:
+- torch.compile-graph-breaks
+- llm-inference
+- ibm
+- inference-infra
+- cluster-inference-infra
+- corpus-ibm-ai-knowledge
+- article
+- graph
+- dynamo
+- breaks
+- item
+- you
+- torch.compile
+- python
+summary: You have a correct PyTorch model and you want it faster. One line—`model = torch.compile(model)`—wraps
+  it. The first run may be slower while compilation happens; later runs may be faster. Compilation is
+  an
+related:
+- LLM Inference
+- torch.compile & Graph Breaks
+path: ibm/torch-compile-graph-breaks.md
+---
+
 # torch.compile: Dynamo, Inductor, Graph Breaks, and `.item()` Costs
 
 You have a correct PyTorch model and you want it faster. One line—`model = torch.compile(model)`—wraps it. The first run may be slower while compilation happens; later runs may be faster. Compilation is an *opportunity*, not a guarantee, and it does not always fuse the entire model into one graph.

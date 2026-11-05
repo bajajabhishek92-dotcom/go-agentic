@@ -1,3 +1,39 @@
+---
+title: 'Quantization-Aware Healing: Compress Without Capping Accuracy'
+slug: a-quantization-aware-healing
+type: article
+corpus: Hugging Face Blog
+corpus_key: huggingface-blog
+cluster: Inference, Efficiency & Infrastructure
+cluster_id: inference-infra
+tags:
+- article
+- corpus/huggingface-blog
+- cluster/inference-infra
+keywords:
+- quantization
+- agent-distillation
+- huggingface-blog
+- inference-infra
+- cluster-inference-infra
+- corpus-huggingface-blog
+- article
+- quantization-aware
+- without
+- healing
+- student
+- accuracy
+- teacher
+- compress
+summary: Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses
+  quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent
+  tax—or becomes
+related:
+- Agent Distillation
+- Quantization
+path: extra/huggingface-blog/quantization-aware-healing.md
+---
+
 # Quantization-Aware Healing: Compress Without Capping Accuracy
 
 Structural compression (fewer layers/heads/params) plus aggressive quantization usually loses quality. The usual fix is **quantize then heal**. How you heal decides whether 4-bit stays a permanent tax—or becomes another teaching pass.

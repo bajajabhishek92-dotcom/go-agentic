@@ -1,3 +1,40 @@
+---
+title: 'Enterprise Agent Platforms: Federate Ownership, Centralize Control'
+slug: a-enterprise-agent-platform
+type: article
+corpus: AWS ML Blog
+corpus_key: aws-ml-blog
+cluster: Enterprise Adoption & Governance
+cluster_id: enterprise-gov
+tags:
+- article
+- corpus/aws-ml-blog
+- cluster/enterprise-gov
+keywords:
+- trust-in-depth
+- enterprise-agent-platforms
+- enterprise-ai-diffusion
+- aws-ml-blog
+- enterprise-gov
+- cluster-enterprise-gov
+- corpus-aws-ml-blog
+- article
+- agent
+- gateway
+- tool
+- team
+- one
+- platforms
+summary: Getting one agent to call a model and a few tools is not the production problem. The production
+  problem is how many teams can ship agents inside the same security, cost, and quality boundary—without
+  every team
+related:
+- Enterprise AI Diffusion
+- Enterprise Agent Platforms
+- Trust in Depth
+path: extra/aws-ml-blog/enterprise-agent-platform.md
+---
+
 # Enterprise Agent Platforms: Federate Ownership, Centralize Control
 
 Getting one agent to call a model and a few tools is not the production problem. The production problem is how many teams can ship agents inside the same security, cost, and quality boundary—without every team reinventing gateways, identity, evals, and rollback.

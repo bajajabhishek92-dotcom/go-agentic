@@ -1,3 +1,41 @@
+---
+title: 'Agentic Engineering Vocabulary: Prompt, Context, Harness, Loop, Graph, Factory'
+slug: a-agentic-engineering-vocabulary
+type: article
+corpus: IBM
+corpus_key: ibm
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/ibm-ai-knowledge
+- cluster/agentic-systems
+keywords:
+- multi-agent-systems
+- loop-engineering
+- agentic-engineering
+- agent-harness
+- ibm
+- agentic-systems
+- cluster-agentic-systems
+- corpus-ibm-ai-knowledge
+- article
+- harness
+- engineering
+- model
+- prompt
+- loop
+summary: Teams shipping most of their code with AI assistants are not magically “prompting better.” They
+  are practicing a stack of ideas that reuse classic computing patterns—feedback loops, orchestration,
+  isolation—under new
+related:
+- Agent Harness
+- Agentic Engineering
+- Loop Engineering
+- Multi-Agent Systems
+path: ibm/agentic-engineering-vocabulary.md
+---
+
 # Agentic Engineering Vocabulary: Prompt, Context, Harness, Loop, Graph, Factory
 
 Teams shipping most of their code with AI assistants are not magically “prompting better.” They are practicing a stack of ideas that reuse classic computing patterns—feedback loops, orchestration, isolation—under new names. Five terms form a useful ladder from a single model call to an automated software factory.

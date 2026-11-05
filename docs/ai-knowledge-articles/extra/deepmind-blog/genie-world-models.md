@@ -1,3 +1,39 @@
+---
+title: 'Genie World Models: Simulation as a Training Substrate'
+slug: a-genie-world-models
+type: article
+corpus: DeepMind Blog
+corpus_key: deepmind-blog
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/deepmind-blog
+- cluster/training-data
+keywords:
+- world-models
+- path-to-agi-last-mile
+- deepmind-blog
+- training-data
+- cluster-training-data
+- corpus-deepmind-blog
+- article
+- world
+- genie
+- models
+- training
+- simulation
+- gemini
+- substrate
+summary: 'World models generate interactive environments you can steer—not just videos you watch. Genie
+  4 is DeepMind’s latest statement of that idea: real-time multimodal simulation (vision + native audio
+  + dialogue) grounded'
+related:
+- Path to AGI (Last Mile)
+- World Models
+path: extra/deepmind-blog/genie-world-models.md
+---
+
 # Genie World Models: Simulation as a Training Substrate
 
 World models generate interactive environments you can steer—not just videos you watch. Genie 4 is DeepMind’s latest statement of that idea: real-time multimodal simulation (vision + native audio + dialogue) grounded in Gemini capabilities, aimed at robotics training, agent testing, and creative prototyping.

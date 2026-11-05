@@ -1,3 +1,38 @@
+---
+title: 'Autonomy at Scale: Reliability Is the Product'
+slug: a-autonomy-at-scale
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Physical AI, Voice & Autonomy
+cluster_id: physical-ai
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/physical-ai
+keywords:
+- physical-ai---robotics
+- autonomy-reliability
+- sequoia
+- physical-ai
+- cluster-physical-ai
+- corpus-sequoia-ai-knowledge
+- article
+- reliability
+- product
+- autonomy
+- scale
+- www.youtube.com/watch
+- rides
+- learning
+summary: 'Waymo’s Dmitri Dolgov (20M+ rides) and Zipline’s long-distance autonomous delivery record push
+  the same lesson: in the physical world, **reliability engineering eats model demos**.'
+related:
+- Autonomy Reliability
+- Physical AI - Robotics
+path: sequoia/autonomy-at-scale.md
+---
+
 # Autonomy at Scale: Reliability Is the Product
 
 Waymo’s Dmitri Dolgov (20M+ rides) and Zipline’s long-distance autonomous delivery record push the same lesson: in the physical world, **reliability engineering eats model demos**.

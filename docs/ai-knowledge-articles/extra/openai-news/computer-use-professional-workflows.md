@@ -1,3 +1,39 @@
+---
+title: 'Computer Use for Professional Software: Train on Real Vendor Workflows'
+slug: a-computer-use-professional-workflows
+type: article
+corpus: OpenAI News
+corpus_key: openai-news
+cluster: Agentic Systems & Engineering
+cluster_id: agentic-systems
+tags:
+- article
+- corpus/openai-news
+- cluster/agentic-systems
+keywords:
+- computer-use---gui-agents
+- agent-evaluation
+- openai-news
+- agentic-systems
+- cluster-agentic-systems
+- corpus-openai-news
+- article
+- use
+- computer
+- software
+- vendor
+- train
+- real
+- workflows
+summary: 'Generic “use a browser” demos understate the hard problem: agents must operate **specialized
+  business software** under company rules—approvals, templates, jurisdiction clauses, CAD constraints,
+  QA viewports—and'
+related:
+- Agent Evaluation
+- Computer Use - GUI Agents
+path: extra/openai-news/computer-use-professional-workflows.md
+---
+
 # Computer Use for Professional Software: Train on Real Vendor Workflows
 
 Generic “use a browser” demos understate the hard problem: agents must operate **specialized business software** under company rules—approvals, templates, jurisdiction clauses, CAD constraints, QA viewports—and verify that the finished process works, not just that individual clicks succeeded.

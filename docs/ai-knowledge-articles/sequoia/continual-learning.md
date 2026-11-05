@@ -1,3 +1,40 @@
+---
+title: 'Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress'
+slug: a-continual-learning
+type: article
+corpus: Sequoia
+corpus_key: sequoia
+cluster: Training, Learning & Data
+cluster_id: training-data
+tags:
+- article
+- corpus/sequoia-ai-knowledge
+- cluster/training-data
+keywords:
+- rl-environments
+- path-to-agi-last-mile
+- continual-learning
+- sequoia
+- training-data
+- cluster-training-data
+- corpus-sequoia-ai-knowledge
+- article
+- learning
+- experience
+- continual
+- models
+- frozen
+- stall
+summary: Pretraining and post-training create impressive snapshots. They do not, by themselves, create
+  systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and
+  builders like
+related:
+- Continual Learning
+- Path to AGI (Last Mile)
+- RL Environments
+path: sequoia/continual-learning.md
+---
+
 # Continual Learning: Why Frozen Models Stall—and How Experience Restarts Progress
 
 Pretraining and post-training create impressive snapshots. They do not, by themselves, create systems that keep learning from deployment. Sequoia’s recent talks with Rich Sutton, David Silver, and builders like Trajectory converge on a hard claim: **the next leap is learning during use**.
