@@ -29,12 +29,13 @@ cd .. && python3 -m http.server 8765
 
 ## Live
 
-GitHub Pages is often unset on this repo (`github.io` 404). Prefer a host that serves **`text/html`** (not jsDelivr `text/plain`, which dumps source):
+GitHub Pages is often unset (`github.io` 404). jsDelivr serves `.html` as **`text/plain`** (looks like “raw HTML source”). Use:
 
-- Topics (in-page reader): https://gitcdn.link/repo/bajajabhishek92-dotcom/go-agentic/main/docs/atlas/topics.html
-- Local: from `docs/`, `python3 -m http.server 8765` → http://127.0.0.1:8765/atlas/topics.html
+- **Self-contained Topics reader (preferred):** `topics-standalone.html` (CSS/JS/bodies inlined — one file, in-page pane)
+- Local: from `docs/`, `python3 -m http.server 8765` → http://127.0.0.1:8765/atlas/topics-standalone.html
+- Modular `topics.html` is for same-origin static hosting / Pages once enabled
 
-Topic cards open an **in-page** reading pane (`#article-id`) using embedded `corpus-bodies.js` — they do not navigate to raw `.md` or CDN-plain `articles.html`.
+Topic cards open an **in-page** reading pane (`#article-id`). They never navigate to `.md` or blob/raw URLs.
 
 ## UX patterns borrowed
 
